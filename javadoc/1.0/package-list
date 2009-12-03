@@ -1,0 +1,8 @@
+de.l3s.boilerpipe
+de.l3s.boilerpipe.document
+de.l3s.boilerpipe.extractors
+de.l3s.boilerpipe.filters.english
+de.l3s.boilerpipe.filters.heuristics
+de.l3s.boilerpipe.filters.simple
+de.l3s.boilerpipe.sax
+de.l3s.boilerpipe.util
