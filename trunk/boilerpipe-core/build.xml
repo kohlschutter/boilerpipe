@@ -80,18 +80,8 @@
         <mkdir dir="${build.dir}" />
 		<mkdir dir="${build.main}" />
 		<mkdir dir="${build.demo}" />
-        <delete dir="${dist.dir}" />
-        <mkdir dir="${dist.dir}" />
+		<mkdir dir="${dist.dir}" />
         <mkdir dir="${app.dir}/javadoc" />
-		<delete>
-			<fileset dir="${javadoc.dir}">
-				<include name="**/*.html" />
-                <include name="**/*.gif" />
-                <include name="**/*.css" />
-                <include name="**/*.png" />
-				<exclude name="**/.svn/**" />
-			</fileset>
-	    </delete>
 	</target>
 
 	<target name="compile">
@@ -101,10 +91,17 @@
 
 	<target name="clean">
 		<delete dir="${build.dir}" />
-		<delete file="${dist.dir}" />
-		<delete file="${javadoc.dir}" />
-		<delete file="${distBin.tar.gz}" />
-		<delete file="${distSrc.tar.gz}" />
+        <delete dir="${dist.dir}" />
+        <mkdir dir="${javadoc.dir}" />
+        <delete>
+            <fileset dir="${javadoc.dir}">
+                <include name="**/*.html" />
+                <include name="**/*.gif" />
+                <include name="**/*.css" />
+                <include name="**/*.png" />
+                <exclude name="**/.svn/**" />
+            </fileset>
+        </delete>
 	</target>
 
 	<target name="javadoc">
@@ -127,7 +124,7 @@
 		</replaceregexp>
         <replaceregexp>
             <regexp pattern="&lt;META NAME=&quot;date&quot;.*?&gt;" />
-            <substitution expression=""/>
+            <substitution expression="&lt;META HTTP-EQUIV=&quot;Content-Type&quot; CONTENT=&quot;text/html;charset=utf-8&quot;"/>
             <fileset dir="${javadoc.dir}">
              <include name="**/*.html" />
             </fileset>
@@ -151,7 +148,7 @@
 		</jar>
 	</target>
 
-	<target name="dist" depends="init,javadoc,jars">
+	<target name="dist" depends="clean,init,javadoc,jars">
 		<tar destfile="${distBin.tar.gz}" compression="gzip">
 			<tarfileset dir="." prefix="${app.name}-${app.version}/">
 				<include name="README.txt" />
