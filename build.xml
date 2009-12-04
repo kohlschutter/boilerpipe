@@ -82,6 +82,7 @@
 		<mkdir dir="${build.demo}" />
 		<mkdir dir="${dist.dir}" />
         <mkdir dir="${app.dir}/javadoc" />
+        <mkdir dir="${javadoc.dir}" />
 	</target>
 
 	<target name="compile">
@@ -150,12 +151,12 @@
 
 	<target name="dist" depends="clean,init,javadoc,jars">
 		<tar destfile="${distBin.tar.gz}" compression="gzip">
-			<tarfileset dir="." prefix="${app.name}-${app.version}/">
+			<tarfileset dir="${app.dir}" prefix="${app.name}-${app.version}/">
 				<include name="README.txt" />
                 <include name="NOTICE.txt" />
 				<include name="LICENSE.txt" />
-				<include name="${javadoc.dir}/${app.version}/**" />
-                <include name="${lib.dir}/**" />
+				<include name="javadoc/**" />
+                <include name="lib/**" />
 			</tarfileset>
 			<tarfileset dir="${dist.dir}" prefix="${app.name}-${app.version}/">
 			    <include name="*.jar" />
@@ -170,7 +171,6 @@
                 <include name=".classpath" />
 				<include name="src/**" />
 				<include name="build.xml" />
-                <include name="${lib.dir}/**" />
 			</tarfileset>
 		</tar>
 	</target>
