@@ -32,7 +32,6 @@ import org.xml.sax.SAXException;
 
 import de.l3s.boilerpipe.BoilerpipeExtractor;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
-import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.sax.BoilerpipeSAXInput;
 
@@ -132,14 +131,6 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
     public String getText(TextDocument doc)
             throws BoilerpipeProcessingException {
         process(doc);
-        StringBuilder sb = new StringBuilder();
-        for (TextBlock block : doc.getTextBlocks()) {
-            if (block.isContent()) {
-                sb.append(block.getText());
-                sb.append('\n');
-            }
-        }
-        return sb.toString();
-
-    }
+        return doc.getContent();
+    }    
 }

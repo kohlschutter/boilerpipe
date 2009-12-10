@@ -71,4 +71,53 @@ public class TextDocument {
     public String getTitle() {
         return title;
     }
+
+    /**
+     * Returns the {@link TextDocument}'s content.
+     * 
+     * @return The content text.
+     */
+    public String getContent() {
+        return getText(true, false);
+    }
+
+    
+    /**
+     * Returns the {@link TextDocument}'s content, non-content or both
+     * 
+     * @param includeContent Whether to include TextBlocks marked as "content".
+     * @param includeNonContent Whether to include TextBlocks marked as "non-content".
+     * @return The text.
+     */
+    public String getText(boolean includeContent, boolean includeNonContent) {
+        StringBuilder sb = new StringBuilder();
+        LOOP: for (TextBlock block : getTextBlocks()) {
+            if(block.isContent()) {
+                if(!includeContent) {
+                    continue LOOP;
+                }
+            } else {
+                if(!includeNonContent) {
+                    continue LOOP;
+                }
+            }
+            sb.append(block.getText());
+            sb.append('\n');
+        }
+        return sb.toString();
+    }
+    
+    /**
+     * Returns detailed debugging information about the contained {@link TextBlock}s.
+     *  
+     * @return Debug information.
+     */
+    public String debugString() {
+        StringBuilder sb = new StringBuilder();
+        for(TextBlock tb : getTextBlocks()) {
+            sb.append(tb.toString());
+            sb.append('\n');
+        }
+        return sb.toString();
+    }
 }
