@@ -7,7 +7,7 @@
 BoilerpipeExtractor (1.0 API)
 </TITLE>
 
-
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"
 
 <LINK REL ="stylesheet" TYPE="text/css" HREF="../../../stylesheet.css" TITLE="Style">
 
@@ -76,9 +76,9 @@ function windowTitle()
 </TR>
 <TR>
 <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;METHOD</FONT></TD>
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
 <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;METHOD</FONT></TD>
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
 </TR>
 </TABLE>
 <A NAME="skip-navbar_top"></A>
@@ -103,8 +103,7 @@ Interface BoilerpipeExtractor</H2>
 </PRE>
 
 <P>
-Marker interface to distinguish between individual filter components
- and complete filter pipelines.
+Describes a complete filter pipeline.
 <P>
 
 <P>
@@ -124,6 +123,39 @@ Marker interface to distinguish between individual filter components
 <TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
 <B>Method Summary</B></FONT></TH>
 </TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../de/l3s/boilerpipe/BoilerpipeExtractor.html#getText(org.xml.sax.InputSource)">getText</A></B>(org.xml.sax.InputSource&nbsp;is)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extracts text from the HTML code available from the given
+ <CODE>InputSource</CODE>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../de/l3s/boilerpipe/BoilerpipeExtractor.html#getText(java.io.Reader)">getText</A></B>(java.io.Reader&nbsp;r)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extracts text from the HTML code available from the given <CODE>Reader</CODE>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../de/l3s/boilerpipe/BoilerpipeExtractor.html#getText(java.lang.String)">getText</A></B>(java.lang.String&nbsp;html)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extracts text from the HTML code given as a String.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../de/l3s/boilerpipe/BoilerpipeExtractor.html#getText(de.l3s.boilerpipe.document.TextDocument)">getText</A></B>(<A HREF="../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>&nbsp;doc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extracts text from the given <A HREF="../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> object.</TD>
+</TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_de.l3s.boilerpipe.BoilerpipeFilter"><!-- --></A>
 <TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
@@ -136,6 +168,96 @@ Marker interface to distinguish between individual filter components
 </TABLE>
 &nbsp;
 <P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getText(java.lang.String)"><!-- --></A><H3>
+getText</H3>
+<PRE>
+java.lang.String <B>getText</B>(java.lang.String&nbsp;html)
+                         throws <A HREF="../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></PRE>
+<DL>
+<DD>Extracts text from the HTML code given as a String.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>html</CODE> - The HTML code as a String.
+<DT><B>Returns:</B><DD>The extracted text.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getText(org.xml.sax.InputSource)"><!-- --></A><H3>
+getText</H3>
+<PRE>
+java.lang.String <B>getText</B>(org.xml.sax.InputSource&nbsp;is)
+                         throws <A HREF="../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></PRE>
+<DL>
+<DD>Extracts text from the HTML code available from the given
+ <CODE>InputSource</CODE>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>is</CODE> - The InputSource containing the HTML
+<DT><B>Returns:</B><DD>The extracted text.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getText(java.io.Reader)"><!-- --></A><H3>
+getText</H3>
+<PRE>
+java.lang.String <B>getText</B>(java.io.Reader&nbsp;r)
+                         throws <A HREF="../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></PRE>
+<DL>
+<DD>Extracts text from the HTML code available from the given <CODE>Reader</CODE>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>r</CODE> - The Reader containing the HTML
+<DT><B>Returns:</B><DD>The extracted text.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getText(de.l3s.boilerpipe.document.TextDocument)"><!-- --></A><H3>
+getText</H3>
+<PRE>
+java.lang.String <B>getText</B>(<A HREF="../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>&nbsp;doc)
+                         throws <A HREF="../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></PRE>
+<DL>
+<DD>Extracts text from the given <A HREF="../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> object.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>doc</CODE> - The <A HREF="../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>.
+<DT><B>Returns:</B><DD>The extracted text.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></CODE></DL>
+</DD>
+</DL>
 <!-- ========= END OF CLASS DATA ========= -->
 <HR>
 
@@ -188,9 +310,9 @@ Marker interface to distinguish between individual filter components
 </TR>
 <TR>
 <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;METHOD</FONT></TD>
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
 <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;METHOD</FONT></TD>
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
 </TR>
 </TABLE>
 <A NAME="skip-navbar_bottom"></A>
