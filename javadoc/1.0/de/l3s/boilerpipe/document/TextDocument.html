@@ -7,7 +7,7 @@
 TextDocument (1.0 API)
 </TITLE>
 
-
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"
 
 <LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
 
@@ -148,6 +148,31 @@ A text document, consisting of one or more <A HREF="../../../../de/l3s/boilerpip
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html#debugString()">debugString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns detailed debugging information about the contained <A HREF="../../../../de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><CODE>TextBlock</CODE></A>s.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html#getContent()">getContent</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>'s content.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html#getText(boolean, boolean)">getText</A></B>(boolean&nbsp;includeContent,
+        boolean&nbsp;includeNonContent)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>'s content, non-content or both</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;java.util.List&lt;<A HREF="../../../../de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document">TextBlock</A>&gt;</CODE></FONT></TD>
 <TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html#getTextBlocks()">getTextBlocks</A></B>()</CODE>
 
@@ -247,6 +272,49 @@ public java.lang.String <B>getTitle</B>()</PRE>
 <DD><DL>
 
 <DT><B>Returns:</B><DD>The "main" title.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getContent()"><!-- --></A><H3>
+getContent</H3>
+<PRE>
+public java.lang.String <B>getContent</B>()</PRE>
+<DL>
+<DD>Returns the <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>'s content.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The content text.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getText(boolean, boolean)"><!-- --></A><H3>
+getText</H3>
+<PRE>
+public java.lang.String <B>getText</B>(boolean&nbsp;includeContent,
+                                boolean&nbsp;includeNonContent)</PRE>
+<DL>
+<DD>Returns the <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>'s content, non-content or both
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>includeContent</CODE> - Whether to include TextBlocks marked as "content".<DD><CODE>includeNonContent</CODE> - Whether to include TextBlocks marked as "non-content".
+<DT><B>Returns:</B><DD>The text.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="debugString()"><!-- --></A><H3>
+debugString</H3>
+<PRE>
+public java.lang.String <B>debugString</B>()</PRE>
+<DL>
+<DD>Returns detailed debugging information about the contained <A HREF="../../../../de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><CODE>TextBlock</CODE></A>s.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>Debug information.</DL>
 </DD>
 </DL>
 <!-- ========= END OF CLASS DATA ========= -->

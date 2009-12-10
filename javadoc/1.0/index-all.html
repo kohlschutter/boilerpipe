@@ -7,7 +7,7 @@
 Index (1.0 API)
 </TITLE>
 
-
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"
 
 <LINK REL ="stylesheet" TYPE="text/css" HREF="./stylesheet.css" TITLE="Style">
 
@@ -102,8 +102,7 @@ Constructor for class de.l3s.boilerpipe.extractors.<A HREF="./de/l3s/boilerpipe/
 <DT><A HREF="./de/l3s/boilerpipe/filters/heuristics/BlockProximityFusion.html" title="class in de.l3s.boilerpipe.filters.heuristics"><B>BlockProximityFusion</B></A> - Class in <A HREF="./de/l3s/boilerpipe/filters/heuristics/package-summary.html">de.l3s.boilerpipe.filters.heuristics</A><DD>Fuses adjacent blocks if their distance (in blocks) does not exceed a certain limit.<DT><A HREF="./de/l3s/boilerpipe/filters/heuristics/BlockProximityFusion.html#BlockProximityFusion(int, boolean)"><B>BlockProximityFusion(int, boolean)</B></A> - 
 Constructor for class de.l3s.boilerpipe.filters.heuristics.<A HREF="./de/l3s/boilerpipe/filters/heuristics/BlockProximityFusion.html" title="class in de.l3s.boilerpipe.filters.heuristics">BlockProximityFusion</A>
 <DD>Creates a new <A HREF="./de/l3s/boilerpipe/filters/heuristics/BlockProximityFusion.html" title="class in de.l3s.boilerpipe.filters.heuristics"><CODE>BlockProximityFusion</CODE></A> instance.
-<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe"><B>BoilerpipeExtractor</B></A> - Interface in <A HREF="./de/l3s/boilerpipe/package-summary.html">de.l3s.boilerpipe</A><DD>Marker interface to distinguish between individual filter components
- and complete filter pipelines.<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeFilter.html" title="interface in de.l3s.boilerpipe"><B>BoilerpipeFilter</B></A> - Interface in <A HREF="./de/l3s/boilerpipe/package-summary.html">de.l3s.boilerpipe</A><DD>A generic <A HREF="./de/l3s/boilerpipe/BoilerpipeFilter.html" title="interface in de.l3s.boilerpipe"><CODE>BoilerpipeFilter</CODE></A>.<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeInput.html" title="interface in de.l3s.boilerpipe"><B>BoilerpipeInput</B></A> - Interface in <A HREF="./de/l3s/boilerpipe/package-summary.html">de.l3s.boilerpipe</A><DD>A source that returns <A HREF="./de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>s.<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe"><B>BoilerpipeProcessingException</B></A> - Exception in <A HREF="./de/l3s/boilerpipe/package-summary.html">de.l3s.boilerpipe</A><DD>Exception for signaling failure in the processing pipeline.<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeProcessingException.html#BoilerpipeProcessingException()"><B>BoilerpipeProcessingException()</B></A> - 
+<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe"><B>BoilerpipeExtractor</B></A> - Interface in <A HREF="./de/l3s/boilerpipe/package-summary.html">de.l3s.boilerpipe</A><DD>Describes a complete filter pipeline.<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeFilter.html" title="interface in de.l3s.boilerpipe"><B>BoilerpipeFilter</B></A> - Interface in <A HREF="./de/l3s/boilerpipe/package-summary.html">de.l3s.boilerpipe</A><DD>A generic <A HREF="./de/l3s/boilerpipe/BoilerpipeFilter.html" title="interface in de.l3s.boilerpipe"><CODE>BoilerpipeFilter</CODE></A>.<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeInput.html" title="interface in de.l3s.boilerpipe"><B>BoilerpipeInput</B></A> - Interface in <A HREF="./de/l3s/boilerpipe/package-summary.html">de.l3s.boilerpipe</A><DD>A source that returns <A HREF="./de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>s.<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe"><B>BoilerpipeProcessingException</B></A> - Exception in <A HREF="./de/l3s/boilerpipe/package-summary.html">de.l3s.boilerpipe</A><DD>Exception for signaling failure in the processing pipeline.<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeProcessingException.html#BoilerpipeProcessingException()"><B>BoilerpipeProcessingException()</B></A> - 
 Constructor for exception de.l3s.boilerpipe.<A HREF="./de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A>
 <DD>&nbsp;
 <DT><A HREF="./de/l3s/boilerpipe/BoilerpipeProcessingException.html#BoilerpipeProcessingException(java.lang.String, java.lang.Throwable)"><B>BoilerpipeProcessingException(String, Throwable)</B></A> - 
@@ -146,7 +145,10 @@ The BoilerpipeFilters in this package have only been tested on English text.<DT>
 The BoilerpipeFilters in this package are pure heuristics.<DT><A HREF="./de/l3s/boilerpipe/filters/simple/package-summary.html"><B>de.l3s.boilerpipe.filters.simple</B></A> - package de.l3s.boilerpipe.filters.simple<DD>
 The BoilerpipeFilters in this package are straight-forward and probably not really specific to English.<DT><A HREF="./de/l3s/boilerpipe/sax/package-summary.html"><B>de.l3s.boilerpipe.sax</B></A> - package de.l3s.boilerpipe.sax<DD>
 Classes related to parsing and producing HTML from/to Boilerpipe TextDocuments.<DT><A HREF="./de/l3s/boilerpipe/util/package-summary.html"><B>de.l3s.boilerpipe.util</B></A> - package de.l3s.boilerpipe.util<DD>
-Some helper classes.<DT><A HREF="./de/l3s/boilerpipe/filters/english/IgnoreBlocksAfterContentFilter.html#DEFAULT_INSTANCE"><B>DEFAULT_INSTANCE</B></A> - 
+Some helper classes.<DT><A HREF="./de/l3s/boilerpipe/document/TextDocument.html#debugString()"><B>debugString()</B></A> - 
+Method in class de.l3s.boilerpipe.document.<A HREF="./de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>
+<DD>Returns detailed debugging information about the contained <A HREF="./de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><CODE>TextBlock</CODE></A>s.
+<DT><A HREF="./de/l3s/boilerpipe/filters/english/IgnoreBlocksAfterContentFilter.html#DEFAULT_INSTANCE"><B>DEFAULT_INSTANCE</B></A> - 
 Static variable in class de.l3s.boilerpipe.filters.english.<A HREF="./de/l3s/boilerpipe/filters/english/IgnoreBlocksAfterContentFilter.html" title="class in de.l3s.boilerpipe.filters.english">IgnoreBlocksAfterContentFilter</A>
 <DD>&nbsp;
 <DT><A HREF="./de/l3s/boilerpipe/filters/english/MinFulltextWordsFilter.html#DEFAULT_INSTANCE"><B>DEFAULT_INSTANCE</B></A> - 
@@ -192,6 +194,9 @@ Constructor for class de.l3s.boilerpipe.extractors.<A HREF="./de/l3s/boilerpipe/
 <DT><A HREF="./de/l3s/boilerpipe/document/TextBlock.html#getContainedTextElements()"><B>getContainedTextElements()</B></A> - 
 Method in class de.l3s.boilerpipe.document.<A HREF="./de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document">TextBlock</A>
 <DD>&nbsp;
+<DT><A HREF="./de/l3s/boilerpipe/document/TextDocument.html#getContent()"><B>getContent()</B></A> - 
+Method in class de.l3s.boilerpipe.document.<A HREF="./de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>
+<DD>Returns the <A HREF="./de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>'s content.
 <DT><A HREF="./de/l3s/boilerpipe/filters/english/IgnoreBlocksAfterContentFilter.html#getDefaultInstance()"><B>getDefaultInstance()</B></A> - 
 Static method in class de.l3s.boilerpipe.filters.english.<A HREF="./de/l3s/boilerpipe/filters/english/IgnoreBlocksAfterContentFilter.html" title="class in de.l3s.boilerpipe.filters.english">IgnoreBlocksAfterContentFilter</A>
 <DD>Returns the singleton instance for DeleteBlocksAfterContentFilter.
@@ -256,9 +261,25 @@ Method in class de.l3s.boilerpipe.document.<A HREF="./de/l3s/boilerpipe/document
 <DT><A HREF="./de/l3s/boilerpipe/document/TextBlock.html#getOffsetBlocksStart()"><B>getOffsetBlocksStart()</B></A> - 
 Method in class de.l3s.boilerpipe.document.<A HREF="./de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document">TextBlock</A>
 <DD>&nbsp;
+<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html#getText(java.lang.String)"><B>getText(String)</B></A> - 
+Method in interface de.l3s.boilerpipe.<A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe">BoilerpipeExtractor</A>
+<DD>Extracts text from the HTML code given as a String.
+<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html#getText(org.xml.sax.InputSource)"><B>getText(InputSource)</B></A> - 
+Method in interface de.l3s.boilerpipe.<A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe">BoilerpipeExtractor</A>
+<DD>Extracts text from the HTML code available from the given
+ <CODE>InputSource</CODE>.
+<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html#getText(java.io.Reader)"><B>getText(Reader)</B></A> - 
+Method in interface de.l3s.boilerpipe.<A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe">BoilerpipeExtractor</A>
+<DD>Extracts text from the HTML code available from the given <CODE>Reader</CODE>.
+<DT><A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html#getText(de.l3s.boilerpipe.document.TextDocument)"><B>getText(TextDocument)</B></A> - 
+Method in interface de.l3s.boilerpipe.<A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe">BoilerpipeExtractor</A>
+<DD>Extracts text from the given <A HREF="./de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> object.
 <DT><A HREF="./de/l3s/boilerpipe/document/TextBlock.html#getText()"><B>getText()</B></A> - 
 Method in class de.l3s.boilerpipe.document.<A HREF="./de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document">TextBlock</A>
 <DD>&nbsp;
+<DT><A HREF="./de/l3s/boilerpipe/document/TextDocument.html#getText(boolean, boolean)"><B>getText(boolean, boolean)</B></A> - 
+Method in class de.l3s.boilerpipe.document.<A HREF="./de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>
+<DD>Returns the <A HREF="./de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>'s content, non-content or both
 <DT><A HREF="./de/l3s/boilerpipe/extractors/ExtractorBase.html#getText(java.lang.String)"><B>getText(String)</B></A> - 
 Method in class de.l3s.boilerpipe.extractors.<A HREF="./de/l3s/boilerpipe/extractors/ExtractorBase.html" title="class in de.l3s.boilerpipe.extractors">ExtractorBase</A>
 <DD>Extracts text from the HTML code given as a String.

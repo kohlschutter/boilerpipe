@@ -20,6 +20,7 @@
 	<property name="app.name" value="boilerpipe" />
 	<property name="app.title" value="boilerpipe content extractor" />
 	<property name="app.version" value="1.0-dev" />
+    <property name="javadoc.version" value="1.0" />
 	<property name="app.javaversion" value="1.5" />
 	<property name="app.dir" value="." />
 
@@ -58,7 +59,7 @@
 	<property name="dist.dir" value="${app.dir}/dist" />
 	<property name="jar.main" value="${dist.dir}/${app.name}-${app.version}.jar" />
 	<property name="jar.demo" value="${dist.dir}/${app.name}-demo-${app.version}.jar" />
-	<property name="javadoc.dir" value="${app.dir}/javadoc/${app.version}/" />
+	<property name="javadoc.dir" value="${app.dir}/javadoc/${javadoc.version}/" />
 	<property name="distBin.tar.gz" value="${dist.dir}/${app.name}-${app.version}-bin.tar.gz" />
 	<property name="distSrc.tar.gz" value="${dist.dir}/${app.name}-${app.version}-src.tar.gz" />
 
@@ -106,7 +107,7 @@
 	</target>
 
 	<target name="javadoc">
-		<javadoc destdir="${javadoc.dir}" version="true" use="true" windowtitle="${app.version} API" classpathref="classpath.main" >
+		<javadoc destdir="${javadoc.dir}" version="true" use="true" windowtitle="${javadoc.version} API" classpathref="classpath.main" >
 			<packageset dir="${src.main}" defaultexcludes="yes">
 				<include name="de/l3s/**" />
 			</packageset>
