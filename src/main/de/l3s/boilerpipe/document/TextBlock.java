@@ -163,7 +163,7 @@ public class TextBlock {
     }
 
     public String toString() {
-        return "[" + offsetBlocksStart + "-" + offsetBlocksEnd + "; nwiwl="+numWordsInWrappedLines+";nwl="+numWrappedLines+"]\t"
+        return "[" + offsetBlocksStart + "-" + offsetBlocksEnd + "; nwiwl="+numWordsInWrappedLines+";nwl="+numWrappedLines+";ld="+linkDensity+"]\t"
                 + isContent + "," + labels + "\t" + getText();
     }
 

@@ -315,10 +315,10 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
 
     private interface TagAction {
         public boolean start(final DefaultHTMLParser instance,
-                final String localName);
+                final String localName) throws SAXException;
 
         public boolean end(final DefaultHTMLParser instance,
-                final String localName);
+                final String localName) throws SAXException;
 
     }
 
@@ -338,8 +338,8 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
     };
     private static final TagAction TA_ANCHOR_TEXT = new TagAction() {
 
-        public boolean start(DefaultHTMLParser instance, final String localName) {
-            if (instance.inAnchor++ == 0) {
+        public boolean start(DefaultHTMLParser instance, final String localName) throws SAXException {
+            if(instance.inAnchor++ == 0) {
                 if (instance.inIgnorableElement == 0) {
                     if (!instance.sbLastWasWhitespace) {
                         instance.tokenBuffer.append(' ');
@@ -349,8 +349,10 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
                     instance.tokenBuffer.append(' ');
                     instance.sbLastWasWhitespace = true;
                 }
+                return false;
+            } else {
+                throw new SAXException("SAX input contains nested A elements -- You have probably hit a bug in NekoHTML (#2909310). Please clean the HTML externally and feed it to boilerpipe again");
             }
-            return false;
         }
 
         public boolean end(DefaultHTMLParser instance, final String localName) {
