@@ -370,6 +370,7 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
 
         public boolean end(final DefaultHTMLParser instance,
                 final String localName) {
+            instance.flushBlock();
             instance.inBody--;
             return false;
         }
