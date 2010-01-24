@@ -19,7 +19,6 @@ package de.l3s.boilerpipe.extractors;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringReader;
 import java.net.URL;
@@ -101,9 +100,14 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
             }
 
             final InputStream in = conn.getInputStream();
-            final Reader r = new InputStreamReader(in, cs);
-            final String text = getText(r);
-            r.close();
+            
+            InputSource is = new InputSource(in);
+            if(cs != null) {
+                is.setEncoding(cs.name());
+            }
+            
+            final String text = getText(is);
+            in.close();
             return text;
         } catch (IOException e) {
             throw new BoilerpipeProcessingException(e);
