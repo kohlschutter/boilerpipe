@@ -35,12 +35,13 @@ import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.util.UnicodeTokenizer;
 
 /**
- * A simple SAX Parser, used by {@link BoilerpipeSAXInput}.
- * The parser uses <a href="http://nekohtml.sourceforge.net/">CyberNeko</a> to parse HTML content.
+ * A simple SAX Parser, used by {@link BoilerpipeSAXInput}. The parser uses <a
+ * href="http://nekohtml.sourceforge.net/">CyberNeko</a> to parse HTML content.
  * 
  * @author Christian Kohlschütter
  */
-final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandler {
+final class DefaultHTMLParser extends AbstractSAXParser implements
+        ContentHandler {
     private static final String ANCHOR_TEXT_START = "$\ue00a<";
     private static final String ANCHOR_TEXT_END = ">\ue00a$";
 
@@ -137,80 +138,63 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
         if (inIgnorableElement != 0) {
             return;
         }
+
         char c;
         boolean startWhitespace = false;
         boolean endWhitespace = false;
-        switch (length) {
-        case 0:
+        if (length == 0) {
             return;
-        case 1:
+        }
+
+        final int end = start + length;
+        for (int i = start; i < end; i++) {
+            if (Character.isWhitespace(ch[i])) {
+                ch[i] = ' ';
+            }
+        }
+        while (start < end) {
             c = ch[start];
-            startWhitespace = Character.isWhitespace(c);
-            endWhitespace = startWhitespace;
-            if (sbLastWasWhitespace) {
-                if (startWhitespace) {
-                    lastEvent = Event.WHITESPACE;
-                    return;
-                }
-            } else if (startWhitespace) {
-                textBuffer.append(' ');
-                tokenBuffer.append(' ');
+            if (c == ' ') {
+                startWhitespace = true;
+                start++;
+                length--;
             } else {
-                textBuffer.append(c);
-                tokenBuffer.append(c);
+                break;
             }
-            break;
-        default:
-            final int end = start + length;
-            for (int i = start; i < end; i++) {
-                if (Character.isWhitespace(ch[i])) {
-                    ch[i] = ' ';
-                }
+        }
+        while (length > 0) {
+            c = ch[start + length - 1];
+            if (c == ' ') {
+                endWhitespace = true;
+                length--;
+            } else {
+                break;
             }
-            while (start < end) {
-                c = ch[start];
-                if (c == ' ') {
-                    startWhitespace = true;
-                    start++;
-                    length--;
-                } else {
-                    break;
-                }
-            }
-            while (length > 0) {
-                c = ch[start + length - 1];
-                if (c == ' ') {
-                    endWhitespace = true;
-                    length--;
-                } else {
-                    break;
-                }
-            }
-            if (length == 0) {
-                if (startWhitespace || endWhitespace) {
-                    if (!sbLastWasWhitespace) {
-                        textBuffer.append(' ');
-                        tokenBuffer.append(' ');
-                    }
-                    sbLastWasWhitespace = true;
-                } else {
-                    sbLastWasWhitespace = false;
-                }
-                lastEvent = Event.WHITESPACE;
-                return;
-            }
-            if (startWhitespace) {
+        }
+        if (length == 0) {
+            if (startWhitespace || endWhitespace) {
                 if (!sbLastWasWhitespace) {
                     textBuffer.append(' ');
                     tokenBuffer.append(' ');
                 }
+                sbLastWasWhitespace = true;
+            } else {
+                sbLastWasWhitespace = false;
             }
-            textBuffer.append(ch, start, length);
-            tokenBuffer.append(ch, start, length);
-            if (endWhitespace) {
+            lastEvent = Event.WHITESPACE;
+            return;
+        }
+        if (startWhitespace) {
+            if (!sbLastWasWhitespace) {
                 textBuffer.append(' ');
                 tokenBuffer.append(' ');
             }
+        }
+        textBuffer.append(ch, start, length);
+        tokenBuffer.append(ch, start, length);
+        if (endWhitespace) {
+            textBuffer.append(' ');
+            tokenBuffer.append(' ');
         }
 
         sbLastWasWhitespace = endWhitespace;
@@ -224,6 +208,7 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
     }
 
     boolean inAnchorText = false;
+
     private void flushBlock() {
         if (inBody == 0) {
             if ("TITLE".equals(lastStartTag) && inBody == 0) {
@@ -243,8 +228,9 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
                 return;
             }
         }
+
         final String[] tokens = UnicodeTokenizer.tokenize(tokenBuffer);
-        
+
         int numWords = 0;
         int numLinkedWords = 0;
         int numWrappedLines = 0;
@@ -338,8 +324,9 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
     };
     private static final TagAction TA_ANCHOR_TEXT = new TagAction() {
 
-        public boolean start(DefaultHTMLParser instance, final String localName) throws SAXException {
-            if(instance.inAnchor++ == 0) {
+        public boolean start(DefaultHTMLParser instance, final String localName)
+                throws SAXException {
+            if (instance.inAnchor++ == 0) {
                 if (instance.inIgnorableElement == 0) {
                     if (!instance.sbLastWasWhitespace) {
                         instance.tokenBuffer.append(' ');
@@ -351,7 +338,10 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
                 }
                 return false;
             } else {
-                throw new SAXException("SAX input contains nested A elements -- You have probably hit a bug in NekoHTML (#2909310). Please clean the HTML externally and feed it to boilerpipe again");
+                // as nested A elements are not allowed per specification, we
+                // are probably reaching this branch due to a bug in the XML parser
+                throw new SAXException(
+                        "SAX input contains nested A elements -- You have probably hit a bug in NekoHTML (#2909310). Please clean the HTML externally and feed it to boilerpipe again");
             }
         }
 
@@ -431,13 +421,14 @@ final class DefaultHTMLParser extends AbstractSAXParser implements ContentHandle
         START_TAG, END_TAG, CHARACTERS, WHITESPACE
     }
 
-    private String title =null;
+    private String title = null;
 
     public String getTitle() {
         return title;
     }
+
     private void setTitle(String s) {
-        if(s == null || s.length() == 0) {
+        if (s == null || s.length() == 0) {
             return;
         }
         title = s;
