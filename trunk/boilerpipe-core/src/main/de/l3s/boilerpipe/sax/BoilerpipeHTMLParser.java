@@ -17,8 +17,6 @@
  */
 package de.l3s.boilerpipe.sax;
 
-import java.io.Flushable;
-
 import org.apache.xerces.parsers.AbstractSAXParser;
 import org.cyberneko.html.HTMLConfiguration;
 
