@@ -34,7 +34,7 @@ import de.l3s.boilerpipe.filters.heuristics.KeepLargestBlockFilter;
  * 
  * As opposed to {@link KeepLargestBlockFilter}, the number of words are
  * computed using {@link TextBlock#getNumFullTextWords()}, which only counts
- * words that occur in text elements with at least 11 words and are thus believed to be full text.
+ * words that occur in text elements with at least 9 words and are thus believed to be full text.
  * 
  * @author Christian Kohlschütter
  */
@@ -55,12 +55,14 @@ public final class KeepLargestFulltextBlockFilter extends HeuristicFilterBase im
             if (!tb.isContent()) {
                 continue;
             }
-            if (getNumFullTextWords(tb) > max) {
+            int numWords = getNumFullTextWords(tb);
+            if (numWords > max) {
                 largestBlock = tb;
-                max = getNumFullTextWords(tb);
+                max = numWords;
             }
             index++;
         }
+        
         if (largestBlock == null) {
             return false;
         }
