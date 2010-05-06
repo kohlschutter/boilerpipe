@@ -26,7 +26,7 @@ import java.util.List;
  */
 public class TextDocument {
     final List<TextBlock> textBlocks;
-    final String title;
+    String title;
 
     /**
      * Creates a new {@link TextDocument} with given {@link TextBlock}s, and no
@@ -70,6 +70,15 @@ public class TextDocument {
      */
     public String getTitle() {
         return title;
+    }
+    
+    /**
+     * Updates the "main" title for this document.
+     * 
+     * @param title
+     */
+    public void setTitle(final String title) {
+    	this.title = title;
     }
 
     /**
