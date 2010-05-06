@@ -32,6 +32,7 @@ import org.xml.sax.Locator;
 import org.xml.sax.SAXException;
 
 import de.l3s.boilerpipe.document.TextBlock;
+import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.util.UnicodeTokenizer;
 
 /**
@@ -40,7 +41,7 @@ import de.l3s.boilerpipe.util.UnicodeTokenizer;
  * 
  * @author Christian Kohlschütter
  */
-final class DefaultHTMLParser extends AbstractSAXParser implements
+public class BoilerpipeHTMLParser extends AbstractSAXParser implements
         ContentHandler {
     private static final String ANCHOR_TEXT_START = "$\ue00a<";
     private static final String ANCHOR_TEXT_END = ">\ue00a$";
@@ -62,7 +63,7 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
     @SuppressWarnings("unused")
     private Event lastEvent = null;
 
-    DefaultHTMLParser() {
+    public BoilerpipeHTMLParser() {
         super(new HTMLConfiguration());
         setContentHandler(this);
     }
@@ -134,7 +135,7 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
             flushBlock();
             flush = false;
         }
-
+        
         if (inIgnorableElement != 0) {
             return;
         }
@@ -300,23 +301,23 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
     }
 
     private interface TagAction {
-        public boolean start(final DefaultHTMLParser instance,
+        public boolean start(final BoilerpipeHTMLParser instance,
                 final String localName) throws SAXException;
 
-        public boolean end(final DefaultHTMLParser instance,
+        public boolean end(final BoilerpipeHTMLParser instance,
                 final String localName) throws SAXException;
 
     }
 
     private static final TagAction TA_IGNORABLE_ELEMENT = new TagAction() {
 
-        public boolean start(final DefaultHTMLParser instance,
+        public boolean start(final BoilerpipeHTMLParser instance,
                 final String localName) {
             instance.inIgnorableElement++;
             return true;
         }
 
-        public boolean end(final DefaultHTMLParser instance,
+        public boolean end(final BoilerpipeHTMLParser instance,
                 final String localName) {
             instance.inIgnorableElement--;
             return true;
@@ -324,7 +325,7 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
     };
     private static final TagAction TA_ANCHOR_TEXT = new TagAction() {
 
-        public boolean start(DefaultHTMLParser instance, final String localName)
+        public boolean start(BoilerpipeHTMLParser instance, final String localName)
                 throws SAXException {
             if (instance.inAnchor++ == 0) {
                 if (instance.inIgnorableElement == 0) {
@@ -345,7 +346,7 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
             }
         }
 
-        public boolean end(DefaultHTMLParser instance, final String localName) {
+        public boolean end(BoilerpipeHTMLParser instance, final String localName) {
             if (--instance.inAnchor == 0) {
                 if (instance.inIgnorableElement == 0) {
                     if (!instance.sbLastWasWhitespace) {
@@ -362,13 +363,13 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
 
     };
     private static final TagAction TA_BODY = new TagAction() {
-        public boolean start(final DefaultHTMLParser instance,
+        public boolean start(final BoilerpipeHTMLParser instance,
                 final String localName) {
             instance.inBody++;
             return false;
         }
 
-        public boolean end(final DefaultHTMLParser instance,
+        public boolean end(final BoilerpipeHTMLParser instance,
                 final String localName) {
             instance.flushBlock();
             instance.inBody--;
@@ -378,7 +379,7 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
 
     private static final TagAction TA_INLINE = new TagAction() {
 
-        public boolean start(DefaultHTMLParser instance, final String localName) {
+        public boolean start(BoilerpipeHTMLParser instance, final String localName) {
             if (!instance.sbLastWasWhitespace) {
                 instance.tokenBuffer.append(' ');
                 instance.textBuffer.append(' ');
@@ -386,7 +387,7 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
             return false;
         }
 
-        public boolean end(DefaultHTMLParser instance, final String localName) {
+        public boolean end(BoilerpipeHTMLParser instance, final String localName) {
             if (!instance.sbLastWasWhitespace) {
                 instance.tokenBuffer.append(' ');
                 instance.textBuffer.append(' ');
@@ -397,25 +398,30 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
 
     private static Map<String, TagAction> TAG_ACTIONS = new HashMap<String, TagAction>();
     static {
-        TAG_ACTIONS.put("STYLE", TA_IGNORABLE_ELEMENT);
-        TAG_ACTIONS.put("SCRIPT", TA_IGNORABLE_ELEMENT);
-        TAG_ACTIONS.put("OPTION", TA_IGNORABLE_ELEMENT);
-        TAG_ACTIONS.put("OBJECT", TA_IGNORABLE_ELEMENT);
-        TAG_ACTIONS.put("EMBED", TA_IGNORABLE_ELEMENT);
-        TAG_ACTIONS.put("APPLET", TA_IGNORABLE_ELEMENT);
-        TAG_ACTIONS.put("A", TA_ANCHOR_TEXT);
-        TAG_ACTIONS.put("BODY", TA_BODY);
+        addTagAction(TAG_ACTIONS, "STYLE", TA_IGNORABLE_ELEMENT);
+        addTagAction(TAG_ACTIONS, "SCRIPT", TA_IGNORABLE_ELEMENT);
+        addTagAction(TAG_ACTIONS, "OPTION", TA_IGNORABLE_ELEMENT);
+        addTagAction(TAG_ACTIONS, "OBJECT", TA_IGNORABLE_ELEMENT);
+        addTagAction(TAG_ACTIONS, "EMBED", TA_IGNORABLE_ELEMENT);
+        addTagAction(TAG_ACTIONS, "APPLET", TA_IGNORABLE_ELEMENT);
+        addTagAction(TAG_ACTIONS, "A", TA_ANCHOR_TEXT);
+        addTagAction(TAG_ACTIONS, "BODY", TA_BODY);
 
-        TAG_ACTIONS.put("STRIKE", TA_INLINE);
-        TAG_ACTIONS.put("U", TA_INLINE);
-        TAG_ACTIONS.put("B", TA_INLINE);
-        TAG_ACTIONS.put("I", TA_INLINE);
-        TAG_ACTIONS.put("EM", TA_INLINE);
-        TAG_ACTIONS.put("STRONG", TA_INLINE);
-        TAG_ACTIONS.put("SPAN", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "STRIKE", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "U", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "B", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "I", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "EM", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "STRONG", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "SPAN", TA_INLINE);
 
-        TAG_ACTIONS.put("ABBR", TA_INLINE);
-        TAG_ACTIONS.put("ACRONYM", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "ABBR", TA_INLINE);
+        addTagAction(TAG_ACTIONS, "ACRONYM", TA_INLINE);
+    }
+    private static void addTagAction(final Map<String,TagAction> tagActions, final String tag, final TagAction action) {
+    	tagActions.put(tag.toUpperCase(), action);
+    	tagActions.put(tag.toLowerCase(), action);
+//    	tagActions.put(tag, action);
     }
 
     private static enum Event {
@@ -434,4 +440,14 @@ final class DefaultHTMLParser extends AbstractSAXParser implements
         }
         title = s;
     }
+
+    /**
+     * Returns a {@link TextDocument} containing the extracted {@link TextBlock}s.
+     * NOTE: Only call this after {@link #parse(org.xml.sax.InputSource)}.
+     *  
+     * @return The {@link TextDocument}
+     */
+	public TextDocument toTextDocument() {
+        return new TextDocument(getTitle(), getTextBlocks());
+	}
 }
