@@ -76,7 +76,7 @@ function windowTitle()
 </TR>
 <TR>
 <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.xerces.parsers.AbstractSAXParser">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.xerces.parsers.AbstractSAXParser">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
 <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
 DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
 </TR>
@@ -93,17 +93,14 @@ de.l3s.boilerpipe.sax</FONT>
 Class BoilerpipeHTMLContentHandler</H2>
 <PRE>
 java.lang.Object
-  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by ">org.apache.xerces.parsers.XMLParser
-      <IMG SRC="../../../../resources/inherit.gif" ALT="extended by ">org.apache.xerces.parsers.AbstractXMLDocumentParser
-          <IMG SRC="../../../../resources/inherit.gif" ALT="extended by ">org.apache.xerces.parsers.AbstractSAXParser
-              <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>de.l3s.boilerpipe.sax.BoilerpipeHTMLContentHandler</B>
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>de.l3s.boilerpipe.sax.BoilerpipeHTMLContentHandler</B>
 </PRE>
 <DL>
-<DT><B>All Implemented Interfaces:</B> <DD>org.apache.xerces.xni.XMLDocumentHandler, org.apache.xerces.xni.XMLDTDContentModelHandler, org.apache.xerces.xni.XMLDTDHandler, org.apache.xerces.xs.PSVIProvider, org.xml.sax.ContentHandler, org.xml.sax.Parser, org.xml.sax.XMLReader</DD>
+<DT><B>All Implemented Interfaces:</B> <DD>org.xml.sax.ContentHandler</DD>
 </DL>
 <HR>
 <DL>
-<DT><PRE>public class <B>BoilerpipeHTMLContentHandler</B><DT>extends org.apache.xerces.parsers.AbstractSAXParser<DT>implements org.xml.sax.ContentHandler</DL>
+<DT><PRE>public class <B>BoilerpipeHTMLContentHandler</B><DT>extends java.lang.Object<DT>implements org.xml.sax.ContentHandler</DL>
 </PRE>
 
 <P>
@@ -119,80 +116,7 @@ A simple SAX Parser, used by <A HREF="../../../../de/l3s/boilerpipe/sax/Boilerpi
 <HR>
 
 <P>
-<!-- ======== NESTED CLASS SUMMARY ======== -->
 
-<A NAME="nested_class_summary"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
-<B>Nested Class Summary</B></FONT></TH>
-</TR>
-</TABLE>
-&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.xerces.parsers.AbstractSAXParser"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.xerces.parsers.AbstractSAXParser</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>org.apache.xerces.parsers.AbstractSAXParser.AttributesProxy, org.apache.xerces.parsers.AbstractSAXParser.LocatorProxy</CODE></TD>
-</TR>
-</TABLE>
-&nbsp;
-<!-- =========== FIELD SUMMARY =========== -->
-
-<A NAME="field_summary"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
-<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
-<B>Field Summary</B></FONT></TH>
-</TR>
-</TABLE>
-&nbsp;<A NAME="fields_inherited_from_class_org.apache.xerces.parsers.AbstractSAXParser"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Fields inherited from class org.apache.xerces.parsers.AbstractSAXParser</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>ALLOW_UE_AND_NOTATION_EVENTS, DECLARATION_HANDLER, DOM_NODE, fContentHandler, fDeclaredAttrs, fDeclHandler, fDocumentHandler, fDTDHandler, fLexicalHandler, fLexicalHandlerParameterEntities, fNamespaceContext, fNamespacePrefixes, fNamespaces, fParseInProgress, fQName, fResolveDTDURIs, fStandalone, fUseEntityResolver2, fVersion, fXMLNSURIs, LEXICAL_HANDLER, NAMESPACES, STRING_INTERNING</CODE></TD>
-</TR>
-</TABLE>
-&nbsp;<A NAME="fields_inherited_from_class_org.apache.xerces.parsers.AbstractXMLDocumentParser"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Fields inherited from class org.apache.xerces.parsers.AbstractXMLDocumentParser</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>fDocumentSource, fDTDContentModelSource, fDTDSource, fInDTD</CODE></TD>
-</TR>
-</TABLE>
-&nbsp;<A NAME="fields_inherited_from_class_org.apache.xerces.parsers.XMLParser"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Fields inherited from class org.apache.xerces.parsers.XMLParser</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>ENTITY_RESOLVER, ERROR_HANDLER, fConfiguration</CODE></TD>
-</TR>
-</TABLE>
-&nbsp;<A NAME="fields_inherited_from_class_org.apache.xerces.xni.XMLDTDHandler"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Fields inherited from interface org.apache.xerces.xni.XMLDTDHandler</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>CONDITIONAL_IGNORE, CONDITIONAL_INCLUDE</CODE></TD>
-</TR>
-</TABLE>
-&nbsp;<A NAME="fields_inherited_from_class_org.apache.xerces.xni.XMLDTDContentModelHandler"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Fields inherited from interface org.apache.xerces.xni.XMLDTDContentModelHandler</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>OCCURS_ONE_OR_MORE, OCCURS_ZERO_OR_MORE, OCCURS_ZERO_OR_ONE, SEPARATOR_CHOICE, SEPARATOR_SEQUENCE</CODE></TD>
-</TR>
-</TABLE>
-&nbsp;
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 
 <A NAME="constructor_summary"><!-- --></A>
@@ -331,33 +255,6 @@ A simple SAX Parser, used by <A HREF="../../../../de/l3s/boilerpipe/sax/Boilerpi
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> containing the extracted <A HREF="../../../../de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><CODE>TextBlock</CODE></A>s.</TD>
-</TR>
-</TABLE>
-&nbsp;<A NAME="methods_inherited_from_class_org.apache.xerces.parsers.AbstractSAXParser"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Methods inherited from class org.apache.xerces.parsers.AbstractSAXParser</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>attributeDecl, characters, comment, doctypeDecl, elementDecl, endCDATA, endDocument, endDTD, endElement, endExternalSubset, endGeneralEntity, endNamespaceMapping, endParameterEntity, externalEntityDecl, getAttributePSVI, getAttributePSVIByName, getContentHandler, getDeclHandler, getDTDHandler, getElementPSVI, getEntityResolver, getErrorHandler, getFeature, getLexicalHandler, getProperty, ignorableWhitespace, internalEntityDecl, notationDecl, parse, parse, processingInstruction, reset, setContentHandler, setDeclHandler, setDocumentHandler, setDTDHandler, setEntityResolver, setErrorHandler, setFeature, setLexicalHandler, setLocale, setProperty, startCDATA, startDocument, startElement, startExternalSubset, startGeneralEntity, startNamespaceMapping, startParameterEntity, unparsedEntityDecl, xmlDecl</CODE></TD>
-</TR>
-</TABLE>
-&nbsp;<A NAME="methods_inherited_from_class_org.apache.xerces.parsers.AbstractXMLDocumentParser"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Methods inherited from class org.apache.xerces.parsers.AbstractXMLDocumentParser</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>any, element, empty, emptyElement, endAttlist, endConditional, endContentModel, endGroup, getDocumentSource, getDTDContentModelSource, getDTDSource, ignoredCharacters, occurrence, pcdata, separator, setDocumentSource, setDTDContentModelSource, setDTDSource, startAttlist, startConditional, startContentModel, startDTD, startGroup, textDecl</CODE></TD>
-</TR>
-</TABLE>
-&nbsp;<A NAME="methods_inherited_from_class_org.apache.xerces.parsers.XMLParser"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Methods inherited from class org.apache.xerces.parsers.XMLParser</B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE>parse</CODE></TD>
 </TR>
 </TABLE>
 &nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
@@ -614,7 +511,7 @@ toTextDocument</H3>
 public <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A> <B>toTextDocument</B>()</PRE>
 <DL>
 <DD>Returns a <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> containing the extracted <A HREF="../../../../de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><CODE>TextBlock</CODE></A>s.
- NOTE: Only call this after <CODE>AbstractSAXParser.parse(org.xml.sax.InputSource)</CODE>.
+ NOTE: Only call this after <CODE>#parse(org.xml.sax.InputSource)</CODE>.
 <P>
 <DD><DL>
 </DL>
@@ -676,7 +573,7 @@ public <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title=
 </TR>
 <TR>
 <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
-  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.xerces.parsers.AbstractSAXParser">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.xerces.parsers.AbstractSAXParser">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
 <TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
 DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
 </TR>
