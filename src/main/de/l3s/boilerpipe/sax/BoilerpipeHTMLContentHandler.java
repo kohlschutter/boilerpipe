@@ -24,8 +24,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-import org.apache.xerces.parsers.AbstractSAXParser;
-import org.cyberneko.html.HTMLConfiguration;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.Locator;
@@ -41,7 +39,7 @@ import de.l3s.boilerpipe.util.UnicodeTokenizer;
  * 
  * @author Christian Kohlschütter
  */
-public class BoilerpipeHTMLContentHandler extends AbstractSAXParser implements
+public class BoilerpipeHTMLContentHandler implements
         ContentHandler {
     private static final String ANCHOR_TEXT_START = "$\ue00a<";
     private static final String ANCHOR_TEXT_END = ">\ue00a$";
@@ -64,8 +62,6 @@ public class BoilerpipeHTMLContentHandler extends AbstractSAXParser implements
     private Event lastEvent = null;
 
     public BoilerpipeHTMLContentHandler() {
-        super(new HTMLConfiguration());
-        setContentHandler(this);
     }
 
 //    @Override
