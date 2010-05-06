@@ -76,6 +76,11 @@ public class BoilerpipeHTMLContentHandler implements
 //    @Override
     public void ignorableWhitespace(char[] ch, int start, int length)
             throws SAXException {
+        if (!sbLastWasWhitespace) {
+            textBuffer.append(' ');
+            tokenBuffer.append(' ');
+        }
+        sbLastWasWhitespace = true;
     }
 
 //    @Override
@@ -390,6 +395,7 @@ public class BoilerpipeHTMLContentHandler implements
             if (!instance.sbLastWasWhitespace) {
                 instance.tokenBuffer.append(' ');
                 instance.textBuffer.append(' ');
+                instance.sbLastWasWhitespace = true;
             }
             return false;
         }
