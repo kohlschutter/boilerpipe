@@ -45,7 +45,7 @@ public final class BoilerpipeSAXInput implements BoilerpipeInput {
     }
 
     public TextDocument getTextDocument() throws BoilerpipeProcessingException {
-        DefaultHTMLParser sp = new DefaultHTMLParser();
+        BoilerpipeHTMLParser sp = new BoilerpipeHTMLParser();
         try {
             sp.parse(is);
         } catch (IOException e) {
@@ -53,8 +53,8 @@ public final class BoilerpipeSAXInput implements BoilerpipeInput {
         } catch (SAXException e) {
             throw new BoilerpipeProcessingException(e);
         }
-
-        return new TextDocument(sp.getTitle(), sp.getTextBlocks());
+        
+        return sp.toTextDocument();
     }
 
 }
