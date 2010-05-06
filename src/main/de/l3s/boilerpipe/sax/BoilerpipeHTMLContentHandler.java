@@ -34,8 +34,8 @@ import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.util.UnicodeTokenizer;
 
 /**
- * A simple SAX Parser, used by {@link BoilerpipeSAXInput}. The parser uses <a
- * href="http://nekohtml.sourceforge.net/">CyberNeko</a> to parse HTML content.
+ * A simple SAX {@link ContentHandler}, used by {@link BoilerpipeSAXInput}.
+ * Can be used by different parser implementations, e.g. NekoHTML and TagSoup.
  * 
  * @author Christian Kohlschütter
  */
@@ -447,7 +447,7 @@ public class BoilerpipeHTMLContentHandler implements
         return title;
     }
 
-    private void setTitle(String s) {
+    public void setTitle(String s) {
         if (s == null || s.length() == 0) {
             return;
         }
