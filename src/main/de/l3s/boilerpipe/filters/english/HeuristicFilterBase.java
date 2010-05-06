@@ -27,7 +27,7 @@ import de.l3s.boilerpipe.document.TextBlock;
 abstract class HeuristicFilterBase {
 
     protected static int getNumFullTextWords(final TextBlock tb) {
-        return getNumFullTextWords(tb, 11);
+        return getNumFullTextWords(tb, 9);
     }
     protected static int getNumFullTextWords(final TextBlock tb, float minTextDensity) {
         if(tb.getTextDensity() >= minTextDensity) {
