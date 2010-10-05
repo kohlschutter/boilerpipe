@@ -43,7 +43,7 @@ public class TerminatingBlocksFinder implements BoilerpipeFilter {
         return INSTANCE;
     }
     
-    private static final Pattern N_COMMENTS = Pattern.compile("^[0-9]+ Comments");
+    private static final Pattern N_COMMENTS = Pattern.compile("(?msi)^[0-9]+ (Comments|users responded in)");
 
     public boolean process(TextDocument doc)
             throws BoilerpipeProcessingException {
@@ -52,11 +52,12 @@ public class TerminatingBlocksFinder implements BoilerpipeFilter {
         for (TextBlock tb : doc.getTextBlocks()) {
             if (tb.getNumWords() < 20) {
                 final String text = tb.getText().trim();
-                final String textLC = text.toLowerCase();
                 if (text.startsWith("Comments")
                         || N_COMMENTS.matcher(text).find()
-                        || textLC.contains("what you think...")
-                        || textLC.contains("add your comment:")
+                        || text.contains("What you think...")
+                        || text.contains("add your comment")
+                        || text.contains("Add your comment")
+                        || text.contains("Add Your Comment")
                         || text.contains("Add Comment")
                         || text.contains("Reader views")
                         || text.contains("Have your say")
