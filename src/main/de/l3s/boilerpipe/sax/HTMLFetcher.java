@@ -7,6 +7,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.Charset;
 import java.nio.charset.UnsupportedCharsetException;
+import java.util.zip.GZIPInputStream;
 
 /**
  * A very simple HTTP/HTML fetcher, really just for demo purposes.
@@ -25,18 +26,28 @@ public class HTMLFetcher {
 	 */
 	public static HTMLDocument fetch(final URL url) throws IOException {
 		final URLConnection conn = url.openConnection();
-		final String encoding = conn.getContentEncoding();
+		final String charset = conn.getContentEncoding();
 
 		Charset cs = Charset.forName("Cp1252");
-		if (encoding != null) {
+		if (charset != null) {
 			try {
-				cs = Charset.forName(encoding);
+				cs = Charset.forName(charset);
 			} catch (UnsupportedCharsetException e) {
 				// keep default
 			}
 		}
+		
+		InputStream in = conn.getInputStream();
 
-		final InputStream in = conn.getInputStream();
+		final String encoding = conn.getContentEncoding();
+		if(encoding != null) {
+			if("gzip".equalsIgnoreCase(encoding)) {
+				in = new GZIPInputStream(in);
+			} else {
+				System.err.println("WARN: unsupported Content-Encoding: "+encoding);
+			}
+		}
+
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		byte[] buf = new byte[4096];
 		int r;
