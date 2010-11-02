@@ -29,22 +29,35 @@ import de.l3s.boilerpipe.document.TextDocument;
  * 
  * @author Christian Kohlschütter
  */
-public class BoilerpipeHTMLParser extends AbstractSAXParser  {
-  
-	private final BoilerpipeHTMLContentHandler contentHandler = new BoilerpipeHTMLContentHandler();
-	
+public class BoilerpipeHTMLParser extends AbstractSAXParser {
+
+    private final BoilerpipeHTMLContentHandler contentHandler;
+
+    /**
+     * Constructs a {@link BoilerpipeHTMLParser} using a default HTML content handler.
+     */
     public BoilerpipeHTMLParser() {
+        this(new BoilerpipeHTMLContentHandler());
+    }
+
+    /**
+     * Constructs a {@link BoilerpipeHTMLParser} using the given {@link BoilerpipeHTMLContentHandler}.
+     *
+     * @param contentHandler
+     */
+    public BoilerpipeHTMLParser(BoilerpipeHTMLContentHandler contentHandler) {
         super(new HTMLConfiguration());
+        this.contentHandler = contentHandler;
         setContentHandler(contentHandler);
     }
 
     /**
-     * Returns a {@link TextDocument} containing the extracted {@link TextBlock}s.
-     * NOTE: Only call this after {@link #parse(org.xml.sax.InputSource)}.
-     *  
+     * Returns a {@link TextDocument} containing the extracted {@link TextBlock}
+     * s. NOTE: Only call this after {@link #parse(org.xml.sax.InputSource)}.
+     * 
      * @return The {@link TextDocument}
      */
-	public TextDocument toTextDocument() {
+    public TextDocument toTextDocument() {
         return contentHandler.toTextDocument();
-	}
+    }
 }

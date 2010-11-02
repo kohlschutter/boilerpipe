@@ -1,7 +1,7 @@
 /**
  * boilerpipe
  *
- * Copyright (c) 2009 Christian Kohlschütter
+ * Copyright (c) 2009, 2010 Christian Kohlschütter
  *
  * The author licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
@@ -15,16 +15,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.l3s.boilerpipe.document;
+package de.l3s.boilerpipe.sax;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
 
 /**
- * Some pre-defined labels which can be used in conjunction with
- * {@link TextBlock#addLabel(String)} and {@link TextBlock#hasLabel(String)}.
+ * Defines an action that is to be performed whenever a particular tag occurs
+ * during HTML parsing.
  * 
  * @author Christian Kohlschütter
  */
-public final class TextBlockLabel {
-    public static final String TITLE = "de.l3s.boilerpipe/TITLE";
-    public static final String INDICATES_END_OF_TEXT = "de.l3s.boilerpipe/INDICATES_END_OF_TEXT";
-    public static final String MIGHT_BE_CONTENT = "de.l3s.boilerpipe/MIGHT_BE_CONTENT";
+public interface TagAction {
+
+	boolean start(final BoilerpipeHTMLContentHandler instance,
+			final String localName, final String qName, final Attributes atts)
+			throws SAXException;
+
+	boolean end(final BoilerpipeHTMLContentHandler instance,
+			final String localName, final String qName) throws SAXException;
 }

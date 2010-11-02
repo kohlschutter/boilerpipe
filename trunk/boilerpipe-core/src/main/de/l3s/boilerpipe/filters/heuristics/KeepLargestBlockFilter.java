@@ -22,14 +22,14 @@ import java.util.List;
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextBlock;
-import de.l3s.boilerpipe.document.TextBlockLabel;
 import de.l3s.boilerpipe.document.TextDocument;
+import de.l3s.boilerpipe.labels.DefaultLabels;
 
 /**
  * Keeps the largest {@link TextBlock} only (by the number of words). In case of
  * more than one block with the same number of words, the first block is chosen.
  * All discarded blocks are marked "not content" and flagged as
- * {@link TextBlockLabel#MIGHT_BE_CONTENT}.
+ * {@link DefaultLabels#MIGHT_BE_CONTENT}.
  * 
  * @author Christian Kohlschütter
  */
@@ -59,7 +59,7 @@ public final class KeepLargestBlockFilter implements BoilerpipeFilter {
                 tb.setIsContent(true);
             } else {
                 tb.setIsContent(false);
-                tb.addLabel(TextBlockLabel.MIGHT_BE_CONTENT);
+                tb.addLabel(DefaultLabels.MIGHT_BE_CONTENT);
             }
         }
 

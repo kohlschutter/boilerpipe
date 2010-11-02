@@ -23,8 +23,8 @@ import java.util.Set;
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextBlock;
-import de.l3s.boilerpipe.document.TextBlockLabel;
 import de.l3s.boilerpipe.document.TextDocument;
+import de.l3s.boilerpipe.labels.DefaultLabels;
 
 
 /**
@@ -101,7 +101,7 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
             final String text = tb.getText().trim();
             for(String candidate : potentialTitles) {
                 if(candidate.equals(text)) {
-                    tb.addLabel(TextBlockLabel.TITLE);
+                    tb.addLabel(DefaultLabels.TITLE);
                     changes = true;
                 }
             }

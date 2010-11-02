@@ -1,7 +1,7 @@
 /**
  * boilerpipe
  *
- * Copyright (c) 2009 Christian Kohlschütter
+ * Copyright (c) 2009, 2010 Christian Kohlschütter
  *
  * The author licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package de.l3s.boilerpipe.filters.english;
+package de.l3s.boilerpipe.filters.simple;
 
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
@@ -23,22 +23,15 @@ import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.document.TextDocument;
 
 /**
- * Keeps only those content blocks which contain at least k full-text words
- * (measured by {@link HeuristicFilterBase#getNumFullTextWords(TextBlock)}). k is 30 by default.
+ * Marks all blocks that contain a given label as "content".
  * 
  * @author Christian Kohlschütter
  */
-public final class MinFulltextWordsFilter extends HeuristicFilterBase implements BoilerpipeFilter {
-    public static final MinFulltextWordsFilter DEFAULT_INSTANCE = new MinFulltextWordsFilter(
-            30);
-    private final int minWords;
+public final class LabelToContentFilter implements BoilerpipeFilter {
+    private String[] labels;
 
-    public static MinFulltextWordsFilter getDefaultInstance() {
-        return DEFAULT_INSTANCE;
-    }
-
-    public MinFulltextWordsFilter(final int minWords) {
-        this.minWords = minWords;
+    public LabelToContentFilter(final String... label) {
+        this.labels = label;
     }
 
     public boolean process(final TextDocument doc)
@@ -46,18 +39,18 @@ public final class MinFulltextWordsFilter extends HeuristicFilterBase implements
 
         boolean changes = false;
 
-        for (TextBlock tb : doc.getTextBlocks()) {
+        BLOCK_LOOP: for (TextBlock tb : doc.getTextBlocks()) {
             if (!tb.isContent()) {
-                continue;
+                for (String label : labels) {
+                    if (tb.hasLabel(label)) {
+                        tb.setIsContent(true);
+                        changes = true;
+                        continue BLOCK_LOOP;
+                    }
+                }
             }
-            if (getNumFullTextWords(tb) < minWords) {
-                tb.setIsContent(false);
-                changes = true;
-            }
-
         }
 
         return changes;
-
     }
 }
