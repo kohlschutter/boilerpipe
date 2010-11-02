@@ -12,7 +12,7 @@ import java.nio.charset.UnsupportedCharsetException;
 import org.xml.sax.InputSource;
 
 import de.l3s.boilerpipe.document.TextDocument;
-import de.l3s.boilerpipe.extractors.DefaultExtractor;
+import de.l3s.boilerpipe.extractors.ArticleExtractor;
 import de.l3s.boilerpipe.sax.BoilerpipeSAXInput;
 import de.l3s.boilerpipe.sax.HTMLHighlighter;
 
@@ -52,8 +52,9 @@ public class Highlight {
 		is.setEncoding(cs.name());
 
 		TextDocument doc = new BoilerpipeSAXInput(is).getTextDocument();
-//		ArticleExtractor.getInstance().process(doc);
-        DefaultExtractor.getInstance().process(doc);
+		ArticleExtractor.getInstance().process(doc);
+//        DefaultExtractor.getInstance().process(doc);
+//		  CanolaExtractor.getInstance().process(doc);
 
 		is = new InputSource(new ByteArrayInputStream(data));
 		is.setEncoding(cs.name());
@@ -65,5 +66,6 @@ public class Highlight {
 		out.close();
 		
 		// now open /tmp/highlighted.html in your web browser
+		System.out.println("Now open file:///tmp/highlighted.html in your web browser");
 	}
 }
