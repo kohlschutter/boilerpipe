@@ -17,7 +17,6 @@
  */
 package de.l3s.boilerpipe.demo;
 
-import java.io.InputStream;
 import java.net.URL;
 
 import org.xml.sax.InputSource;
@@ -25,9 +24,10 @@ import org.xml.sax.InputSource;
 import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.extractors.ArticleExtractor;
 import de.l3s.boilerpipe.sax.BoilerpipeSAXInput;
+import de.l3s.boilerpipe.sax.HTMLFetcher;
 
 /**
- * Demonstrates how to use Boilerpoipe.
+ * Demonstrates how to use Boilerpipe when working with {@link InputSource}s.
  * 
  * @author Christian Kohlschütter
  */
@@ -37,13 +37,10 @@ public class UsingSAX {
         url = new URL(
                 "http://www.l3s.de/web/page11g.do?sp=page11g&link=ln104g&stu1g.LanguageISOCtxParam=en");
 
-        // NOTE We ignore HTTP-based character encoding in this demo...
-        final InputStream urlStream = url.openStream();
-        final InputSource is = new InputSource(urlStream);
-
+        final InputSource is = HTMLFetcher.fetch(url).toInputSource();
+        
         final BoilerpipeSAXInput in = new BoilerpipeSAXInput(is);
         final TextDocument doc = in.getTextDocument();
-        urlStream.close();
 
         // You have the choice between different Extractors
 

@@ -19,12 +19,13 @@ package de.l3s.boilerpipe.demo;
 
 import java.net.URL;
 
-import de.l3s.boilerpipe.extractors.DefaultExtractor;
+import de.l3s.boilerpipe.extractors.ArticleExtractor;
 
 /**
- * Demonstrates how to use Boilerpipe.
+ * Demonstrates how to use Boilerpipe to get the main content as plain text.
  * 
  * @author Christian Kohlschütter
+ * @see HTMLHighlightDemo if you need HTML as well.
  */
 public class Oneliner {
     public static void main(final String[] args) throws Exception {
@@ -33,9 +34,10 @@ public class Oneliner {
         		);
 
         // This can also be done in one line:
-        System.out.println(DefaultExtractor.INSTANCE.getText(url));
+         System.out.println(ArticleExtractor.INSTANCE.getText(url));
 
         // Also try other extractors!
-        // System.out.println(ArticleExtractor.INSTANCE.getText(url));
+//        System.out.println(DefaultExtractor.INSTANCE.getText(url));
+//       System.out.println(CommonExtractors.CANOLA_EXTRACTOR.getText(url));
     }
 }
