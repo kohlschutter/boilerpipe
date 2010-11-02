@@ -80,7 +80,7 @@ public final class HTMLHighlighter {
     /**
      * Returns the highlighted HTML code.
      * 
-     * @return
+     * @return The highlighted HTML as a String.
      */
     public String getHTML() {
         return implementation.html.toString();
@@ -127,7 +127,8 @@ public final class HTMLHighlighter {
     static {
         TAG_ACTIONS.put("STYLE", TA_IGNORABLE_ELEMENT);
         TAG_ACTIONS.put("SCRIPT", TA_IGNORABLE_ELEMENT);
-        TAG_ACTIONS.put("NOSCRIPT", TA_IGNORABLE_ELEMENT);
+        TAG_ACTIONS.put("OPTION", TA_IGNORABLE_ELEMENT);
+//        TAG_ACTIONS.put("NOSCRIPT", TA_IGNORABLE_ELEMENT);
         TAG_ACTIONS.put("OBJECT", TA_IGNORABLE_ELEMENT);
         TAG_ACTIONS.put("EMBED", TA_IGNORABLE_ELEMENT);
         TAG_ACTIONS.put("APPLET", TA_IGNORABLE_ELEMENT);

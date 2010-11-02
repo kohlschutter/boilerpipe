@@ -22,12 +22,12 @@ import java.util.regex.Pattern;
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextBlock;
-import de.l3s.boilerpipe.document.TextBlockLabel;
 import de.l3s.boilerpipe.document.TextDocument;
+import de.l3s.boilerpipe.labels.DefaultLabels;
 
 /**
  * Finds blocks which are potentially indicating the end of an article text and marks
- * them with {@link TextBlockLabel#INDICATES_END_OF_TEXT}. This can be used in conjunction
+ * them with {@link DefaultLabels#INDICATES_END_OF_TEXT}. This can be used in conjunction
  * with a downstream {@link IgnoreBlocksAfterContentFilter}. 
  * 
  * @author Christian Kohlschütter
@@ -67,7 +67,7 @@ public class TerminatingBlocksFinder implements BoilerpipeFilter {
                         || text.startsWith("© Reuters")
                         || text.startsWith("Please rate this")
                 ) {
-                    tb.addLabel(TextBlockLabel.INDICATES_END_OF_TEXT);
+                    tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
                     changes = true;
                 }
             }

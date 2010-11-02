@@ -19,7 +19,7 @@ package de.l3s.boilerpipe.sax;
 
 import java.util.ArrayList;
 import java.util.BitSet;
-import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -31,439 +31,388 @@ import org.xml.sax.SAXException;
 
 import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.document.TextDocument;
+import de.l3s.boilerpipe.labels.LabelAction;
 import de.l3s.boilerpipe.util.UnicodeTokenizer;
 
 /**
- * A simple SAX {@link ContentHandler}, used by {@link BoilerpipeSAXInput}.
- * Can be used by different parser implementations, e.g. NekoHTML and TagSoup.
+ * A simple SAX {@link ContentHandler}, used by {@link BoilerpipeSAXInput}. Can
+ * be used by different parser implementations, e.g. NekoHTML and TagSoup.
  * 
  * @author Christian Kohlschütter
  */
-public class BoilerpipeHTMLContentHandler implements
-        ContentHandler {
-    private static final String ANCHOR_TEXT_START = "$\ue00a<";
-    private static final String ANCHOR_TEXT_END = ">\ue00a$";
+public class BoilerpipeHTMLContentHandler implements ContentHandler {
 
-    private StringBuilder tokenBuffer = new StringBuilder();
-    private StringBuilder textBuffer = new StringBuilder();
+	private final Map<String, TagAction> tagActions;
+	private String title = null;
 
-    private int inBody = 0;
-    private int inAnchor = 0;
-    private int inIgnorableElement = 0;
-    private boolean sbLastWasWhitespace = false;
-    private int textElementIdx = 0;
+	static final String ANCHOR_TEXT_START = "$\ue00a<";
+	static final String ANCHOR_TEXT_END = ">\ue00a$";
 
-    private final List<TextBlock> textBlocks = new ArrayList<TextBlock>();
+	StringBuilder tokenBuffer = new StringBuilder();
+	StringBuilder textBuffer = new StringBuilder();
 
-    private String lastStartTag = null;
-    @SuppressWarnings("unused")
-    private String lastEndTag = null;
-    @SuppressWarnings("unused")
-    private Event lastEvent = null;
+	int inBody = 0;
+	int inAnchor = 0;
+	int inIgnorableElement = 0;
+	boolean sbLastWasWhitespace = false;
+	private int textElementIdx = 0;
 
-    public BoilerpipeHTMLContentHandler() {
-    }
+	private final List<TextBlock> textBlocks = new ArrayList<TextBlock>();
 
-//    @Override
-    public void endDocument() throws SAXException {
-        flushBlock();
-    }
+	private String lastStartTag = null;
+	@SuppressWarnings("unused")
+	private String lastEndTag = null;
+	@SuppressWarnings("unused")
+	private Event lastEvent = null;
 
-//    @Override
-    public void endPrefixMapping(String prefix) throws SAXException {
-    }
+	private int offsetBlocks = 0;
+	private BitSet currentContainedTextElements = new BitSet();
 
-//    @Override
-    public void ignorableWhitespace(char[] ch, int start, int length)
-            throws SAXException {
-        if (!sbLastWasWhitespace) {
-            textBuffer.append(' ');
-            tokenBuffer.append(' ');
-        }
-        sbLastWasWhitespace = true;
-    }
+	private boolean flush = false;
+	boolean inAnchorText = false;
 
-//    @Override
-    public void processingInstruction(String target, String data)
-            throws SAXException {
-    }
+	LinkedList<LabelAction> labelStack = new LinkedList<LabelAction>();
+	LinkedList<Integer> fontSizeStack = new LinkedList<Integer>();
 
-//    @Override
-    public void setDocumentLocator(Locator locator) {
-    }
+	/**
+	 * Recycles this instance.
+	 */
+	public void recycle() {
+		tokenBuffer.setLength(0);
+		textBuffer.setLength(0);
 
-//    @Override
-    public void skippedEntity(String name) throws SAXException {
-    }
+		inBody = 0;
+		inAnchor = 0;
+		inIgnorableElement = 0;
+		sbLastWasWhitespace = false;
+		textElementIdx = 0;
 
-//    @Override
-    public void startDocument() throws SAXException {
-    }
+		textBlocks.clear();
 
-//    @Override
-    public void startPrefixMapping(String prefix, String uri)
-            throws SAXException {
-    }
+		lastStartTag = null;
+		lastEndTag = null;
+		lastEvent = null;
 
-    private boolean flush = false;
+		offsetBlocks = 0;
+		currentContainedTextElements.clear();
 
-//    @Override
-    public void startElement(String uri, String localName, String qName,
-            Attributes atts) throws SAXException {
-        TagAction ta = TAG_ACTIONS.get(localName);
-        if (ta != null) {
-            flush = ta.start(this, localName) | flush;
-        } else {
-            flush = true;
-        }
+		flush = false;
+		inAnchorText = false;
+	}
 
-        lastEvent = Event.START_TAG;
-        lastStartTag = localName;
-    }
+	/**
+	 * Constructs a {@link BoilerpipeHTMLContentHandler} using the
+	 * {@link DefaultTagActionMap}.
+	 */
+	public BoilerpipeHTMLContentHandler() {
+		this(DefaultTagActionMap.INSTANCE);
+	}
 
-//    @Override
-    public void endElement(String uri, String localName, String qName)
-            throws SAXException {
-        TagAction ta = TAG_ACTIONS.get(localName);
-        if (ta != null) {
-            flush = ta.end(this, localName) | flush;
-        } else {
-            flush = true;
-        }
+	/**
+	 * Constructs a {@link BoilerpipeHTMLContentHandler} using the given
+	 * {@link TagActionMap}.
+	 * 
+	 * @param tagActions
+	 *            The {@link TagActionMap} to use, e.g.
+	 *            {@link DefaultTagActionMap}.
+	 */
+	public BoilerpipeHTMLContentHandler(final TagActionMap tagActions) {
+		this.tagActions = tagActions;
+	}
 
-        lastEvent = Event.END_TAG;
-        lastEndTag = localName;
-    }
+	// @Override
+	public void endDocument() throws SAXException {
+		flushBlock();
+	}
 
-    private int offsetBlocks = 0;
-    private BitSet currentContainedTextElements = new BitSet();
+	// @Override
+	public void endPrefixMapping(String prefix) throws SAXException {
+	}
 
-//    @Override
-    public void characters(char[] ch, int start, int length)
-            throws SAXException {
-        textElementIdx++;
+	// @Override
+	public void ignorableWhitespace(char[] ch, int start, int length)
+			throws SAXException {
+		if (!sbLastWasWhitespace) {
+			textBuffer.append(' ');
+			tokenBuffer.append(' ');
+		}
+		sbLastWasWhitespace = true;
+	}
 
-        if (flush) {
-            flushBlock();
-            flush = false;
-        }
-        
-        if (inIgnorableElement != 0) {
-            return;
-        }
+	// @Override
+	public void processingInstruction(String target, String data)
+			throws SAXException {
+	}
 
-        char c;
-        boolean startWhitespace = false;
-        boolean endWhitespace = false;
-        if (length == 0) {
-            return;
-        }
+	// @Override
+	public void setDocumentLocator(Locator locator) {
+	}
 
-        final int end = start + length;
-        for (int i = start; i < end; i++) {
-            if (Character.isWhitespace(ch[i])) {
-                ch[i] = ' ';
-            }
-        }
-        while (start < end) {
-            c = ch[start];
-            if (c == ' ') {
-                startWhitespace = true;
-                start++;
-                length--;
-            } else {
-                break;
-            }
-        }
-        while (length > 0) {
-            c = ch[start + length - 1];
-            if (c == ' ') {
-                endWhitespace = true;
-                length--;
-            } else {
-                break;
-            }
-        }
-        if (length == 0) {
-            if (startWhitespace || endWhitespace) {
-                if (!sbLastWasWhitespace) {
-                    textBuffer.append(' ');
-                    tokenBuffer.append(' ');
-                }
-                sbLastWasWhitespace = true;
-            } else {
-                sbLastWasWhitespace = false;
-            }
-            lastEvent = Event.WHITESPACE;
-            return;
-        }
-        if (startWhitespace) {
-            if (!sbLastWasWhitespace) {
-                textBuffer.append(' ');
-                tokenBuffer.append(' ');
-            }
-        }
-        textBuffer.append(ch, start, length);
-        tokenBuffer.append(ch, start, length);
-        if (endWhitespace) {
-            textBuffer.append(' ');
-            tokenBuffer.append(' ');
-        }
+	// @Override
+	public void skippedEntity(String name) throws SAXException {
+	}
 
-        sbLastWasWhitespace = endWhitespace;
-        lastEvent = Event.CHARACTERS;
+	// @Override
+	public void startDocument() throws SAXException {
+	}
 
-        currentContainedTextElements.set(textElementIdx);
-    }
+	// @Override
+	public void startPrefixMapping(String prefix, String uri)
+			throws SAXException {
+	}
 
-    List<TextBlock> getTextBlocks() {
-        return textBlocks;
-    }
+	// @Override
+	public void startElement(String uri, String localName, String qName,
+			Attributes atts) throws SAXException {
+		TagAction ta = tagActions.get(localName);
+		if (ta != null) {
+			flush = ta.start(this, localName, qName, atts) | flush;
+		} else {
+			flush = true;
+		}
 
-    boolean inAnchorText = false;
+		lastEvent = Event.START_TAG;
+		lastStartTag = localName;
+	}
 
-    private void flushBlock() {
-        if (inBody == 0) {
-            if ("TITLE".equals(lastStartTag) && inBody == 0) {
-                setTitle(tokenBuffer.toString().trim());
-            }
-            tokenBuffer.setLength(0);
-            return;
-        }
+	// @Override
+	public void endElement(String uri, String localName, String qName)
+			throws SAXException {
+		TagAction ta = tagActions.get(localName);
+		if (ta != null) {
+			flush = ta.end(this, localName, qName) | flush;
+		} else {
+			flush = true;
+		}
 
-        final int length = tokenBuffer.length();
-        switch (length) {
-        case 0:
-            return;
-        case 1:
-            if (sbLastWasWhitespace) {
-                tokenBuffer.setLength(0);
-                return;
-            }
-        }
+		lastEvent = Event.END_TAG;
+		lastEndTag = localName;
+	}
 
-        final String[] tokens = UnicodeTokenizer.tokenize(tokenBuffer);
+	// @Override
+	public void characters(char[] ch, int start, int length)
+			throws SAXException {
+		textElementIdx++;
 
-        int numWords = 0;
-        int numLinkedWords = 0;
-        int numWrappedLines = 0;
-        int currentLineLength = -1; // don't count the first space
-        final int maxLineLength = 80;
-        int numTokens = 0;
-        int numWordsCurrentLine = 0;
+		if (flush) {
+			flushBlock();
+			flush = false;
+		}
 
-        for (String token : tokens) {
-            if (ANCHOR_TEXT_START.equals(token)) {
-                inAnchorText = true;
-            } else if (ANCHOR_TEXT_END.equals(token)) {
-                inAnchorText = false;
-            } else if (isWord(token)) {
-                numTokens++;
-                numWords++;
-                numWordsCurrentLine++;
-                if (inAnchorText) {
-                    numLinkedWords++;
-                }
-                final int tokenLength = token.length();
-                currentLineLength += tokenLength + 1;
-                if (currentLineLength > maxLineLength) {
-                    numWrappedLines++;
-                    currentLineLength = tokenLength;
-                    numWordsCurrentLine = 1;
-                }
-            } else {
-                numTokens++;
-            }
-        }
-        if (numTokens == 0) {
-            return;
-        }
+		if (inIgnorableElement != 0) {
+			return;
+		}
 
-        int numWordsInWrappedLines;
-        if (numWrappedLines == 0) {
-            numWordsInWrappedLines = numWords;
-            numWrappedLines = 1;
-        } else {
-            numWordsInWrappedLines = numWords - numWordsCurrentLine;
-        }
+		char c;
+		boolean startWhitespace = false;
+		boolean endWhitespace = false;
+		if (length == 0) {
+			return;
+		}
 
-        TextBlock tb = new TextBlock(textBuffer.toString().trim(),
-                currentContainedTextElements, numWords, numLinkedWords,
-                numWordsInWrappedLines, numWrappedLines, offsetBlocks);
-        currentContainedTextElements = new BitSet();
+		final int end = start + length;
+		for (int i = start; i < end; i++) {
+			if (Character.isWhitespace(ch[i])) {
+				ch[i] = ' ';
+			}
+		}
+		while (start < end) {
+			c = ch[start];
+			if (c == ' ') {
+				startWhitespace = true;
+				start++;
+				length--;
+			} else {
+				break;
+			}
+		}
+		while (length > 0) {
+			c = ch[start + length - 1];
+			if (c == ' ') {
+				endWhitespace = true;
+				length--;
+			} else {
+				break;
+			}
+		}
+		if (length == 0) {
+			if (startWhitespace || endWhitespace) {
+				if (!sbLastWasWhitespace) {
+					textBuffer.append(' ');
+					tokenBuffer.append(' ');
+				}
+				sbLastWasWhitespace = true;
+			} else {
+				sbLastWasWhitespace = false;
+			}
+			lastEvent = Event.WHITESPACE;
+			return;
+		}
+		if (startWhitespace) {
+			if (!sbLastWasWhitespace) {
+				textBuffer.append(' ');
+				tokenBuffer.append(' ');
+			}
+		}
+		textBuffer.append(ch, start, length);
+		tokenBuffer.append(ch, start, length);
+		if (endWhitespace) {
+			textBuffer.append(' ');
+			tokenBuffer.append(' ');
+		}
 
-        offsetBlocks++;
+		sbLastWasWhitespace = endWhitespace;
+		lastEvent = Event.CHARACTERS;
 
-        textBuffer.setLength(0);
-        tokenBuffer.setLength(0);
+		currentContainedTextElements.set(textElementIdx);
+	}
 
-        // System.out.println(tb.getText());
-        // System.out.println(numWords + "\t" + numLinkedWords + "\t"
-        // + tb.textDensity + "\t" +
-        // tb.linkDensity+"\t"+numWordsCurrentLine+"\t"+numWrappedLines);
+	List<TextBlock> getTextBlocks() {
+		return textBlocks;
+	}
 
-        textBlocks.add(tb);
-    }
+	void flushBlock() {
+		if (inBody == 0) {
+			if ("TITLE".equalsIgnoreCase(lastStartTag) && inBody == 0) {
+				setTitle(tokenBuffer.toString().trim());
+			}
+			textBuffer.setLength(0);
+			tokenBuffer.setLength(0);
+			return;
+		}
 
-    private static final Pattern PAT_VALID_WORD_CHARACTER = Pattern
-            .compile("[\\p{L}\\p{Nd}\\p{Nl}\\p{No}]");
+		final int length = tokenBuffer.length();
+		switch (length) {
+		case 0:
+			return;
+		case 1:
+			if (sbLastWasWhitespace) {
+				textBuffer.setLength(0);
+				tokenBuffer.setLength(0);
+				return;
+			}
+		}
 
-    private static boolean isWord(final String token) {
-        return PAT_VALID_WORD_CHARACTER.matcher(token).find();
-    }
+		final String[] tokens = UnicodeTokenizer.tokenize(tokenBuffer);
 
-    private interface TagAction {
-        public boolean start(final BoilerpipeHTMLContentHandler instance,
-                final String localName) throws SAXException;
+		int numWords = 0;
+		int numLinkedWords = 0;
+		int numWrappedLines = 0;
+		int currentLineLength = -1; // don't count the first space
+		final int maxLineLength = 80;
+		int numTokens = 0;
+		int numWordsCurrentLine = 0;
 
-        public boolean end(final BoilerpipeHTMLContentHandler instance,
-                final String localName) throws SAXException;
+		for (String token : tokens) {
+			if (ANCHOR_TEXT_START.equals(token)) {
+				inAnchorText = true;
+			} else if (ANCHOR_TEXT_END.equals(token)) {
+				inAnchorText = false;
+			} else if (isWord(token)) {
+				numTokens++;
+				numWords++;
+				numWordsCurrentLine++;
+				if (inAnchorText) {
+					numLinkedWords++;
+				}
+				final int tokenLength = token.length();
+				currentLineLength += tokenLength + 1;
+				if (currentLineLength > maxLineLength) {
+					numWrappedLines++;
+					currentLineLength = tokenLength;
+					numWordsCurrentLine = 1;
+				}
+			} else {
+				numTokens++;
+			}
+		}
+		if (numTokens == 0) {
+			return;
+		}
 
-    }
+		int numWordsInWrappedLines;
+		if (numWrappedLines == 0) {
+			numWordsInWrappedLines = numWords;
+			numWrappedLines = 1;
+		} else {
+			numWordsInWrappedLines = numWords - numWordsCurrentLine;
+		}
 
-    private static final TagAction TA_IGNORABLE_ELEMENT = new TagAction() {
+		TextBlock tb = new TextBlock(textBuffer.toString().trim(),
+				currentContainedTextElements, numWords, numLinkedWords,
+				numWordsInWrappedLines, numWrappedLines, offsetBlocks);
+		currentContainedTextElements = new BitSet();
 
-        public boolean start(final BoilerpipeHTMLContentHandler instance,
-                final String localName) {
-            instance.inIgnorableElement++;
-            return true;
-        }
+		offsetBlocks++;
 
-        public boolean end(final BoilerpipeHTMLContentHandler instance,
-                final String localName) {
-            instance.inIgnorableElement--;
-            return true;
-        }
-    };
-    private static final TagAction TA_ANCHOR_TEXT = new TagAction() {
+		textBuffer.setLength(0);
+		tokenBuffer.setLength(0);
 
-        public boolean start(BoilerpipeHTMLContentHandler instance, final String localName)
-                throws SAXException {
-            if (instance.inAnchor++ == 0) {
-                if (instance.inIgnorableElement == 0) {
-                    if (!instance.sbLastWasWhitespace) {
-                        instance.tokenBuffer.append(' ');
-                        instance.textBuffer.append(' ');
-                    }
-                    instance.tokenBuffer.append(ANCHOR_TEXT_START);
-                    instance.tokenBuffer.append(' ');
-                    instance.sbLastWasWhitespace = true;
-                }
-                return false;
-            } else {
-                // as nested A elements are not allowed per specification, we
-                // are probably reaching this branch due to a bug in the XML parser
-                throw new SAXException(
-                        "SAX input contains nested A elements -- You have probably hit a bug in NekoHTML (#2909310). Please clean the HTML externally and feed it to boilerpipe again");
-            }
-        }
+		// System.out.println(tb.getText());
+		// System.out.println(numWords + "\t" + numLinkedWords + "\t"
+		// + tb.textDensity + "\t" +
+		// tb.linkDensity+"\t"+numWordsCurrentLine+"\t"+numWrappedLines);
 
-        public boolean end(BoilerpipeHTMLContentHandler instance, final String localName) {
-            if (--instance.inAnchor == 0) {
-                if (instance.inIgnorableElement == 0) {
-                    if (!instance.sbLastWasWhitespace) {
-                        instance.tokenBuffer.append(' ');
-                        instance.textBuffer.append(' ');
-                    }
-                    instance.tokenBuffer.append(ANCHOR_TEXT_END);
-                    instance.tokenBuffer.append(' ');
-                    instance.sbLastWasWhitespace = true;
-                }
-            }
-            return false;
-        }
+		addTextBlock(tb);
+	}
 
-    };
-    private static final TagAction TA_BODY = new TagAction() {
-        public boolean start(final BoilerpipeHTMLContentHandler instance,
-                final String localName) {
-            instance.inBody++;
-            return false;
-        }
+	protected void addTextBlock(final TextBlock tb) {
 
-        public boolean end(final BoilerpipeHTMLContentHandler instance,
-                final String localName) {
-            instance.flushBlock();
-            instance.inBody--;
-            return false;
-        }
-    };
+		for (Integer l : fontSizeStack) {
+			if (l != null) {
+				tb.addLabel("font-" + l);
+				break;
+			}
+		}
+		for (LabelAction labels : labelStack) {
+			if (labels != null) {
+				labels.addTo(tb);
+			}
+		}
 
-    private static final TagAction TA_INLINE = new TagAction() {
+		textBlocks.add(tb);
+	}
 
-        public boolean start(BoilerpipeHTMLContentHandler instance, final String localName) {
-            if (!instance.sbLastWasWhitespace) {
-                instance.tokenBuffer.append(' ');
-                instance.textBuffer.append(' ');
-                instance.sbLastWasWhitespace = true;
-            }
-            return false;
-        }
+	private static final Pattern PAT_VALID_WORD_CHARACTER = Pattern
+			.compile("[\\p{L}\\p{Nd}\\p{Nl}\\p{No}]");
 
-        public boolean end(BoilerpipeHTMLContentHandler instance, final String localName) {
-            if (!instance.sbLastWasWhitespace) {
-                instance.tokenBuffer.append(' ');
-                instance.textBuffer.append(' ');
-            }
-            return false;
-        }
-    };
+	private static boolean isWord(final String token) {
+		return PAT_VALID_WORD_CHARACTER.matcher(token).find();
+	}
 
-    private static Map<String, TagAction> TAG_ACTIONS = new HashMap<String, TagAction>();
-    static {
-        addTagAction(TAG_ACTIONS, "STYLE", TA_IGNORABLE_ELEMENT);
-        addTagAction(TAG_ACTIONS, "SCRIPT", TA_IGNORABLE_ELEMENT);
-        addTagAction(TAG_ACTIONS, "OPTION", TA_IGNORABLE_ELEMENT);
-        addTagAction(TAG_ACTIONS, "OBJECT", TA_IGNORABLE_ELEMENT);
-        addTagAction(TAG_ACTIONS, "EMBED", TA_IGNORABLE_ELEMENT);
-        addTagAction(TAG_ACTIONS, "APPLET", TA_IGNORABLE_ELEMENT);
-        addTagAction(TAG_ACTIONS, "A", TA_ANCHOR_TEXT);
-        addTagAction(TAG_ACTIONS, "BODY", TA_BODY);
+	static private enum Event {
+		START_TAG, END_TAG, CHARACTERS, WHITESPACE
+	}
 
-        addTagAction(TAG_ACTIONS, "STRIKE", TA_INLINE);
-        addTagAction(TAG_ACTIONS, "U", TA_INLINE);
-        addTagAction(TAG_ACTIONS, "B", TA_INLINE);
-        addTagAction(TAG_ACTIONS, "I", TA_INLINE);
-        addTagAction(TAG_ACTIONS, "EM", TA_INLINE);
-        addTagAction(TAG_ACTIONS, "STRONG", TA_INLINE);
-        addTagAction(TAG_ACTIONS, "SPAN", TA_INLINE);
+	public String getTitle() {
+		return title;
+	}
 
-        addTagAction(TAG_ACTIONS, "ABBR", TA_INLINE);
-        addTagAction(TAG_ACTIONS, "ACRONYM", TA_INLINE);
-    }
-    private static void addTagAction(final Map<String,TagAction> tagActions, final String tag, final TagAction action) {
-    	tagActions.put(tag.toUpperCase(), action);
-    	tagActions.put(tag.toLowerCase(), action);
-//    	tagActions.put(tag, action);
-    }
+	public void setTitle(String s) {
+		if (s == null || s.length() == 0) {
+			return;
+		}
+		title = s;
+	}
 
-    private static enum Event {
-        START_TAG, END_TAG, CHARACTERS, WHITESPACE
-    }
-
-    private String title = null;
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String s) {
-        if (s == null || s.length() == 0) {
-            return;
-        }
-        title = s;
-    }
-
-    /**
-     * Returns a {@link TextDocument} containing the extracted {@link TextBlock}s.
-     * NOTE: Only call this after {@link #parse(org.xml.sax.InputSource)}.
-     *  
-     * @return The {@link TextDocument}
-     */
+	/**
+	 * Returns a {@link TextDocument} containing the extracted {@link TextBlock}
+	 * s. NOTE: Only call this after parsing.
+	 * 
+	 * @return The {@link TextDocument}
+	 */
 	public TextDocument toTextDocument() {
 		// just to be sure
 		flushBlock();
-		
-        return new TextDocument(getTitle(), getTextBlocks());
+
+		return new TextDocument(getTitle(), getTextBlocks());
+	}
+
+	public void addWhitespaceIfNecessary() {
+		if (!sbLastWasWhitespace) {
+			tokenBuffer.append(' ');
+			textBuffer.append(' ');
+			sbLastWasWhitespace = true;
+		}
 	}
 }

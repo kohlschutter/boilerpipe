@@ -44,17 +44,30 @@ public final class BoilerpipeSAXInput implements BoilerpipeInput {
         this.is = is;
     }
 
+    /**
+     * Retrieves the {@link TextDocument} using a default HTML parser.
+     */
     public TextDocument getTextDocument() throws BoilerpipeProcessingException {
-        BoilerpipeHTMLParser sp = new BoilerpipeHTMLParser();
+        return getTextDocument(new BoilerpipeHTMLParser());
+    }
+    
+    /**
+     * Retrieves the {@link TextDocument} using the given HTML parser.
+     * 
+     * @param parser The parser used to transform the input into boilerpipe's internal representation.
+     * @return The retrieved {@link TextDocument}
+     * @throws BoilerpipeProcessingException
+     */
+    public TextDocument getTextDocument(final BoilerpipeHTMLParser parser) throws BoilerpipeProcessingException {
         try {
-            sp.parse(is);
+            parser.parse(is);
         } catch (IOException e) {
             throw new BoilerpipeProcessingException(e);
         } catch (SAXException e) {
             throw new BoilerpipeProcessingException(e);
         }
         
-        return sp.toTextDocument();
+        return parser.toTextDocument();
     }
 
 }

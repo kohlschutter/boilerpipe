@@ -20,12 +20,12 @@ package de.l3s.boilerpipe.filters.heuristics;
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextBlock;
-import de.l3s.boilerpipe.document.TextBlockLabel;
 import de.l3s.boilerpipe.document.TextDocument;
+import de.l3s.boilerpipe.labels.DefaultLabels;
 
 /**
  * Marks all {@link TextBlock}s "content" which are between the headline and the part that
- * has already been marked content, if they are marked {@link TextBlockLabel#MIGHT_BE_CONTENT}.
+ * has already been marked content, if they are marked {@link DefaultLabels#MIGHT_BE_CONTENT}.
  * 
  * This filter is quite specific to the news domain.
  * 
@@ -47,7 +47,7 @@ public final class ExpandTitleToContentFilter implements BoilerpipeFilter {
         int title = -1;
         int contentStart = -1;
         for (TextBlock tb : doc.getTextBlocks()) {
-            if (contentStart == -1 && tb.hasLabel(TextBlockLabel.TITLE)) {
+            if (contentStart == -1 && tb.hasLabel(DefaultLabels.TITLE)) {
                 title = i;
                 contentStart = -1;
             }
@@ -63,7 +63,7 @@ public final class ExpandTitleToContentFilter implements BoilerpipeFilter {
         }
         boolean changes = false;
         for (TextBlock tb : doc.getTextBlocks().subList(title, contentStart)) {
-            if (tb.hasLabel(TextBlockLabel.MIGHT_BE_CONTENT)) {
+            if (tb.hasLabel(DefaultLabels.MIGHT_BE_CONTENT)) {
                 changes = tb.setIsContent(true) | changes;
             }
         }

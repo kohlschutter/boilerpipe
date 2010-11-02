@@ -22,18 +22,18 @@ import java.util.List;
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextBlock;
-import de.l3s.boilerpipe.document.TextBlockLabel;
 import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.filters.heuristics.KeepLargestBlockFilter;
+import de.l3s.boilerpipe.labels.DefaultLabels;
 
 /**
  * Keeps the largest {@link TextBlock} only (by the number of words). In case of
  * more than one block with the same number of words, the first block is chosen.
  * All discarded blocks are marked "not content" and flagged as
- * {@link TextBlockLabel#MIGHT_BE_CONTENT}.
+ * {@link DefaultLabels#MIGHT_BE_CONTENT}.
  * 
  * As opposed to {@link KeepLargestBlockFilter}, the number of words are
- * computed using {@link TextBlock#getNumFullTextWords()}, which only counts
+ * computed using {@link HeuristicFilterBase#getNumFullTextWords(TextBlock)}, which only counts
  * words that occur in text elements with at least 9 words and are thus believed to be full text.
  * 
  * @author Christian Kohlschütter
@@ -72,7 +72,7 @@ public final class KeepLargestFulltextBlockFilter extends HeuristicFilterBase im
                 tb.setIsContent(true);
             } else {
                 tb.setIsContent(false);
-                tb.addLabel(TextBlockLabel.MIGHT_BE_CONTENT);
+                tb.addLabel(DefaultLabels.MIGHT_BE_CONTENT);
             }
         }
 

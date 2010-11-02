@@ -21,6 +21,8 @@ import java.util.BitSet;
 import java.util.HashSet;
 import java.util.Set;
 
+import de.l3s.boilerpipe.labels.DefaultLabels;
+
 /**
  * Describes a block of text.
  * 
@@ -71,11 +73,6 @@ public class TextBlock {
         this.offsetBlocksStart = offsetBlocks;
         this.offsetBlocksEnd = offsetBlocks;
         initDensities();
-//        if (textDensity >= 11) {
-//            numFullTextWords = numWords;
-//        } else {
-//            numFullTextWords = 0;
-//        }
     }
 
     public boolean isContent() {
@@ -152,7 +149,7 @@ public class TextBlock {
             numWrappedLines = 1;
         }
         textDensity = numWordsInWrappedLines / (float) numWrappedLines;
-        linkDensity = numWordsInAnchorText / (float) numWords;
+        linkDensity = numWords == 0 ? 0 : numWordsInAnchorText / (float) numWords;
     }
 
     public int getOffsetBlocksStart() {
@@ -163,15 +160,15 @@ public class TextBlock {
     }
 
     public String toString() {
-        return "[" + offsetBlocksStart + "-" + offsetBlocksEnd + "; nwiwl="+numWordsInWrappedLines+";nwl="+numWrappedLines+";ld="+linkDensity+"]\t"
-                + isContent + "," + labels + "\t" + getText();
+        return "[" + offsetBlocksStart + "-" + offsetBlocksEnd + "; nw="+numWords+";nwl="+numWrappedLines+";ld="+linkDensity+"]\t"
+                + (isContent?"CONTENT":"boilerplate") + "," + labels + "\t" + getText();
     }
 
     /**
      * Adds an arbitrary String label to this {@link TextBlock}.
      * 
      * @param label The label
-     * @see TextBlockLabel
+     * @see DefaultLabels
      */
     public void addLabel(final String label) {
         if (labels == null) {
@@ -198,7 +195,7 @@ public class TextBlock {
      * to the data structure. However it is recommended to use the label-specific methods in {@link TextBlock}
      * whenever possible.
      * 
-     * @return
+     * @return Returns the set of labels, or <code>null</code> if no labels was added yet.
      */
     public Set<String> getLabels() {
         return labels;
@@ -220,10 +217,24 @@ public class TextBlock {
             this.labels.addAll(l);
         }
     }
-
-//    public int getNumFullTextWords() {
-//        return numFullTextWords;
-//    }
+    
+    /**
+     * Adds a set of labels to this {@link TextBlock}.
+     * <code>null</code>-references are silently ignored.
+     * 
+     * @param l The labels to be added. 
+     */
+    public void addLabels(final String... l) {
+        if(l == null) {
+            return;
+        }
+        if(this.labels == null) {
+            this.labels = new HashSet<String>();
+        }
+        for(String label : l) {
+            this.labels.add(label);
+        }
+    }
     
     public BitSet getContainedTextElements() {
         return containedTextElements;
