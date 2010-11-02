@@ -154,7 +154,10 @@ public final class HTMLHighlighter {
         void process(final TextDocument doc, final InputSource is) throws BoilerpipeProcessingException {
             for (TextBlock block : doc.getTextBlocks()) {
                 if (block.isContent()) {
-                    contentBitSet.or(block.getContainedTextElements());
+                	final BitSet bs = block.getContainedTextElements();
+                	if(bs != null) {
+                        contentBitSet.or(bs);
+                	}
                 }
             }
 
