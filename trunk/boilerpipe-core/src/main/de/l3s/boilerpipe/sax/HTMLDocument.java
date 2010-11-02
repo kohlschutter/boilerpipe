@@ -11,16 +11,16 @@ import org.xml.sax.InputSource;
  * @author Christian Kohlschütter
  */
 public class HTMLDocument implements InputSourceable {
-	private final Charset encoding;
+	private final Charset charset;
 	private final byte[] data;
 
-	public HTMLDocument(final byte[] data, final Charset encoding) {
+	public HTMLDocument(final byte[] data, final Charset charset) {
 		this.data = data;
-		this.encoding = encoding;
+		this.charset = charset;
 	}
 	
-	public Charset getEncoding() {
-		return encoding;
+	public Charset getCharset() {
+		return charset;
 	}
 	
 	public byte[] getData() {
@@ -29,7 +29,7 @@ public class HTMLDocument implements InputSourceable {
 	
 	public InputSource toInputSource() {
 		final InputSource is = new InputSource(new ByteArrayInputStream(data));
-		is.setEncoding(encoding.name());
+		is.setEncoding(charset.name());
 		return is;
 	}
 }
