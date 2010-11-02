@@ -18,13 +18,9 @@
 package de.l3s.boilerpipe.extractors;
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.Reader;
 import java.io.StringReader;
 import java.net.URL;
-import java.net.URLConnection;
-import java.nio.charset.Charset;
-import java.nio.charset.UnsupportedCharsetException;
 
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -33,6 +29,7 @@ import de.l3s.boilerpipe.BoilerpipeExtractor;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.sax.BoilerpipeSAXInput;
+import de.l3s.boilerpipe.sax.HTMLFetcher;
 
 /**
  * The base class of Extractors. Also provides some helper methods to quickly
@@ -87,28 +84,7 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
      */
     public String getText(final URL url) throws BoilerpipeProcessingException {
         try {
-            final URLConnection conn = url.openConnection();
-            final String encoding = conn.getContentEncoding();
-
-            Charset cs = Charset.forName("Cp1252");
-            if (encoding != null) {
-                try {
-                    cs = Charset.forName(encoding);
-                } catch (UnsupportedCharsetException e) {
-                    // keep default
-                }
-            }
-
-            final InputStream in = conn.getInputStream();
-            
-            InputSource is = new InputSource(in);
-            if(cs != null) {
-                is.setEncoding(cs.name());
-            }
-            
-            final String text = getText(is);
-            in.close();
-            return text;
+        	return getText(HTMLFetcher.fetch(url).toInputSource());
         } catch (IOException e) {
             throw new BoilerpipeProcessingException(e);
         }
