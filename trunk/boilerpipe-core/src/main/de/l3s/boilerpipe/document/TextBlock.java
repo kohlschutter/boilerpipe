@@ -31,7 +31,7 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
  * 
  * @author Christian Kohlschütter
  */
-public class TextBlock {
+public class TextBlock implements Cloneable {
     boolean isContent = false;
     private CharSequence text;
     Set<String> labels = null;
@@ -57,7 +57,7 @@ public class TextBlock {
             0, 0, 0, 0, Integer.MAX_VALUE);
 
     public TextBlock(final String text) {
-        this(text, EMPTY_BITSET, 0,0,0,0,0);
+        this(text, null, 0,0,0,0,0);
     }
     
     public TextBlock(final String text, final BitSet containedTextElements,
@@ -130,7 +130,11 @@ public class TextBlock {
 
         this.isContent |= other.isContent;
 
-        containedTextElements.or(other.containedTextElements);
+        if(containedTextElements == null) {
+        	containedTextElements = (BitSet)other.containedTextElements.clone();
+        } else {
+        	containedTextElements.or(other.containedTextElements);
+        }
 
         numFullTextWords += other.numFullTextWords;
 
@@ -231,12 +235,37 @@ public class TextBlock {
         if(this.labels == null) {
             this.labels = new HashSet<String>();
         }
-        for(String label : l) {
+        for(final String label : l) {
             this.labels.add(label);
         }
     }
-    
+
+    /**
+     * Returns the containedTextElements BitSet, or <code>null</code>.
+     * @return
+     */
     public BitSet getContainedTextElements() {
         return containedTextElements;
     }
+
+	@Override
+	protected Object clone() {
+		final TextBlock clone;
+		try {
+			clone = (TextBlock)super.clone();
+		} catch (CloneNotSupportedException e) {
+			throw new RuntimeException(e);
+		}
+		if(text != null && !(text instanceof String)) {
+			clone.text = new StringBuilder(text);
+		}
+		if(labels != null && !labels.isEmpty()) {
+			clone.labels = new HashSet<String>(labels);
+		}
+		if(containedTextElements != null) {
+			clone.containedTextElements = (BitSet)containedTextElements.clone();
+		}
+		
+		return clone;
+	}
 }
