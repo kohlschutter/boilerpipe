@@ -1,0 +1,533 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+
+<TITLE>
+HTMLHighlighter (1.1 API)
+</TITLE>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="HTMLHighlighter (1.1 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/HTMLHighlighter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../de/l3s/boilerpipe/sax/HTMLFetcher.html" title="class in de.l3s.boilerpipe.sax"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../de/l3s/boilerpipe/sax/InputSourceable.html" title="interface in de.l3s.boilerpipe.sax"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?de/l3s/boilerpipe/sax/HTMLHighlighter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="HTMLHighlighter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+de.l3s.boilerpipe.sax</FONT>
+<BR>
+Class HTMLHighlighter</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>de.l3s.boilerpipe.sax.HTMLHighlighter</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public final class <B>HTMLHighlighter</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+Highlights text blocks in an HTML document that have been marked as "content"
+ in the corresponding <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>.
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Christian Kohlschütter</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#getExtraStyleSheet()">getExtraStyleSheet</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the extra stylesheet definition that will be inserted in the HEAD
+ element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#getPostHighlight()">getPostHighlight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the string that will be inserted after any highlighted HTML
+ block.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#getPreHighlight()">getPreHighlight</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the string that will be inserted before any highlighted HTML
+ block.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#isOutputHighlightOnly()">isOutputHighlightOnly</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If true, only HTML enclosed within highlighted content will be returned</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax">HTMLHighlighter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#newExtractingInstance()">newExtractingInstance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new <A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax"><CODE>HTMLHighlighter</CODE></A>, which is set-up to return only the
+ extracted HTML text, including enclosed markup.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax">HTMLHighlighter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#newHighlightingInstance()">newHighlightingInstance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a new <A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax"><CODE>HTMLHighlighter</CODE></A>, which is set-up to return the full
+ HTML text, with the extracted text portion <b>highlighted</b>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#process(de.l3s.boilerpipe.document.TextDocument, org.xml.sax.InputSource)">process</A></B>(<A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>&nbsp;doc,
+        org.xml.sax.InputSource&nbsp;is)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Processes the given <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> and the original HTML text (as
+ an <CODE>InputSource</CODE>).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#process(de.l3s.boilerpipe.document.TextDocument, java.lang.String)">process</A></B>(<A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>&nbsp;doc,
+        java.lang.String&nbsp;origHTML)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Processes the given <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> and the original HTML text (as a
+ String).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#process(java.net.URL, de.l3s.boilerpipe.BoilerpipeExtractor)">process</A></B>(java.net.URL&nbsp;url,
+        <A HREF="../../../../de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe">BoilerpipeExtractor</A>&nbsp;extractor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#setExtraStyleSheet(java.lang.String)">setExtraStyleSheet</A></B>(java.lang.String&nbsp;extraStyleSheet)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the extra stylesheet definition that will be inserted in the HEAD
+ element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#setOutputHighlightOnly(boolean)">setOutputHighlightOnly</A></B>(boolean&nbsp;outputHighlightOnly)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets whether only HTML enclosed within highlighted content will be
+ returned, or the whole HTML document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#setPostHighlight(java.lang.String)">setPostHighlight</A></B>(java.lang.String&nbsp;postHighlight)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the string that will be inserted after any highlighted HTML block.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html#setPreHighlight(java.lang.String)">setPreHighlight</A></B>(java.lang.String&nbsp;preHighlight)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the string that will be inserted prior to any highlighted HTML
+ block.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="newHighlightingInstance()"><!-- --></A><H3>
+newHighlightingInstance</H3>
+<PRE>
+public static <A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax">HTMLHighlighter</A> <B>newHighlightingInstance</B>()</PRE>
+<DL>
+<DD>Creates a new <A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax"><CODE>HTMLHighlighter</CODE></A>, which is set-up to return the full
+ HTML text, with the extracted text portion <b>highlighted</b>.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newExtractingInstance()"><!-- --></A><H3>
+newExtractingInstance</H3>
+<PRE>
+public static <A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax">HTMLHighlighter</A> <B>newExtractingInstance</B>()</PRE>
+<DL>
+<DD>Creates a new <A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax"><CODE>HTMLHighlighter</CODE></A>, which is set-up to return only the
+ extracted HTML text, including enclosed markup.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="process(de.l3s.boilerpipe.document.TextDocument, java.lang.String)"><!-- --></A><H3>
+process</H3>
+<PRE>
+public java.lang.String <B>process</B>(<A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>&nbsp;doc,
+                                java.lang.String&nbsp;origHTML)
+                         throws <A HREF="../../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></PRE>
+<DL>
+<DD>Processes the given <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> and the original HTML text (as a
+ String).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>doc</CODE> - The processed <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>.<DD><CODE>origHTML</CODE> - The original HTML document.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="process(de.l3s.boilerpipe.document.TextDocument, org.xml.sax.InputSource)"><!-- --></A><H3>
+process</H3>
+<PRE>
+public java.lang.String <B>process</B>(<A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document">TextDocument</A>&nbsp;doc,
+                                org.xml.sax.InputSource&nbsp;is)
+                         throws <A HREF="../../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></PRE>
+<DL>
+<DD>Processes the given <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A> and the original HTML text (as
+ an <CODE>InputSource</CODE>).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>doc</CODE> - The processed <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>.<DD><CODE>is</CODE> - The original HTML document.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="process(java.net.URL, de.l3s.boilerpipe.BoilerpipeExtractor)"><!-- --></A><H3>
+process</H3>
+<PRE>
+public java.lang.String <B>process</B>(java.net.URL&nbsp;url,
+                                <A HREF="../../../../de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe">BoilerpipeExtractor</A>&nbsp;extractor)
+                         throws java.io.IOException,
+                                <A HREF="../../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A>,
+                                org.xml.sax.SAXException</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.io.IOException</CODE>
+<DD><CODE><A HREF="../../../../de/l3s/boilerpipe/BoilerpipeProcessingException.html" title="class in de.l3s.boilerpipe">BoilerpipeProcessingException</A></CODE>
+<DD><CODE>org.xml.sax.SAXException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isOutputHighlightOnly()"><!-- --></A><H3>
+isOutputHighlightOnly</H3>
+<PRE>
+public boolean <B>isOutputHighlightOnly</B>()</PRE>
+<DL>
+<DD>If true, only HTML enclosed within highlighted content will be returned
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setOutputHighlightOnly(boolean)"><!-- --></A><H3>
+setOutputHighlightOnly</H3>
+<PRE>
+public void <B>setOutputHighlightOnly</B>(boolean&nbsp;outputHighlightOnly)</PRE>
+<DL>
+<DD>Sets whether only HTML enclosed within highlighted content will be
+ returned, or the whole HTML document.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getExtraStyleSheet()"><!-- --></A><H3>
+getExtraStyleSheet</H3>
+<PRE>
+public java.lang.String <B>getExtraStyleSheet</B>()</PRE>
+<DL>
+<DD>Returns the extra stylesheet definition that will be inserted in the HEAD
+ element.
+ 
+ By default, this corresponds to a simple definition that marks text in
+ class "x-boilerpipe-mark1" as inline text with yellow background.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setExtraStyleSheet(java.lang.String)"><!-- --></A><H3>
+setExtraStyleSheet</H3>
+<PRE>
+public void <B>setExtraStyleSheet</B>(java.lang.String&nbsp;extraStyleSheet)</PRE>
+<DL>
+<DD>Sets the extra stylesheet definition that will be inserted in the HEAD
+ element.
+ 
+ To disable, set it to the empty string: ""
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>extraStyleSheet</CODE> - Plain HTML</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPreHighlight()"><!-- --></A><H3>
+getPreHighlight</H3>
+<PRE>
+public java.lang.String <B>getPreHighlight</B>()</PRE>
+<DL>
+<DD>Returns the string that will be inserted before any highlighted HTML
+ block.
+ 
+ By default, this corresponds to
+ <code>&lt;span class=&qupt;x-boilerpipe-mark1&quot;&gt;</code>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPreHighlight(java.lang.String)"><!-- --></A><H3>
+setPreHighlight</H3>
+<PRE>
+public void <B>setPreHighlight</B>(java.lang.String&nbsp;preHighlight)</PRE>
+<DL>
+<DD>Sets the string that will be inserted prior to any highlighted HTML
+ block.
+ 
+ To disable, set it to the empty string: ""
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPostHighlight()"><!-- --></A><H3>
+getPostHighlight</H3>
+<PRE>
+public java.lang.String <B>getPostHighlight</B>()</PRE>
+<DL>
+<DD>Returns the string that will be inserted after any highlighted HTML
+ block.
+ 
+ By default, this corresponds to <code>&lt;/span&gt;</code>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPostHighlight(java.lang.String)"><!-- --></A><H3>
+setPostHighlight</H3>
+<PRE>
+public void <B>setPostHighlight</B>(java.lang.String&nbsp;postHighlight)</PRE>
+<DL>
+<DD>Sets the string that will be inserted after any highlighted HTML block.
+ 
+ To disable, set it to the empty string: ""
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/HTMLHighlighter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../de/l3s/boilerpipe/sax/HTMLFetcher.html" title="class in de.l3s.boilerpipe.sax"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../de/l3s/boilerpipe/sax/InputSourceable.html" title="interface in de.l3s.boilerpipe.sax"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?de/l3s/boilerpipe/sax/HTMLHighlighter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="HTMLHighlighter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>
