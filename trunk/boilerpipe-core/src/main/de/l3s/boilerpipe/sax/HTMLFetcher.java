@@ -7,6 +7,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.Charset;
 import java.nio.charset.UnsupportedCharsetException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.zip.GZIPInputStream;
 
 /**
@@ -18,6 +20,8 @@ public class HTMLFetcher {
 	private HTMLFetcher() {
 	}
 	
+	private static final Pattern PAT_CHARSET = Pattern.compile("charset=([^; ]+)$");
+	
 	/**
 	 * Fetches the document at the given URL, using {@link URLConnection}.
 	 * @param url
@@ -26,14 +30,18 @@ public class HTMLFetcher {
 	 */
 	public static HTMLDocument fetch(final URL url) throws IOException {
 		final URLConnection conn = url.openConnection();
-		final String charset = conn.getContentEncoding();
+		final String ct = conn.getContentType();
 
 		Charset cs = Charset.forName("Cp1252");
-		if (charset != null) {
-			try {
-				cs = Charset.forName(charset);
-			} catch (UnsupportedCharsetException e) {
-				// keep default
+		if (ct != null) {
+			Matcher m = PAT_CHARSET.matcher(ct);
+			if(m.find()) {
+				final String charset = m.group(1);
+				try {
+					cs = Charset.forName(charset);
+				} catch (UnsupportedCharsetException e) {
+					// keep default
+				}
 			}
 		}
 		
