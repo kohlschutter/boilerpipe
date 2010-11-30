@@ -54,10 +54,20 @@ public class DefaultTagActionMap extends TagActionMap {
         
         // New in 1.1 (especially to improve extraction quality from Wikipedia etc.)
         setTagAction("SUP", CommonTagActions.TA_INLINE_NO_WHITESPACE);
+        
+        // New in 1.2
+        setTagAction("CODE", CommonTagActions.TA_INLINE_NO_WHITESPACE);
+        setTagAction("TT", CommonTagActions.TA_INLINE_NO_WHITESPACE);
+        setTagAction("SUB", CommonTagActions.TA_INLINE_NO_WHITESPACE);
+        setTagAction("VAR", CommonTagActions.TA_INLINE_NO_WHITESPACE);
+
 
         setTagAction("ABBR", CommonTagActions.TA_INLINE_WHITESPACE);
         setTagAction("ACRONYM", CommonTagActions.TA_INLINE_WHITESPACE);
 
         setTagAction("FONT", CommonTagActions.TA_INLINE_NO_WHITESPACE); // could also use TA_FONT 
-    }
+
+        // added in 1.1.1
+        setTagAction("NOSCRIPT", CommonTagActions.TA_IGNORABLE_ELEMENT);
+}
 }
