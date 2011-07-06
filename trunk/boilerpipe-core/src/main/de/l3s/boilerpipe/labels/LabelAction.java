@@ -17,6 +17,8 @@
  */
 package de.l3s.boilerpipe.labels;
 
+import java.util.Arrays;
+
 import de.l3s.boilerpipe.document.TextBlock;
 
 /**
@@ -38,5 +40,9 @@ public class LabelAction {
     
     protected final void addLabelsTo(final TextBlock tb) {
         tb.addLabels(labels);
-    }   
+    }
+    
+    public String toString() {
+    	return super.toString()+"{"+Arrays.asList(labels)+"}";
+    }
 }

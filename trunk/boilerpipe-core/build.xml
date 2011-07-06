@@ -1,7 +1,7 @@
 <!--
     boilerpipe
 
-    Copyright (c) 2009 Christian Kohlschütter
+    Copyright (c) 2009-2011 Christian Kohlschütter
 
     The author licenses this file to You under the Apache License, Version 2.0
     (the "License"); you may not use this file except in compliance with
@@ -19,8 +19,8 @@
 	
 	<property name="app.name" value="boilerpipe" />
 	<property name="app.title" value="boilerpipe content extractor" />
-	<property name="app.version" value="1.1-dev" />
-    <property name="javadoc.version" value="1.1" />
+	<property name="app.version" value="1.2.0" />
+    <property name="javadoc.version" value="1.2" />
 	<property name="app.javaversion" value="1.5" />
 	<property name="app.dir" value="." />
 
@@ -59,6 +59,8 @@
 	<property name="dist.dir" value="${app.dir}/dist" />
 	<property name="jar.main" value="${dist.dir}/${app.name}-${app.version}.jar" />
 	<property name="jar.demo" value="${dist.dir}/${app.name}-demo-${app.version}.jar" />
+	<property name="jar.javadoc" value="${dist.dir}/${app.name}-javadoc-${app.version}.jar" />
+	<property name="jar.sources" value="${dist.dir}/${app.name}-sources-${app.version}.jar" />
 	<property name="javadoc.dir" value="${app.dir}/javadoc/${javadoc.version}/" />
 	<property name="distBin.tar.gz" value="${dist.dir}/${app.name}-${app.version}-bin.tar.gz" />
 	<property name="distSrc.tar.gz" value="${dist.dir}/${app.name}-${app.version}-src.tar.gz" />
@@ -142,6 +144,19 @@
 		</jar>
 		<jar destfile="${jar.demo}">
 			<fileset dir="${build.demo}">
+				<include name="**/*" />
+			</fileset>
+			<fileset dir="${src.demo}">
+				<include name="**/*" />
+			</fileset>
+		</jar>
+		<jar destfile="${jar.javadoc}">
+			<fileset dir="${javadoc.dir}">
+				<include name="**/*" />
+			</fileset>
+		</jar>
+		<jar destfile="${jar.sources}">
+			<fileset dir="${src.main}">
 				<include name="**/*" />
 			</fileset>
 			<fileset dir="${src.demo}">

@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.l3s.boilerpipe</groupId>
+	<artifactId>boilerpipe</artifactId>
+	<packaging>jar</packaging>
+	<version>1.2.0</version>
+	<name>Boilerpipe</name>
+	<description>Boilerpipe -- Boilerplate Removal and Fulltext Extraction from HTML pages</description>
+
+	<distributionManagement>
+		<repository>
+			<id>boilerpipe-m2-repo</id>
+			<url>svn:https://boilerpipe.googlecode.com/svn/repo/</url>
+		</repository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>boilerpipe-m2-repo</id>
+			<url>svn:https://boilerpipe.googlecode.com/svn/repo/</url>
+		</repository>
+	</repositories>
+
+	<build>
+    <extensions>
+      <extension>
+        <groupId>org.jvnet.wagon-svn</groupId>
+        <artifactId>wagon-svn</artifactId>
+        <version>1.8</version>
+      </extension>
+    </extensions>
+	</build>
+</project>

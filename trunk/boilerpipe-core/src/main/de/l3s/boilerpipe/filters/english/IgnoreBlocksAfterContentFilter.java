@@ -1,7 +1,7 @@
 /**
  * boilerpipe
  *
- * Copyright (c) 2009 Christian Kohlschütter
+ * Copyright (c) 2009,2010 Christian Kohlschütter
  *
  * The author licenses this file to You under the Apache License, Version 2.0
  * (the "License"); you may not use this file except in compliance with
@@ -37,6 +37,8 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
 public final class IgnoreBlocksAfterContentFilter extends HeuristicFilterBase implements BoilerpipeFilter {
     public static final IgnoreBlocksAfterContentFilter DEFAULT_INSTANCE = new IgnoreBlocksAfterContentFilter(
             60);
+    public static final IgnoreBlocksAfterContentFilter INSTANCE_200 = new IgnoreBlocksAfterContentFilter(
+            200);
     private final int minNumWords;
 
     /**

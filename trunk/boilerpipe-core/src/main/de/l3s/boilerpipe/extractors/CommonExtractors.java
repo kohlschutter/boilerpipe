@@ -22,6 +22,12 @@ public final class CommonExtractors {
 	public static final DefaultExtractor DEFAULT_EXTRACTOR = DefaultExtractor.INSTANCE;
 
 	/**
+	 * Like {@link DefaultExtractor}, but keeps the largest text block only.
+	 */
+	public static final LargestContentExtractor LARGEST_CONTENT_EXTRACTOR = LargestContentExtractor.INSTANCE;
+	
+	
+	/**
 	 * Trained on krdwrd Canola (different definition of "boilerplate"). You may
 	 * give it a try.
 	 */

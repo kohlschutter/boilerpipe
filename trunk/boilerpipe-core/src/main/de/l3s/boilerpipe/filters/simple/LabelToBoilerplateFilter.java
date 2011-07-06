@@ -21,6 +21,7 @@ import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.document.TextDocument;
+import de.l3s.boilerpipe.labels.DefaultLabels;
 
 /**
  * Marks all blocks that contain a given label as "boilerplate".
@@ -28,6 +29,8 @@ import de.l3s.boilerpipe.document.TextDocument;
  * @author Christian Kohlschütter
  */
 public final class LabelToBoilerplateFilter implements BoilerpipeFilter {
+	public static final LabelToBoilerplateFilter INSTANCE_STRICTLY_NOT_CONTENT = new LabelToBoilerplateFilter(DefaultLabels.STRICTLY_NOT_CONTENT);
+	
     private String[] labels;
 
     public LabelToBoilerplateFilter(final String... label) {

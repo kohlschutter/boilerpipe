@@ -36,6 +36,10 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
  * computed using {@link HeuristicFilterBase#getNumFullTextWords(TextBlock)}, which only counts
  * words that occur in text elements with at least 9 words and are thus believed to be full text.
  * 
+ * NOTE: Without language-specific fine-tuning (i.e., running the default instance), this filter
+ * may lead to suboptimal results. You better use {@link KeepLargestBlockFilter} instead, which
+ * works at the level of number-of-words instead of text densities.
+ * 
  * @author Christian Kohlschütter
  */
 public final class KeepLargestFulltextBlockFilter extends HeuristicFilterBase implements BoilerpipeFilter {

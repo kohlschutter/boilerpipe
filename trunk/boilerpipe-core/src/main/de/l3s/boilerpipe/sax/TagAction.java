@@ -34,4 +34,6 @@ public interface TagAction {
 
 	boolean end(final BoilerpipeHTMLContentHandler instance,
 			final String localName, final String qName) throws SAXException;
+	
+	boolean changesTagLevel();
 }

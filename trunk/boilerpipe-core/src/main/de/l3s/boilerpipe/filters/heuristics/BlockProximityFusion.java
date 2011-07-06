@@ -36,11 +36,17 @@ public final class BlockProximityFusion implements BoilerpipeFilter {
     private final int maxBlocksDistance;
 
     public static final BlockProximityFusion MAX_DISTANCE_1 = new BlockProximityFusion(
-            1, false);
+            1, false, false);
+    public static final BlockProximityFusion MAX_DISTANCE_1_SAME_TAGLEVEL = new BlockProximityFusion(
+            1, false, true);
     public static final BlockProximityFusion MAX_DISTANCE_1_CONTENT_ONLY = new BlockProximityFusion(
-            1, true);
+            1, true, false);
+    public static final BlockProximityFusion MAX_DISTANCE_1_CONTENT_ONLY_SAME_TAGLEVEL = new BlockProximityFusion(
+            1, true, true);
 
     private final boolean contentOnly;
+
+	private final boolean sameTagLevelOnly;
 
     /**
      * Creates a new {@link BlockProximityFusion} instance.
@@ -49,9 +55,10 @@ public final class BlockProximityFusion implements BoilerpipeFilter {
      * @param contentOnly 
      */
     public BlockProximityFusion(final int maxBlocksDistance,
-            final boolean contentOnly) {
+            final boolean contentOnly, final boolean sameTagLevelOnly) {
         this.maxBlocksDistance = maxBlocksDistance;
         this.contentOnly = contentOnly;
+		this.sameTagLevelOnly = sameTagLevelOnly;
     }
 
     public boolean process(TextDocument doc)
@@ -99,6 +106,9 @@ public final class BlockProximityFusion implements BoilerpipeFilter {
                             || !block.isContent()) {
                         ok = false;
                     }
+                }
+                if(ok && sameTagLevelOnly && prevBlock.getTagLevel() != block.getTagLevel()) {
+                	ok = false;
                 }
                 if (ok) {
                     prevBlock.mergeNext(block);

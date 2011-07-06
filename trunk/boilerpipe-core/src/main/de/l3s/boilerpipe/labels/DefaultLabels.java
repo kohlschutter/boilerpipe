@@ -27,6 +27,11 @@ import de.l3s.boilerpipe.document.TextBlock;
  */
 public final class DefaultLabels {
     public static final String TITLE = "de.l3s.boilerpipe/TITLE";
+    public static final String ARTICLE_METADATA = "de.l3s.boilerpipe/ARTICLE_METADATA";
     public static final String INDICATES_END_OF_TEXT = "de.l3s.boilerpipe/INDICATES_END_OF_TEXT";
     public static final String MIGHT_BE_CONTENT = "de.l3s.boilerpipe/MIGHT_BE_CONTENT";
+    public static final String STRICTLY_NOT_CONTENT = "de.l3s.boilerpipe/STRICTLY_NOT_CONTENT";
+    public static final String HR = "de.l3s.boilerpipe/HR";
+    
+    public static final String MARKUP_PREFIX = "<";
 }

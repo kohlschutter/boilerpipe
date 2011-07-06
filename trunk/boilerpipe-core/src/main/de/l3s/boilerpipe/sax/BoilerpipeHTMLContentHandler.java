@@ -54,6 +54,10 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 	int inBody = 0;
 	int inAnchor = 0;
 	int inIgnorableElement = 0;
+
+	int tagLevel = 0;
+	int blockTagLevel = -1;
+
 	boolean sbLastWasWhitespace = false;
 	private int textElementIdx = 0;
 
@@ -71,7 +75,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 	private boolean flush = false;
 	boolean inAnchorText = false;
 
-	LinkedList<LabelAction> labelStack = new LinkedList<LabelAction>();
+	LinkedList<LinkedList<LabelAction>> labelStacks = new LinkedList<LinkedList<LabelAction>>();
 	LinkedList<Integer> fontSizeStack = new LinkedList<Integer>();
 
 	/**
@@ -164,10 +168,16 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 	// @Override
 	public void startElement(String uri, String localName, String qName,
 			Attributes atts) throws SAXException {
+		labelStacks.add(null);
+
 		TagAction ta = tagActions.get(localName);
 		if (ta != null) {
+			if(ta.changesTagLevel()) {
+				tagLevel++;
+			}
 			flush = ta.start(this, localName, qName, atts) | flush;
 		} else {
+			tagLevel++;
 			flush = true;
 		}
 
@@ -184,9 +194,19 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 		} else {
 			flush = true;
 		}
+		
+		if(ta == null || ta.changesTagLevel()) {
+			tagLevel--;
+		}
+		
+		if (flush) {
+			flushBlock();
+		}
 
 		lastEvent = Event.END_TAG;
 		lastEndTag = localName;
+
+		labelStacks.removeLast();
 	}
 
 	// @Override
@@ -194,6 +214,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 			throws SAXException {
 		textElementIdx++;
 
+	
 		if (flush) {
 			flushBlock();
 			flush = false;
@@ -254,6 +275,11 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 				tokenBuffer.append(' ');
 			}
 		}
+		
+		if (blockTagLevel == -1) {
+			blockTagLevel = tagLevel;
+		}
+
 		textBuffer.append(ch, start, length);
 		tokenBuffer.append(ch, start, length);
 		if (endWhitespace) {
@@ -271,7 +297,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 		return textBlocks;
 	}
 
-	void flushBlock() {
+	public void flushBlock() {
 		if (inBody == 0) {
 			if ("TITLE".equalsIgnoreCase(lastStartTag) && inBody == 0) {
 				setTitle(tokenBuffer.toString().trim());
@@ -292,7 +318,6 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 				return;
 			}
 		}
-
 		final String[] tokens = UnicodeTokenizer.tokenize(tokenBuffer);
 
 		int numWords = 0;
@@ -329,7 +354,6 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 		if (numTokens == 0) {
 			return;
 		}
-
 		int numWordsInWrappedLines;
 		if (numWrappedLines == 0) {
 			numWordsInWrappedLines = numWords;
@@ -348,12 +372,9 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 		textBuffer.setLength(0);
 		tokenBuffer.setLength(0);
 
-		// System.out.println(tb.getText());
-		// System.out.println(numWords + "\t" + numLinkedWords + "\t"
-		// + tb.textDensity + "\t" +
-		// tb.linkDensity+"\t"+numWordsCurrentLine+"\t"+numWrappedLines);
-
+		tb.setTagLevel(blockTagLevel);
 		addTextBlock(tb);
+		blockTagLevel = -1;
 	}
 
 	protected void addTextBlock(final TextBlock tb) {
@@ -364,9 +385,13 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 				break;
 			}
 		}
-		for (LabelAction labels : labelStack) {
-			if (labels != null) {
-				labels.addTo(tb);
+		for (LinkedList<LabelAction> labelStack : labelStacks) {
+			if (labelStack != null) {
+				for (LabelAction labels : labelStack) {
+					if (labels != null) {
+						labels.addTo(tb);
+					}
+				}
 			}
 		}
 
@@ -414,5 +439,16 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 			textBuffer.append(' ');
 			sbLastWasWhitespace = true;
 		}
+	}
+
+	public void addLabelAction(final LabelAction la)
+			throws IllegalStateException {
+		LinkedList<LabelAction> labelStack = labelStacks.getLast();
+		if (labelStack == null) {
+			labelStack = new LinkedList<LabelAction>();
+			labelStacks.removeLast();
+			labelStacks.add(labelStack);
+		}
+		labelStack.add(la);
 	}
 }

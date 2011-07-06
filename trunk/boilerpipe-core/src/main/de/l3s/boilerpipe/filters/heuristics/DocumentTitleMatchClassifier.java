@@ -38,7 +38,7 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 
     private final Set<String> potentialTitles;
 
-    public DocumentTitleMatchClassifier(String title) {
+	public DocumentTitleMatchClassifier(String title) {
         if (title == null) {
             this.potentialTitles = null;
         } else {
@@ -52,18 +52,30 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
                 
                 String p;
                 
-                p = getLongestPart(title, "[ ]*[\\|:][ ]*");
+                p = getLongestPart(title, "[ ]*[\\|»|:][ ]*");
                 if(p != null) {
                     potentialTitles.add(p);
                 }
-                p = getLongestPart(title, "[ ]*[\\|:\\(\\)][ ]*");
+                p = getLongestPart(title, "[ ]*[\\|»|:\\(\\)][ ]*");
+                if(p != null) {
+                    potentialTitles.add(p);
+                }
+                p = getLongestPart(title, "[ ]*[\\|»|:\\(\\)\\-][ ]*");
+                if(p != null) {
+                    potentialTitles.add(p);
+                }
+                p = getLongestPart(title, "[ ]*[\\|»|,|:\\(\\)\\-][ ]*");
                 if(p != null) {
                     potentialTitles.add(p);
                 }
             }
         }
     }
-    
+
+    public Set<String> getPotentialTitles() {
+		return potentialTitles;
+	}
+
     private String getLongestPart(final String title, final String pattern) {
         String[] parts = title.split(pattern);
         if(parts.length == 1) {

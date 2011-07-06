@@ -49,6 +49,7 @@ public class TextBlock implements Cloneable {
     BitSet containedTextElements;
 
     private int numFullTextWords = 0;
+	private int tagLevel;
 
     private static final BitSet EMPTY_BITSET = new BitSet();
     public static final TextBlock EMPTY_START = new TextBlock("", EMPTY_BITSET,
@@ -145,6 +146,8 @@ public class TextBlock implements Cloneable {
                 labels.addAll(other.labels);
             }
         }
+        
+        tagLevel = Math.min(tagLevel, other.tagLevel);
     }
 
     private void initDensities() {
@@ -164,8 +167,8 @@ public class TextBlock implements Cloneable {
     }
 
     public String toString() {
-        return "[" + offsetBlocksStart + "-" + offsetBlocksEnd + "; nw="+numWords+";nwl="+numWrappedLines+";ld="+linkDensity+"]\t"
-                + (isContent?"CONTENT":"boilerplate") + "," + labels + "\t" + getText();
+        return "[" + offsetBlocksStart + "-" + offsetBlocksEnd + ";tl="+tagLevel+"; nw="+numWords+";nwl="+numWrappedLines+";ld="+linkDensity+"]\t"
+                + (isContent?"CONTENT":"boilerplate") + "," + labels + "\n" + getText();
     }
 
     /**
@@ -189,6 +192,10 @@ public class TextBlock implements Cloneable {
      */
     public boolean hasLabel(final String label) {
         return labels != null && labels.contains(label);
+    }
+    
+    public boolean removeLabel(final String label) {
+    	return labels != null && labels.remove(label);
     }
     
     /**
@@ -267,5 +274,13 @@ public class TextBlock implements Cloneable {
 		}
 		
 		return clone;
+	}
+
+	public int getTagLevel() {
+		return tagLevel;
+	}
+
+	public void setTagLevel(int tagLevel) {
+		this.tagLevel = tagLevel;
 	}
 }
