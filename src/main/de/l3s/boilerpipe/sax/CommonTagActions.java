@@ -59,6 +59,9 @@ public abstract class CommonTagActions {
                     | t2.end(instance, localName, qName);
         }
 
+        public boolean changesTagLevel() {
+        	return t1.changesTagLevel() || t2.changesTagLevel();
+        }
     }
 
     /**
@@ -78,6 +81,10 @@ public abstract class CommonTagActions {
             instance.inIgnorableElement--;
             return true;
         }
+        
+        public boolean changesTagLevel() {
+        	return true;
+        }
     };
     
     /**
@@ -92,22 +99,22 @@ public abstract class CommonTagActions {
         public boolean start(BoilerpipeHTMLContentHandler instance,
                 final String localName, final String qName,
                 final Attributes atts) throws SAXException {
-            if (instance.inAnchor++ == 0) {
-                if (instance.inIgnorableElement == 0) {
-                    instance.addWhitespaceIfNecessary();
-                    instance.tokenBuffer
-                            .append(BoilerpipeHTMLContentHandler.ANCHOR_TEXT_START);
-                    instance.tokenBuffer.append(' ');
-                    instance.sbLastWasWhitespace = true;
-                }
-                return false;
-            } else {
+            if (instance.inAnchor++ > 0) {
                 // as nested A elements are not allowed per specification, we
                 // are probably reaching this branch due to a bug in the XML
                 // parser
-                throw new SAXException(
-                        "SAX input contains nested A elements -- You have probably hit a bug in your HTML parser (e.g., NekoHTML bug #2909310). Please clean the HTML externally and feed it to boilerpipe again");
+            	System.err.println("Warning: SAX input contains nested A elements -- You have probably hit a bug in your HTML parser (e.g., NekoHTML bug #2909310). Please clean the HTML externally and feed it to boilerpipe again. Trying to recover somehow...");
+            	
+            	end(instance, localName, qName);
             }
+            if (instance.inIgnorableElement == 0) {
+                instance.addWhitespaceIfNecessary();
+                instance.tokenBuffer
+                        .append(BoilerpipeHTMLContentHandler.ANCHOR_TEXT_START);
+                instance.tokenBuffer.append(' ');
+                instance.sbLastWasWhitespace = true;
+            }
+            return false;
         }
 
         public boolean end(BoilerpipeHTMLContentHandler instance,
@@ -124,6 +131,9 @@ public abstract class CommonTagActions {
             return false;
         }
 
+        public boolean changesTagLevel() {
+        	return true;
+        }
     };
     
     /**
@@ -144,6 +154,10 @@ public abstract class CommonTagActions {
             instance.inBody--;
             return false;
         }
+        
+        public boolean changesTagLevel() {
+        	return true;
+        }
     };
 
     /**
@@ -162,6 +176,10 @@ public abstract class CommonTagActions {
                 final String localName, final String qName) {
             instance.addWhitespaceIfNecessary();
             return false;
+        }
+        
+        public boolean changesTagLevel() {
+        	return false;
         }
     };
     
@@ -186,9 +204,34 @@ public abstract class CommonTagActions {
                 final String localName, final String qName) {
             return false;
         }
+
+        public boolean changesTagLevel() {
+        	return false;
+        }
     };
     private static final Pattern PAT_FONT_SIZE = Pattern
             .compile("([\\+\\-]?)([0-9])");
+    
+    /**
+     * Explicitly marks this tag a simple "block-level" element, which always generates whitespace
+     */
+    public static final TagAction TA_BLOCK_LEVEL = new TagAction() {
+
+        public boolean start(BoilerpipeHTMLContentHandler instance,
+                final String localName, final String qName,
+                final Attributes atts) {
+            return true;
+        }
+
+        public boolean end(BoilerpipeHTMLContentHandler instance,
+                final String localName, final String qName) {
+            return true;
+        }
+        
+        public boolean changesTagLevel() {
+        	return true;
+        }
+    };    
     
     /**
      * Special TagAction for the <code>&lt;FONT&gt;</code> tag, which keeps track of the
@@ -246,6 +289,10 @@ public abstract class CommonTagActions {
             instance.fontSizeStack.removeFirst();
             return false;
         }
+        
+        public boolean changesTagLevel() {
+        	return false;
+        }
     };
 
     /**
@@ -264,15 +311,18 @@ public abstract class CommonTagActions {
                 final String localName, final String qName,
                 final Attributes atts) {
             instance.addWhitespaceIfNecessary();
-            instance.labelStack.add(action);
+            instance.addLabelAction(action);
             return false;
         }
 
         public boolean end(BoilerpipeHTMLContentHandler instance,
                 final String localName, final String qName) {
             instance.addWhitespaceIfNecessary();
-            instance.labelStack.removeLast();
             return false;
+        }
+        
+        public boolean changesTagLevel() {
+        	return false;
         }
     }
 
@@ -291,14 +341,17 @@ public abstract class CommonTagActions {
         public boolean start(BoilerpipeHTMLContentHandler instance,
                 final String localName, final String qName,
                 final Attributes atts) {
-            instance.labelStack.add(action);
+            instance.addLabelAction(action);
             return true;
         }
 
         public boolean end(BoilerpipeHTMLContentHandler instance,
                 final String localName, final String qName) {
-            instance.labelStack.removeLast();
             return true;
+        }
+        
+        public boolean changesTagLevel() {
+        	return true;
         }
     }
 }

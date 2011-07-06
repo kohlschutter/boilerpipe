@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+
+<TITLE>
+de.l3s.boilerpipe.sax (1.2 API)
+</TITLE>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=utf-8"
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="de.l3s.boilerpipe.sax (1.2 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../de/l3s/boilerpipe/labels/package-summary.html"><B>PREV PACKAGE</B></A>&nbsp;
+&nbsp;<A HREF="../../../../de/l3s/boilerpipe/util/package-summary.html"><B>NEXT PACKAGE</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?de/l3s/boilerpipe/sax/package-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="package-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<H2>
+Package de.l3s.boilerpipe.sax
+</H2>
+
+Classes related to parsing and producing HTML from/to Boilerpipe TextDocuments.
+<P>
+<B>See:</B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A HREF="#package_description"><B>Description</B></A>
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Interface Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/InputSourceable.html" title="interface in de.l3s.boilerpipe.sax">InputSourceable</A></B></TD>
+<TD>An InputSourceable can return an arbitrary number of new <CODE>InputSource</CODE>s for a given document.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/TagAction.html" title="interface in de.l3s.boilerpipe.sax">TagAction</A></B></TD>
+<TD>Defines an action that is to be performed whenever a particular tag occurs
+ during HTML parsing.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/BoilerpipeHTMLContentHandler.html" title="class in de.l3s.boilerpipe.sax">BoilerpipeHTMLContentHandler</A></B></TD>
+<TD>A simple SAX <CODE>ContentHandler</CODE>, used by <A HREF="../../../../de/l3s/boilerpipe/sax/BoilerpipeSAXInput.html" title="class in de.l3s.boilerpipe.sax"><CODE>BoilerpipeSAXInput</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/BoilerpipeHTMLParser.html" title="class in de.l3s.boilerpipe.sax">BoilerpipeHTMLParser</A></B></TD>
+<TD>A simple SAX Parser, used by <A HREF="../../../../de/l3s/boilerpipe/sax/BoilerpipeSAXInput.html" title="class in de.l3s.boilerpipe.sax"><CODE>BoilerpipeSAXInput</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/BoilerpipeSAXInput.html" title="class in de.l3s.boilerpipe.sax">BoilerpipeSAXInput</A></B></TD>
+<TD>Parses an <CODE>InputSource</CODE> using SAX and returns a <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/CommonTagActions.html" title="class in de.l3s.boilerpipe.sax">CommonTagActions</A></B></TD>
+<TD>Defines an action that is to be performed whenever a particular tag occurs during HTML parsing.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/CommonTagActions.BlockTagLabelAction.html" title="class in de.l3s.boilerpipe.sax">CommonTagActions.BlockTagLabelAction</A></B></TD>
+<TD><A HREF="../../../../de/l3s/boilerpipe/sax/CommonTagActions.html" title="class in de.l3s.boilerpipe.sax"><CODE>CommonTagActions</CODE></A> for block-level elements, which triggers some <A HREF="../../../../de/l3s/boilerpipe/labels/LabelAction.html" title="class in de.l3s.boilerpipe.labels"><CODE>LabelAction</CODE></A> on the generated
+ <A HREF="../../../../de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><CODE>TextBlock</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/CommonTagActions.Chained.html" title="class in de.l3s.boilerpipe.sax">CommonTagActions.Chained</A></B></TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/CommonTagActions.InlineTagLabelAction.html" title="class in de.l3s.boilerpipe.sax">CommonTagActions.InlineTagLabelAction</A></B></TD>
+<TD><A HREF="../../../../de/l3s/boilerpipe/sax/CommonTagActions.html" title="class in de.l3s.boilerpipe.sax"><CODE>CommonTagActions</CODE></A> for inline elements, which triggers some <A HREF="../../../../de/l3s/boilerpipe/labels/LabelAction.html" title="class in de.l3s.boilerpipe.labels"><CODE>LabelAction</CODE></A> on the generated
+ <A HREF="../../../../de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><CODE>TextBlock</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/DefaultTagActionMap.html" title="class in de.l3s.boilerpipe.sax">DefaultTagActionMap</A></B></TD>
+<TD>Default <A HREF="../../../../de/l3s/boilerpipe/sax/TagAction.html" title="interface in de.l3s.boilerpipe.sax"><CODE>TagAction</CODE></A>s.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLDocument.html" title="class in de.l3s.boilerpipe.sax">HTMLDocument</A></B></TD>
+<TD>An <A HREF="../../../../de/l3s/boilerpipe/sax/InputSourceable.html" title="interface in de.l3s.boilerpipe.sax"><CODE>InputSourceable</CODE></A> for <A HREF="../../../../de/l3s/boilerpipe/sax/HTMLFetcher.html" title="class in de.l3s.boilerpipe.sax"><CODE>HTMLFetcher</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLFetcher.html" title="class in de.l3s.boilerpipe.sax">HTMLFetcher</A></B></TD>
+<TD>A very simple HTTP/HTML fetcher, really just for demo purposes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax">HTMLHighlighter</A></B></TD>
+<TD>Highlights text blocks in an HTML document that have been marked as "content"
+ in the corresponding <A HREF="../../../../de/l3s/boilerpipe/document/TextDocument.html" title="class in de.l3s.boilerpipe.document"><CODE>TextDocument</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/MarkupTagAction.html" title="class in de.l3s.boilerpipe.sax">MarkupTagAction</A></B></TD>
+<TD>Assigns labels for element CSS classes and ids to the corresponding
+ <A HREF="../../../../de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><CODE>TextBlock</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD WIDTH="15%"><B><A HREF="../../../../de/l3s/boilerpipe/sax/TagActionMap.html" title="class in de.l3s.boilerpipe.sax">TagActionMap</A></B></TD>
+<TD>Base class for definition a set of <A HREF="../../../../de/l3s/boilerpipe/sax/TagAction.html" title="interface in de.l3s.boilerpipe.sax"><CODE>TagAction</CODE></A>s that are to be used for the
+ HTML parsing process.</TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<P>
+<A NAME="package_description"><!-- --></A><H2>
+Package de.l3s.boilerpipe.sax Description
+</H2>
+
+<P>
+<p>
+Classes related to parsing and producing HTML from/to Boilerpipe TextDocuments.
+</p>
+<P>
+
+<P>
+<DL>
+</DL>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Package</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1">Class</FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-use.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../de/l3s/boilerpipe/labels/package-summary.html"><B>PREV PACKAGE</B></A>&nbsp;
+&nbsp;<A HREF="../../../../de/l3s/boilerpipe/util/package-summary.html"><B>NEXT PACKAGE</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?de/l3s/boilerpipe/sax/package-summary.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="package-summary.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+
+</BODY>
+</HTML>

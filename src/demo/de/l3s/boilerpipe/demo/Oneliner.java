@@ -31,7 +31,8 @@ import de.l3s.boilerpipe.extractors.ArticleExtractor;
 public class Oneliner {
     public static void main(final String[] args) throws Exception {
         final URL url = new URL(
-                "http://www.l3s.de/web/page11g.do?sp=page11g&link=ln104g&stu1g.LanguageISOCtxParam=en"
+//                "http://www.l3s.de/web/page11g.do?sp=page11g&link=ln104g&stu1g.LanguageISOCtxParam=en"
+        		"http://www.dn.se/nyheter/vetenskap/annu-godare-choklad-med-hjalp-av-dna-teknik"
         		);
 
         // This can also be done in one line:

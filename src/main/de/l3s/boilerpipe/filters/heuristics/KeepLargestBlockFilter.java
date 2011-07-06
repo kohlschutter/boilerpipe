@@ -18,6 +18,7 @@
 package de.l3s.boilerpipe.filters.heuristics;
 
 import java.util.List;
+import java.util.ListIterator;
 
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
@@ -31,38 +32,82 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
  * All discarded blocks are marked "not content" and flagged as
  * {@link DefaultLabels#MIGHT_BE_CONTENT}.
  * 
+ * Note that, by default, only TextBlocks marked as "content" are taken into consideration.
+ * 
  * @author Christian Kohlschütter
  */
 public final class KeepLargestBlockFilter implements BoilerpipeFilter {
-    public static final KeepLargestBlockFilter INSTANCE = new KeepLargestBlockFilter();
+	public static final KeepLargestBlockFilter INSTANCE = new KeepLargestBlockFilter(
+			false);
+	public static final KeepLargestBlockFilter INSTANCE_EXPAND_TO_SAME_TAGLEVEL = new KeepLargestBlockFilter(
+			true);
+	private final boolean expandToSameLevelText;
 
-    public boolean process(final TextDocument doc)
-            throws BoilerpipeProcessingException {
-        List<TextBlock> textBlocks = doc.getTextBlocks();
-        if (textBlocks.size() < 2) {
-            return false;
-        }
+	public KeepLargestBlockFilter(boolean expandToSameLevelText) {
+		this.expandToSameLevelText = expandToSameLevelText;
+	}
 
-        int maxNumWords = -1;
-        TextBlock largestBlock = null;
-        for (TextBlock tb : textBlocks) {
-            if (!tb.isContent()) {
-                continue;
-            }
-            if (tb.getNumWords() > maxNumWords) {
-                largestBlock = tb;
-                maxNumWords = tb.getNumWords();
-            }
-        }
-        for (TextBlock tb : textBlocks) {
-            if (tb == largestBlock) {
-                tb.setIsContent(true);
-            } else {
-                tb.setIsContent(false);
-                tb.addLabel(DefaultLabels.MIGHT_BE_CONTENT);
-            }
-        }
+	public boolean process(final TextDocument doc)
+			throws BoilerpipeProcessingException {
+		List<TextBlock> textBlocks = doc.getTextBlocks();
+		if (textBlocks.size() < 2) {
+			return false;
+		}
 
-        return true;
-    }
+		int maxNumWords = -1;
+		TextBlock largestBlock = null;
+
+		int level = -1;
+
+		int i = 0;
+		int n = -1;
+		for (TextBlock tb : textBlocks) {
+			if (tb.isContent()) {
+				final int nw = tb.getNumWords();
+				if (nw > maxNumWords) {
+					largestBlock = tb;
+					maxNumWords = nw;
+
+					n = i;
+
+					if (expandToSameLevelText) {
+						level = tb.getTagLevel();
+					}
+				}
+			}
+			i++;
+		}
+		for (TextBlock tb : textBlocks) {
+			if (tb == largestBlock) {
+				tb.setIsContent(true);
+			} else {
+				tb.setIsContent(false);
+				tb.addLabel(DefaultLabels.MIGHT_BE_CONTENT);
+			}
+		}
+		if (expandToSameLevelText && n != -1) {
+			for (ListIterator<TextBlock> it = textBlocks.listIterator(n); it
+					.hasPrevious();) {
+				TextBlock tb = it.previous();
+				final int tl = tb.getTagLevel();
+				if(tl < level) {
+					break;
+				} else if(tl == level) {
+					tb.setIsContent(true);
+				}
+			}
+			for (ListIterator<TextBlock> it = textBlocks.listIterator(n); it
+			.hasNext();) {
+				TextBlock tb = it.next();
+				final int tl = tb.getTagLevel();
+				if(tl < level) {
+					break;
+				} else if(tl == level) {
+					tb.setIsContent(true);
+				}
+			}
+		}
+
+		return true;
+	}
 }

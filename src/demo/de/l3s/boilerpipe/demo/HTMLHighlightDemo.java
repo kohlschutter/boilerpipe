@@ -17,12 +17,14 @@ public class HTMLHighlightDemo {
 	public static void main(String[] args) throws Exception {
 		URL url = new URL(
 				"http://research.microsoft.com/en-us/um/people/ryenw/hcir2010/challenge.html"
+//				"http://boilerpipe-web.appspot.com/"
 		        );
 		
 		// choose from a set of useful BoilerpipeExtractors...
 		final BoilerpipeExtractor extractor = CommonExtractors.ARTICLE_EXTRACTOR;
 //		final BoilerpipeExtractor extractor = CommonExtractors.DEFAULT_EXTRACTOR;
 //		final BoilerpipeExtractor extractor = CommonExtractors.CANOLA_EXTRACTOR;
+//		final BoilerpipeExtractor extractor = CommonExtractors.LARGEST_CONTENT_EXTRACTOR;
 
 		// choose the operation mode (i.e., highlighting or extraction)
 		final HTMLHighlighter hh = HTMLHighlighter.newHighlightingInstance();

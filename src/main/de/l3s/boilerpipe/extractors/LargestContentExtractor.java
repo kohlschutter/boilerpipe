@@ -19,9 +19,9 @@ package de.l3s.boilerpipe.extractors;
 
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextDocument;
-import de.l3s.boilerpipe.filters.english.KeepLargestFulltextBlockFilter;
 import de.l3s.boilerpipe.filters.english.NumWordsRulesClassifier;
 import de.l3s.boilerpipe.filters.heuristics.BlockProximityFusion;
+import de.l3s.boilerpipe.filters.heuristics.KeepLargestBlockFilter;
 
 /**
  * A full-text extractor which extracts the largest text component of a page.
@@ -45,15 +45,9 @@ public final class LargestContentExtractor extends ExtractorBase {
 
     public boolean process(TextDocument doc)
             throws BoilerpipeProcessingException {
-        return
-
-        NumWordsRulesClassifier.INSTANCE.process(doc)
+        return NumWordsRulesClassifier.INSTANCE.process(doc)
                 | BlockProximityFusion.MAX_DISTANCE_1.process(doc)
-                | KeepLargestFulltextBlockFilter.INSTANCE.process(doc);
-
-        // The following won't work !!!
-        // MarkEverythingContentFilter.INSTANCE.process(doc)
-        // | KeepLargestFulltextBlockFilter.INSTANCE.process(doc)
+                | KeepLargestBlockFilter.INSTANCE.process(doc);
     }
 
 }

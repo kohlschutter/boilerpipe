@@ -4,7 +4,7 @@
 	<classpathentry kind="src" path="src/demo"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry exported="true" kind="lib" path="lib/nekohtml-1.9.13.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/xerces-2.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/nekohtml-1.9.13.jar"/>
+	<classpathentry kind="lib" path="lib/xerces-2.9.1.jar"/>
 	<classpathentry kind="output" path="build-eclipse"/>
 </classpath>

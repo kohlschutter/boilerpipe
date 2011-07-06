@@ -19,6 +19,12 @@ public class HTMLDocument implements InputSourceable {
 		this.charset = charset;
 	}
 	
+	public HTMLDocument(final String data) {
+		Charset cs = Charset.forName("utf-8");
+		this.data = data.getBytes(cs);
+		this.charset = cs;
+	}
+	
 	public Charset getCharset() {
 		return charset;
 	}

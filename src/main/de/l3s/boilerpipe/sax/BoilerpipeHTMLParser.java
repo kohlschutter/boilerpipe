@@ -20,6 +20,7 @@ package de.l3s.boilerpipe.sax;
 import org.apache.xerces.parsers.AbstractSAXParser;
 import org.cyberneko.html.HTMLConfiguration;
 
+import de.l3s.boilerpipe.BoilerpipeDocumentSource;
 import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.document.TextDocument;
 
@@ -29,9 +30,9 @@ import de.l3s.boilerpipe.document.TextDocument;
  * 
  * @author Christian Kohlschütter
  */
-public class BoilerpipeHTMLParser extends AbstractSAXParser {
+public class BoilerpipeHTMLParser extends AbstractSAXParser implements BoilerpipeDocumentSource {
 
-    private final BoilerpipeHTMLContentHandler contentHandler;
+    private BoilerpipeHTMLContentHandler contentHandler;
 
     /**
      * Constructs a {@link BoilerpipeHTMLParser} using a default HTML content handler.
@@ -47,10 +48,22 @@ public class BoilerpipeHTMLParser extends AbstractSAXParser {
      */
     public BoilerpipeHTMLParser(BoilerpipeHTMLContentHandler contentHandler) {
         super(new HTMLConfiguration());
-        this.contentHandler = contentHandler;
         setContentHandler(contentHandler);
     }
+    
+    protected BoilerpipeHTMLParser(boolean ignore) {
+    	super(new HTMLConfiguration());
+    }
 
+    public void setContentHandler(final BoilerpipeHTMLContentHandler contentHandler) {
+    	this.contentHandler = contentHandler;
+    	super.setContentHandler(contentHandler);
+    }
+    public void setContentHandler(final org.xml.sax.ContentHandler contentHandler) {
+    	this.contentHandler = null;
+    	super.setContentHandler(contentHandler);
+    }
+    
     /**
      * Returns a {@link TextDocument} containing the extracted {@link TextBlock}
      * s. NOTE: Only call this after {@link #parse(org.xml.sax.InputSource)}.
