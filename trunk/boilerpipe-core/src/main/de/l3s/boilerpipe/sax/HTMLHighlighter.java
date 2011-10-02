@@ -85,6 +85,7 @@ public final class HTMLHighlighter {
 	 *            The processed {@link TextDocument}.
 	 * @param origHTML
 	 *            The original HTML document.
+	 * @return The highlighted HTML.
 	 * @throws BoilerpipeProcessingException
 	 */
 	public String process(final TextDocument doc, final String origHTML)
@@ -100,6 +101,7 @@ public final class HTMLHighlighter {
 	 *            The processed {@link TextDocument}.
 	 * @param is
 	 *            The original HTML document.
+	 * @return The highlighted HTML.
 	 * @throws BoilerpipeProcessingException
 	 */
 	public String process(final TextDocument doc, final InputSource is)
@@ -130,9 +132,20 @@ public final class HTMLHighlighter {
 
 		return html;
 	}
+	
 	private static final Pattern PAT_TAG_NO_TEXT = Pattern.compile("<[^/][^>]*></[^>]*>");
 	private static final Pattern PAT_SUPER_TAG = Pattern.compile("^<[^>]*>(<.*?>)</[^>]*>$");
 
+	/**
+	 * Fetches the given {@link URL} and processes the retrieved HTML using the specified {@link BoilerpipeExtractor}.
+	 * 
+	 * @param doc
+	 *            The processed {@link TextDocument}.
+	 * @param is
+	 *            The original HTML document.
+	 * @return The highlighted HTML.
+	 * @throws BoilerpipeProcessingException
+	 */
 	public String process(final URL url, final BoilerpipeExtractor extractor)
 			throws IOException, BoilerpipeProcessingException, SAXException {
 		final HTMLDocument htmlDoc = HTMLFetcher.fetch(url);
