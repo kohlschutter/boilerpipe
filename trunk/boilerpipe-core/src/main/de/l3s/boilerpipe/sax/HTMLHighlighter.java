@@ -67,11 +67,11 @@ public final class HTMLHighlighter {
 		if (extractHTML) {
 			setOutputHighlightOnly(true);
 			setExtraStyleSheet("\n<style type=\"text/css\">\n"
-			+ "A:before { content:' '; } \n"  //
-			+ "A:after { content:' '; } \n"  //
-			+ "SPAN:before { content:' '; } \n"  //
-			+ "SPAN:after { content:' '; } \n"  //
-			+ "</style>\n");
+					+ "A:before { content:' '; } \n" //
+					+ "A:after { content:' '; } \n" //
+					+ "SPAN:before { content:' '; } \n" //
+					+ "SPAN:after { content:' '; } \n" //
+					+ "</style>\n");
 			setPreHighlight("");
 			setPostHighlight("");
 		}
@@ -108,22 +108,22 @@ public final class HTMLHighlighter {
 			throws BoilerpipeProcessingException {
 		final Implementation implementation = new Implementation();
 		implementation.process(doc, is);
-		
+
 		String html = implementation.html.toString();
-		if(outputHighlightOnly) {
+		if (outputHighlightOnly) {
 			Matcher m;
 
 			boolean repeat = true;
-			while(repeat) {
+			while (repeat) {
 				repeat = false;
 				m = PAT_TAG_NO_TEXT.matcher(html);
-				if(m.find()) {
+				if (m.find()) {
 					repeat = true;
 					html = m.replaceAll("");
 				}
-				
+
 				m = PAT_SUPER_TAG.matcher(html);
-				if(m.find()) {
+				if (m.find()) {
 					repeat = true;
 					html = m.replaceAll(m.group(1));
 				}
@@ -132,12 +132,15 @@ public final class HTMLHighlighter {
 
 		return html;
 	}
-	
-	private static final Pattern PAT_TAG_NO_TEXT = Pattern.compile("<[^/][^>]*></[^>]*>");
-	private static final Pattern PAT_SUPER_TAG = Pattern.compile("^<[^>]*>(<.*?>)</[^>]*>$");
+
+	private static final Pattern PAT_TAG_NO_TEXT = Pattern
+			.compile("<[^/][^>]*></[^>]*>");
+	private static final Pattern PAT_SUPER_TAG = Pattern
+			.compile("^<[^>]*>(<.*?>)</[^>]*>$");
 
 	/**
-	 * Fetches the given {@link URL} and processes the retrieved HTML using the specified {@link BoilerpipeExtractor}.
+	 * Fetches the given {@link URL} using {@link HTMLFetcher} and processes the
+	 * retrieved HTML using the specified {@link BoilerpipeExtractor}.
 	 * 
 	 * @param doc
 	 *            The processed {@link TextDocument}.
@@ -376,12 +379,12 @@ public final class HTMLHighlighter {
 			try {
 				if (inIgnorableElement == 0) {
 					if (outputHighlightOnly) {
-//						boolean highlight = contentBitSet
-//								.get(characterElementIdx);
+						// boolean highlight = contentBitSet
+						// .get(characterElementIdx);
 
-//						if (!highlight) {
-//							return;
-//						}
+						// if (!highlight) {
+						// return;
+						// }
 					}
 
 					html.append('<');
@@ -417,12 +420,12 @@ public final class HTMLHighlighter {
 			try {
 				if (inIgnorableElement == 0) {
 					if (outputHighlightOnly) {
-//						boolean highlight = contentBitSet
-//								.get(characterElementIdx);
+						// boolean highlight = contentBitSet
+						// .get(characterElementIdx);
 
-//						if (!highlight) {
-//							return;
-//						}
+						// if (!highlight) {
+						// return;
+						// }
 					}
 					html.append("</");
 					html.append(qName);
