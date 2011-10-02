@@ -19,11 +19,13 @@ import java.util.zip.GZIPInputStream;
 public class HTMLFetcher {
 	private HTMLFetcher() {
 	}
-	
-	private static final Pattern PAT_CHARSET = Pattern.compile("charset=([^; ]+)$");
-	
+
+	private static final Pattern PAT_CHARSET = Pattern
+			.compile("charset=([^; ]+)$");
+
 	/**
 	 * Fetches the document at the given URL, using {@link URLConnection}.
+	 * 
 	 * @param url
 	 * @return
 	 * @throws IOException
@@ -32,10 +34,15 @@ public class HTMLFetcher {
 		final URLConnection conn = url.openConnection();
 		final String ct = conn.getContentType();
 
+		if (ct == null
+				|| !(ct.equals("text/html") || ct.startsWith("text/html;"))) {
+			throw new IOException("Unsupported content type: "+ct);
+		}
+
 		Charset cs = Charset.forName("Cp1252");
 		if (ct != null) {
 			Matcher m = PAT_CHARSET.matcher(ct);
-			if(m.find()) {
+			if (m.find()) {
 				final String charset = m.group(1);
 				try {
 					cs = Charset.forName(charset);
@@ -44,15 +51,16 @@ public class HTMLFetcher {
 				}
 			}
 		}
-		
+
 		InputStream in = conn.getInputStream();
 
 		final String encoding = conn.getContentEncoding();
-		if(encoding != null) {
-			if("gzip".equalsIgnoreCase(encoding)) {
+		if (encoding != null) {
+			if ("gzip".equalsIgnoreCase(encoding)) {
 				in = new GZIPInputStream(in);
 			} else {
-				System.err.println("WARN: unsupported Content-Encoding: "+encoding);
+				System.err.println("WARN: unsupported Content-Encoding: "
+						+ encoding);
 			}
 		}
 
@@ -65,7 +73,7 @@ public class HTMLFetcher {
 		in.close();
 
 		final byte[] data = bos.toByteArray();
-		
+
 		return new HTMLDocument(data, cs);
 	}
 }
