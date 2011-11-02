@@ -35,7 +35,7 @@ import org.apache.xerces.xni.parser.XMLDocumentSource;
 import org.cyberneko.html.HTMLElements.Element;
 import org.cyberneko.html.filters.NamespaceBinder;
 import org.cyberneko.html.xercesbridge.XercesBridge;
-                      
+@SuppressWarnings("all")
 /**
  * Balances tags in an HTML document. This component receives document events
  * and tries to correct many common mistakes that human (and computer) HTML
