@@ -35,18 +35,12 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
  */
 public final class LabelFusion implements BoilerpipeFilter {
 
-    public static final LabelFusion INSTANCE = new LabelFusion("");
-
-	private final String labelPrefix;
+    public static final LabelFusion INSTANCE = new LabelFusion();
 
     /**
      * Creates a new {@link LabelFusion} instance.
-     *
-     * @param maxBlocksDistance The maximum distance in blocks.
-     * @param contentOnly 
      */
-    public LabelFusion(final String labelPrefix) {
-        this.labelPrefix = labelPrefix;
+    private LabelFusion() {
     }
 
     public boolean process(TextDocument doc)
@@ -86,7 +80,8 @@ public final class LabelFusion implements BoilerpipeFilter {
 	private Set<String> markupLabelsOnly(final Set<String> set1) {
 		Set<String> set = new HashSet<String>(set1);
 		for(Iterator<String> it = set.iterator(); it.hasNext(); ) {
-			if(!it.next().startsWith(DefaultLabels.MARKUP_PREFIX)) {
+			final String label = it.next();
+			if(!label.startsWith(DefaultLabels.MARKUP_PREFIX)) {
 				it.remove();
 			}
 		}
