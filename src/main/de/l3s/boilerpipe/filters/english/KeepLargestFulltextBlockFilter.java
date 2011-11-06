@@ -54,7 +54,6 @@ public final class KeepLargestFulltextBlockFilter extends HeuristicFilterBase im
 
         int max = -1;
         TextBlock largestBlock = null;
-        int index = 0;
         for (TextBlock tb : textBlocks) {
             if (!tb.isContent()) {
                 continue;
@@ -64,7 +63,6 @@ public final class KeepLargestFulltextBlockFilter extends HeuristicFilterBase im
                 largestBlock = tb;
                 max = numWords;
             }
-            index++;
         }
         
         if (largestBlock == null) {
