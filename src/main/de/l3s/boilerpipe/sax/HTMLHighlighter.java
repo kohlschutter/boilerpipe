@@ -23,6 +23,7 @@ import java.net.URL;
 import java.util.BitSet;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -46,6 +47,8 @@ import de.l3s.boilerpipe.document.TextDocument;
  * @author Christian Kohlschütter
  */
 public final class HTMLHighlighter {
+
+	private Map<String, Set<String>> tagWhitelist = null;
 
 	/**
 	 * Creates a new {@link HTMLHighlighter}, which is set-up to return the full
@@ -387,12 +390,30 @@ public final class HTMLHighlighter {
 						// }
 					}
 
+					final Set<String> whitelistAttributes;
+					if (tagWhitelist == null) {
+						whitelistAttributes = null;
+					} else {
+						whitelistAttributes = tagWhitelist.get(qName);
+						if (whitelistAttributes == null) {
+							// skip
+							return;
+						}
+					}
+
 					html.append('<');
 					html.append(qName);
 					if (!ignoreAttrs) {
 						final int numAtts = atts.getLength();
 						for (int i = 0; i < numAtts; i++) {
 							final String attr = atts.getQName(i);
+
+							if (whitelistAttributes != null
+									&& !whitelistAttributes.contains(attr)) {
+								// skip
+								continue;
+							}
+
 							final String value = atts.getValue(i);
 							html.append(' ');
 							html.append(attr);
@@ -427,6 +448,13 @@ public final class HTMLHighlighter {
 						// return;
 						// }
 					}
+
+					if (tagWhitelist != null
+							&& !tagWhitelist.containsKey(qName)) {
+						// skip
+						return;
+					}
+
 					html.append("</");
 					html.append(qName);
 					html.append('>');
@@ -495,4 +523,11 @@ public final class HTMLHighlighter {
 		return out.toString();
 	}
 
+	public Map<String, Set<String>> getTagWhitelist() {
+		return tagWhitelist;
+	}
+
+	public void setTagWhitelist(Map<String, Set<String>> tagWhitelist) {
+		this.tagWhitelist = tagWhitelist;
+	}
 }
