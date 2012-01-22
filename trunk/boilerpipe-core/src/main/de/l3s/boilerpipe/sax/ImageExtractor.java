@@ -30,6 +30,18 @@ import de.l3s.boilerpipe.document.TextDocument;
  */
 public final class ImageExtractor {
 	public static final ImageExtractor INSTANCE = new ImageExtractor();
+	
+	/**
+	 * Returns the singleton instance of {@link ImageExtractor}.
+	 * 
+	 * @return
+	 */
+	public static ImageExtractor getInstance() {
+		return INSTANCE;
+	}
+
+	private ImageExtractor() {
+	}
 
 	/**
 	 * Processes the given {@link TextDocument} and the original HTML text (as a
