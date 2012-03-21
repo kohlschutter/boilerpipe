@@ -19,13 +19,13 @@ package de.l3s.boilerpipe.filters.heuristics;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 import de.l3s.boilerpipe.BoilerpipeFilter;
 import de.l3s.boilerpipe.BoilerpipeProcessingException;
 import de.l3s.boilerpipe.document.TextBlock;
 import de.l3s.boilerpipe.document.TextDocument;
 import de.l3s.boilerpipe.labels.DefaultLabels;
-
 
 /**
  * Marks {@link TextBlock}s which contain parts of the HTML
@@ -36,90 +36,108 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
  */
 public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 
-    private final Set<String> potentialTitles;
+	private final Set<String> potentialTitles;
 
 	public DocumentTitleMatchClassifier(String title) {
-        if (title == null) {
-            this.potentialTitles = null;
-        } else {
-            title = title.trim();
-            if (title.length() == 0) {
-                this.potentialTitles = null;
-            } else {
-                this.potentialTitles = new HashSet<String>();
-                
-                potentialTitles.add(title);
-                
-                String p;
-                
-                p = getLongestPart(title, "[ ]*[\\|»|:][ ]*");
-                if(p != null) {
-                    potentialTitles.add(p);
-                }
-                p = getLongestPart(title, "[ ]*[\\|»|:\\(\\)][ ]*");
-                if(p != null) {
-                    potentialTitles.add(p);
-                }
-                p = getLongestPart(title, "[ ]*[\\|»|:\\(\\)\\-][ ]*");
-                if(p != null) {
-                    potentialTitles.add(p);
-                }
-                p = getLongestPart(title, "[ ]*[\\|»|,|:\\(\\)\\-][ ]*");
-                if(p != null) {
-                    potentialTitles.add(p);
-                }
-            }
-        }
-    }
+		if (title == null) {
+			this.potentialTitles = null;
+		} else {
+			
+			title = title.replace('\u00a0', ' ');
+			
+			title = title.trim();
+			if (title.length() == 0) {
+				this.potentialTitles = null;
+			} else {
+				this.potentialTitles = new HashSet<String>();
 
-    public Set<String> getPotentialTitles() {
+				potentialTitles.add(title);
+
+				String p;
+
+				p = getLongestPart(title, "[ ]*[\\|»|:][ ]*");
+				if (p != null) {
+					potentialTitles.add(p);
+				}
+				p = getLongestPart(title, "[ ]*[\\|»|:\\(\\)][ ]*");
+				if (p != null) {
+					potentialTitles.add(p);
+				}
+				p = getLongestPart(title, "[ ]*[\\|»|:\\(\\)\\-][ ]*");
+				if (p != null) {
+					potentialTitles.add(p);
+				}
+				p = getLongestPart(title, "[ ]*[\\|»|,|:\\(\\)\\-][ ]*");
+				if (p != null) {
+					potentialTitles.add(p);
+				}
+				p = getLongestPart(title, "[ ]*[\\|»|,|:\\(\\)\\-\u00a0][ ]*");
+				if (p != null) {
+					potentialTitles.add(p);
+				}
+			}
+		}
+		System.out.println(potentialTitles);
+	}
+
+	public Set<String> getPotentialTitles() {
 		return potentialTitles;
 	}
 
-    private String getLongestPart(final String title, final String pattern) {
-        String[] parts = title.split(pattern);
-        if(parts.length == 1) {
-            return null;
-        }
-        int longestNumWords = 0;
-        String longestPart = "";
-        for (int i = 0; i < parts.length; i++) {
-            String p = parts[i];
-            if (p.contains(".com")) {
-                continue;
-            }
-            final int numWords = p.split("[\b]+").length;
-            if (numWords > longestNumWords
-                    || p.length() > longestPart.length()) {
-                longestNumWords = numWords;
-                longestPart = p;
-            }
-        }
-        if(longestPart.length() == 0) {
-            return null;
-        } else {
-            return longestPart.trim();
-        }
-    }
+	private String getLongestPart(final String title, final String pattern) {
+		String[] parts = title.split(pattern);
+		if (parts.length == 1) {
+			return null;
+		}
+		int longestNumWords = 0;
+		String longestPart = "";
+		for (int i = 0; i < parts.length; i++) {
+			String p = parts[i];
+			if (p.contains(".com")) {
+				continue;
+			}
+			final int numWords = p.split("[\b]+").length;
+			if (numWords > longestNumWords || p.length() > longestPart.length()) {
+				longestNumWords = numWords;
+				longestPart = p;
+			}
+		}
+		if (longestPart.length() == 0) {
+			return null;
+		} else {
+			return longestPart.trim();
+		}
+	}
+	
+	private static final Pattern PAT_REMOVE_CHARACTERS = Pattern.compile("[\\?\\!\\.\\-\\:]+");
 
-    public boolean process(TextDocument doc)
-            throws BoilerpipeProcessingException {
-        if (potentialTitles == null) {
-            return false;
-        }
-        boolean changes = false;
+	public boolean process(TextDocument doc)
+			throws BoilerpipeProcessingException {
+		if (potentialTitles == null) {
+			return false;
+		}
+		boolean changes = false;
+		
+		for (final TextBlock tb : doc.getTextBlocks()) {
+			String text = tb.getText();
+			
+			text = text.replace('\u00a0', ' ');
+			text = text.trim();
 
-        for (final TextBlock tb : doc.getTextBlocks()) {
-            final String text = tb.getText().trim();
-            for(String candidate : potentialTitles) {
-                if(candidate.equals(text)) {
-                    tb.addLabel(DefaultLabels.TITLE);
-                    changes = true;
-                }
-            }
-        }
-
-        return changes;
-    }
+			if (potentialTitles.contains(text)) {
+				tb.addLabel(DefaultLabels.TITLE);
+				changes = true;
+				break;
+			}
+			
+			text = PAT_REMOVE_CHARACTERS.matcher(text).replaceAll("").trim();
+			if (potentialTitles.contains(text)) {
+				tb.addLabel(DefaultLabels.TITLE);
+				changes = true;
+				break;
+			}
+		}
+		return changes;
+	}
 
 }
