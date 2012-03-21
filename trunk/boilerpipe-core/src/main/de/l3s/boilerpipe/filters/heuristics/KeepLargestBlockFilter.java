@@ -38,13 +38,17 @@ import de.l3s.boilerpipe.labels.DefaultLabels;
  */
 public final class KeepLargestBlockFilter implements BoilerpipeFilter {
 	public static final KeepLargestBlockFilter INSTANCE = new KeepLargestBlockFilter(
-			false);
+			false, 0);
 	public static final KeepLargestBlockFilter INSTANCE_EXPAND_TO_SAME_TAGLEVEL = new KeepLargestBlockFilter(
-			true);
+			true, 0);
+	public static final KeepLargestBlockFilter INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS = new KeepLargestBlockFilter(
+			true, 10);
 	private final boolean expandToSameLevelText;
+	private final int minWords;
 
-	public KeepLargestBlockFilter(boolean expandToSameLevelText) {
+	public KeepLargestBlockFilter(boolean expandToSameLevelText, final int minWords) {
 		this.expandToSameLevelText = expandToSameLevelText;
+		this.minWords = minWords;
 	}
 
 	public boolean process(final TextDocument doc)
@@ -64,6 +68,7 @@ public final class KeepLargestBlockFilter implements BoilerpipeFilter {
 		for (TextBlock tb : textBlocks) {
 			if (tb.isContent()) {
 				final int nw = tb.getNumWords();
+				
 				if (nw > maxNumWords) {
 					largestBlock = tb;
 					maxNumWords = nw;
@@ -86,6 +91,7 @@ public final class KeepLargestBlockFilter implements BoilerpipeFilter {
 			}
 		}
 		if (expandToSameLevelText && n != -1) {
+			
 			for (ListIterator<TextBlock> it = textBlocks.listIterator(n); it
 					.hasPrevious();) {
 				TextBlock tb = it.previous();
@@ -93,7 +99,9 @@ public final class KeepLargestBlockFilter implements BoilerpipeFilter {
 				if(tl < level) {
 					break;
 				} else if(tl == level) {
-					tb.setIsContent(true);
+					if(tb.getNumWords() >= minWords) {
+						tb.setIsContent(true);
+					}
 				}
 			}
 			for (ListIterator<TextBlock> it = textBlocks.listIterator(n); it
@@ -103,7 +111,9 @@ public final class KeepLargestBlockFilter implements BoilerpipeFilter {
 				if(tl < level) {
 					break;
 				} else if(tl == level) {
-					tb.setIsContent(true);
+					if(tb.getNumWords() >= minWords) {
+						tb.setIsContent(true);
+					}
 				}
 			}
 		}
