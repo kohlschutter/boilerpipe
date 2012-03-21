@@ -77,7 +77,6 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 				}
 			}
 		}
-		System.out.println(potentialTitles);
 	}
 
 	public Set<String> getPotentialTitles() {
