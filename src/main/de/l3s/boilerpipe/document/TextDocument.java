@@ -17,6 +17,7 @@
  */
 package de.l3s.boilerpipe.document;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,7 +25,7 @@ import java.util.List;
  * 
  * @author Christian Kohlschütter
  */
-public class TextDocument {
+public class TextDocument implements Cloneable {
     final List<TextBlock> textBlocks;
     String title;
 
@@ -128,5 +129,13 @@ public class TextDocument {
             sb.append('\n');
         }
         return sb.toString();
+    }
+    
+    public TextDocument clone() {
+    	final List<TextBlock> list = new ArrayList<TextBlock>(textBlocks.size());
+    	for(TextBlock tb : textBlocks) {
+    		list.add(tb.clone());
+    	}
+    	return new TextDocument(title, list);
     }
 }
