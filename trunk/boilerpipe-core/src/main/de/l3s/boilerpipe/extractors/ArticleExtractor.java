@@ -55,7 +55,7 @@ public final class ArticleExtractor extends ExtractorBase {
                 | BlockProximityFusion.MAX_DISTANCE_1.process(doc)
                 | BoilerplateBlockFilter.INSTANCE_KEEP_TITLE.process(doc)
                 | BlockProximityFusion.MAX_DISTANCE_1_CONTENT_ONLY.process(doc)
-                | KeepLargestBlockFilter.INSTANCE_EXPAND_TO_SAME_TAGLEVEL.process(doc)
+                | KeepLargestBlockFilter.INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS.process(doc)
                 | ExpandTitleToContentFilter.INSTANCE.process(doc);
     }
 }

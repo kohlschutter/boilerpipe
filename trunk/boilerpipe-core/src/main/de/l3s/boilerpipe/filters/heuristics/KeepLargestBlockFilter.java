@@ -42,7 +42,7 @@ public final class KeepLargestBlockFilter implements BoilerpipeFilter {
 	public static final KeepLargestBlockFilter INSTANCE_EXPAND_TO_SAME_TAGLEVEL = new KeepLargestBlockFilter(
 			true, 0);
 	public static final KeepLargestBlockFilter INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS = new KeepLargestBlockFilter(
-			true, 10);
+			true, 100);
 	private final boolean expandToSameLevelText;
 	private final int minWords;
 
