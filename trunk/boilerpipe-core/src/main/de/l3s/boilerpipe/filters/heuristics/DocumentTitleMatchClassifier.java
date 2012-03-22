@@ -55,6 +55,10 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 
 				String p;
 
+				p = getLongestPart(title, "[ ]*[\\|»|-][ ]*");
+				if (p != null) {
+					potentialTitles.add(p);
+				}
 				p = getLongestPart(title, "[ ]*[\\|»|:][ ]*");
 				if (p != null) {
 					potentialTitles.add(p);
@@ -75,12 +79,32 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 				if (p != null) {
 					potentialTitles.add(p);
 				}
+				
+				addPotentialTitles(potentialTitles, title, "[ ]+[\\|][ ]+", 4);
+				addPotentialTitles(potentialTitles, title, "[ ]+[\\-][ ]+", 4);
 			}
 		}
 	}
 
 	public Set<String> getPotentialTitles() {
 		return potentialTitles;
+	}
+	
+	private void addPotentialTitles(final Set<String> potentialTitles, final String title, final String pattern, final int minWords) {
+		String[] parts = title.split(pattern);
+		if (parts.length == 1) {
+			return;
+		}
+		for (int i = 0; i < parts.length; i++) {
+			String p = parts[i];
+			if (p.contains(".com")) {
+				continue;
+			}
+			final int numWords = p.split("[\b ]+").length;
+			if (numWords >=minWords) {
+				potentialTitles.add(p);
+			}
+		}
 	}
 
 	private String getLongestPart(final String title, final String pattern) {
@@ -95,7 +119,7 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 			if (p.contains(".com")) {
 				continue;
 			}
-			final int numWords = p.split("[\b]+").length;
+			final int numWords = p.split("[\b ]+").length;
 			if (numWords > longestNumWords || p.length() > longestPart.length()) {
 				longestNumWords = numWords;
 				longestPart = p;
