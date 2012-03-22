@@ -256,7 +256,7 @@ public class TextBlock implements Cloneable {
     }
 
 	@Override
-	protected Object clone() {
+	protected TextBlock clone() {
 		final TextBlock clone;
 		try {
 			clone = (TextBlock)super.clone();
