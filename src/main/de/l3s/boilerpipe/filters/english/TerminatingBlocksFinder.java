@@ -74,6 +74,10 @@ public class TerminatingBlocksFinder implements BoilerpipeFilter {
 						tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
 						changes = true;
 					}
+				} else if(tb.getLinkDensity() == 1.0) {
+					if(text.equals("Comment")) {
+						tb.addLabel(DefaultLabels.INDICATES_END_OF_TEXT);
+					}
 				}
 			}
 		}
