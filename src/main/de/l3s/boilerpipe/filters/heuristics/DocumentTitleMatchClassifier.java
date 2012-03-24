@@ -44,8 +44,10 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 		} else {
 			
 			title = title.replace('\u00a0', ' ');
+			title = title.replace("'", "");
 			
-			title = title.trim();
+			title = title.trim().toLowerCase();
+			
 			if (title.length() == 0) {
 				this.potentialTitles = null;
 			} else {
@@ -82,6 +84,9 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 				
 				addPotentialTitles(potentialTitles, title, "[ ]+[\\|][ ]+", 4);
 				addPotentialTitles(potentialTitles, title, "[ ]+[\\-][ ]+", 4);
+				
+				potentialTitles.add(title.replaceFirst(" - [^\\-]+$", ""));
+				potentialTitles.add(title.replaceFirst("^[^\\-]+ - ", ""));
 			}
 		}
 	}
@@ -145,7 +150,9 @@ public final class DocumentTitleMatchClassifier implements BoilerpipeFilter {
 			String text = tb.getText();
 			
 			text = text.replace('\u00a0', ' ');
-			text = text.trim();
+			text = text.replace("'", "");
+
+			text = text.trim().toLowerCase();
 
 			if (potentialTitles.contains(text)) {
 				tb.addLabel(DefaultLabels.TITLE);
