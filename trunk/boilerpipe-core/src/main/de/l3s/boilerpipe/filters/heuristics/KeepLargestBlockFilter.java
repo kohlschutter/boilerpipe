@@ -85,6 +85,7 @@ public final class KeepLargestBlockFilter implements BoilerpipeFilter {
 		for (TextBlock tb : textBlocks) {
 			if (tb == largestBlock) {
 				tb.setIsContent(true);
+				tb.addLabel(DefaultLabels.VERY_LIKELY_CONTENT);
 			} else {
 				tb.setIsContent(false);
 				tb.addLabel(DefaultLabels.MIGHT_BE_CONTENT);
