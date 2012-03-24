@@ -17,6 +17,9 @@
  */
 package de.l3s.boilerpipe.sax;
 
+import de.l3s.boilerpipe.labels.DefaultLabels;
+import de.l3s.boilerpipe.labels.LabelAction;
+
 
 /**
  * Default {@link TagAction}s. Seem to work well.
@@ -69,5 +72,15 @@ public class DefaultTagActionMap extends TagActionMap {
 
         // added in 1.1.1
         setTagAction("NOSCRIPT", CommonTagActions.TA_IGNORABLE_ELEMENT);
-}
+        
+        // New in 1.3
+		setTagAction("LI", new CommonTagActions.BlockTagLabelAction(
+				new LabelAction(DefaultLabels.LI)));
+		setTagAction("H1", new CommonTagActions.BlockTagLabelAction(
+				new LabelAction(DefaultLabels.H1, DefaultLabels.HEADING)));
+		setTagAction("H2", new CommonTagActions.BlockTagLabelAction(
+				new LabelAction(DefaultLabels.H2, DefaultLabels.HEADING)));
+		setTagAction("H3", new CommonTagActions.BlockTagLabelAction(
+				new LabelAction(DefaultLabels.H3, DefaultLabels.HEADING)));
+	}
 }

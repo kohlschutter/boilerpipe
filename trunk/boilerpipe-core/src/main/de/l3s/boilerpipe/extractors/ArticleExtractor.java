@@ -26,6 +26,9 @@ import de.l3s.boilerpipe.filters.heuristics.BlockProximityFusion;
 import de.l3s.boilerpipe.filters.heuristics.DocumentTitleMatchClassifier;
 import de.l3s.boilerpipe.filters.heuristics.ExpandTitleToContentFilter;
 import de.l3s.boilerpipe.filters.heuristics.KeepLargestBlockFilter;
+import de.l3s.boilerpipe.filters.heuristics.LargeBlockSameTagLevelToContentFilter;
+import de.l3s.boilerpipe.filters.heuristics.ListAtEndFilter;
+import de.l3s.boilerpipe.filters.heuristics.TrailingHeadlineToBoilerplateFilter;
 import de.l3s.boilerpipe.filters.simple.BoilerplateBlockFilter;
 
 /**
@@ -43,7 +46,7 @@ public final class ArticleExtractor extends ExtractorBase {
     public static ArticleExtractor getInstance() {
         return INSTANCE;
     }
-
+    
     public boolean process(TextDocument doc)
             throws BoilerpipeProcessingException {
         return
@@ -52,10 +55,14 @@ public final class ArticleExtractor extends ExtractorBase {
                 | new DocumentTitleMatchClassifier(doc.getTitle()).process(doc)
                 | NumWordsRulesClassifier.INSTANCE.process(doc)
                 | IgnoreBlocksAfterContentFilter.DEFAULT_INSTANCE.process(doc)
+                | TrailingHeadlineToBoilerplateFilter.INSTANCE.process(doc)
                 | BlockProximityFusion.MAX_DISTANCE_1.process(doc)
                 | BoilerplateBlockFilter.INSTANCE_KEEP_TITLE.process(doc)
-                | BlockProximityFusion.MAX_DISTANCE_1_CONTENT_ONLY.process(doc)
+                | BlockProximityFusion.MAX_DISTANCE_1_CONTENT_ONLY_SAME_TAGLEVEL.process(doc)
                 | KeepLargestBlockFilter.INSTANCE_EXPAND_TO_SAME_TAGLEVEL_MIN_WORDS.process(doc)
-                | ExpandTitleToContentFilter.INSTANCE.process(doc);
+                | ExpandTitleToContentFilter.INSTANCE.process(doc)
+                | LargeBlockSameTagLevelToContentFilter.INSTANCE.process(doc)
+                | ListAtEndFilter.INSTANCE.process(doc)
+        ;
     }
 }
