@@ -1,2 +1,0 @@
-See http://code.google.com/p/boilerpipe/wiki/QuickStart for installation
-instructions.

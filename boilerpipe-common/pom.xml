@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>boilerpipe-common</artifactId>
+  <packaging>jar</packaging>
+  <parent>
+    <groupId>com.kohlschutter.boilerpipe</groupId>
+    <artifactId>boilerpipe-parent</artifactId>
+    <version>2.0-SNAPSHOT</version>
+  </parent>
+  <name>boilerpipe-common</name>
+  <properties>
+    <boilerpipe.parent.base.directory>${project.parent.basedir}</boilerpipe.parent.base.directory>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xercesImpl</artifactId>
+      <version>2.9.1</version>
+    </dependency>
+    <!-- 
+    <dependency>
+      <groupId>net.sourceforge.nekohtml</groupId>
+      <artifactId>nekohtml</artifactId>
+      <version>1.9.13</version>
+    </dependency>
+    -->
+    <dependency>
+      <groupId>com.kohlschutter.boilerpipe</groupId>
+      <artifactId>nekohtml-relocated</artifactId>
+      <version>1.9.13</version>
+    </dependency>
+  </dependencies>
+</project>
