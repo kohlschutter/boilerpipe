@@ -32,7 +32,7 @@ import org.apache.xerces.xni.Augmentations;
  * <p>
  * <strong>Note:</strong>
  * This code is inspired by performance enhancements submitted by
- * Marc-André Morissette.
+ * Marc-Andre Morissette.
  * 
  * @author Andy Clark
  */
