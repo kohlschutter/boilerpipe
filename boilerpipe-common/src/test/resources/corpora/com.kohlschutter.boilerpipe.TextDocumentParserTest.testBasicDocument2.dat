@@ -1,3 +1,1 @@
-[[0-0;tl=3; nw=2;nwl=1;ld=0.0]	boilerplate,null
-hello world, [1-1;tl=4; nw=9;nwl=1;ld=0.44444445]	boilerplate,null
-this is a link and this is mixed content.]
+[TextBlock{isContent=false, text=hello world, labels=null, offsetBlocksStart=0, offsetBlocksEnd=0, numWords=2, numWordsInAnchorText=0, numWordsInWrappedLines=2, numWrappedLines=1, textDensity=2.0, linkDensity=0.0, containedTextElements={2}, numFullTextWords=0, tagLevel=3}, TextBlock{isContent=false, text=this is a link and this is mixed content., labels=null, offsetBlocksStart=1, offsetBlocksEnd=1, numWords=9, numWordsInAnchorText=4, numWordsInWrappedLines=9, numWrappedLines=1, textDensity=9.0, linkDensity=0.44444445, containedTextElements={5, 6, 7, 9, 10}, numFullTextWords=0, tagLevel=4}]
