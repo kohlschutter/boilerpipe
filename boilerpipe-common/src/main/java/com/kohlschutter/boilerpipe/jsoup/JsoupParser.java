@@ -8,6 +8,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.List;
@@ -19,24 +22,35 @@ import static com.kohlschutter.boilerpipe.text.Text.isWord;
  */
 public class JsoupParser {
 
+    public TextDocument parse( InputStream inputStream, String charsetName , String baseUri ) throws IOException {
+        return parse( Jsoup.parse( inputStream, charsetName, baseUri ) );
+    }
+
+    public TextDocument parse( URL url, int timeoutMillis ) throws IOException {
+        return parse( Jsoup.parse( url, timeoutMillis ) );
+    }
+
+    public TextDocument parse( String html ) {
+        return parse( Jsoup.parse( html ) );
+    }
+
     /**
      * Parse the given HTML to return a TextDocument.
      *
-     * @param html
      * @return
      */
-    public TextDocument parse( String html ) {
+    public TextDocument parse( Document document ) {
 
-        Document document = Jsoup.parse( html );
+        String title = document.head().select( "title" ).text();
 
-        String title = null;
         List<TextBlock> textBlocks = new ArrayList<>();
 
         Elements textBlockElements = document.body().select( "div,p" );
 
         for (int offsetBlock = 0; offsetBlock < textBlockElements.size(); offsetBlock++) {
             Element textBlockElement = textBlockElements.get( offsetBlock );
-            createTextBlock( textBlockElement, offsetBlock );
+            TextBlock textBlock = createTextBlock( textBlockElement, offsetBlock );
+            textBlocks.add( textBlock );
         }
 
         return new TextDocument( title, textBlocks );
