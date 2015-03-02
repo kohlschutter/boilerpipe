@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
+import com.kohlschutter.boilerpipe.text.Text;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.Locator;
@@ -33,6 +34,8 @@ import com.kohlschutter.boilerpipe.document.TextBlock;
 import com.kohlschutter.boilerpipe.document.TextDocument;
 import com.kohlschutter.boilerpipe.labels.LabelAction;
 import com.kohlschutter.boilerpipe.util.UnicodeTokenizer;
+
+import static com.kohlschutter.boilerpipe.text.Text.isWord;
 
 /**
  * A simple SAX {@link ContentHandler}, used by {@link BoilerpipeSAXInput}. Can be used by different
@@ -321,7 +324,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
         inAnchorText = true;
       } else if (ANCHOR_TEXT_END.equals(token)) {
         inAnchorText = false;
-      } else if (isWord(token)) {
+      } else if (isWord( token )) {
         numTokens++;
         numWords++;
         numWordsCurrentLine++;
@@ -384,13 +387,6 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
     }
 
     textBlocks.add(tb);
-  }
-
-  private static final Pattern PAT_VALID_WORD_CHARACTER = Pattern
-      .compile("[\\p{L}\\p{Nd}\\p{Nl}\\p{No}]");
-
-  private static boolean isWord(final String token) {
-    return PAT_VALID_WORD_CHARACTER.matcher(token).find();
   }
 
   static private enum Event {
