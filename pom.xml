@@ -206,5 +206,6 @@
     <module>nekohtml-relocated</module>
     <module>boilerpipe-common</module>
     <module>boilerpipe-demo</module>
+    <module>boilerpipe-test-framework</module>
   </modules>
 </project>
