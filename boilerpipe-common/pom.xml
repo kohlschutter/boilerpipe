@@ -13,23 +13,42 @@
   <properties>
     <boilerpipe.parent.base.directory>${project.parent.basedir}</boilerpipe.parent.base.directory>
   </properties>
+
   <dependencies>
+
     <dependency>
       <groupId>xerces</groupId>
       <artifactId>xercesImpl</artifactId>
       <version>2.9.1</version>
     </dependency>
-    <!-- 
+
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.7.3</version>
+    </dependency>
+
+    <!--
     <dependency>
       <groupId>net.sourceforge.nekohtml</groupId>
       <artifactId>nekohtml</artifactId>
       <version>1.9.13</version>
     </dependency>
     -->
+
     <dependency>
       <groupId>com.kohlschutter.boilerpipe</groupId>
       <artifactId>nekohtml-relocated</artifactId>
       <version>1.9.13</version>
     </dependency>
+
+    <dependency>
+      <groupId>com.kohlschutter.boilerpipe</groupId>
+      <artifactId>boilerpipe-test-framework</artifactId>
+      <version>2.0-SNAPSHOT</version>
+      <scope>test</scope>
+    </dependency>
+
   </dependencies>
+
 </project>
