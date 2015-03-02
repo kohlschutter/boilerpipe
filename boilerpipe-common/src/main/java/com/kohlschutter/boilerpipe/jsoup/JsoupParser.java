@@ -41,7 +41,11 @@ public class JsoupParser {
      */
     public TextDocument parse( Document document ) {
 
-        String title = document.head().select( "title" ).text();
+        String title = document.head().select( "title" ).text().trim();
+
+        if ( "".equals( title ) ) {
+            title = null;
+        }
 
         List<TextBlock> textBlocks = new ArrayList<>();
 
