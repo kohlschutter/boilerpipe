@@ -1,6 +1,7 @@
 package com.kohlschutter.boilerpipe.jsoup;
 
 import org.jsoup.nodes.Element;
+import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 
 import java.util.*;
@@ -25,20 +26,39 @@ public class TextNodeListHTMLFormatter {
 
         for (TextNode textNode : textNodes) {
 
-            Element parent = (Element)textNode.parent();
+            // text nodes have a container element that holds them.  For example
+            // if we have <b>hello</b> then the text node would be just 'hello'
+            // and the container would be <b>
 
-            Element holder = rootToHolderIndex.get( parent );
+            Element container = (Element)textNode.parent();
+            Element containerParent = container.parent();
+
+            Element holder = rootToHolderIndex.get( container );
+
+            Node childToAppend = textNode;
+
+            if ( holder == null && rootToHolderIndex.containsKey( containerParent ) ) {
+                holder = rootToHolderIndex.get( containerParent );
+
+                Element copy = createShallowAndEmptyCopy( container );
+                copy.appendChild( textNode );
+
+                childToAppend = copy;
+            }
 
             if ( holder == null ) {
 
-                holder = createShallowAndEmptyCopy( parent );
+                holder = createShallowAndEmptyCopy( container );
 
                 rootHolders.add( holder );
-                rootToHolderIndex.put( parent, holder );
+                rootToHolderIndex.put( container, holder );
+
+                childToAppend = textNode.clone();
 
             }
 
-            holder.appendChild( textNode.clone() );
+
+            holder.appendChild( childToAppend );
 
         }
 
