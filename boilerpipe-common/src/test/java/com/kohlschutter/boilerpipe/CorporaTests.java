@@ -1,13 +1,19 @@
 package com.kohlschutter.boilerpipe;
 
+import com.javafx.tools.doclets.internal.toolkit.util.TextTag;
 import com.kohlschutter.boilerpipe.corpora.CorporaAsserter;
 import com.kohlschutter.boilerpipe.corpora.CorporaCache;
+import com.kohlschutter.boilerpipe.document.TextDocument;
 import com.kohlschutter.boilerpipe.extractors.ArticleExtractor;
+import com.kohlschutter.boilerpipe.jsoup.JsoupParser;
+import com.kohlschutter.boilerpipe.sax.BoilerpipeSAXInput;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.junit.Test;
+import org.xml.sax.InputSource;
 
 import java.io.IOException;
+import java.io.StringReader;
 import java.net.URL;
 
 /**
@@ -35,7 +41,11 @@ public class CorporaTests {
 
         ArticleExtractor articleExtractor = ArticleExtractor.getInstance();
 
-        corporaAsserter.assertCorpora( key, articleExtractor.getText( html ) );
+        //TextDocument textDocumentFromNeko = new BoilerpipeSAXInput(new InputSource(new StringReader(html))).getTextDocument();
+
+        TextDocument textDocumentFromJsoup = new JsoupParser().parse( html );
+
+        corporaAsserter.assertCorpora( key, articleExtractor.getText( textDocumentFromJsoup ) );
 
     }
 

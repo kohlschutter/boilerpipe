@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 /**
  *
  */
-public class NekoVsJSoupTest {
+public class SimpleNekoVsJSoupTest {
 
     @Test
     public void testBasicDocument1() throws Exception {

@@ -19,8 +19,7 @@ public class Parsers {
 
         final HTMLDocument htmlDoc = HTMLFetcher.fetch( url );
 
-        return new BoilerpipeSAXInput(htmlDoc.toInputSource())
-                 .getTextDocument();
+        return new BoilerpipeSAXInput( htmlDoc.toInputSource() ).getTextDocument();
 
     }
 
