@@ -20,7 +20,8 @@ public class TextNodeListHTMLFormatter {
         // keep an index from the parent node of the text node to a 'holder'
         // clone element which is a copy of the parent but just contains its
         // markup and not the actual element.
-        Map<Element,Element> rootToHolderIndex = new HashMap<>();
+
+        Map<Element,Element> holderIndex = new HashMap<>();
 
         StringBuilder buff = new StringBuilder();
 
@@ -33,15 +34,19 @@ public class TextNodeListHTMLFormatter {
             Element container = (Element)textNode.parent();
             Element containerParent = container.parent();
 
-            Element holder = rootToHolderIndex.get( container );
+            Element holder = holderIndex.get( container );
 
             Node childToAppend = textNode;
 
-            if ( holder == null && rootToHolderIndex.containsKey( containerParent ) ) {
-                holder = rootToHolderIndex.get( containerParent );
+            if ( holder == null && holderIndex.containsKey( containerParent ) ) {
+                holder = holderIndex.get( containerParent );
 
                 Element copy = createShallowAndEmptyCopy( container );
                 copy.appendChild( textNode );
+
+                // we need an index of ALL elements because we are NOT sure if a
+                // text node later in the chain could become a holder
+                holderIndex.put( container, copy );
 
                 childToAppend = copy;
             }
@@ -51,7 +56,7 @@ public class TextNodeListHTMLFormatter {
                 holder = createShallowAndEmptyCopy( container );
 
                 rootHolders.add( holder );
-                rootToHolderIndex.put( container, holder );
+                holderIndex.put( container, holder );
 
                 childToAppend = textNode.clone();
 
