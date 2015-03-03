@@ -30,7 +30,6 @@ public class CorporaAsserter {
 
     public void assertCorpora( String key, String actual ) throws IOException {
 
-
         if ( UPDATE_MODE ) {
 
             corporaCache.write( key, actual );

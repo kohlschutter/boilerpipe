@@ -44,8 +44,7 @@ public class CorporaTests {
 
         TextDocument textDocumentFromJsoup = new JsoupParser().parse( html );
 
-        // + "-text"
-        corporaAsserter.assertCorpora( key , articleExtractor.getText( textDocumentFromJsoup ) );
+        corporaAsserter.assertCorpora( key + "-text", articleExtractor.getText( textDocumentFromJsoup ) );
 
     }
 
