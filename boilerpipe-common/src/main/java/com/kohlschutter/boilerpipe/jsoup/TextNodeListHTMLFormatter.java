@@ -1,6 +1,5 @@
 package com.kohlschutter.boilerpipe.jsoup;
 
-import org.jsoup.nodes.Element;
 import org.jsoup.nodes.TextNode;
 
 import java.util.List;

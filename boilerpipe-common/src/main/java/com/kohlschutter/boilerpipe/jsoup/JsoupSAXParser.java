@@ -1,7 +1,5 @@
 package com.kohlschutter.boilerpipe.jsoup;
 
-import com.kohlschutter.boilerpipe.document.TextDocument;
-import com.kohlschutter.boilerpipe.sax.BoilerpipeHTMLContentHandler;
 import com.kohlschutter.boilerpipe.sax.ExtendedContentHandler;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
