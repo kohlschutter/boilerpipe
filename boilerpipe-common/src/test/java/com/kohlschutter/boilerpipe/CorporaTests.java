@@ -33,7 +33,7 @@ public class CorporaTests {
 
     private void test( String link, String key ) throws Exception {
         testContentAsText( link, key );
-        //testContentAsHTML( link, key );
+        testContentAsHTML( link, key );
     }
 
     private void testContentAsText(String link, String key) throws Exception {
@@ -55,7 +55,7 @@ public class CorporaTests {
         ArticleExtractor articleExtractor = ArticleExtractor.getInstance();
 
         TextDocument textDocumentFromJsoup = new JsoupParser().parse( html );
-        corporaAsserter.assertCorpora( key, articleExtractor.getHTML( textDocumentFromJsoup ) );
+        corporaAsserter.assertCorpora( key + "-html", articleExtractor.getHTML( textDocumentFromJsoup ) );
 
     }
 
