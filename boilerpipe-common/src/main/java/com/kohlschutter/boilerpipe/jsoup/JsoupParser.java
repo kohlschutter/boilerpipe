@@ -2,6 +2,8 @@ package com.kohlschutter.boilerpipe.jsoup;
 
 import com.kohlschutter.boilerpipe.document.TextBlock;
 import com.kohlschutter.boilerpipe.document.TextDocument;
+import com.kohlschutter.boilerpipe.sax.DefaultTagActionMap;
+import com.kohlschutter.boilerpipe.sax.TagAction;
 import com.kohlschutter.boilerpipe.text.Text;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -14,6 +16,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.List;
+import java.util.Map;
 
 import static com.kohlschutter.boilerpipe.text.Text.isWord;
 
@@ -21,6 +24,16 @@ import static com.kohlschutter.boilerpipe.text.Text.isWord;
  *
  */
 public class JsoupParser {
+
+    private final Map<String, TagAction> tagActions;
+
+    public JsoupParser() {
+        this( DefaultTagActionMap.INSTANCE);
+    }
+
+    public JsoupParser(Map<String, TagAction> tagActions) {
+        this.tagActions = tagActions;
+    }
 
     public TextDocument parse( InputStream inputStream, String charsetName , String baseUri ) throws IOException {
         return parse( Jsoup.parse( inputStream, charsetName, baseUri ) );
@@ -52,9 +65,14 @@ public class JsoupParser {
         Elements textBlockElements = document.body().select( "div,p" );
 
         for (int offsetBlock = 0; offsetBlock < textBlockElements.size(); offsetBlock++) {
+
             Element textBlockElement = textBlockElements.get( offsetBlock );
+
             TextBlock textBlock = createTextBlock( textBlockElement, offsetBlock );
-            textBlocks.add( textBlock );
+
+            if ( textBlock != null )
+                textBlocks.add( textBlock );
+
         }
 
         return new TextDocument( title, textBlocks );

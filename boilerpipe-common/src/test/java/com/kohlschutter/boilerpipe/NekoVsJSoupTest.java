@@ -1,7 +1,9 @@
 package com.kohlschutter.boilerpipe;
 
 import com.kohlschutter.boilerpipe.corpora.Formatter;
+import com.kohlschutter.boilerpipe.document.TextBlocks;
 import com.kohlschutter.boilerpipe.document.TextDocument;
+import com.kohlschutter.boilerpipe.jsoup.JsoupContentHandlerParser;
 import com.kohlschutter.boilerpipe.jsoup.JsoupParser;
 import com.kohlschutter.boilerpipe.sax.BoilerpipeSAXInput;
 import com.kohlschutter.boilerpipe.sax.HTMLDocument;
@@ -51,6 +53,9 @@ public class NekoVsJSoupTest {
 
         assertEquals( td0.getTitle(), td1.getTitle() );
 
+        assertEquals( table( TextBlocks.text( td0.getTextBlocks() ) ),
+                      table( TextBlocks.text( td1.getTextBlocks() ) ) );
+
         assertEquals( table( td0.getTextBlocks() ),
                       table( td1.getTextBlocks() ) );
 
@@ -69,7 +74,8 @@ public class NekoVsJSoupTest {
 
     private TextDocument parseWithJSoup( String path ) throws Exception {
 
-        JsoupParser jsoupParser = new JsoupParser();
+        //JsoupParser jsoupParser = new JsoupParser();
+        JsoupContentHandlerParser jsoupParser = new JsoupContentHandlerParser();
 
         TextDocument textDocument = jsoupParser.parse( getClass().getResourceAsStream( path ), "UTF-8", "http://example.com" );
 
