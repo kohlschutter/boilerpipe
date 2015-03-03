@@ -17,6 +17,8 @@
  */
 package com.kohlschutter.boilerpipe.document;
 
+import org.jsoup.select.Elements;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,6 +89,9 @@ public class TextDocument implements Cloneable {
     return getHTML( true, false );
   }
 
+  public Elements getContentAsHTMLElements() {
+    return getHTMLElements( true, false );
+  }
 
   /**
    * Returns the {@link TextDocument}'s content, non-content or both
@@ -128,6 +133,21 @@ public class TextDocument implements Cloneable {
     return sb.toString();
 
   }
+
+  public Elements getHTMLElements(boolean includeContent, boolean includeNonContent) {
+
+    Elements result = new Elements();
+
+    List<TextBlock> textBlocks = filterTextBlocks( includeContent, includeNonContent );
+
+    for (TextBlock textBlock : textBlocks) {
+      result.addAll( textBlock.getElements() );
+    }
+
+    return result;
+
+  }
+
 
 
   public List<TextBlock> filterTextBlocks(boolean includeContent, boolean includeNonContent) {

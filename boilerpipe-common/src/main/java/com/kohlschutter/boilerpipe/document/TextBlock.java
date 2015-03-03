@@ -19,9 +19,11 @@ package com.kohlschutter.boilerpipe.document;
 
 import java.util.*;
 
+import com.kohlschutter.boilerpipe.jsoup.ElementsConverter;
 import com.kohlschutter.boilerpipe.jsoup.TextNodeListHTMLFormatter;
 import com.kohlschutter.boilerpipe.labels.DefaultLabels;
 import org.jsoup.nodes.TextNode;
+import org.jsoup.select.Elements;
 
 /**
  * Describes a block of text.
@@ -106,6 +108,16 @@ public class TextBlock implements Cloneable {
     return TextNodeListHTMLFormatter.format( textNodes );
 
   }
+
+  /**
+   * Convert this TextBlock into a set of Elements from JSoup.
+   */
+  public Elements getElements() {
+
+    return ElementsConverter.convert( textNodes );
+
+  }
+
 
   public int getNumWords() {
     return numWords;
