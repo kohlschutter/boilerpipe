@@ -32,8 +32,8 @@ public class CorporaTests {
     }
 
     private void test( String link, String key ) throws Exception {
-        //testContentAsText( link, key );
-        testContentAsHTML( link, key );
+        testContentAsText( link, key );
+        //testContentAsHTML( link, key );
     }
 
     private void testContentAsText(String link, String key) throws Exception {
@@ -42,11 +42,10 @@ public class CorporaTests {
 
         ArticleExtractor articleExtractor = ArticleExtractor.getInstance();
 
-        //TextDocument textDocumentFromNeko = new BoilerpipeSAXInput(new InputSource(new StringReader(html))).getTextDocument();
-
         TextDocument textDocumentFromJsoup = new JsoupParser().parse( html );
 
-        corporaAsserter.assertCorpora( key, articleExtractor.getText( textDocumentFromJsoup ) );
+        // + "-text"
+        corporaAsserter.assertCorpora( key , articleExtractor.getText( textDocumentFromJsoup ) );
 
     }
 
@@ -56,15 +55,8 @@ public class CorporaTests {
 
         ArticleExtractor articleExtractor = ArticleExtractor.getInstance();
 
-        //TextDocument textDocumentFromNeko = new BoilerpipeSAXInput(new InputSource(new StringReader(html))).getTextDocument();
-
-        TextDocument textDocumentFromJsoup;
-
-        //textDocumentFromJsoup = new JsoupParser().parse( html );
-        //corporaAsserter.assertCorpora( key, articleExtractor.getHTML( textDocumentFromJsoup ) );
-
-        textDocumentFromJsoup = new JsoupParser().parse( html );
-        corporaAsserter.assertCorpora( key, articleExtractor.getText( textDocumentFromJsoup ) );
+        TextDocument textDocumentFromJsoup = new JsoupParser().parse( html );
+        corporaAsserter.assertCorpora( key, articleExtractor.getHTML( textDocumentFromJsoup ) );
 
     }
 
