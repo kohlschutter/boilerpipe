@@ -20,10 +20,6 @@ import java.net.URL;
  */
 public class JsoupParser {
 
-    // the namespace isn't actually used by boilerpipe but required by the SAX
-    // API.
-    private static final String NAMESPACE = "http://www.w3.org/1999/xhtml";
-
     public TextDocument parse( InputStream inputStream, String charsetName , String baseUri ) throws IOException, SAXException {
         return parse( Jsoup.parse( inputStream, charsetName, baseUri ) );
     }
@@ -43,56 +39,13 @@ public class JsoupParser {
      */
     public TextDocument parse( Document document ) throws SAXException {
 
-        // TODO: take an Extended Content Handler NOT a BoilerpipeHTMLContentHandler
-        // so that we can test this.  Probably break this into a
-        // JSoupTextDocumentParser and a JSoupSAXParser.
         BoilerpipeHTMLContentHandler contentHandler = new BoilerpipeHTMLContentHandler();
 
-        contentHandler.startDocument();
+        JsoupSAXParser jsoupSAXParser = new JsoupSAXParser( contentHandler );
 
-        for (Element element : document.children()) {
-            handle( element, contentHandler );
-        }
-
-        contentHandler.endDocument();
+        jsoupSAXParser.parse( document );
 
         return contentHandler.toTextDocument();
-
-    }
-
-    public void handle( Element element, ExtendedContentHandler contentHandler) throws SAXException {
-
-        String localName = element.tagName().toUpperCase();
-
-        Attributes attributes = new AttributesImpl( element.attributes() );
-
-        contentHandler.startElement( NAMESPACE, localName, localName, attributes );
-
-        contentHandler.startElement( element );
-
-        for ( Node current : element.childNodes() ) {
-
-            if ( current instanceof Element ) {
-
-                Element currentElement = (Element)current;
-
-                handle( currentElement, contentHandler );
-
-            }
-
-            if ( current instanceof TextNode) {
-
-                TextNode currentTextNode = (TextNode)current;
-                char[] chars = currentTextNode.text().toCharArray();
-
-                contentHandler.textNode( currentTextNode );
-                contentHandler.characters( chars, 0, chars.length );
-
-            }
-
-        }
-
-        contentHandler.endElement( NAMESPACE, localName, localName );
 
     }
 
