@@ -3,6 +3,7 @@ package com.kohlschutter.boilerpipe.jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
+import org.jsoup.select.Elements;
 
 import java.util.*;
 
@@ -15,7 +16,8 @@ public class TextNodeListHTMLFormatter {
 
         // a list of roots which are actually element holders which contain all
         // the child nodes in the index.
-        List<Element> rootHolders = new ArrayList<>();
+
+        Elements roots = new Elements();
 
         // keep an index from the parent node of the text node to a 'holder'
         // clone element which is a copy of the parent but just contains its
@@ -55,7 +57,7 @@ public class TextNodeListHTMLFormatter {
 
                 holder = createShallowAndEmptyCopy( container );
 
-                rootHolders.add( holder );
+                roots.add( holder );
                 holderIndex.put( container, holder );
 
                 childToAppend = textNode.clone();
@@ -67,7 +69,7 @@ public class TextNodeListHTMLFormatter {
 
         }
 
-        for (Element rootHolder : rootHolders) {
+        for (Element rootHolder : roots) {
             buff.append( rootHolder.outerHtml() );
         }
 

@@ -1,8 +1,10 @@
 package com.kohlschutter.boilerpipe.jsoup;
 
 import com.kohlschutter.boilerpipe.sax.DefaultExtendedContentHandler;
+import org.jsoup.nodes.Attribute;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.TextNode;
+import org.xml.sax.SAXException;
 
 /**
  * Simple pretty printer for HTML which uses the parsed DOM to print elements
@@ -10,13 +12,25 @@ import org.jsoup.nodes.TextNode;
  */
 public class HTMLPrettyPrinter {
 
-    public String format( Element root ) {
+    public static String format( Element root ) {
 
-        return null;
+        try {
+
+            PrintingContentHandler printingContentHandler = new PrintingContentHandler();
+
+            JsoupSAXParser jsoupSAXParser = new JsoupSAXParser( printingContentHandler );
+
+            jsoupSAXParser.parse( root );
+
+            return printingContentHandler.buff.toString();
+
+        } catch (SAXException e) {
+            throw new RuntimeException( e );
+        }
 
     }
 
-    class PrintingContentHandler extends DefaultExtendedContentHandler {
+    static class PrintingContentHandler extends DefaultExtendedContentHandler {
 
         StringBuilder buff = new StringBuilder();
 
@@ -25,21 +39,33 @@ public class HTMLPrettyPrinter {
 
             buff.append( "<" );
             buff.append( element.tagName() );
-            buff.append( ">" );
+
+            for (Attribute attribute : element.attributes().asList()) {
+
+                buff.append( "  " );
+                buff.append( attribute.getKey() );
+                buff.append( "=\"" );
+                buff.append( attribute.getValue() );
+                buff.append( "=\"\n" );
+
+            }
+
+            buff.append( ">\n" );
 
         }
 
         @Override
         public void endElement(Element element) {
 
-            buff.append( "</" );
+            buff.append( "\n</" );
             buff.append( element.tagName() );
-            buff.append( "/>" );
+            buff.append( "/>\n" );
 
         }
 
         @Override
         public void textNode(TextNode textNode) {
+            buff.append( textNode.text() );
         }
 
     }
