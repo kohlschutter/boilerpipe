@@ -14,7 +14,6 @@ public class TextVsHTMLTest {
 
         ArticleExtractor articleExtractor = ArticleExtractor.getInstance();
 
-
         TextDocument td;
         td = Parsers.parseWithJSoup( "/test3.html" );
         String text = articleExtractor.getText( td );

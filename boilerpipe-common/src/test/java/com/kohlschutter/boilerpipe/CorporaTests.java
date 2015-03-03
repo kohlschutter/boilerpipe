@@ -60,8 +60,8 @@ public class CorporaTests {
 
         TextDocument textDocumentFromJsoup;
 
-        textDocumentFromJsoup = new JsoupParser().parse( html );
-        corporaAsserter.assertCorpora( key, articleExtractor.getHTML( textDocumentFromJsoup ) );
+        //textDocumentFromJsoup = new JsoupParser().parse( html );
+        //corporaAsserter.assertCorpora( key, articleExtractor.getHTML( textDocumentFromJsoup ) );
 
         textDocumentFromJsoup = new JsoupParser().parse( html );
         corporaAsserter.assertCorpora( key, articleExtractor.getText( textDocumentFromJsoup ) );
