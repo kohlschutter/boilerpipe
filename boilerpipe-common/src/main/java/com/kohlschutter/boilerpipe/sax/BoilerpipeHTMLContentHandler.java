@@ -40,8 +40,9 @@ import com.kohlschutter.boilerpipe.util.UnicodeTokenizer;
 import static com.kohlschutter.boilerpipe.text.Text.isWord;
 
 /**
- * A simple SAX {@link ContentHandler}, used by {@link BoilerpipeSAXInput}. Can be used by different
- * parser implementations, e.g. NekoHTML and TagSoup.
+ * A simple SAX {@link ContentHandler}, used by {@link BoilerpipeSAXInput}. Can
+ * be used by different parser implementations, e.g. NekoHTML and TagSoup and
+ * JSoup.
  */
 public class BoilerpipeHTMLContentHandler implements ContentHandler {
 
@@ -59,16 +60,20 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
   int inIgnorableElement = 0;
 
   int tagLevel = 0;
+
   int blockTagLevel = -1;
 
   boolean sbLastWasWhitespace = false;
+
   private int textElementIdx = 0;
 
   private final List<TextBlock> textBlocks = new ArrayList<>();
 
   private String lastStartTag = null;
+
   @SuppressWarnings("unused")
   private String lastEndTag = null;
+
   @SuppressWarnings("unused")
   private Event lastEvent = null;
 
@@ -77,10 +82,14 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 
   private List<TextNode> currentTextNodes = new ArrayList<>();
 
+  private TextNode currentTextNode;
+
   private boolean flush = false;
+
   boolean inAnchorText = false;
 
   LinkedList<LinkedList<LabelAction>> labelStacks = new LinkedList<>();
+
   LinkedList<Integer> fontSizeStack = new LinkedList<>();
 
   /**
@@ -284,8 +293,9 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
       blockTagLevel = tagLevel;
     }
 
-    textBuffer.append(ch, start, length);
+    textBuffer.append( ch, start, length );
     tokenBuffer.append(ch, start, length);
+
     if (endWhitespace) {
       textBuffer.append(' ');
       tokenBuffer.append(' ');
@@ -295,6 +305,8 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
     lastEvent = Event.CHARACTERS;
 
     currentContainedTextElements.set(textElementIdx);
+
+    currentTextNodes.add( currentTextNode );
 
   }
 
@@ -306,7 +318,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
    */
   public void textNode( TextNode textNode ) {
 
-    currentTextNodes.add( textNode );
+    currentTextNode = textNode;
 
   }
 
@@ -315,13 +327,18 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
   }
 
   public void flushBlock() {
+
     if (inBody == 0) {
+
       if ("TITLE".equalsIgnoreCase(lastStartTag) && inBody == 0) {
         setTitle(tokenBuffer.toString().trim());
       }
+
       textBuffer.setLength(0);
       tokenBuffer.setLength(0);
+
       return;
+
     }
 
     final int length = tokenBuffer.length();
@@ -379,8 +396,6 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
       numWordsInWrappedLines = numWords - numWordsCurrentLine;
     }
 
-    //if ( currentElement == null ) throw new RuntimeException( "FIXME" );
-
     TextBlock tb = new TextBlock( currentTextNodes,
                                   textBuffer.toString().trim(),
                                   currentContainedTextElements,
@@ -398,9 +413,10 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
     textBuffer.setLength(0);
     tokenBuffer.setLength(0);
 
-    tb.setTagLevel(blockTagLevel);
+    tb.setTagLevel( blockTagLevel );
     addTextBlock(tb);
     blockTagLevel = -1;
+
   }
 
   protected void addTextBlock(final TextBlock tb) {
@@ -463,7 +479,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
   public void addLabelAction(final LabelAction la) throws IllegalStateException {
     LinkedList<LabelAction> labelStack = labelStacks.getLast();
     if (labelStack == null) {
-      labelStack = new LinkedList<LabelAction>();
+      labelStack = new LinkedList<>();
       labelStacks.removeLast();
       labelStacks.add(labelStack);
     }

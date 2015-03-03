@@ -32,11 +32,11 @@ public class CorporaTests {
     }
 
     private void test( String link, String key ) throws Exception {
-        testContent( link, key );
-        //testContentAsHTML( link, key );
+        //testContentAsText( link, key );
+        testContentAsHTML( link, key );
     }
 
-    private void testContent(String link, String key) throws Exception {
+    private void testContentAsText(String link, String key) throws Exception {
 
         String html = read( link );
 
@@ -58,9 +58,13 @@ public class CorporaTests {
 
         //TextDocument textDocumentFromNeko = new BoilerpipeSAXInput(new InputSource(new StringReader(html))).getTextDocument();
 
-        TextDocument textDocumentFromJsoup = new JsoupParser().parse( html );
+        TextDocument textDocumentFromJsoup;
 
+        textDocumentFromJsoup = new JsoupParser().parse( html );
         corporaAsserter.assertCorpora( key, articleExtractor.getHTML( textDocumentFromJsoup ) );
+
+        textDocumentFromJsoup = new JsoupParser().parse( html );
+        corporaAsserter.assertCorpora( key, articleExtractor.getText( textDocumentFromJsoup ) );
 
     }
 

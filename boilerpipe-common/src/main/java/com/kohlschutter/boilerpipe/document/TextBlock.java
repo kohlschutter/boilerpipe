@@ -19,8 +19,8 @@ package com.kohlschutter.boilerpipe.document;
 
 import java.util.*;
 
+import com.kohlschutter.boilerpipe.jsoup.TextNodeListHTMLFormatter;
 import com.kohlschutter.boilerpipe.labels.DefaultLabels;
-import org.jsoup.nodes.Element;
 import org.jsoup.nodes.TextNode;
 
 /**
@@ -30,6 +30,11 @@ import org.jsoup.nodes.TextNode;
  * HTML markup) or a compound of such atomic elements.
  */
 public class TextBlock implements Cloneable {
+
+  private static final BitSet EMPTY_BITSET = new BitSet();
+  public static final TextBlock EMPTY_START = new TextBlock( null, "", EMPTY_BITSET, 0, 0, 0, 0, -1 );
+  public static final TextBlock EMPTY_END = new TextBlock( null, "", EMPTY_BITSET, 0, 0, 0, 0, Integer.MAX_VALUE );
+
   boolean isContent = false;
   private CharSequence text;
   Set<String> labels = null;
@@ -47,11 +52,8 @@ public class TextBlock implements Cloneable {
   BitSet containedTextElements;
 
   private int numFullTextWords = 0;
-  private int tagLevel;
 
-  private static final BitSet EMPTY_BITSET = new BitSet();
-  public static final TextBlock EMPTY_START = new TextBlock( null, "", EMPTY_BITSET, 0, 0, 0, 0, -1 );
-  public static final TextBlock EMPTY_END = new TextBlock( null, "", EMPTY_BITSET, 0, 0, 0, 0, Integer.MAX_VALUE );
+  private int tagLevel;
 
   private List<TextNode> textNodes = new ArrayList<>();
 
@@ -101,16 +103,7 @@ public class TextBlock implements Cloneable {
 
   public String getHTML() {
 
-    StringBuilder buff = new StringBuilder();
-
-    for (TextNode textNode : textNodes) {
-      Element element = (Element)textNode.parent();
-
-      buff.append( element.html() );
-
-    }
-
-    return buff.toString();
+    return TextNodeListHTMLFormatter.format( textNodes );
 
   }
 
@@ -137,6 +130,8 @@ public class TextBlock implements Cloneable {
     StringBuilder sb = (StringBuilder) text;
     sb.append('\n');
     sb.append(other.text);
+
+    textNodes.addAll( other.textNodes );
 
     numWords += other.numWords;
     numWordsInAnchorText += other.numWordsInAnchorText;
@@ -319,4 +314,5 @@ public class TextBlock implements Cloneable {
   public void setTagLevel(int tagLevel) {
     this.tagLevel = tagLevel;
   }
+
 }

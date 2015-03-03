@@ -79,11 +79,10 @@ public class JsoupParser {
             if ( current instanceof TextNode) {
 
                 TextNode currentTextNode = (TextNode)current;
-
                 char[] chars = currentTextNode.text().toCharArray();
 
-                contentHandler.characters( chars, 0, chars.length );
                 contentHandler.textNode( currentTextNode );
+                contentHandler.characters( chars, 0, chars.length );
 
             }
 

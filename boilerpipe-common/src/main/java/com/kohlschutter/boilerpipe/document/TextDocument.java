@@ -80,11 +80,11 @@ public class TextDocument implements Cloneable {
    * @return The content text.
    */
   public String getContent() {
-    return getText(true, false);
+    return getText( true, false );
   }
 
   public String getContentAsHTML() {
-    return getHTML(true, false);
+    return getHTML( true, false );
   }
 
 
@@ -102,7 +102,8 @@ public class TextDocument implements Cloneable {
     List<TextBlock> textBlocks = filterTextBlocks( includeContent, includeNonContent );
 
     for (TextBlock textBlock : textBlocks) {
-      sb.append(textBlock.getText());
+      String text = textBlock.getText();
+      sb.append(text);
       sb.append('\n');
 
     }
@@ -118,7 +119,8 @@ public class TextDocument implements Cloneable {
     List<TextBlock> textBlocks = filterTextBlocks( includeContent, includeNonContent );
 
     for (TextBlock textBlock : textBlocks) {
-      sb.append(textBlock.getHTML());
+      String html = textBlock.getHTML();
+      sb.append(html);
       sb.append('\n');
 
     }
@@ -164,7 +166,7 @@ public class TextDocument implements Cloneable {
   }
 
   public TextDocument clone() {
-    final List<TextBlock> list = new ArrayList<TextBlock>(textBlocks.size());
+    final List<TextBlock> list = new ArrayList<>(textBlocks.size());
     for (TextBlock tb : textBlocks) {
       list.add(tb.clone());
     }
