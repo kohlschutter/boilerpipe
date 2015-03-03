@@ -41,8 +41,8 @@ public class NekoVsJSoupTest {
 
     private void test( String path ) throws Exception {
 
-        TextDocument td0 = parseWithNeko( path );
-        TextDocument td1 = parseWithJSoup( path );
+        TextDocument td0 = Parsers.parseWithNeko( path );
+        TextDocument td1 = Parsers.parseWithJSoup( path );
 
         assertNotNull( td0 );
         assertNotNull( td1 );
@@ -57,26 +57,6 @@ public class NekoVsJSoupTest {
 
     }
 
-    private TextDocument parseWithNeko(String path) throws Exception {
 
-        URL url = getClass().getResource( path );
-
-        final HTMLDocument htmlDoc = HTMLFetcher.fetch( url );
-
-        return new BoilerpipeSAXInput(htmlDoc.toInputSource())
-                 .getTextDocument();
-
-    }
-
-    private TextDocument parseWithJSoup( String path ) throws Exception {
-
-        //JsoupParser jsoupParser = new JsoupParser();
-        JsoupParser jsoupParser = new JsoupParser();
-
-        TextDocument textDocument = jsoupParser.parse( getClass().getResourceAsStream( path ), "UTF-8", "http://example.com" );
-
-        return textDocument;
-
-    }
 
 }
