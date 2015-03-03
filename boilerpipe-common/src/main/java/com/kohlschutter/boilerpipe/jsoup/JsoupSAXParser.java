@@ -51,11 +51,11 @@ public class JsoupSAXParser {
      *
      * @return
      */
-    public void parse( Document document ) throws SAXException {
+    public void parse( Element root ) throws SAXException {
 
         contentHandler.startDocument();
 
-        for (Element element : document.children()) {
+        for (Element element : root.children()) {
             handle( element );
         }
 
