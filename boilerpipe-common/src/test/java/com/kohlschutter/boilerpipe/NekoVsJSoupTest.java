@@ -1,20 +1,16 @@
 package com.kohlschutter.boilerpipe;
 
-import com.kohlschutter.boilerpipe.corpora.Formatter;
 import com.kohlschutter.boilerpipe.document.TextBlocks;
 import com.kohlschutter.boilerpipe.document.TextDocument;
 import com.kohlschutter.boilerpipe.jsoup.JsoupContentHandlerParser;
-import com.kohlschutter.boilerpipe.jsoup.JsoupParser;
 import com.kohlschutter.boilerpipe.sax.BoilerpipeSAXInput;
 import com.kohlschutter.boilerpipe.sax.HTMLDocument;
 import com.kohlschutter.boilerpipe.sax.HTMLFetcher;
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.net.URL;
-import java.text.Format;
 
-import static com.kohlschutter.boilerpipe.corpora.Formatter.table;
+import static com.kohlschutter.boilerpipe.corpora.Formatter.*;
 import static org.junit.Assert.*;
 
 /**
