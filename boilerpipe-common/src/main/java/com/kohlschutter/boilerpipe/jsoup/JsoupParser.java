@@ -2,6 +2,7 @@ package com.kohlschutter.boilerpipe.jsoup;
 
 import com.kohlschutter.boilerpipe.document.TextDocument;
 import com.kohlschutter.boilerpipe.sax.BoilerpipeHTMLContentHandler;
+import com.kohlschutter.boilerpipe.sax.ExtendedContentHandler;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -42,6 +43,9 @@ public class JsoupParser {
      */
     public TextDocument parse( Document document ) throws SAXException {
 
+        // TODO: take an Extended Content Handler NOT a BoilerpipeHTMLContentHandler
+        // so that we can test this.  Probably break this into a
+        // JSoupTextDocumentParser and a JSoupSAXParser.
         BoilerpipeHTMLContentHandler contentHandler = new BoilerpipeHTMLContentHandler();
 
         contentHandler.startDocument();
@@ -56,7 +60,7 @@ public class JsoupParser {
 
     }
 
-    public void handle( Element element, BoilerpipeHTMLContentHandler contentHandler) throws SAXException {
+    public void handle( Element element, ExtendedContentHandler contentHandler) throws SAXException {
 
         String localName = element.tagName().toUpperCase();
 

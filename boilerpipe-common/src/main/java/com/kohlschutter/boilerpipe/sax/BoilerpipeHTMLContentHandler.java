@@ -134,16 +134,16 @@ public class BoilerpipeHTMLContentHandler implements ExtendedContentHandler {
     this.tagActions = tagActions;
   }
 
-  // @Override
+  @Override
   public void endDocument() throws SAXException {
     flushBlock();
   }
 
-  // @Override
+  @Override
   public void endPrefixMapping(String prefix) throws SAXException {
   }
 
-  // @Override
+  @Override
   public void ignorableWhitespace(char[] ch, int start, int length) throws SAXException {
     if (!sbLastWasWhitespace) {
       textBuffer.append(' ');
@@ -152,27 +152,27 @@ public class BoilerpipeHTMLContentHandler implements ExtendedContentHandler {
     sbLastWasWhitespace = true;
   }
 
-  // @Override
+  @Override
   public void processingInstruction(String target, String data) throws SAXException {
   }
 
-  // @Override
+  @Override
   public void setDocumentLocator(Locator locator) {
   }
 
-  // @Override
+  @Override
   public void skippedEntity(String name) throws SAXException {
   }
 
-  // @Override
+  @Override
   public void startDocument() throws SAXException {
   }
 
-  // @Override
+  @Override
   public void startPrefixMapping(String prefix, String uri) throws SAXException {
   }
 
-  // @Override
+  @Override
   public void startElement(String uri, String localName, String qName, Attributes atts)
       throws SAXException {
     labelStacks.add(null);
