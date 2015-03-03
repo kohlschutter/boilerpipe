@@ -25,6 +25,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 import com.kohlschutter.boilerpipe.text.Text;
+import org.jsoup.nodes.Element;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.Locator;
@@ -62,7 +63,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
   boolean sbLastWasWhitespace = false;
   private int textElementIdx = 0;
 
-  private final List<TextBlock> textBlocks = new ArrayList<TextBlock>();
+  private final List<TextBlock> textBlocks = new ArrayList<>();
 
   private String lastStartTag = null;
   @SuppressWarnings("unused")
@@ -73,11 +74,13 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
   private int offsetBlocks = 0;
   private BitSet currentContainedTextElements = new BitSet();
 
+  private Element currentElement = null;
+
   private boolean flush = false;
   boolean inAnchorText = false;
 
-  LinkedList<LinkedList<LabelAction>> labelStacks = new LinkedList<LinkedList<LabelAction>>();
-  LinkedList<Integer> fontSizeStack = new LinkedList<Integer>();
+  LinkedList<LinkedList<LabelAction>> labelStacks = new LinkedList<>();
+  LinkedList<Integer> fontSizeStack = new LinkedList<>();
 
   /**
    * Recycles this instance.
@@ -177,6 +180,19 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 
     lastEvent = Event.START_TAG;
     lastStartTag = localName;
+  }
+
+  /**
+   * Called on each jsoup element
+   *
+   * @param element
+   */
+  public void startElement( Element element ) {
+
+    if ( textBuffer.length() > 0 && currentElement == null ) {
+      currentElement = element;
+    }
+
   }
 
   // @Override
@@ -282,6 +298,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
     lastEvent = Event.CHARACTERS;
 
     currentContainedTextElements.set(textElementIdx);
+
   }
 
   List<TextBlock> getTextBlocks() {
@@ -353,9 +370,15 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
       numWordsInWrappedLines = numWords - numWordsCurrentLine;
     }
 
-    TextBlock tb =
-        new TextBlock(textBuffer.toString().trim(), currentContainedTextElements, numWords,
-            numLinkedWords, numWordsInWrappedLines, numWrappedLines, offsetBlocks);
+    TextBlock tb = new TextBlock( currentElement,
+                                  textBuffer.toString().trim(),
+                                  currentContainedTextElements,
+                                  numWords,
+                                  numLinkedWords,
+                                  numWordsInWrappedLines,
+                                  numWrappedLines,
+                                  offsetBlocks );
+
     currentContainedTextElements = new BitSet();
 
     offsetBlocks++;

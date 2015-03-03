@@ -22,6 +22,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import com.kohlschutter.boilerpipe.labels.DefaultLabels;
+import org.jsoup.nodes.Element;
 
 /**
  * Describes a block of text.
@@ -50,17 +51,25 @@ public class TextBlock implements Cloneable {
   private int tagLevel;
 
   private static final BitSet EMPTY_BITSET = new BitSet();
-  public static final TextBlock EMPTY_START = new TextBlock("", EMPTY_BITSET, 0, 0, 0, 0, -1);
-  public static final TextBlock EMPTY_END = new TextBlock("", EMPTY_BITSET, 0, 0, 0, 0,
-      Integer.MAX_VALUE);
+  public static final TextBlock EMPTY_START = new TextBlock( null, "", EMPTY_BITSET, 0, 0, 0, 0, -1 );
+  public static final TextBlock EMPTY_END = new TextBlock( null, "", EMPTY_BITSET, 0, 0, 0, 0, Integer.MAX_VALUE );
+
+  private Element element;
 
   public TextBlock(final String text) {
-    this(text, null, 0, 0, 0, 0, 0);
+    this( null, text, null, 0, 0, 0, 0, 0 );
   }
 
-  public TextBlock(final String text, final BitSet containedTextElements, final int numWords,
-      final int numWordsInAnchorText, final int numWordsInWrappedLines, final int numWrappedLines,
-      final int offsetBlocks) {
+  public TextBlock( Element element,
+                    final String text,
+                    final BitSet containedTextElements,
+                    final int numWords,
+                    final int numWordsInAnchorText,
+                    final int numWordsInWrappedLines,
+                    final int numWrappedLines,
+                    final int offsetBlocks ) {
+
+    this.element = element;
     this.text = text;
     this.containedTextElements = containedTextElements;
     this.numWords = numWords;
@@ -69,7 +78,9 @@ public class TextBlock implements Cloneable {
     this.numWrappedLines = numWrappedLines;
     this.offsetBlocksStart = offsetBlocks;
     this.offsetBlocksEnd = offsetBlocks;
+
     initDensities();
+
   }
 
   public boolean isContent() {

@@ -64,6 +64,8 @@ public class JsoupParser {
 
         contentHandler.startElement( NAMESPACE, localName, localName, attributes );
 
+        contentHandler.startElement( element );
+
         for ( Node current : element.childNodes() ) {
 
             if ( current instanceof Element ) {
