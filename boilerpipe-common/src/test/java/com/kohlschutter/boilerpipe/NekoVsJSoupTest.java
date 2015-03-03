@@ -2,7 +2,7 @@ package com.kohlschutter.boilerpipe;
 
 import com.kohlschutter.boilerpipe.document.TextBlocks;
 import com.kohlschutter.boilerpipe.document.TextDocument;
-import com.kohlschutter.boilerpipe.jsoup.JsoupContentHandlerParser;
+import com.kohlschutter.boilerpipe.jsoup.JsoupParser;
 import com.kohlschutter.boilerpipe.sax.BoilerpipeSAXInput;
 import com.kohlschutter.boilerpipe.sax.HTMLDocument;
 import com.kohlschutter.boilerpipe.sax.HTMLFetcher;
@@ -71,7 +71,7 @@ public class NekoVsJSoupTest {
     private TextDocument parseWithJSoup( String path ) throws Exception {
 
         //JsoupParser jsoupParser = new JsoupParser();
-        JsoupContentHandlerParser jsoupParser = new JsoupContentHandlerParser();
+        JsoupParser jsoupParser = new JsoupParser();
 
         TextDocument textDocument = jsoupParser.parse( getClass().getResourceAsStream( path ), "UTF-8", "http://example.com" );
 

@@ -17,7 +17,7 @@ import java.net.URL;
 /**
  * Parser that emulates SAX and just uses a stock BoilerpipeHTMLContentHandler
  */
-public class JsoupContentHandlerParser {
+public class JsoupParser {
 
     // the namespace isn't actually used by boilerpipe but required by the SAX
     // API.
