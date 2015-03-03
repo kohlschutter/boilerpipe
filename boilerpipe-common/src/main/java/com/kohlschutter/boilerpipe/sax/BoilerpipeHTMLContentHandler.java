@@ -26,6 +26,7 @@ import java.util.regex.Pattern;
 
 import com.kohlschutter.boilerpipe.text.Text;
 import org.jsoup.nodes.Element;
+import org.jsoup.nodes.TextNode;
 import org.xml.sax.Attributes;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.Locator;
@@ -74,7 +75,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
   private int offsetBlocks = 0;
   private BitSet currentContainedTextElements = new BitSet();
 
-  private Element currentElement = null;
+  private List<TextNode> currentTextNodes = new ArrayList<>();
 
   private boolean flush = false;
   boolean inAnchorText = false;
@@ -189,10 +190,6 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
    */
   public void startElement( Element element ) {
 
-    if ( textBuffer.length() > 0 && currentElement == null ) {
-      currentElement = element;
-    }
-
   }
 
   // @Override
@@ -301,6 +298,18 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 
   }
 
+  /**
+   * Called when we have found a text node so we can keep a reference to it for
+   * use with TextBlocks.
+   *
+   * @param textNode
+   */
+  public void textNode( TextNode textNode ) {
+
+    currentTextNodes.add( textNode );
+
+  }
+
   List<TextBlock> getTextBlocks() {
     return textBlocks;
   }
@@ -370,7 +379,9 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
       numWordsInWrappedLines = numWords - numWordsCurrentLine;
     }
 
-    TextBlock tb = new TextBlock( currentElement,
+    //if ( currentElement == null ) throw new RuntimeException( "FIXME" );
+
+    TextBlock tb = new TextBlock( currentTextNodes,
                                   textBuffer.toString().trim(),
                                   currentContainedTextElements,
                                   numWords,
@@ -380,6 +391,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
                                   offsetBlocks );
 
     currentContainedTextElements = new BitSet();
+    currentTextNodes = new ArrayList<>();
 
     offsetBlocks++;
 

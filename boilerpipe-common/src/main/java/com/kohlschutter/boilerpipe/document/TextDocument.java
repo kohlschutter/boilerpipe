@@ -83,6 +83,11 @@ public class TextDocument implements Cloneable {
     return getText(true, false);
   }
 
+  public String getContentAsHTML() {
+    return getHTML(true, false);
+  }
+
+
   /**
    * Returns the {@link TextDocument}'s content, non-content or both
    * 
@@ -91,7 +96,42 @@ public class TextDocument implements Cloneable {
    * @return The text.
    */
   public String getText(boolean includeContent, boolean includeNonContent) {
+
     StringBuilder sb = new StringBuilder();
+
+    List<TextBlock> textBlocks = filterTextBlocks( includeContent, includeNonContent );
+
+    for (TextBlock textBlock : textBlocks) {
+      sb.append(textBlock.getText());
+      sb.append('\n');
+
+    }
+
+    return sb.toString();
+
+  }
+
+  public String getHTML(boolean includeContent, boolean includeNonContent) {
+
+    StringBuilder sb = new StringBuilder();
+
+    List<TextBlock> textBlocks = filterTextBlocks( includeContent, includeNonContent );
+
+    for (TextBlock textBlock : textBlocks) {
+      sb.append(textBlock.getHTML());
+      sb.append('\n');
+
+    }
+
+    return sb.toString();
+
+  }
+
+
+  public List<TextBlock> filterTextBlocks(boolean includeContent, boolean includeNonContent) {
+
+    List<TextBlock> result = new ArrayList<>();
+
     LOOP : for (TextBlock block : getTextBlocks()) {
       if (block.isContent()) {
         if (!includeContent) {
@@ -102,11 +142,12 @@ public class TextDocument implements Cloneable {
           continue LOOP;
         }
       }
-      sb.append(block.getText());
-      sb.append('\n');
+      result.add( block );
     }
-    return sb.toString();
+
+    return result;
   }
+
 
   /**
    * Returns detailed debugging information about the contained {@link TextBlock}s.

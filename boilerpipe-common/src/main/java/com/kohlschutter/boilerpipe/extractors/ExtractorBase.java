@@ -107,4 +107,10 @@ public abstract class ExtractorBase implements BoilerpipeExtractor {
     process(doc);
     return doc.getContent();
   }
+
+  public String getHTML(TextDocument doc) throws BoilerpipeProcessingException {
+    process(doc);
+    return doc.getContentAsHTML();
+  }
+
 }

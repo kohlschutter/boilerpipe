@@ -83,6 +83,7 @@ public class JsoupParser {
                 char[] chars = currentTextNode.text().toCharArray();
 
                 contentHandler.characters( chars, 0, chars.length );
+                contentHandler.textNode( currentTextNode );
 
             }
 

@@ -25,7 +25,6 @@ public class Parsers {
 
     public static TextDocument parseWithJSoup( String path ) throws Exception {
 
-        //JsoupParser jsoupParser = new JsoupParser();
         JsoupParser jsoupParser = new JsoupParser();
 
         TextDocument textDocument = jsoupParser.parse( Parsers.class.getResourceAsStream( path ), "UTF-8", "http://example.com" );

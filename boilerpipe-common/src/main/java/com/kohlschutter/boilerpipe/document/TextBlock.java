@@ -17,12 +17,11 @@
  */
 package com.kohlschutter.boilerpipe.document;
 
-import java.util.BitSet;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 import com.kohlschutter.boilerpipe.labels.DefaultLabels;
 import org.jsoup.nodes.Element;
+import org.jsoup.nodes.TextNode;
 
 /**
  * Describes a block of text.
@@ -54,13 +53,13 @@ public class TextBlock implements Cloneable {
   public static final TextBlock EMPTY_START = new TextBlock( null, "", EMPTY_BITSET, 0, 0, 0, 0, -1 );
   public static final TextBlock EMPTY_END = new TextBlock( null, "", EMPTY_BITSET, 0, 0, 0, 0, Integer.MAX_VALUE );
 
-  private Element element;
+  private List<TextNode> textNodes = new ArrayList<>();
 
   public TextBlock(final String text) {
     this( null, text, null, 0, 0, 0, 0, 0 );
   }
 
-  public TextBlock( Element element,
+  public TextBlock( List<TextNode> textNodes,
                     final String text,
                     final BitSet containedTextElements,
                     final int numWords,
@@ -69,7 +68,7 @@ public class TextBlock implements Cloneable {
                     final int numWrappedLines,
                     final int offsetBlocks ) {
 
-    this.element = element;
+    this.textNodes = textNodes;
     this.text = text;
     this.containedTextElements = containedTextElements;
     this.numWords = numWords;
@@ -98,6 +97,21 @@ public class TextBlock implements Cloneable {
 
   public String getText() {
     return text.toString();
+  }
+
+  public String getHTML() {
+
+    StringBuilder buff = new StringBuilder();
+
+    for (TextNode textNode : textNodes) {
+      Element element = (Element)textNode.parent();
+
+      buff.append( element.html() );
+
+    }
+
+    return buff.toString();
+
   }
 
   public int getNumWords() {
