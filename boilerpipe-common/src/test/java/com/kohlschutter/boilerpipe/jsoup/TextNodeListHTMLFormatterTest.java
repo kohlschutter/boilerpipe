@@ -21,7 +21,7 @@ public class TextNodeListHTMLFormatterTest {
 
         String html = TextNodeListHTMLFormatter.format( textNodeExtendedContentListener.getTextNodes() );
 
-        assertEquals( "hello world\n",
+        assertEquals( "<p>hello world</p>\n",
                       html );
 
     }
