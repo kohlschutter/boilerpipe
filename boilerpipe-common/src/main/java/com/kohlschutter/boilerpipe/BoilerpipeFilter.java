@@ -23,6 +23,7 @@ import com.kohlschutter.boilerpipe.document.TextDocument;
  * A generic {@link BoilerpipeFilter}. Takes a {@link TextDocument} and processes it somehow.
  */
 public interface BoilerpipeFilter {
+
   /**
    * Processes the given document <code>doc</code>.
    * 
@@ -31,4 +32,5 @@ public interface BoilerpipeFilter {
    * @throws BoilerpipeProcessingException
    */
   boolean process(final TextDocument doc) throws BoilerpipeProcessingException;
+
 }
