@@ -44,7 +44,7 @@ import static com.kohlschutter.boilerpipe.text.Text.isWord;
  * be used by different parser implementations, e.g. NekoHTML and TagSoup and
  * JSoup.
  */
-public class BoilerpipeHTMLContentHandler implements ContentHandler {
+public class BoilerpipeHTMLContentHandler implements ExtendedContentHandler {
 
   private final Map<String, TagAction> tagActions;
   private String title = null;
@@ -192,16 +192,12 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
     lastStartTag = localName;
   }
 
-  /**
-   * Called on each jsoup element
-   *
-   * @param element
-   */
+  @Override
   public void startElement( Element element ) {
 
   }
 
-  // @Override
+  @Override
   public void endElement(String uri, String localName, String qName) throws SAXException {
     TagAction ta = tagActions.get(localName);
     if (ta != null) {
@@ -224,7 +220,12 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
     labelStacks.removeLast();
   }
 
-  // @Override
+  @Override
+  public void endElement(Element element) {
+
+  }
+
+  @Override
   public void characters(char[] ch, int start, int length) throws SAXException {
     textElementIdx++;
 
@@ -310,12 +311,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
 
   }
 
-  /**
-   * Called when we have found a text node so we can keep a reference to it for
-   * use with TextBlocks.
-   *
-   * @param textNode
-   */
+  @Override
   public void textNode( TextNode textNode ) {
 
     currentTextNode = textNode;
@@ -411,7 +407,7 @@ public class BoilerpipeHTMLContentHandler implements ContentHandler {
     offsetBlocks++;
 
     textBuffer.setLength(0);
-    tokenBuffer.setLength(0);
+    tokenBuffer.setLength( 0 );
 
     tb.setTagLevel( blockTagLevel );
     addTextBlock(tb);
