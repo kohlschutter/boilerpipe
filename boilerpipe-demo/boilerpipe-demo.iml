@@ -13,9 +13,9 @@
     <orderEntry type="library" name="Maven: xerces:xercesImpl:2.9.1" level="project" />
     <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.3.04" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.7.3" level="project" />
-    <orderEntry type="module" module-name="nekohtml-relocated" />
     <orderEntry type="module" module-name="nekohtml" />
     <orderEntry type="library" name="Maven: net.sourceforge.nekohtml:nekohtml:1.9.13" level="project" />
+    <orderEntry type="module" module-name="nekohtml-relocated" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
