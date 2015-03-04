@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+ <!--<![endif]-->
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1" /> 
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/motherboard/apple-touch-icon-57x57.png?v20150227013551" /> 
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/motherboard/apple-touch-icon-114x114.png?v20150227013551" /> 
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/motherboard/apple-touch-icon-72x72.png?v20150227013551" /> 
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/motherboard/apple-touch-icon-144x144.png?v20150227013551" /> 
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/motherboard/apple-touch-icon-60x60.png?v20150227013551" /> 
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/motherboard/apple-touch-icon-120x120.png?v20150227013551" /> 
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/motherboard/apple-touch-icon-76x76.png?v20150227013551" /> 
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/favicons/motherboard/apple-touch-icon-152x152.png?v20150227013551" /> 
+  <link rel="icon" type="image/png" href="/assets/favicons/motherboard/favicon-196x196.png?v20150227013551" sizes="196x196" /> 
+  <link rel="icon" type="image/png" href="/assets/favicons/motherboard/favicon-96x96.png?v20150227013551" sizes="96x96" /> 
+  <link rel="icon" type="image/png" href="/assets/favicons/motherboard/favicon-32x32.png?v20150227013551" sizes="32x32" /> 
+  <link rel="icon" type="image/png" href="/assets/favicons/motherboard/favicon-16x16.png?v20150227013551" sizes="16x16" /> 
+  <link rel="icon" type="image/png" href="/assets/favicons/motherboard/favicon-128.png?v20150227013551" sizes="128x128" /> 
+  <meta name="msapplication-TileColor" content="#7974bd" /> 
+  <meta name="msapplication-TileImage" content="/assets/favicons/motherboard/mstile-144x144.png?v20150227013551" /> 
+  <meta name="msapplication-square70x70logo" content="/assets/favicons/motherboard/mstile-70x70.png?v20150227013551" /> 
+  <meta name="msapplication-square150x150logo" content="/assets/favicons/motherboard/mstile-150x150.png?v20150227013551" /> 
+  <meta name="msapplication-wide310x150logo" content="/assets/favicons/motherboard/mstile-310x150.png?v20150227013551" /> 
+  <meta name="msapplication-square310x310logo" content="/assets/favicons/motherboard/mstile-310x310.png?v20150227013551" /> 
+  <link rel="icon" type="image/png" href="/assets/favicons/motherboard/favicon-32x32.png?v20150227013551" sizes="32x32" /> 
+  <link rel="icon" type="image/png" href="/assets/favicons/motherboard/favicon-16x16.png?v20150227013551" sizes="16x16" /> 
+  <link rel="canonical" href="http://motherboard.vice.com/read/fcc-confirms-net-neutrality-order-wont-be-released-today" /> 
+  <meta name="description" content="Two stubborn commission members are dragging their feet on the final order." /> 
+  <meta property="og:description" content="Two stubborn commission members are dragging their feet on the final order." /> 
+  <meta name="keywords" content="net neutrality, fcc, Title II, reclassification, Open Internet, culture, Internet" /> 
+  <meta name="thumbnail" content="//motherboard-images.vice.com/content-images/article/19418/1424960083536424.jpg?crop=0.461455525606469xw:1xh;*,*&amp;resize=500:*&amp;output-format=jpeg&amp;output-quality=90" /> 
+  <meta property="og:image" content="//motherboard-images.vice.com/content-images/article/19418/1424960083536424.jpg?crop=0.461455525606469xw:1xh;*,*&amp;resize=500:*&amp;output-format=jpeg&amp;output-quality=90" /> 
+  <meta property="og:title" content="Thanks to GOP Commissioners, We Won't See the Full Net Neutrality Rules Today" /> 
+  <meta property="og:site_name" content="Motherboard" /> 
+  <meta property="og:type" content="article" /> 
+  <meta property="og:article:published_time" content="2015-02-26 15:30:00" /> 
+  <meta property="og:locale" content="en_us" /> 
+  <meta property="og:url" content="http://motherboard.vice.com/read/fcc-confirms-net-neutrality-order-wont-be-released-today" /> 
+  <meta name="twitter" content="Thanks to GOP Commissioners, We Won't See the Full Net Neutrality Rules Today" /> 
+  <meta name="twitter:description" content="Two stubborn commission members are dragging their feet on the final order." /> 
+  <meta name="twitter:image" content="//motherboard-images.vice.com/content-images/article/19418/1424960083536424.jpg?crop=0.461455525606469xw:1xh;*,*&amp;resize=500:*&amp;output-format=jpeg&amp;output-quality=90" /> 
+  <meta name="twitter:card" content="summary" /> 
+  <meta name="twitter:site" content="@motherboard" /> 
+  <meta name="sailthru.title" content="Thanks to GOP Commissioners, We Won't See the Full Net Neutrality Rules Today" /> 
+  <meta name="sailthru.url" content="http://motherboard.vice.com/read/fcc-confirms-net-neutrality-order-wont-be-released-today" /> 
+  <meta name="sailthru.publish_date" content="2015-02-26 15:30:00" /> 
+  <meta name="sailthru.description" content="Two stubborn commission members are dragging their feet on the final order." /> 
+  <meta name="sailthru.item_type" content="article" /> 
+  <meta name="sailthru.locale" content="en_us" /> 
+  <meta name="sailthru.expire_date" content="2015-03-05" /> 
+  <meta name="sailthru.tags" content="net neutrality, fcc, Title II, reclassification, Open Internet, culture, Internet, MB, en_us" /> 
+  <link rel="stylesheet" type="text/css" href="/assets/css/motherboard/style.css?v20150227013551" /> 
+  <script type="text/javascript" src="/assets/js/vmp/lib/modernizr-2.5.3.min.js"></script> 
+  <script type="text/javascript">
+/*<![CDATA[*/
+var calls = [], _gaq = _gaq || [], ga;
+calls.push(
+['_setAccount', 'UA-599058-30'],
+['_setDomainName', 'motherboard.vice.com'],
+['t2._setAccount', 'UA-37305051-1'],
+['t2._setDomainName', 'motherboard.vice.com']
+);
+calls.push(
+['_setPageGroup', 2, ""],
+['t2._setPageGroup', 2, ""]
+);
+calls.push(
+['_setPageGroup', 3, "Sam Gustin"],
+['t2._setPageGroup', 3, "Sam Gustin"]
+);
+calls.push(
+['_setPageGroup', 4, "2015_02_26"],
+['t2._setPageGroup', 4, "2015_02_26"],
+['_setPageGroup', 5, "2015_02"],
+['t2._setPageGroup', 5, "2015_02"]
+);
+calls.push(
+['_trackPageview'],
+['t2._trackPageview']
+);
+_gaq.push.apply(_gaq, calls);
+(function() {
+ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+/*]]>*/
+</script> 
+  <title>Thanks to GOP Commissioners, We Won't See the Full Net Neutrality Rules Today | Motherboard</title> 
+  <!-- BEGIN Krux Control Tag for "Motherboard" --> 
+  <!-- Source: /snippet/controltag?confid=JLnYmGrt&site=Motherboard&edit=1 --> 
+  <script class="kxct" data-id="JLnYmGrt" data-timing="async" data-version="1.9" type="text/javascript">
+		window.Krux || ((Krux = function(){
+			Krux.q.push(arguments)
+		}).q = []);
+		(function(){
+			var k = document.createElement('script');
+			k.type = 'text/javascript';
+			k.async = true;
+			var m, src = (m = location.href.match(/\bkxsrc=([^&]+)/)) && decodeURIComponent(m[1]);
+			k.src = /^https?:\/\/([a-z0-9_\-\.]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+				(location.protocol === "https:" ? "https:" : "http:") + "//cdn.krxd.net/controltag?confid=JLnYmGrt"
+				;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(k, s);
+		}());
+
+	</script> 
+  <!-- END Krux Controltag --> 
+  <script>
+		window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+		(function(){
+		     function retrieve(n){
+		   var m, k='kx'+n;
+		   if(window.localStorage){
+		       return window.localStorage[k] || "";
+		   }else if(navigator.cookieEnabled){
+		       m = document.cookie.match(k+'=([^;]*)');
+		       return (m && unescape(m[1])) || "";
+		   }else{
+		       return '';
+		   }
+		     }
+		Krux.user = retrieve('user');
+		     Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+		 })();
+
+	</script> 
+  <!-- begin comscore tag --> 
+  <script>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "8568956" });
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+</script> 
+  <noscript> 
+  </noscript>
+ </head>
+ <body class="article-page lang-en_us">
+  <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=8568956&amp;cv=2.0&amp;cj=1" />  
+  <!-- end comscore tag -->  
+  <!-- Start Alexa Certify Javascript --> 
+  <script type="text/javascript">
+_atrk_opts = { atrk_acct:"x5HVh1aUXR00Gi", domain:"vice.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script> 
+  <noscript>
+   <img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=x5HVh1aUXR00Gi" style="display:none" height="1" width="1" alt="" />
+  </noscript> 
+  <!-- End Alexa Certify Javascript --> 
+  <div class="motherboard-ad-header-wrapper"> 
+   <div class="motherboard-ad-header-inner"> 
+    <div class="motherboard-ad ad-masthead-wide" data-ref="header"></div> 
+   </div> 
+  </div> 
+  <section class="site-wrapper"> 
+   <div class="site-navigation-mobile-screen"></div> 
+   <nav class="site-navigation"> 
+    <ul class="main-nav-headings"> 
+     <li class="search-mobile-navigation"> <button class="site-icon search"></button> 
+      <div class="searchbox-container"> 
+       <div class="gcse-searchbox-only" data-resultsurl="/article/gsearch" data-queryparametername="query" data-placeholder="Search..."></div> 
+      </div> </li> 
+     <li class="main-nav-heading no-link" id="main-nav-heading-1">Sections</li> 
+     <ul class="main-nav-sub-headings features"> 
+      <li><a href="/tag/machines?trk_source=nav">Machines</a></li> 
+      <li><a href="/tag/discoveries?trk_source=nav">Discoveries</a></li> 
+      <li><a href="/tag/space?trk_source=nav">Space</a></li> 
+      <li><a href="/tag/futures?trk_source=nav">Futures</a></li> 
+      <li><a href="/tag/culture?trk_source=nav">Culture</a></li> 
+      <li><a href="/tag/earth?trk_source=nav">Earth</a></li> 
+     </ul> 
+     <li class="main-nav-heading" id="main-nav-heading-2"> <a href="/en_us/videos?trk_source=nav">Videos</a> </li> 
+     <li class="main-nav-heading" id="main-nav-heading-3"> <a href="/about?trk_source=nav">About</a> </li> 
+    </ul> 
+   </nav> 
+   <section class="vice-network-bar"> 
+    <p class="version"></p> 
+    <section class="locales built"> 
+     <div class="current-locale">
+       en 
+     </div> 
+     <ul> 
+      <li> <a href="/de"> de </a> </li> 
+      <li> <a href="/es"> es </a> </li> 
+      <li> <a href="/it"> it </a> </li> 
+      <li> <a href="/nl"> nl </a> </li> 
+      <li> <a href="/pt_br"> pt </a> </li> 
+     </ul> 
+    </section> 
+    <section class="family"> 
+     <h2 class="family-trigger">The <span class="icon-sprite">VICE</span> Channels</h2> 
+     <ul></ul> 
+    </section> 
+   </section> 
+   <header class="site-header"> 
+    <div class="main-nav-header"> 
+     <div class="header-wrapper"> 
+      <button class="menu-non-rounded"> <span class="menu-icon"></span> </button> 
+      <div class="socials-in-article"> 
+       <a href="#" data-share-type="facebook" class="facebook sharing-item"> <i class="site-icon facebook"></i> Share </a> 
+       <a href="#" data-share-type="twitter" class="twitter sharing-item"> <i class="site-icon twitter"></i> Tweet </a> 
+      </div> 
+      <h1 class="motherboard-logo"> <a href="/en_us?trk_source=header-logo"> <span>Motherboard</span> </a> <a href="/en_us?trk_source=header-logo" class="motherboard-load-initial"> <span>Motherboard</span> </a> </h1> 
+      <nav class="inline-site-navigation"> 
+       <ul class="main-nav-headings"> 
+        <li class="main-nav-heading" id="main-nav-heading-1"> <a href="/en_us/videos?trk_source=nav"> Watch <span class="site-icon arrow-down"></span> </a> </li> 
+        <li class="main-nav-heading no-link" id="main-nav-heading-2"> Sections <span class="site-icon arrow-down"></span> </li> 
+        <li class="main-nav-heading main-subnav-heading" id="main-nav-heading-3"> <a href="/en_us/tag/machines?trk_source=nav"> Machines <span class="site-icon arrow-down"></span> </a> </li> 
+        <li class="main-nav-heading main-subnav-heading" id="main-nav-heading-4"> <a href="/en_us/tag/discoveries?trk_source=nav"> Discoveries <span class="site-icon arrow-down"></span> </a> </li> 
+        <li class="main-nav-heading main-subnav-heading" id="main-nav-heading-5"> <a href="/en_us/tag/space?trk_source=nav"> Space <span class="site-icon arrow-down"></span> </a> </li> 
+        <li class="main-nav-heading main-subnav-heading" id="main-nav-heading-6"> <a href="/en_us/tag/futures?trk_source=nav"> Futures <span class="site-icon arrow-down"></span> </a> </li> 
+        <li class="main-nav-heading main-subnav-heading" id="main-nav-heading-7"> <a href="/en_us/tag/culture?trk_source=nav"> Culture <span class="site-icon arrow-down"></span> </a> </li> 
+        <li class="main-nav-heading main-subnav-heading" id="main-nav-heading-8"> <a href="/en_us/tag/earth?trk_source=nav"> Earth <span class="site-icon arrow-down"></span> </a> </li> 
+       </ul> 
+      </nav> 
+      <script type="text/template" id="nav-item-template">
+				<a href="<%= url %>?trk_source=nav">
+					<figure>
+						<div class="article-media-overlay"></div>
+						<img src="<%= image.url %>" alt="<%= image.alt %>" />
+					</figure>
+					<h2><%= title %></h2>
+				</a>
+			</script> 
+      <div class="socials"> 
+       <a href="http://www.facebook.com/motherboardtv?trk_source=motherboard" target="_blank" class="site-icon facebook"></a> 
+       <a href="https://twitter.com/motherboard?trk_source=motherboard" target="_blank" class="site-icon twitter"></a> 
+       <a href="http://motherboardtv.tumblr.com/?trk_source=motherboard" class="site-icon tumblr" target="_blank"></a> 
+       <a href="/rss?trk_source=motherboard" class="site-icon rss" target="_blank"></a> 
+       <a href="http://www.youtube.com/motherboardtv?feature=watch&amp;trk_source=motherboard" target="_blank" class="site-icon youtube"></a> 
+      </div> 
+      <div class="search-container"> 
+       <button class="site-icon search"></button> 
+       <div class="searchbox-container"> 
+        <div class="gcse-searchbox-only" data-resultsurl="/article/gsearch" data-queryparametername="query"></div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="global-sub-nav-sections" class="sub-nav-sections"> 
+     <div class="header-wrapper"> 
+      <div class="sub-nav-section watch has-submenu" id="sub-nav-section-1"> 
+       <ul class="sub-nav-section-headings"> 
+        <li data-model-id="videos-latest"> <a href="/en_us/videos?trk_source=nav">Latest Videos</a> </li> 
+        <li data-model-id="videos-documentaries"> <a href="/tag/documentaries?trk_source=nav">Documentaries</a> </li> 
+        <li data-model-id="videos-interviews"> <a href="/tag/interviews?trk_source=nav">Interviews</a> </li> 
+       </ul> 
+       <div class="sub-nav-section-models"> 
+        <div class="sub-nav-section-model" data-model-id="videos-latest" data-has-menu="true" data-topic-slug="videos" data-type="videos"> 
+        </div> 
+        <div class="sub-nav-section-model" data-model-id="videos-documentaries" data-has-menu="true" data-topic-slug="documentaries" data-type="videos"> 
+        </div> 
+        <div class="sub-nav-section-model" data-model-id="videos-interviews" data-has-menu="true" data-topic-slug="interviews" data-type="videos"> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sub-nav-section watch has-submenu" id="sub-nav-section-2"> 
+       <ul class="sub-nav-section-headings"> 
+        <li data-model-id="sections-machines"> <a href="/en_us/tag/machines?trk_source=nav">Machines</a> </li> 
+        <li data-model-id="sections-discoveries"> <a href="/en_us/tag/discoveries?trk_source=nav">Discoveries</a> </li> 
+        <li data-model-id="sections-space"> <a href="/en_us/tag/space?trk_source=nav">Space</a> </li> 
+        <li data-model-id="sections-futures"> <a href="/en_us/tag/futures?trk_source=nav">Futures</a> </li> 
+        <li data-model-id="sections-culture"> <a href="/en_us/tag/culture?trk_source=nav">Culture</a> </li> 
+        <li data-model-id="sections-earth"> <a href="/en_us/tag/earth?trk_source=nav">Earth</a> </li> 
+       </ul> 
+       <div class="sub-nav-section-models"> 
+        <div class="sub-nav-section-model" data-model-id="sections-machines" data-has-menu="true" data-topic-slug="machines"> 
+        </div> 
+        <div class="sub-nav-section-model" data-model-id="sections-discoveries" data-has-menu="true" data-topic-slug="discoveries"> 
+        </div> 
+        <div class="sub-nav-section-model" data-model-id="sections-space" data-has-menu="true" data-topic-slug="space"> 
+        </div> 
+        <div class="sub-nav-section-model" data-model-id="sections-futures" data-has-menu="true" data-topic-slug="futures"> 
+        </div> 
+        <div class="sub-nav-section-model" data-model-id="sections-culture" data-has-menu="true" data-topic-slug="culture"> 
+        </div> 
+        <div class="sub-nav-section-model" data-model-id="sections-earth" data-has-menu="true" data-topic-slug="earth"> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sub-nav-section sections" id="sub-nav-section-3"> 
+       <div class="sub-nav-section-models"> 
+        <div class="sub-nav-section-model center-items" data-model-id="tag-machines" data-topic-slug="machines"> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sub-nav-section sections" id="sub-nav-section-4"> 
+       <div class="sub-nav-section-models"> 
+        <div class="sub-nav-section-model center-items" data-model-id="tag-discoveries" data-topic-slug="discoveries"> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sub-nav-section sections" id="sub-nav-section-5"> 
+       <div class="sub-nav-section-models"> 
+        <div class="sub-nav-section-model center-items" data-model-id="tag-space" data-topic-slug="space"> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sub-nav-section sections" id="sub-nav-section-6"> 
+       <div class="sub-nav-section-models"> 
+        <div class="sub-nav-section-model center-items" data-model-id="tag-futures" data-topic-slug="futures"> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sub-nav-section sections" id="sub-nav-section-7"> 
+       <div class="sub-nav-section-models"> 
+        <div class="sub-nav-section-model center-items" data-model-id="tag-culture" data-topic-slug="culture"> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="sub-nav-section sections" id="sub-nav-section-8"> 
+       <div class="sub-nav-section-models"> 
+        <div class="sub-nav-section-model center-items" data-model-id="tag-earth" data-topic-slug="earth"> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="social-sub-nav-section" class="sub-nav-sections"> 
+     <div class="header-wrapper"> 
+      <div class="social-header-item facebook-item"> 
+       <div class="fb-like" data-href="http://www.facebook.com/motherboardtv" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div> 
+      </div> 
+      <div class="social-header-item"> 
+       <a href="https://twitter.com/motherboard" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true">Follow</a> 
+      </div> 
+      <div class="social-header-item youtube-item"> 
+       <div class="g-ytsubscribe" data-channel="motherboardtv" data-layout="default" data-count="default"></div> 
+      </div> 
+      <div class="social-header-item google-item"> 
+       <div class="g-follow" data-annotation="bubble" data-height="20" data-href="https://plus.google.com/108283912023034722668" data-rel="publisher"></div> 
+      </div> 
+      <a href="http://www.vice.com/newsletter?trk_source=motherboard" target="_blank" class="newsletter">Newsletter</a> 
+     </div> 
+    </div> 
+   </header> 
+   <div class="site-content"> 
+    <section class="lede article-lede"> 
+     <div class="media"> 
+      <div class="lede-image-container"> 
+       <img src="//motherboard-images.vice.com/content-images/article/19418/1424960083536424.jpg?crop=1xw:0.866822429906542xh;*,*&amp;resize=1200:*&amp;output-format=jpeg&amp;output-quality=90" class="media-lede-image media-lede" alt="" /> 
+       <img src="//motherboard-images.vice.com/content-images/article/19418/1424960083536424.jpg?crop=1xw:0.628446261682243xh;*,*&amp;resize=2300:*&amp;output-format=jpeg&amp;output-quality=90" class="media-lede-image media-desktop-lede" alt="" /> 
+       <img src="//motherboard-images.vice.com/content-images/article/19418/1424960083536424.jpg?crop=0.820365378855945xw:1xh;*,*&amp;resize=700:*&amp;output-format=jpeg&amp;output-quality=90" class="media-lede-image media-mobile-lede" alt="" /> 
+      </div> 
+      <h5 class="caption-article caption-lede"> <p>FCC&nbsp;​Chairman Tom&nbsp;Wheeler. Image:&nbsp;<a href="https://www.flickr.com/photos/freepress/11934228504/in/photolist-obk6hv-nU9aTR-nU9ZdZ-nU98Ro-obk6ri-nU9Zk2-obk95V-nU9dwW-nU8Poo-obubSy-qr1HLy-nU9akB-obyeUq-nTVem9-qr87BR-jbA3Fy-obkDHJ-odc272-o9nGLQ-jbA3mq-jbzazV-jbz85K" target="_blank">​Free Press/Flickr</a></p> </h5> 
+     </div> 
+    </section> 
+    <article class="article-single" data-id="19418"> 
+     <header class="article-header"> 
+      <div class="wrapper"> 
+       <h1 class="article-title">Thanks to GOP Commissioners, We Won't See the Full Net Neutrality Rules Today</h1> 
+       <section class="motherboard-portlet motherboard-portlet-about" id="yw0"> 
+        <div class="author-info image"> 
+         <a href="/author/SamGustin"> 
+          <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/authors/no-id/1403651338442719.jpg?resize=300:*&amp;output-format=jpeg&amp;output-quality=90" /> </a> 
+        </div> 
+        <div class="author-info hasImage"> 
+         <span>Written by </span> 
+         <h3><a href="/author/SamGustin">Sam Gustin</a></h3> 
+         <h4>Correspondent</h4> 
+         <ul class="social-info"> 
+          <li><a href="https://twitter.com/samgustin" target="_blank" class="social-link"><span class="site-icon twitter"></span></a></li> 
+         </ul> 
+        </div>
+       </section> 
+       <time pubdate="" datetime="2015-02-26T15:30:00+00:00" class="meta-time"> February 26, 2015 // 10:30 AM EST </time> 
+       <div class="ad-sponsored-by motherboard-portlet-about"> 
+        <div class="motherboard-ad ad-banner" data-ref="sponsored_content_top"></div> 
+       </div> 
+      </div> 
+     </header> 
+     <div class="wrapper article-content-wrapper"> 
+      <div class="left-column article-left-column"> 
+       <div class="article-scroll-wrapper"> 
+        <section class="motherboard-widget motherboard-widget-social vertical-share-widget" data-title="Thanks to GOP Commissioners, We Won't See the Full Net Neutrality Rules Today" data-url="http://motherboard.vice.com/read/fcc-confirms-net-neutrality-order-wont-be-released-today" data-description="Two stubborn commission members are dragging their feet on the final order." data-media="" data-topic="" data-gatag="Side Widget" data-twitterhandle="motherboard" id="yw1"> 
+         <a href="#" data-share-type="facebook" class="social-facebook sharing-item"> <span class="site-icon facebook"></span> </a> 
+         <a href="#" data-share-type="twitter" class="social-twitter sharing-item"> <span class="site-icon twitter"></span> </a> 
+         <a href="#" data-share-type="googleplus" class="social-googleplus sharing-item"> <span class="site-icon google-plus"></span> </a> 
+         <a href="#" data-share-type="tumblr" class="social-tumblr sharing-item"> <span class="site-icon tumblr"></span> </a> 
+         <a href="#" data-share-type="reddit" class="social-reddit sharing-item"> <span class="site-icon reddit"></span> </a> 
+         <a href="#" data-share-type="stumbleupon" class="social-stumbleupon sharing-item"> <span class="site-icon stumbleupon"></span> </a> 
+         <a href="#" data-share-type="comment" class="social-comment sharing-item"> <span class="site-icon comment-icon"></span> </a>
+        </section> 
+        <div class="article-content rich-text"> 
+         <p>​
+          <inline style="background-color: initial;">
+           The Federal Communications Commission will not release the text of its new net neutrality rules today&nbsp;even if the new policy is approved, a senior FCC official told Motherboard.
+          </inline></p>
+         <p>
+          <inline style="background-color: initial;">
+           In fact, it could take weeks before the final rules are published, the official said. That’s because the two Republican commissioners, Ajit Pai and Mike O’Rielly—who oppose net neutrality of any sort—have refused to submit basic edits on the order.
+          </inline></p>
+         <p>The FCC will not release the text of the order until edits from the offices of all five commissioners are incorporated, including dissenting opinions. This will depend on&nbsp;how long the GOP commissioners refuse to provide edits on the new rules.</p>
+         <p>The FCC will still hold a press conference with reporters this afternoon to brief everyone on the new rules, even though the exact text of the final order is on hold.</p>
+         <blockquote class="quote">
+          <h3>&quot;
+           <inline style="background-color: initial;">
+            It could take weeks before the final rules are published&quot;
+           </inline></h3>
+         </blockquote>
+         <p></p>
+         <p>&quot;As is typical for a final rule and order, the final document is not available until staff makes final edits, which must be cleared by each commissioner,&quot; FCC press secretary Kim Hart told Motherboard. &quot;This process typically takes a few weeks.&quot;</p>
+         <p>The FCC is voting on whether to reclassify internet service like traditional phone companies, which would give it stronger powers to regulate the industry.</p>
+         <p>The new rules, which are expected to be approved by a vote of 3-2, would prohibit internet providers from&nbsp;blocking sites as long as they're legal; slowing down or &quot;throttling&quot; certain traffic based on content;&nbsp;and paid prioritization, or &quot;fast lanes&quot; for certain publishers who pay more—three concepts that are at the core of net neutrality.&nbsp;</p>
+         <p>The new policy is expected to establish the strongest net neutrality framework in US history, and it’s already being hailed as a landmark victory by open internet advocates.</p> 
+        </div> 
+       </div> 
+       <div class="article-footer"> 
+        <div class="topics-container"> 
+         <p class="article-topics"> <span class="tags"><span class="tags-title">Topics: </span><span class="tag"><a href="/tag/net+neutrality">net neutrality</a></span>, <span class="tag"><a href="/tag/fcc">fcc</a></span>, <span class="tag"><a href="/tag/Title+II">Title II</a></span>, <span class="tag"><a href="/tag/reclassification">reclassification</a></span>, <span class="tag"><a href="/tag/Open+Internet">Open Internet</a></span>, <span class="tag"><a href="/tag/culture">culture</a></span>, <span class="tag"><a href="/tag/Internet">Internet</a></span></span> </p> 
+        </div> 
+        <section class="motherboard-portlet motherboard-widget-content-botton-share" data-title="Thanks to GOP Commissioners, We Won't See the Full Net Neutrality Rules Today" data-url="http://motherboard.vice.com/read/fcc-confirms-net-neutrality-order-wont-be-released-today" data-description="Two stubborn commission members are dragging their feet on the final order." data-media="" data-topic="" data-gatag="Bottom Widget" data-twitterhandle="motherboard" id="yw2"> 
+         <a href="http://motherboard.vice.com/read/fcc-confirms-net-neutrality-order-wont-be-released-today#disqus_thread" data-share-type="comment" class="social-comment sharing-item"> Comment</a> 
+         <span class="social-separator toggle">Share</span> 
+         <div class="social-buttons"> 
+          <a href="#" data-share-type="facebook" class="social-facebook sharing-item"> <span class="site-icon facebook"></span> <i>Share on</i> facebook </a> 
+          <a href="#" data-share-type="twitter" class="social-twitter sharing-item"> <span class="site-icon twitter"></span> <i>Share on</i> twitter </a> 
+          <div class="extra-buttons"> 
+           <a href="#" data-share-type="googleplus" class="social-googleplus sharing-item"> <span class="site-icon google-plus"></span> Google plus </a> 
+           <a href="#" data-share-type="tumblr" class="social-tumblr sharing-item"> <span class="site-icon tumblr"></span> Tumblr </a> 
+           <a href="#" data-share-type="reddit" class="social-reddit sharing-item"> <span class="site-icon reddit"></span> Reddit </a> 
+           <a href="#" data-share-type="stumbleupon" class="social-stumbleupon sharing-item"> <span class="site-icon stumbleupon"></span> Stumbleupon </a> 
+          </div> 
+         </div>
+        </section>
+        <section class="motherboard-portlet motherboard-portlet-recommended">
+         <h3 class="section-title">Recommended</h3>
+         <ul class="stories-list"> 
+          <li class="story"> 
+           <figure class="archive-img"> 
+            <a href="/read/the-fight-for-an-open-internet-and-how-david-beat-goliath?trk_source=recommended"> 
+             <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/19424/1424969175097326.jpg?crop=1xw:0.75xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="How Net Neutrality Came Back from the Dead" /> </a> 
+           </figure> <p class="title"> <a href="/read/the-fight-for-an-open-internet-and-how-david-beat-goliath?trk_source=recommended">How Net Neutrality Came Back from the Dead</a> </p> </li> 
+          <li class="story"> 
+           <figure class="archive-img"> 
+            <a href="/read/net-neutrality-passes-but-the-fight-isnt-over?trk_source=recommended"> 
+             <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/19423/1424967259813785.png?crop=0.9816747854326142xw:1xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="Net Neutrality Wins: No Blocking, Throttling, or 'Fast Lanes' for the Internet" /> </a> 
+           </figure> <p class="title"> <a href="/read/net-neutrality-passes-but-the-fight-isnt-over?trk_source=recommended">Net Neutrality Wins: No Blocking, Throttling, or 'Fast Lanes' for the Internet</a> </p> </li> 
+          <li class="story"> 
+           <figure class="archive-img"> 
+            <a href="/read/twitter-is-supersupportive-of-fccs-net-neutrality-proposal?trk_source=recommended"> 
+             <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/19284/1424703117096783.jpg?crop=1xw:0.843956043956044xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="Twitter Is #SuperSupportive of FCC's Net Neutrality Proposal" /> </a> 
+           </figure> <p class="title"> <a href="/read/twitter-is-supersupportive-of-fccs-net-neutrality-proposal?trk_source=recommended">Twitter Is #SuperSupportive of FCC's Net Neutrality Proposal</a> </p> </li> 
+          <li class="story"> 
+           <figure class="archive-img"> 
+            <a href="/read/republicans-are-angry-about-the-fccs-perfectly-ordinary-rulemaking-process?trk_source=recommended"> 
+             <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/19011/1423684213007195.png?crop=0.6234001585683543xw:1xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="Republicans Are Angry About the FCC's Perfectly Ordinary Rulemaking Process" /> </a> 
+           </figure> <p class="title"> <a href="/read/republicans-are-angry-about-the-fccs-perfectly-ordinary-rulemaking-process?trk_source=recommended">Republicans Are Angry About the FCC's Perfectly Ordinary Rulemaking Process</a> </p> </li> 
+          <li class="story"> 
+           <figure class="archive-img"> 
+            <a href="/read/fcc-proposes-strong-net-neutrality-rules-but-dont-call-the-internet-a-utility?trk_source=recommended"> 
+             <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/no-id/1423081270854492.jpg?crop=0.6319444444444444xw:1xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="FCC Proposes Strong Net Neutrality Rules, But Don't Call the Internet a Utility" /> </a> 
+           </figure> <p class="title"> <a href="/read/fcc-proposes-strong-net-neutrality-rules-but-dont-call-the-internet-a-utility?trk_source=recommended">FCC Proposes Strong Net Neutrality Rules, But Don't Call the Internet a Utility</a> </p> </li> 
+          <li class="story"> 
+           <figure class="archive-img"> 
+            <a href="/read/nancy-pelosi-urged-the-fcc-to-classify-the-internet-as-a-utility?trk_source=recommended"> 
+             <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/15122/1410211831242264.jpg?crop=0.6684444444444445xw:1xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="Nancy Pelosi Urged the FCC to Adopt Strict Net Neutrality Rules" /> </a> 
+           </figure> <p class="title"> <a href="/read/nancy-pelosi-urged-the-fcc-to-classify-the-internet-as-a-utility?trk_source=recommended">Nancy Pelosi Urged the FCC to Adopt Strict Net Neutrality Rules</a> </p> </li>
+         </ul>
+        </section> 
+       </div> 
+      </div> 
+      <div class="right-rail article-right-rail"> 
+       <div class="motherboard-ad sidebar-block" data-ref="sidebar"></div> 
+       <section class="motherboard-portlet motherboard-widget-connect" data-title="" data-url="" data-description="" data-media="" data-topic="" data-gatag="" data-twitterhandle="motherboard" id="yw4"> 
+        <h3>Connect To Motherboard</h3> 
+        <div class="connect-social-items"> 
+         <a href="http://www.facebook.com/motherboardtv" class="social-facebook" target="_blank" data-type="facebook"> <span class="site-icon facebook"></span> </a> 
+         <a href="http://twitter.com/MOTHERBOARD" class="social-twitter" target="_blank" data-type="twitter"> <span class="site-icon twitter"></span> </a> 
+         <a href="http://www.youtube.com/subscription_center?add_user=motherboardtv" class="social-youtube" data-type="youtube" target="_blank"> <span class="site-icon youtube"></span> </a> 
+         <a href="http://motherboardtv.tumblr.com/" class="social-tumblr" data-type="tumblr" target="_blank"> <span class="site-icon tumblr"></span> </a> 
+         <a href="/rss" data-type="rss" class="social-rss" target="_blank"> <span class="site-icon rss"></span> </a> 
+         <a href="http://www.vice.com/newsletter" data-type="email" class="social-email last" target="_blank"> <span class="site-icon envelope-alt"></span> </a> 
+        </div>
+       </section> 
+       <section class="motherboard-portlet motherboard-portlet-archive">
+        <h3 class="section-title">Most Popular</h3>
+        <ul class="stories-list"> 
+         <li class="story"> 
+          <figure class="archive-img"> 
+           <a href="/read/the-united-states-is-angry-that-china-wants-crypto-backdoors-too?trk_source=popular"> 
+            <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/19483/1425065898929872.jpg?crop=1xw:0.4351087771942986xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="The United States Is Angry That China Wants Crypto Backdoors, Too" /> </a> 
+          </figure> <p class="title"> <a href="/read/the-united-states-is-angry-that-china-wants-crypto-backdoors-too?trk_source=popular">The United States Is Angry That China Wants Crypto Backdoors, Too</a> </p> </li> 
+         <li class="story"> 
+          <figure class="archive-img"> 
+           <a href="/read/watch-42-artificial-intelligences-are-going-head-to-head-in-civilization-v?trk_source=popular"> 
+            <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/19479/1425062456187652.jpg?crop=1xw:0.5276235741444867xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="42 Artificial Intelligences Are Going Head to Head in 'Civilization V'" /> </a> 
+          </figure> <p class="title"> <a href="/read/watch-42-artificial-intelligences-are-going-head-to-head-in-civilization-v?trk_source=popular">42 Artificial Intelligences Are Going Head to Head in 'Civilization V'</a> </p> </li> 
+         <li class="story"> 
+          <figure class="archive-img"> 
+           <a href="/read/does-the-sun-have-a-heart-of-dark-matter?trk_source=popular"> 
+            <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/no-id/1425160407215491.jpg?crop=1xw:0.5155555555555555xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="Does the Sun Have a Heart of Dark Matter?" /> </a> 
+          </figure> <p class="title"> <a href="/read/does-the-sun-have-a-heart-of-dark-matter?trk_source=popular">Does the Sun Have a Heart of Dark Matter?</a> </p> </li> 
+         <li class="story"> 
+          <figure class="archive-img"> 
+           <a href="/read/police-could-charge-a-data-center-in-the-largest-child-porn-bust-ever?trk_source=popular"> 
+            <div class="article-media-overlay"></div> <img src="//motherboard-images.vice.com/content-images/article/19503/1425229776913662.jpg?crop=1xw:0.9666666666666667xh;*,*&amp;resize=600:*&amp;output-format=jpeg&amp;output-quality=90" alt="Police Could Charge a Data Center in the Largest Child Porn Bust Ever" /> </a> 
+          </figure> <p class="title"> <a href="/read/police-could-charge-a-data-center-in-the-largest-child-porn-bust-ever?trk_source=popular">Police Could Charge a Data Center in the Largest Child Porn Bust Ever</a> </p> </li> 
+        </ul>
+       </section> 
+       <div class="motherboard-ad bottom-sidebar-ad" data-ref="sidebar_bottom"></div> 
+      </div> 
+     </div> 
+     <div class="article-comment-wrapper"> 
+      <div class="wrapper"> 
+       <div class="vicenews-widget comment-widget"> 
+        <div class="motherboard-comments-ad"> 
+         <div class="motherboard-ad-header-wrapper"> 
+          <div class="motherboard-ad-header-inner"> 
+           <div class="motherboard-ad ad-masthead-wide" data-ref="header"></div> 
+          </div> 
+         </div> 
+        </div> 
+        <h5 class=""><span>Comments</span></h5> 
+        <div id="disqus_thread"></div> 
+        <script type="text/javascript">
+		var disqus_shortname = 'MotherboardUS',
+			disqus_url = 'http://motherboard.vice.com/read/fcc-confirms-net-neutrality-order-wont-be-released-today',
+			disqus_title = 'Thanks to GOP Commissioners, We Won\'t See the Full Net Neutrality Rules Today',
+			disqus_identifier = 'article/19418';
+
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = '//MotherboardUS.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+
+		(function() {
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = '//MotherboardUS.disqus.com/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+	</script> 
+        <noscript>
+         Please enable JavaScript to view the 
+         <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript> 
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+       </div> 
+      </div> 
+     </div> 
+    </article> 
+   </div> 
+   <footer id="main-footer" class="clearfix"> 
+    <div class="wrapper"> 
+     <nav id="footer-nav"> 
+      <span class="legal"> &copy; 2015 Vice Media LLC </span> 
+      <a href="/en_us/about" class="about-left">About <span>Motherboard</span></a> 
+      <div class="right-menu"> 
+       <a href="/en_us/about" class="about">About <span>Motherboard</span></a> 
+       <a href="mailto:editor@motherboard.tv" class="contact">Contact</a> 
+       <a href="/privacy">Privacy Policy</a> 
+       <a href="/terms" class="last">Terms of Use</a> 
+      </div> 
+     </nav> 
+    </div>
+    <!-- end .wrapper --> 
+   </footer> 
+  </section> 
+  <iframe src="/themes/motherboard/statics/html/mb_tracker.html" height="1" width="1" id="iframe-tracker"></iframe> 
+  <script type="text/javascript">
+    var _sf_async_config={uid:8233,domain:"motherboard.tv"};
+    (function(){
+        function loadChartbeat() {
+            window._sf_endpt=(new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src',
+            (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+            "js/chartbeat.js");
+            document.body.appendChild(e);
+        }
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function') ?
+        loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script> 
+  <!-- End of Chartbeat -->
+  <script type="text/javascript">
+	window.vmp_ad_config = {
+		ad_slots : {},
+		ad_targetting_sizes : {},
+		config : {
+			adunit : 'motherboard.vice.com/netneutrality',
+			els : '.motherboard-ad',
+			targeting : {
+				topic : "net neutrality",
+				aid : "fcc-confirms-net-neutrality-order-wont-be-released-today",
+				atype : "blog",
+				auth : "Sam Gustin",
+				keywords : "net neutrality, fcc, Title II, reclassification, Open Internet, culture, Internet",
+				country : "en_us"
+			}
+		}
+	};
+</script>
+  <script type="text/javascript">
+/*<![CDATA[*/
+//Sailthru Horizon
+(function(){function loadHorizon(){var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js';var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);}loadHorizon();var oldOnLoad = window.onload;window.onload = function(){if(typeof oldOnLoad === 'function'){oldOnLoad();}
+Sailthru.setup({domain: 'horizon.vice.com'
+});
+};
+})();
+var SYSTEM_PREFIX = 'vmp', SITE_PREFIX = 'motherboard', SITE_LOCALE = 'en_us';
+//Google Custom Serch Engine
+(function(){var cx = '006027918092062956483:2wxwe5src7c';
+var gcse = document.createElement('script');
+gcse.type = 'text/javascript';
+gcse.async = true;
+gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(gcse, s);
+})();
+
+/*]]>*/
+</script> 
+  <script type="text/javascript" src="/assets/js/vmp/lib/require.min.js?v20150227013551" id="vmp-require-js" data-main="/assets/js/vmp/system/require.config.js?v20150227013551" data-config-extension="/assets/js/motherboard/configs/mobo.config.js?v20150227013551" data-main-script="/assets/js/motherboard/articles/single.js" data-asset-version="v20150227013551"></script>  
+ </body>
+</html>

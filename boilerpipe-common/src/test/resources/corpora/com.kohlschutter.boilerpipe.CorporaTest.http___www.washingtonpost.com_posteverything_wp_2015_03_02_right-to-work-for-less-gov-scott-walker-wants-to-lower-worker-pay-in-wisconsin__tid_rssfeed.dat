@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=2.0" /> 
+  <meta name="keywords" content="unions, right-to-work, Scott Walker, wages, bargaining power, jobs, growth, " /> 
+  <meta name="description" content="The &quot;right-to-work&quot; legislation set to pass in Wisconsin provides no new rights and no new work. What it's really about is undermining the bargaining power of working Wisconsinites." /> 
+  <meta name="news_keywords" content="unions, right-to-work, Scott Walker, wages, bargaining power, jobs, growth, " /> 
+  <meta name="twitter:site" value="@WashingtonPost" /> 
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta property="og:description" content="The &quot;right-to-work&quot; legislation set to pass in Wisconsin provides no new rights and no new work. What it's really about is undermining the bargaining power of working Wisconsinites." /> 
+  <meta property="og:type" content="article" /> 
+  <meta property="og:site_name" content="Washington Post" /> 
+  <meta property="og:image" content="http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/02/04/National-Politics/Images/Wisconsin_Budget-0b261.jpg" /> 
+  <meta property="og:title" content="Right to work for less: Gov. Scott Walker wants to lower worker pay in Wisconsin" /> 
+  <meta property="article:publisher" content="https://www.facebook.com/washingtonpost" /> 
+  <meta property="fb:admins" content="1513210492" /> 
+  <meta property="fb:app_id" content="41245586762" /> 
+  <meta property="fb:admins" content="1244584375" /> 
+  <meta property="fb:admins" content="4403963" /> 
+  <meta property="fb:admins" content="2724956" /> 
+  <meta property="fb:admins" content="500835072" /> 
+  <meta property="og:url" content="http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" /> 
+  <meta name="section" content="" /> 
+  <meta name="commercialNode" content="/opinions" /> 
+  <link rel="canonical" href="http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" /> 
+  <link rel="alternate" href="android-app://com.washingtonpost.android/wp-android/www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" /> 
+  <title>Right to work for less: Gov. Scott Walker wants to lower worker pay in Wisconsin - The Washington Post</title> 
+  <meta property="twitter:creator" content="@econjared" /> 
+  <!--[if (gt IE 8) | (IEMobile)]><!--> 
+  <link rel="stylesheet" href="/pb/resources/css/headerfonts.css?_=63ea2f" /> 
+  <!--<![endif]--> 
+  <!--[if (lt IE 9) & (!IEMobile)]><link rel="stylesheet" href="/pb/resources/css/headerfonts_ie.css?_=63ea2f"/><![endif]--> 
+  <link rel="stylesheet" href="/pb/resources/compact/type/default/styles/bc9d233e62887b11846ddc11bf4175c8.css?_=63ea2f" /> 
+  <link rel="stylesheet" href="/pb/resources/compact/template/rsGOqUHVBT_e95UFnb0Lg-A/styles/c02b52362899159d02048b5e21f9c491.css?_=63ea2f" /> 
+  <link rel="stylesheet" href="/pb/resource/style-rsGOqUHVBT_e95UFnb0Lg-A-eff422a0.css?_=63ea2f" /> 
+  <script>window.head_conf={head:"TWPHead"};</script> 
+  <script src="/pb/resources/js/head.min.js"></script> 
+  <script type="text/javascript" src="/pb/resources/compact/type/default/headJS/068d3c1f0e80ba3b4dc4a0d195ab9bcb.js?_=63ea2f"></script> 
+  <script type="text/javascript" src="/pb/resource/headjs-rsGOqUHVBT_e95UFnb0Lg-A-eff422a0.js?_=63ea2f"></script> 
+  <script>(function(r){r.pageName="";r.templateName="rsGOqUHVBT_e95UFnb0Lg-A";r.contextPath="/pb";r.isAdmin=false;r.layoutEngineName="off";r.environment="production"}(window.wp_pb||{}));var commercialNode="/opinions";</script> 
+  <script type="text/javascript">wp_pb=window.wp_pb||{};var isMobile={Android:function(){return navigator.userAgent.match(/Android/i)?true:false},AndroidOld:function(){return navigator.userAgent.match(/Android 2.3.3/i)?true:false},AndroidTablet:function(){return(navigator.userAgent.match(/Android/i)&&!navigator.userAgent.match(/Mobile/i))?true:false},Kindle:function(){return navigator.userAgent.match(/Kindle/i)?true:false},KindleFire:function(){return navigator.userAgent.match(/KFOT/i)?true:false},Silk:function(){return navigator.userAgent.match(/Silk/i)?true:false},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)?true:false},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)?true:false},iPhone:function(){return navigator.userAgent.match(/iPhone|iPod/i)?true:false},iPad:function(){return navigator.userAgent.match(/iPad/i)?true:false},Windows:function(){return navigator.userAgent.match(/IEMobile/i)?true:false},FirefoxOS:function(){return(navigator.userAgent.match(/Mozilla/i)&&navigator.userAgent.match(/Mobile/i))?true:false},Retina:function(){return(window.retina||window.devicePixelRatio>1)?true:false},any:function(){return(isMobile.Android()||isMobile.Kindle()||isMobile.KindleFire()||isMobile.Silk()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Windows()||isMobile.FirefoxOS())},all:function(){return(navigator.userAgent)},tablet:function(){return(isMobile.AndroidTablet()||isMobile.iPad()||isMobile.Kindle()||isMobile.KindleFire()||isMobile.Silk())}};var mobile_browser=isMobile.any()?1:0,iphone_browser=isMobile.iPhone()?1:0,ipad_browser=isMobile.iPad()?1:0,android_browser=isMobile.Android()?1:0,android233_browser=isMobile.AndroidOld()?1:0,kindle_browser=isMobile.Kindle()?1:0,retina_browser=isMobile.Retina()?1:0,mobile_tablet=isMobile.tablet()?1:0;TWP=window.TWP||{};TWP.PostTV=TWP.PostTV||{};TWP.PostTV.BrowserInfo=TWP.PostTV.BrowserInfo||{init:function(){this.browser=this.searchString(this.dataBrowser)||"An unknown browser";this.version=this.searchVersion(navigator.userAgent)||this.searchVersion(navigator.appVersion)||"an unknown version";this.OS=this.searchString(this.dataOS)||"an unknown OS"},searchString:function(data){for(var i=0;i<data.length;i++){var dataString=data[i].string;var dataProp=data[i].prop;this.versionSearchString=data[i].versionSearch||data[i].identity;if(dataString){if(dataString.indexOf(data[i].subString)!=-1){return data[i].identity}}else{if(dataProp){return data[i].identity}}}},searchVersion:function(dataString){var index=dataString.indexOf(this.versionSearchString);if(index==-1){return}return parseFloat(dataString.substring(index+this.versionSearchString.length+1))},dataBrowser:[{string:navigator.userAgent,subString:"Chrome",identity:"Chrome"},{string:navigator.userAgent,subString:"OmniWeb",versionSearch:"OmniWeb/",identity:"OmniWeb"},{string:navigator.vendor,subString:"Apple",identity:"Safari",versionSearch:"Version"},{prop:window.opera,identity:"Opera",versionSearch:"Version"},{string:navigator.vendor,subString:"iCab",identity:"iCab"},{string:navigator.vendor,subString:"KDE",identity:"Konqueror"},{string:navigator.userAgent,subString:"Firefox",identity:"Firefox"},{string:navigator.vendor,subString:"Camino",identity:"Camino"},{string:navigator.userAgent,subString:"Netscape",identity:"Netscape"},{string:navigator.userAgent,subString:"MSIE",identity:"Explorer",versionSearch:"MSIE"},{string:navigator.userAgent,subString:"Gecko",identity:"Mozilla",versionSearch:"rv"},{string:navigator.userAgent,subString:"Mozilla",identity:"Netscape",versionSearch:"Mozilla"}],dataOS:[{string:navigator.platform,subString:"Win",identity:"Windows"},{string:navigator.platform,subString:"Mac",identity:"Mac"},{string:navigator.userAgent,subString:"iPhone",identity:"iPhone"},{string:navigator.userAgent,subString:"iPad",identity:"iPad"},{string:navigator.userAgent,subString:"Android",identity:"Android"},{string:navigator.platform,subString:"Linux",identity:"Linux"}]};TWP.PostTV.BrowserInfo.init();TWP.PostTV.getCookie=function(name){var nameEQ=name+"=";var ca=document.cookie.split(";");for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==" "){c=c.substring(1,c.length)}if(c.indexOf(nameEQ)==0){return c.substring(nameEQ.length,c.length)}}return null};wp_pb.BrowserInfo=wp_pb.BrowserInfo||{};wp_pb.BrowserInfo.mobile_browser=mobile_browser;wp_pb.BrowserInfo.tablet=mobile_tablet;wp_pb.BrowserInfo.OS=TWP.PostTV.BrowserInfo.OS;wp_pb.BrowserInfo.browser=TWP.PostTV.BrowserInfo.browser;wp_pb.BrowserInfo.version=TWP.PostTV.BrowserInfo.version;wp_pb.BrowserInfo.OS=TWP.PostTV.BrowserInfo.OS;</script> 
+  <script type="text/javascript">if(typeof wp_meta_data=="undefined"){try{wp_meta_data={platform:"pagebuilder",showAds:true,showPreRollAds:false,isHomepage:false,isErrorPage:false,isMultimedia:false,wt:"BlogStory",contentName:["posteverything"],page_id:["posteverything15167"],author:["Jared Bernstein"],keywords:["unions","right-to-work","Scott Walker","wages","bargaining power","jobs","growth",""],clavis:{keywords:[],topics:[],ct:[]},breaking_news:[false],contentType:["BlogStory"]}}catch(e){}};</script> 
+  <script type="text/javascript">(function(){TWP=(typeof TWP=="undefined")?{}:TWP;TWP.Data=(typeof TWP.Data=="undefined")?{}:TWP.Data;TWP.Data["Tracking"]={init:function(){this.props={};this.props.platform="pagebuilder";this.props.page_type="";this.props.page_name="opinions:blog:posteverything - 15167 - 20150302 - right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin";this.props.section="opinions";this.props.channel="wp - opinions";this.props.subsection="opinions";this.props.hierarchy="opinions|blog";this.props.content_type="blog";this.props.story_type="";this.props.headline="Right to work for less: Gov. Scott Walker wants to lower worker pay in Wisconsin";this.props.author="Jared Bernstein";this.props.source="The Washington Post";this.props.content_id="posteverything15167";this.props.page_num="";this.props.op_ranking="no sentiment - no ideology";this.props.columnname="";this.props.blogname="posteverything";this.props.published="";this.props.news_or_commercial="News";this.props.commercial_node="/opinions";this.props.content_category="Opinions";this.props.sectionfront="";this.props.track_scrolling=true}};TWP.Data["Tracking"].init()})();</script> 
+  <script type="text/javascript">(function(){var a=document,b=a.createElement("script"),a=a.getElementsByTagName("script")[0];b.type="text/javascript";b.async=!0;b.src="http://s.moatads.com/washpost421KqtH31/moatcontent.js";a.parentNode.insertBefore(b,a)})();</script> 
+  <script id="twp-identity" src="//js.washingtonpost.com/1h/twp-global.js"></script> 
+ </head> 
+ <body class="pb-theme-normal pb-full-fluid"> 
+  <script type="text/javascript" src="//js.washingtonpost.com/wp-stat/otto/js/mbox.js"></script> 
+  <div class="mboxDefault"></div> 
+  <div class="pb-container " id="pb-root"> 
+   <div id="article-posteverything_1400695227156_920" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-page-header-v2 pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="page-header-v2" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="page-header-v2|article-posteverything"> 
+    <!--[if lt IE 9]><style>.lt-ie9 body.left-menu #site-menu{left:-50px}.lt-ie9 #wp-logo{background:transparent url(/pb/resources/img/washingtonpost_black_32.png) no-repeat 0 8px}.lt-ie9 header.dark #wp-logo{background:transparent url(/pb/resources/img/washingtonpost_white_32.png) no-repeat 0 8px}</style><![endif]--> 
+    <!--[if lt IE 8]><header class="ie ie7 lte9 lte8 lte7 abt-not-loaded "><![endif]--> 
+    <!--[if IE 8]><header class="ie ie8 lte9 lte8 abt-not-loaded "><![endif]--> 
+    <!--[if IE 9]><header class="ie ie9 lte9 abt-not-loaded "><![endif]--> 
+    <!--[if gt IE 9]><header class="ie abt-not-loaded "><![endif]--> 
+    <!--[if !IE]><!--> 
+    <header id="wp-header" class="nie abt-not-loaded ">
+     <!--<![endif]--> 
+     <nav id="site-menu" class="nav-menu"> 
+      <form id="nav-search-mobile" method="get" action="http://www.washingtonpost.com/pb/newssearch/"> 
+       <button type="submit" class="fa fa-search"></button> 
+       <input type="text" placeholder="Search" name="query" autocomplete="off" /> 
+      </form> 
+      <ul id="site-menu-sections"> 
+       <li id="nav-screenreader-link"><a class="screenreader-link" href="http://www.washingtonpost.com/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/?resType=accessibility">Accessibility for screenreader</a></li> 
+       <li id="nav-sign-in-mobile" class="hidden mobile-only"><a href="#">Sign In</a></li> 
+       <li id="nav-user-mobile" class="hidden mobile-only"><a href="#">Username</a></li> 
+       <li><a href="http://www.posttv.com/?nid=top_pb_posttv">PostTV</a></li> 
+       <li><a href="http://www.washingtonpost.com/politics?nid=top_pb_politics">Politics</a></li> 
+       <li><a href="http://www.washingtonpost.com/opinions?nid=top_pb_opinions">Opinions</a></li> 
+       <li><a href="http://www.washingtonpost.com/local?nid=top_pb_local">Local</a></li> 
+       <li><a href="http://www.washingtonpost.com/sports?nid=top_pb_sports">Sports</a></li> 
+       <li><a href="http://www.washingtonpost.com/national?nid=top_pb_national">National</a></li> 
+       <li><a href="http://www.washingtonpost.com/world?nid=top_pb_world">World</a></li> 
+       <li><a href="http://www.washingtonpost.com/business?nid=top_pb_business">Business</a></li> 
+       <li><a href="http://www.washingtonpost.com/business/technology?nid=top_pb_technology">Tech</a></li> 
+       <li><a href="http://www.washingtonpost.com/lifestyle?nid=top_pb_lifestyle">Lifestyle</a></li> 
+       <li><a href="http://www.washingtonpost.com/entertainment?nid=top_pb_entertainment">Entertainment</a></li> 
+       <li><a href="http://www.washingtonpost.com/classifieds?nid=top_pb_classifieds">Classifieds</a></li> 
+       <li><a href="http://www.washingtonpost.com/jobs?nid=top_pb_jobs">Jobs</a></li> 
+       <li><a href="http://www.washingtonpost.com/realestate?nid=top_pb_realestate">Real Estate</a></li> 
+       <li><a href="http://www.washingtonpost.com/goingoutguide?nid=top_pb_goingoutguide">Events</a></li> 
+       <li><a href="http://www.washingtonpost.com/rentals?nid=top_pb_rentals">Rentals</a></li> 
+       <li><a href="http://www.washingtonpost.com/cars/?nid=top_pb_cars">Cars</a></li> 
+       <li><a href="http://www.washingtonpost.com/sf/brand-connect/?nid=top_pb_brandconnect">WP BrandConnect</a></li> 
+       <li><a href="https://account.washingtonpost.com/actmgmt/registration/addnewsletter/default/">Newsletters &amp; Alerts</a></li> 
+      </ul> 
+      <div id="site-menu-info"> 
+       <p class="site-attribution"> <a href="http://www.washingtonpost.com"><strong>washingtonpost.com</strong></a> <span class="copyright">&copy; 1996-2015 The Washington Post</span> </p> 
+       <p><a href="http://www.washingtonpost.com/actmgmt/help/">Help and Contact Us</a></p> 
+       <p><a href="http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p> 
+       <p><a href="http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p> 
+       <p><a href="http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submissions and Discussion Policy</a></p> 
+       <p><a href="http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p> 
+       <p><a href="http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p> 
+      </div> 
+     </nav> 
+     <div id="user-menu" class="nav-menu">
+      <ul></ul>
+     </div> 
+     <div id="nav-bar"> 
+      <div class="nav-left nav-section"> 
+       <div id="site-menu-btn" class="nav-btn"> 
+        <span class="nav-btn-label">Sections</span> 
+        <i class="fa fa-bars"></i> 
+       </div> 
+       <div id="wp-logo"> 
+        <a href="http://www.washingtonpost.com?nid=top_pb_wplogo">The Washington Post</a> 
+       </div> 
+       <div id="wp-logo-for-print"> 
+        <img src="//www.washingtonpost.com/pb/resources/img/washingtonpost_black_32.png" alt="The Washington Post" /> 
+       </div> 
+      </div> 
+      <div class="nav-middle nav-section"> 
+       <div id="nav-page-title" data-show-on-scroll="true">
+        Right to work for less: Gov. Scott Walker wants to lower worker pay in Wisconsin
+       </div> 
+      </div> 
+      <div class="nav-right nav-section"> 
+       <form id="nav-search" method="get" action="http://www.washingtonpost.com/newssearch/"> 
+        <input type="text" placeholder="Search" name="query" autocomplete="off" /> 
+        <button type="submit" class="fa fa-search"></button> 
+       </form> 
+       <a id="nav-sign-in" class="nav-btn hidden" href="#">Sign In</a> 
+       <div id="nav-user" class="nav-btn hidden" data-menu="user-menu" data-show-identity="true"> 
+        <span class="username">Username</span> 
+        <i class="fa fa-caret-down"></i> 
+       </div> 
+      </div> 
+     </div> 
+    </header> 
+    <div id="wp-topper" class="abt-not-loaded"> 
+     <a id="wp-logo-large" href="http://www.washingtonpost.com?nid=top_pb_wplogo"></a> 
+     <div class="top-timestamp"></div> 
+    </div> 
+   </div> 
+   <div id="article-posteverything_1400695245717_741" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-ad-leaderboard pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="ad-leaderboard" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="ad-leaderboard|article-posteverything"> 
+    <div class="leaderboard ad-hideable"> 
+     <div id="slug_leaderboard" data-ad-type="leaderboard" class="pb-ad-container" style="display:none;"> 
+     </div> 
+    </div> 
+    <div class="mobile-leaderboard ad-hideable"> 
+     <div id="slug_mob_av" data-ad-type="mob_av" style="display:none;"></div> 
+    </div> 
+    <div class="mobile-fixed ad-hideable"> 
+     <div id="slug_t" data-ad-type="t" class="pb-ad-container-mobile" style="display:none;"> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="article-posteverything_1400870992330_392" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-article-article-topper pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="article-article-topper" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="article-article-topper|article-posteverything"> 
+    <div id="article-topper" class="article-topper"> 
+     <div class="headline-kicker">
+      <a href="http://www.washingtonpost.com/posteverything">PostEverything</a>
+     </div> 
+     <h1>Right to work for less: Gov. Scott Walker wants to lower worker pay in Wisconsin</h1> 
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+   <div id="article-posteverything_1409076140335_584" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-sharebars-top-share-bar pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="sharebars-top-share-bar" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="sharebars-top-share-bar|article-posteverything"> 
+    <style>.hideText{position:absolute;left:-10000px}</style> 
+    <div id="top-sharebar_1952" class="top-sharebar-wrapper color-top unprocessed" data-postshare="facebook,twitter"> 
+     <div class="social-tools-wrapper"> 
+      <div class="social-tools-primary margin-top"> 
+       <div class="social-tools "> 
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'https://www.facebook.com/sharer/sharer.php?u=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '' , 'width=658,height=354,scrollbars=no');}catch(err){ window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwapo.st%2F1Gbi7cW','share_facebook','width=658,height=354,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="facebook tool first desktop mobile">
+          <span class="hideText">Share on Facebook</span>
+          <span class="fa fa-facebook-square"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'https://twitter.com/share?url=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '&amp;text=Right+to+work+for+less%3A+Gov.+Scott+Walker+wants+to+lower+worker+pay+in+Wisconsin' , 'width=550, height=350, scrollbars=no');}catch(err){ window.open('https://twitter.com/share?url=http%3A%2F%2Fwapo.st%2F1Gbi7cW&amp;text=Right+to+work+for+less%3A+Gov.+Scott+Walker+wants+to+lower+worker+pay+in+Wisconsin','share_twitter','width=550, height=350, scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="twitter tool desktop mobile">
+          <span class="hideText">Share on Twitter</span>
+          <span class="fa fa-twitter"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'https://plus.google.com/share?url=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '' , 'width=832,height=472,scrollbars=no');}catch(err){ window.open('https://plus.google.com/share?url=http%3A%2F%2Fwapo.st%2F1Gbi7cW','share_google-plus','width=832,height=472,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="google-plus tool desktop">
+          <span class="hideText">Share on Google Plus</span>
+          <span class="fa fa-google-plus"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'mailto:?subject=Right%20to%20work%20for%20less%3A%20Gov.%20Scott%20Walker%20wants%20to%20lower%20worker%20pay%20in%20Wisconsin from The Washington Post&amp;body=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '' , null);}catch(err){ window.location.href = 'mailto:?subject=Right%20to%20work%20for%20less%3A%20Gov.%20Scott%20Walker%20wants%20to%20lower%20worker%20pay%20in%20Wisconsin from The Washington Post&amp;body=http%3A%2F%2Fwapo.st%2F1Gbi7cW'; }return false;" tabindex="_tbidx_"> 
+         <div class="email tool desktop">
+          <span class="hideText">Share via Email</span>
+          <span class="fa fa-envelope"></span>
+         </div> </a>
+        <a onclick="return false;"> 
+         <div class="more tool last desktop mobile">
+          <span class="hideText" tabindex="_tbidx_">More Options</span>
+          <span class="fa fa-plus"> </span>
+         </div> </a>
+       </div> 
+      </div> 
+      <div class="social-tools-additional margin-top"> 
+       <div class="social-tools "> 
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'mailto:?subject=Right%20to%20work%20for%20less%3A%20Gov.%20Scott%20Walker%20wants%20to%20lower%20worker%20pay%20in%20Wisconsin from The Washington Post&amp;body=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '' , null);}catch(err){ window.location.href = 'mailto:?subject=Right%20to%20work%20for%20less%3A%20Gov.%20Scott%20Walker%20wants%20to%20lower%20worker%20pay%20in%20Wisconsin from The Washington Post&amp;body=http%3A%2F%2Fwapo.st%2F1Gbi7cW'; }return false;" tabindex="_tbidx_"> 
+         <div class="email tool first mobile">
+          <span class="hideText">Share via Email</span>
+          <span class="fa fa-envelope"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'whatsapp://send?text=Right%20to%20work%20for%20less%3A%20Gov.%20Scott%20Walker%20wants%20to%20lower%20worker%20pay%20in%20Wisconsin - ', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '' , null);}catch(err){ window.location.href = 'whatsapp://send?text=Right%20to%20work%20for%20less%3A%20Gov.%20Scott%20Walker%20wants%20to%20lower%20worker%20pay%20in%20Wisconsin - http%3A%2F%2Fwapo.st%2F1Gbi7cW'; }return false;" tabindex="_tbidx_"> 
+         <div class="whatsapp tool mobile">
+          <span class="hideText">Share on Whatsapp</span>
+          <span class="fa fa-whatsapp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAEhwAABIcBblSwhwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKMSURBVEiJnZVLSFVRFIb/czORKEqjJI0EoVKILMxB0cBJjYJGRhMD6TVs0kAhpw2qSdkoCGoSQkENehBKUSARCtqggiJudUGjh4+KEDW/BmftXB3OuXr7YbH3Wa9/r33WWScCtAg2S9olqdnWHZLGJA05GZb0KzMDkCV1QD9LwzhwJCtXlFHJCUkXJK2SNCnpiZ14UNKIpA2SWqyyPZK2WdxdSScljRarZAXw0J3wFrC+SLVBOoBJi5kADnh70vmyOX4GDi0huZda4J4jqk0j2QfMAzNAU4kEXsJNPEiSrAEKZux2AduBO8ClEkg2uqs77kl6TDkElJkuB3xgATtLIOqwmO9ApYAI+GTK/c5xN//iYonX9sri2nPWhtWSkPTcNV51oq1bMj+2dDyz9WBO0lZ7eCtpyjkNuP28pM4SSYZsbchJqrGHwYTTF0lPbT+peHSUgpCvJiep3CVN4pSkGUlVkq6WSDJua0VOUt4eGlMcRyR12b5N0hlJkbMvl1SZQdJs65jvokJGl0RAr+uyfuLhWQEMANPWecnxc878HwuoAmZNUZ9BtAy44Yh+APlEi38zvxDzyPRdQRESXCvS9xFwzJKlIe98G61CgIagbDHFHNBQhEjAOqALeOEI3rEwEcqAQdNfJzEg35uhbRESL1uI51vkdN2WpwCs9iT1ZvhJ/E/53wncTjzFwY2oYOw0Q68LaLJTLiV5NfG0Dujx9rAZNuNZ4LzdccB9oBUoTyReCewFTgNfzXcKOJo8RLjXNEwQ/8QC5oy8D3gN/E749wGb0ir1LwrgI/GH1Urc8/VW3WjKIaaJ/z9XgMNpyYNEwE1JbyTd1sLkTMNaSXWSaiUVJL2UNFvE/y/+AObPwGxY9EFMAAAAAElFTkSuQmCC" /></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, '//pinterest.com/pin/create/button/?url=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '&amp;media=http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/02/04/National-Politics/Images/Wisconsin_Budget-0b261.jpg&amp;description=Right+to+work+for+less%3A+Gov.+Scott+Walker+wants+to+lower+worker+pay+in+Wisconsin' , 'width=550,height=450,scrollbars=no');}catch(err){ window.open('//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwapo.st%2F1Gbi7cW&amp;media=http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/02/04/National-Politics/Images/Wisconsin_Budget-0b261.jpg&amp;description=Right+to+work+for+less%3A+Gov.+Scott+Walker+wants+to+lower+worker+pay+in+Wisconsin','share_linkedin','width=550,height=450,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="pinterest tool desktop mobile">
+          <span class="hideText">Share on Pinterest</span>
+          <span class="fa fa-pinterest"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'https://plus.google.com/share?url=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '' , 'width=832,height=472,scrollbars=no');}catch(err){ window.open('https://plus.google.com/share?url=http%3A%2F%2Fwapo.st%2F1Gbi7cW','share_google-plus','width=832,height=472,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="google-plus tool mobile">
+          <span class="hideText">Share on Google Plus</span>
+          <span class="fa fa-google-plus"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'http://www.linkedin.com/shareArticle?mini=true&amp;url=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '&amp;title=Right+to+work+for+less%3A+Gov.+Scott+Walker+wants+to+lower+worker+pay+in+Wisconsin' , 'width=830,height=460,scrollbars=no');}catch(err){ window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwapo.st%2F1Gbi7cW&amp;title=Right+to+work+for+less%3A+Gov.+Scott+Walker+wants+to+lower+worker+pay+in+Wisconsin','share_linkedin','width=830,height=460,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="linkedin tool desktop mobile">
+          <span class="hideText">Share on LinkedIn</span>
+          <span class="fa fa-linkedin"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'http://www.tumblr.com/share/link?url=', 'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/', '&amp;name=Right+to+work+for+less%3A+Gov.+Scott+Walker+wants+to+lower+worker+pay+in+Wisconsin&amp;description=' , 'width=550,height=450,scrollbars=no');}catch(err){ window.open('http://www.tumblr.com/share/link?url=http%3A%2F%2Fwapo.st%2F1Gbi7cW&amp;name=Right+to+work+for+less%3A+Gov.+Scott+Walker+wants+to+lower+worker+pay+in+Wisconsin&amp;description=','share_tumblr','width=550,height=450,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="tumblr tool last desktop">
+          <span class="hideText">Share on Tumblr</span>
+          <span class="fa fa-tumblr"></span>
+         </div> </a>
+       </div> 
+      </div> 
+     </div> 
+     <div id="slug_tiffany_tile" data-ad-type="tiffany_tile" class="left" style="display:none;padding-left:20px !important;height:auto;max-height:60px;overflow:hidden;"> 
+      <div id="wpni_adi_tiffany_tile" class="ads slug tiffany_tile header"></div> 
+     </div> 
+     <div class=" utility-tools-wrapper"> 
+      <div class="utility-tools-primary margin-top"> 
+       <div class="social-tools "> 
+        <div class="textresizer tool first mobile">
+         <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+         <span class="fa fa-font"></span>
+        </div>
+        <a onclick="window.print();" tabindex="_tbidx_"> 
+         <div class="print tool mobile">
+          <span class="hideText">Print Article</span>
+          <span class="fa fa-print"></span>
+         </div> </a>
+        <a href="#" onclick="wp_pb.report('comments', 'showComments',{elm:$(this),guid:'http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/'}); return false;" tabindex="_tbidx_"> 
+         <div class="comments tool last mobile">
+          <span class="hideText">Comments</span>
+          <span class="fa fa-comments"></span> 
+          <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/"></span>
+         </div> </a>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="clear"></div> 
+   </div> 
+   <div class="pb-scatter"> 
+    <div id="main-content" class="pb-layout-item pb-chain pb-two col-lg-8 col-md-8 col-sm-12 col-xs-12 main-content" data-pb-columns="2"> 
+     <div id="article-posteverything_1400870958390_84" class="moat-trackable pb-feature pb-chained pb-f-article-article-body pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="article-article-body" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="article-article-body|article-posteverything"> 
+      <div id="article-body" class="article-body"> 
+       <div class="pb-sig-line has-headshot has-1-headshots has-bio is-not-column"> 
+        <a href="http://www.washingtonpost.com/people/jared-bernstein"><img alt="Jared Bernstein" class="pb-headshot pos-1" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/posteverything/wp-content/uploads/2014/06/Bernstein-e1403707521281.jpg&amp;h=80&amp;w=80" /></a>
+        <div class="headshot-to-the-left"> 
+         <span class="pb-byline">By <a href="http://www.washingtonpost.com/people/jared-bernstein">Jared Bernstein</a></span> 
+         <span class="pb-timestamp">March 2</span> 
+         <span class="tweet-authors"><span class="pb-twitter-follow unprocessed"><a href="https://twitter.com/@econjared" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @econjared</a></span> </span> 
+         <div class="pb-bio">
+          Jared Bernstein, a former chief economist to Vice President Biden, is a senior fellow at the Center on Budget and Policy Priorities and author of the forthcoming book 'The Reconnection Agenda: Reuniting Growth and Prosperity.'
+         </div> 
+        </div>
+        <div class="clear"></div> 
+       </div> 
+       <article>
+        <div class="inline-content inline-photo inline-photo-normal"> 
+         <a name="fa9d72ad58"></a> 
+         <img class="unprocessed" data-hi-res-src="//www.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/02/04/National-Politics/Images/Wisconsin_Budget-0b261.jpg&amp;w=1484" data-low-res-src="//www.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/02/04/National-Politics/Images/Wisconsin_Budget-0b261.jpg&amp;w=480" src="//www.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/02/04/National-Politics/Images/Wisconsin_Budget-0b261.jpg&amp;w=480" />
+         <br /> 
+         <span class="pb-caption">Gov. Scott Walker wants Wisconsin to join states covered by right-to-work laws. (John Hart/Wisconsin State Journal via Associated Press)</span> 
+        </div> 
+        <p>The art of the misnomer — an industry standard of American politics — has rarely been more effectively applied than in right-to-work&nbsp;laws. Since Wisconsin Gov. Scott Walker (R) and the state&nbsp;<a href="http://www.huffingtonpost.com/2015/02/28/right-to-work-protests_n_6775886.html">legislature</a> are in the midst of trying to turn the state into the 25th covered by the laws, it’s worth unpacking what’s going on here.</p> 
+        <p>Here’s what the legislation&nbsp;does: It makes it illegal for unions to negotiate contracts wherein&nbsp;everyone covered by that contract has to contribute to its negotiation and enforcement.</p> 
+        <p>Let’s be very clear about this: RTW does not confer some new right or privilege on those in states that adopt it. It takes away an existing right: the ability of unions to require the beneficiaries of union contracts to pay for their negotiation and enforcement. In anything, the law creates a right to freeload — to reap the significant benefits of union bargaining without paying for them.</p> 
+        <p>Let’s also be clear about what goes on in non-RTW states, as anti-union forces consistently distort the current reality. In non-RTW states, no one has to join a union. There have been no “closed shops” in America for more than 20 years. When RTW advocates say they’re fighting against “forced unionism,” they are making stuff up. There’s no such thing.</p> 
+        <p>Workers in a bargaining unit in non-RTW states don’t even have to pay full union dues. If they object to, say, the union’s political activities, they can pay reduced dues that cover only the costs of negotiating and enforcing the contract. Since that’s most of what local unions do, by the way, such fees amount to 80 percent to 90 percent of full dues.</p> 
+        <p>So when Steve Moore of the Heritage Foundation <a href="http://www.washingtonexaminer.com/why-every-state-should-guarantee-the-right-to-work/article/2550668">claims</a> that workers in non-RTW states “can be compelled to join a union and pay dues at a union shop whether they wish to or not” or that they “can even be forced to pay union dues for partisan political activities with which they don’t agree,” he’s deep within a fact-free zone.</p> 
+        <p>Gordon Lafer, whose <a href="http://www.epi.org/publication/right-to-work-is-the-wrong-answer-for-wisconsin/">work on this issue</a> is indispensable, points out the following:</p>
+        <div class="has-subscribe-promo borB1S borT1S marB26 padB10 padT10"> 
+        </div> 
+        <p>“There are many organizations that, like unions, require membership dues. For instance, an attorney who wants to appear in court must be a dues-paying member of the bar association. One may dislike the bar association, but must still pay dues if he or she wants to appear in court. Condominium or homeowners associations similarly require dues of their members. A homebuyer can’t choose to live in a condominium development without paying the association fees. Yet the national corporate lobbies supporting RTW are not proposing a ‘right to practice law’ or a ‘right to live where you want.’ They are focused solely on restricting employees’ organizations.”</p> 
+        <p>Along with misnaming, the other silly game you see played in these debates involves <a href="http://alec.org/docs/RSPS_7th_Edition.pdf">cooking the numbers</a> to make it look like your preferred policy unleashes reams of growth and jobs and whatever other fairy dust you’re selling. I could easily argue that Mississippi, a RTW state, had the highest state unemployment rate at the end of last year and the lowest job growth. You could just as easily point out that North Dakota, as a RTW state, had the lowest unemployment rate and highest job growth. In fact, that sounds uncomfortably like a D.C. pundits’ debate.</p> 
+        <p>Thankfully, Brad Plumer <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2012/12/10/how-right-to-work-laws-could-reshape-michigans-economy/">reviewed</a> the exhaustive research on the effect of RTW on state economies and provides this useful summary:</p> 
+        <p>“There’s a dizzying amount of research on the subject, but a few broad conclusions have emerged over the years: Right-to-work laws do weaken labor unions. The laws appear to tilt the balance of power so that workers reap fewer of the gains from growth. And it’s still hard to find definitive evidence that right-to-work laws help (or harm) a state’s overall economy.”</p> 
+        <p>Finally, economists Heidi Shierholz and Elise Gould do the rigorous statistical <a href="http://s4.epi.org/files/page/-/old/briefingpapers/BriefingPaper299.pdf">analysis</a> to quantify Plumer’s “appear to tilt” point. They look at the difference in pay between RTW and non-RTW states and find that the “raw” difference, with no effort to control for the wide variety of wage determinants, is about 14 percent in favor of non-RTW states. But that makes no more sense than ignoring North Dakota’s energy-extraction boom in celebrating its low unemployment rate.</p> 
+        <p>When they add a full set of controls, including workers’ characteristics, state economic conditions and state price differences, they still find a significant wage advantage in non-RTW states of about 3 percent, which, for full-time workers, amounts to $1,500 per year.</p> 
+        <p>Look, there are no perfect institutions in America, and unions are no exception. But they exist for a critically important reason: to balance out the inherent power of employers over workers and, thus, to enforce a more equitable distribution of the fruits of growth. In this regard, it is not a coincidence that as unions have diminished in numbers and power, the earnings of the middle class have stagnated.</p> 
+        <p>Moreover, because of their role in balancing power, unions in America have also been an important force for progressive politics. Though they still play that role, it, too, is diminished. Here again, the rise of a disparaged government engaged in dysfunctional, broken politics is no coincidence.</p> 
+        <p>So regardless of where you stand on this issue, and especially if you’ve reasonably been walking around thinking “right-to-work” sounds like something you should support, read the Lafer link above and see whether you find it convincing. And if you do, please pass it forward. Working Americans have enough trouble trying to make ends meet in this economy without deeply funded propagandists undermining their already weak bargaining power.</p>
+       </article> 
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div id="article-posteverything_1400695254028_901" class="moat-trackable pb-feature pb-chained pb-f-page-share-bar pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-share-bar" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="page-share-bar|article-posteverything"> 
+      <div class="social-tools-wrapper-bottom "> 
+       <ul class="social-tools-bottom inline"> 
+        <li data-sharetype="facebook" class="left facebook"> <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwapo.st%2F1Gbi7cW','share_facebook','width=658,height=354,scrollbars=no'); return false;" tabindex="_tbidx_"> <span class="fa fa-facebook-square">&nbsp;</span><span class="longname">Share on Facebook</span><span class="shortname">Share</span> </a> </li> 
+        <li data-sharetype="twitter" class="right twitter"> <a href="#" onclick="window.open('https://twitter.com/share?url=http%3A%2F%2Fwapo.st%2F1Gbi7cW&amp;text=Right to work for less: Gov. Scott Walker wants to lower worker pay in Wisconsin','share_twitter','width=550, height=350, scrollbars=no'); return false;" tabindex="_tbidx_"> <span class="fa fa-twitter">&nbsp;</span> <span class="longname">Share on Twitter</span><span class="shortname">Tweet</span> </a> </li> 
+       </ul> 
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div id="article-posteverything_1400695259727_569" class="moat-trackable pb-feature pb-chained pb-f-page-comments pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-comments" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="page-comments|article-posteverything"> 
+      <div data-allow-comments="true" class="pb-comment-wrapper lockfix "> 
+       <div id="comment_summary_pb_comments" class="comment-summary summary-expanded-desktop summary-expanded-mobile"> 
+        <div class="comment-summary-count">
+         <span class="fa fa-comments"></span>
+         <span id="echo_container" class="echo_container comment-vars echo-counter" guid="http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/"></span>
+        </div> 
+        <div class="comment-summary-display">
+         <span class="comment-display"> Show Comments</span>
+        </div> 
+       </div> 
+       <div id="echo_container_placeholder" class="echo_container_placeholder"> 
+        <div id="echo_container_pb_comments" class="echo_container canvas comment-vars comments unprocessed defer deferMobile count submitbox stream comments-collapsed" guid="http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" allow_comments="true" allow_photos="false" allow_videos="false" commentpermalinkurlfacet="http://www.washingtonpost.com/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" defaultsort="reverseChronological" defaulttab="all" isallcomments="true" includepause="true" includepermalink="false" includerecommend="true" includereport="true" includereply="true" includeshare="true" includesorts="true" includetabs="" includeverifiedcommenters="true" includevoteofftopic="false" markerdisplay="'post_commenter':'Post Commenter','staff':'Post Writer','top_commenter':'Post Forum','top_local':'Washingtologist','top_sports':'SuperFan','fact_checker':'Fact Checker','post_recommended':'Post Recommended','world_watcher':'World Watcher','cultuer_connoisseur':'Culture Connoisseur','weather_watcher':'Capital Weather Watcher','post_contributor':'Post Contributor'" markersall="" maxitems="7" maxitemstop="2" moderationrequired="" primarynode="opinions" sectionid="" columnname="" source="washpost.com" streamid="" tabs="{}" usermarkers="" usermarkersall="" webtype="blog" data-canvas-id="washpost.com/km4ey0dajm" data-app-instance="6634zxcgfd"> 
+         <div class="echo-header-container"> 
+          <div id="comment-info-links" class="right"> 
+           <span class="discussion-policy"><a href="http://www.washingtonpost.com/blogs/ask-the-post/discussion-and-submission-guidelines/" target="_policy">Discussion Policy</a> </span> 
+          </div> 
+          <div class="comment-count-label">
+           <span class="echo-counter"></span> Comments
+          </div> 
+         </div> 
+         <div id="echo_stream_container" class="echo-stream-container echo-comment-container echo-canvas canvas canvas-methode-allcomments echo-stream" data-canvas-id="washpost.com/km4ey0dajm" data-app-instance="6634zxcgfd"> 
+         </div> 
+        </div> 
+        <div class="badgetext hide hidden"> 
+         <div id="echo-top_sports" class="echo-badge-info"> 
+          <div class="marker echo-item-user-top_sports"></div>
+          <p class="title">SuperFan Badge</p> 
+          <p>SuperFan badge holders consistently post smart, timely comments about Washington area sports and teams.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-culture_connoisseur" class="echo-badge-info"> 
+          <div class="marker echo-item-user-culture_connoisseur"></div>
+          <p class="title">Culture Connoisseur Badge</p> 
+          <p>Culture Connoisseurs consistently offer thought-provoking, timely comments on the arts, lifestyle and entertainment.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-fact_checker" class="echo-badge-info"> 
+          <div class="marker echo-item-user-fact_checker"></div>
+          <p class="title">Fact Checker Badge</p> 
+          <p>Fact Checkers contribute questions, information and facts to <a target="_badgeinfo" href="http://www.washingtonpost.com/blogs/fact-checker">The Fact Checker</a>.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-top_local" class="echo-badge-info"> 
+          <div class="marker echo-item-user-top_local"></div>
+          <p class="title">Washingtologist Badge</p> 
+          <p>Washingtologists consistently post thought-provoking, timely comments on events, communities, and trends in the Washington area.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-staff" class="echo-badge-info"> 
+          <div class="marker echo-item-user-staff" style="float:left;"></div>
+          <p class="title">Post Writer Badge</p> 
+          <p>This commenter is a Washington Post editor, reporter or producer.</p> 
+         </div> 
+         <div id="echo-top_commenter" class="echo-badge-info"> 
+          <div class="marker echo-item-user-top_commenter"></div>
+          <p class="title">Post Forum Badge</p> 
+          <p>Post Forum members consistently offer thought-provoking, timely comments on politics, national and international affairs.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-weather_watcher" class="echo-badge-info"> 
+          <div class="marker echo-item-user-weather_watcher"></div>
+          <p class="title">Weather Watcher Badge</p> 
+          <p>Weather Watchers consistently offer thought-provoking, timely comments on climates and forecasts.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-world_watcher" class="echo-badge-info"> 
+          <div class="marker echo-item-user-world_watcher"></div>
+          <p class="title">World Watcher Badge</p> 
+          <p>World Watchers consistently offer thought-provoking, timely comments on international affairs.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-post_contributor" class="echo-badge-info"> 
+          <div class="marker echo-item-user-post_contributor"></div>
+          <p class="title">Post Contributor Badge</p> 
+          <p>This commenter is a Washington Post contributor. Post contributors aren’t staff, but may write articles or columns. In some cases, contributors are sources or experts quoted in a story.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-post_recommended" class="echo-badge-info"> 
+          <div class="marker echo-item-marker-post_recommended"></div>
+          <p class="title">Post Recommended</p> 
+          <p>Washington Post reporters or editors recommend this comment or reader post.</p> 
+         </div> 
+         <div id="echo-anon-report"> 
+          <p>You must be logged in to report a comment.</p> 
+          <div class="inline padding-right-9">
+           <a class="echo-sign-in icon right-arrow" href=""><strong>Sign in here</strong></a>
+          </div> 
+         </div> 
+         <div id="echo-anon-recommend"> 
+          <p>You must be logged in to recommend a comment.</p> 
+          <div class="inline padding-right-9">
+           <a class="echo-sign-in icon right-arrow" href=""><strong>Sign in here</strong></a>
+          </div> 
+         </div> 
+         <div id="echo-comments-overview"> 
+          <p>Comments our editors find particularly useful or relevant are displayed in <strong>Top Comments</strong>, as are comments by users with these badges: <strong><span class="badge-list"></span></strong>. Replies to those posts appear here, as well as posts by staff writers.</p>
+          <p>All comments are posted in the <strong>All Comments</strong> tab.</p> 
+          <div class="inline padding-right-9 left">
+           <a class="icon right-arrow" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html"><strong>More about badges</strong></a>
+          </div>
+          <div class="inline padding-right-9 right">
+           <a class="icon right-arrow" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html"><strong>Get a badge</strong></a>
+          </div> 
+          <div class="clear padding-top-10"> 
+           <p>To pause and restart automatic updates, click &quot;Live&quot; or &quot;Paused&quot;. If paused, you'll be notified of the number of additional comments that have come in.</p> 
+          </div> 
+         </div> 
+         <div id="echo-more-comments-top"> 
+          <div style="font-size: 11px;">
+           <br />Comments our editors find particularly useful or relevant are displayed in 
+           <strong>Top Comments</strong>, as are comments by users with these badges: 
+           <strong><span class="badge-list"></span></strong>. Replies to those posts appear here, as well as posts by staff writers.
+          </div> 
+         </div> 
+        </div> 
+        <div class="hide hidden utils"> 
+         <div id="comment-flag-container"> 
+          <div id="comment-flag-list"> 
+           <div class="arrow-one"></div> 
+           <div class="arrow-two"></div> 
+           <div class="flag-list"> 
+            <ul> 
+             <li id="flag-spam" class="report-button">Spam</li> 
+             <li id="flag-offensive" class="report-button">Offensive</li> 
+             <li id="flag-disagree" class="report-button">Disagree</li> 
+             <li id="flag-offtopic" class="report-button">Off-Topic</li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <!--[if IE 7]><style type="text/css">.comment-share-info #newsharebar li .more{position:relative;margin-left:-220px}.comment-share-info #newsharebar li .morebottom{height:110px;position:relative;top:10px;z-index:998}.comment-share-info #newsharebar li .morebottom .left,.comment-share-info #newsharebar li .morebottom .right{z-index:1000;height:110px}.comment-share-info #newsharebar li .morebottom ul li{width:100px}.comment-share-info #newsharebar li .arrow-one,.comment-share-info #newsharebar li .arrow-two{position:absolute;z-index:999;left:229px}.comment-share-info #newsharebar li .arrow-one{top:9px}.comment-share-info #newsharebar li .arrow-two{top:11px}</style><![endif]--> 
+        <div class="comment-share-info hide hidden"> 
+         <div id="newsharebar"> 
+          <div class="newshare"> 
+           <ul class="share mega-menu inline-list"> 
+            <li class="sharetop"> 
+             <div class="more" style="display: none;"> 
+              <div class="arrow-one"></div> 
+              <div class="arrow-two"></div> 
+              <div class="morebottom"> 
+               <div class="left"> 
+                <ul> 
+                 <li>
+                  <div class="shareitems facebook"></div> <a href="javascript:void(0)" class="facebook-link" onclick="window.open('http://www.facebook.com/share.php?u={shareURL}','','width=658,height=354,scrollbars=no');return false;">Facebook</a></li> 
+                 <li>
+                  <div class="shareitems twitter"></div> <a href="javascript:void(0)" onclick="window.open('http://www.twitter.com/intent/tweet?text={headline}&amp;url={shareURL}','','width=550, height=350, scrollbars=no')">Twitter</a></li> 
+                 <li>
+                  <div class="shareitems reddit"></div> <a href="javascript:void(0)" onclick="window.open('http://reddit.com/submit?url={shareURL}%3Ftid%3Dsm_btn_reddit&amp;title={headline}','','width=550, height=350, scrollbars=no')">Reddit</a></li> 
+                </ul> 
+               </div> 
+               <div class="right"> 
+                <ul> 
+                 <li>
+                  <div class="shareitems stumbleupon"></div><a href="http://www.stumbleupon.com/submit?url={shareURL}%3Ftid%3Dsm_btn_su&amp;title={headline}">StumbleUpon</a></li> 
+                 <li>
+                  <div class="shareitems digg"></div> <a href="http://digg.com/submit?phase=2&amp;url={shareURL}%3Ftid%3Dsm_btn_digg&amp;title={headline}">Digg</a></li> 
+                 <li>
+                  <div class="shareitems delicious"></div> <a href="http://www.delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url={shareURL}%3Ftid%3Dsm_btn_delicious&amp;title={headline}">Delicious</a></li> 
+                </ul> 
+               </div> 
+               <div style="clear:both;"></div> 
+              </div> 
+             </div> </li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div>
+       </div> 
+      </div> 
+      <style>.pb-feature.pb-f-page-comments .pb-comment-wrapper{padding-right:0;border-bottom:0}.pb-feature.pb-f-page-comments{border-right:1px solid #d5d5d5;padding-right:50px}</style> 
+     </div> 
+    </div> 
+    <div id="right-rail" class="pb-layout-item pb-chain pb-one col-lg-4 col-md-4 col-sm-12 col-xs-12 right-rail" data-pb-columns="1"> 
+     <div id="article-posteverything_1400695275459_52" class="moat-trackable pb-feature pb-chained pb-f-ad-flex pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="ad-flex" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="ad-flex|article-posteverything"> 
+      <div id="slug_flex_ss_bb_hp" class="pb-ad-container" style="display:none;" data-ad-type="flex_ss_bb_hp"></div> 
+     </div> 
+     <div id="article-posteverything_1400695280809_920" class="moat-trackable pb-feature pb-chained pb-f-page-post-most pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-post-most" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="page-post-most|article-posteverything"> 
+      <div id="post-most-rr" class="post-most"> 
+       <div class="header-mobile-border"></div> 
+       <div class="pb-module-header">
+        Most Read 
+        <span class="section"></span>
+       </div> 
+       <ul class="large def-feed"> 
+        <li> <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/a-scientific-explanation-of-what-makes-indian-food-so-delicious/?tid=pm_pop"> 
+          <div class="number left">
+           1
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/wonkblog/201503/Images/iStock_000026844728_Full1425323581.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/wonkblog/201503/Images/iStock_000026844728_Full1425323581.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Scientists have figured out what makes Indian food so delicious
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/blogs/capital-weather-gang/wp/2015/03/03/significant-snow-event-possible-late-wednesday-night-into-thursday/?tid=pm_pop"> 
+          <div class="number left">
+           2
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/capital-weather-gang/201503/Images/gfs_ptype_slp_ma_9-2.png" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/capital-weather-gang/201503/Images/gfs_ptype_slp_ma_9-2.png" width="138" height="92" /> 
+          <div class="headline ">
+           Significant snow event possible late Wednesday night into Thursday
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/blogs/plum-line/wp/2015/03/03/why-netanyahus-speech-didnt-do-his-american-allies-any-favors/?tid=pm_pop"> 
+          <div class="number left">
+           3
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/plum-line/201503/Images/Was8908615.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/plum-line/201503/Images/Was8908615.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Why Netanyahu's speech didn't do his American allies any favors
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/politics/decrying-insult-some-democrats-seethe-after-netanyahu-address/2015/03/03/2414c30c-c1c8-11e4-9271-610273846239_story.html?tid=pm_pop"> 
+          <div class="number left">
+           4
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/2010-2019/Wires/Videos/2015-03-03/AP/Images/Congress_Netanyahu-05b6d.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/2010-2019/Wires/Videos/2015-03-03/AP/Images/Congress_Netanyahu-05b6d.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Decrying 'insult,' some Democrats seethe after Netanyahu address
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li class="last"> <a href="http://www.washingtonpost.com/news/the-intersect/wp/2015/03/02/google-has-developed-a-technology-to-tell-whether-facts-on-the-internet-are-true/?tid=pm_pop"> 
+          <div class="number left">
+           5
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/the-intersect/201503/Images/google-datacenter-tech-061363877102.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/the-intersect/201503/Images/google-datacenter-tech-061363877102.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Google has developed a technology to tell whether 'facts' on the Internet are true
+          </div> 
+          <div class="clear"></div> </a> </li> 
+       </ul> 
+       <ul class="large alt-feed"> 
+        <li> <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/a-scientific-explanation-of-what-makes-indian-food-so-delicious/?tid=pm_pop_b"> 
+          <div class="number left">
+           1
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/wonkblog/201503/Images/iStock_000026844728_Full1425323581.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/wonkblog/201503/Images/iStock_000026844728_Full1425323581.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Scientists have figured out what makes Indian food so delicious
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/blogs/post-politics/wp/2015/03/03/full-text-netanyahus-address-to-congress/?tid=pm_pop_b"> 
+          <div class="number left">
+           2
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/post-politics/201503/Images/APW1109208.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/post-politics/201503/Images/APW1109208.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           The complete transcript of Netanyahu’s address to Congress
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/world/national-security/justice-dept-review-finds-pattern-of-racial-bias-among-ferguson-police/2015/03/03/27535390-c1c7-11e4-9271-610273846239_story.html?tid=pm_pop_b"> 
+          <div class="number left">
+           3
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/2010-2019/WashingtonPost/2015/03/03/National-Security/Images/Ferguson_Police_Force-0bad2.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/2010-2019/WashingtonPost/2015/03/03/National-Security/Images/Ferguson_Police_Force-0bad2.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Justice review finds pattern of racial bias among Ferguson police
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/blogs/capital-weather-gang/wp/2015/03/03/significant-snow-event-possible-late-wednesday-night-into-thursday/?tid=pm_pop_b"> 
+          <div class="number left">
+           4
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/2010-2019/WashingtonPost/2015/02/21/Others/Images/2015-02-21/snow241424551991.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/2010-2019/WashingtonPost/2015/02/21/Others/Images/2015-02-21/snow241424551991.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Significant snow event possible late Wednesday night into Thursday
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li class="last"> <a href="http://www.washingtonpost.com/blogs/style-blog/wp/2015/03/03/a-woodworking-plagiarism-scandal-on-ellens-design-challenge-hgtv-handling-of-finale-sparks-controversy/?tid=pm_pop_b"> 
+          <div class="number left">
+           5
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/style-blog/201503/Images/unnamed.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/style-blog/201503/Images/unnamed.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           A woodworking plagiarism scandal on ‘Ellen’s Design Challenge’? HGTV handling of finale sparks controversy.
+          </div> 
+          <div class="clear"></div> </a> </li> 
+       </ul> 
+       <div id="slug_postmost" data-ad-type="postmost" style="display:none;width:100%;"></div> 
+      </div> 
+     </div> 
+     <div id="article-posteverything_1409786774481_807" class="moat-trackable pb-feature pb-chained pb-f-most-sidebar pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="most-sidebar" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="most-sidebar|article-posteverything"> 
+      <style>.the-most ul.large li{display:none}</style> 
+      <div id="the-most-rr" class="the-most"> 
+       <div class="header-mobile-border"></div> 
+       <div class="pb-module-header">
+        <a class="the-most-sb-header" href="http://www.washingtonpost.com/themost?tid=themost_sb_header">The Most <span class="section">Popular All Over</span></a>
+       </div> 
+       <ul class="large"> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.toledoblade.com/local/2015/03/03/National-Socialists-plan-April-18-rally.html"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.toledoblade.com/image/2015/03/03/600x_a4-3_cCM/CTY-Nazi10p-2005.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.toledoblade.com/image/2015/03/03/600x_a4-3_cCM/CTY-Nazi10p-2005.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.toledoblade.com"> 
+           <div class="feedname">
+            The Toledo Blade
+           </div> </a> 
+          <a target="_blank" href="http://www.toledoblade.com/local/2015/03/03/National-Socialists-plan-April-18-rally.html"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             National Socialists to return to Toledo
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.wnyc.org/story/family-business-xi-famous-foods/"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=https://media2.wnyc.org/i/1500/1000/c/80/1/xianfamousfoods_getty.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=https://media2.wnyc.org/i/1500/1000/c/80/1/xianfamousfoods_getty.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.wnyc.org"> 
+           <div class="feedname">
+            WNYC - New York Public Radio
+           </div> </a> 
+          <a target="_blank" href="http://www.wnyc.org/story/family-business-xi-famous-foods/"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             The Family Business: Xi'an Famous Foods
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.theatlantic.com/health/archive/2015/03/the-abominable-k-cup-coffee-pod-environment-problem/386501/"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://cdn.theatlantic.com/static/newsroom/img/mt/2015/03/0130_KCups_1-1/lead_large.jpg?nkndjp&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://cdn.theatlantic.com/static/newsroom/img/mt/2015/03/0130_KCups_1-1/lead_large.jpg?nkndjp&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.theatlantic.com"> 
+           <div class="feedname">
+            The Atlantic
+           </div> </a> 
+          <a target="_blank" href="http://www.theatlantic.com/health/archive/2015/03/the-abominable-k-cup-coffee-pod-environment-problem/386501/"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             A Brewing Problem
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.baltimoresun.com/sports/orioles/bs-sp-schmuck-column-0304-20150303-column.html?track=rss"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.trbimg.com/img-54f64155/turbine/bs-sp-schmuck-column-0304-20150303&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.trbimg.com/img-54f64155/turbine/bs-sp-schmuck-column-0304-20150303&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.baltimoresun.com"> 
+           <div class="feedname">
+            The Baltimore Sun
+           </div> </a> 
+          <a target="_blank" href="http://www.baltimoresun.com/sports/orioles/bs-sp-schmuck-column-0304-20150303-column.html?track=rss"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Adam Jones: 'I deserve a little bit of respect' from Orioles front office
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="https://www.thedodo.com/dogs-in-deep-snow-1021626946.html"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=https://assets.rbl.ms/569711/300x.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=https://assets.rbl.ms/569711/300x.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.thedodo.com"> 
+           <div class="feedname">
+            The Dodo
+           </div> </a> 
+          <a target="_blank" href="https://www.thedodo.com/dogs-in-deep-snow-1021626946.html"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             12 Dogs Who Really Didn't Expect The Snow To Be This Deep
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg.CROP.rectangle-large.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg.CROP.rectangle-large.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.slate.com"> 
+           <div class="feedname">
+            Slate
+           </div> </a> 
+          <a target="_blank" href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Netanyahu Just Did Obama a Big Favor
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.stltoday.com/tncms/asset/editorial/ef6a0bb2-b7c0-5c2b-b9fc-f849a888322b/"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/7/48/748e9d7c-497f-52a1-a290-b66f4d858269/54f51dfe23a12.image.jpg?resize=300%2C212&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/7/48/748e9d7c-497f-52a1-a290-b66f4d858269/54f51dfe23a12.image.jpg?resize=300%2C212&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.stltoday.com"> 
+           <div class="feedname">
+            St. Louis Post-Dispatch
+           </div> </a> 
+          <a target="_blank" href="http://www.stltoday.com/tncms/asset/editorial/ef6a0bb2-b7c0-5c2b-b9fc-f849a888322b/"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Riverfront stadium gets new frills, keeps some historic buildings
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li class="last"> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.washingtonpost.com/politics/decrying-insult-some-democrats-seethe-after-netanyahu-address/2015/03/03/2414c30c-c1c8-11e4-9271-610273846239_story.html?tid=pm_pop"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/rf/image_1024w/2010-2019/Wires/Videos/2015-03-03/AP/Images/Congress_Netanyahu-05b6d.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/rf/image_1024w/2010-2019/Wires/Videos/2015-03-03/AP/Images/Congress_Netanyahu-05b6d.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.washingtonpost.com"> 
+           <div class="feedname">
+            The Washington Post
+           </div> </a> 
+          <a target="_blank" href="http://www.washingtonpost.com/politics/decrying-insult-some-democrats-seethe-after-netanyahu-address/2015/03/03/2414c30c-c1c8-11e4-9271-610273846239_story.html?tid=pm_pop"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Decrying 'insult,' House Democrats seethe after Netanyahu address
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+       </ul> 
+       <a href="http://www.washingtonpost.com/themost?tid=themost_sb_img"> <img width="100%" src="/pb/resources/img/themost-290x60.png" /> </a> 
+      </div> 
+     </div> 
+     <div id="article-posteverything_1400695291385_609" class="moat-trackable pb-feature pb-chained pb-f-ad-flex-2 pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="ad-flex-2" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="ad-flex-2|article-posteverything"> 
+      <div id="slug_flex_ss_bb_hp_2" class="pb-ad-container" style="display:none;" data-ad-type-placeholder="flex_ss_bb_hp|2" data-ad-delivery="vi"></div> 
+     </div> 
+     <div id="article-posteverything_1403202596557_604" class="moat-trackable pb-feature pb-chained pb-f-page-moneta-8 pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-moneta-8" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="page-moneta-8|article-posteverything"> 
+      <div id="rev_ad_8"></div> 
+     </div> 
+     <div id="article-posteverything_1400695298474_994" class="moat-trackable pb-feature pb-chained pb-f-page-footer-v2 pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-footer-v2" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="page-footer-v2|article-posteverything"> 
+      <ul class="footer-v2 plain"> 
+       <li><a href="http://www.washingtonpost.com"><b>washingtonpost.com</b></a></li> 
+       <li>&copy; 1996-2015 The Washington Post</li> 
+       <li>&nbsp;</li> 
+       <li><a href="http://www.washingtonpost.com/actmgmt/help/">Help and Contact Us</a></li> 
+       <li><a href="http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></li> 
+       <li><a href="http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></li> 
+       <li><a href="http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submissions and Discussion Policy</a></li> 
+       <li><a href="http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></li> 
+       <li><a href="http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></li> 
+      </ul> 
+     </div> 
+     <div id="article-posteverything_1400695303000_901" class="moat-trackable pb-feature pb-chained pb-f-ad-flex-3 pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="ad-flex-3" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="ad-flex-3|article-posteverything"> 
+      <div id="slug_flex_ss_bb_hp_3" class="pb-ad-container" style="display:none;" data-ad-type-placeholder="flex_ss_bb_hp|3" data-ad-delivery="vi"></div> 
+     </div> 
+    </div>
+   </div> 
+   <div id="article-posteverything_1400695307612_565" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-article-next-story pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="article-next-story" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="article-next-story|article-posteverything"> 
+    <div class="next-story-wrapper"> 
+     <div class="next-story has-bg-photo">
+      <div class="kicker">
+       Next Story
+      </div>
+      <div class="heading heading2">
+       <a href="http://www.washingtonpost.com/posteverything/wp/2015/03/02/an-open-letter-to-scott-walkers-foreign-policy-team/">An open letter to Scott Walker's foreign policy team</a>
+      </div>
+      <div class="heading heading3">
+       Scott Walker has had a pretty good month. Except on foreign policy. You need to work on that.
+      </div>
+      <div class="sigline">
+       <span class="author">Daniel W. Drezner</span> &middot; 
+       <span class="date">March 2</span>
+      </div>
+     </div> 
+     <a href="http://www.washingtonpost.com/posteverything/wp/2015/03/02/an-open-letter-to-scott-walkers-foreign-policy-team/"><span id="next-story-bg" class="next-story-bg" style="background:url('http://www.washingtonpost.com/blogs/wp-content/themes/wapo-blogs-v2/imrs.php?w=250&amp;h=250&amp;src=http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/03/01/National-Politics/Images/GOP_2016_Walker-0beed-3573.jpg') no-repeat center top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></span></a> 
+    </div> 
+    <script type="text/javascript">(function($){TWP=window.TWP||{};TWP.Features=TWP.Features||{};TWP.Features.Article=TWP.Features.Article||{};TWP.Features.Article.NextStory=TWP.Features.Article.NextStory||{};TWP.Features.Article.NextStory.tnUrl="http://img.washingtonpost.com/rf/image_908w/2010-2019/WashingtonPost/2015/03/01/National-Politics/Images/GOP_2016_Walker-0beed-3573.jpg"})(jQuery);</script> 
+   </div> 
+   <div id="article-posteverything_1401913379615_918" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-ad-leaderboard-2 pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="ad-leaderboard-2" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="ad-leaderboard-2|article-posteverything"> 
+    <div id="slug_leaderboard_bottom" data-ad-type="leaderboard_bottom" class="pb-ad-container leaderboard-2" style="display:none;"> 
+    </div> 
+   </div> 
+   <div class="pb-scatter"> 
+    <div id="article-posteverything_1412705194016_712" class="moat-trackable pb-layout-item pb-feature pb-one pb-f-page-clavis pb-f-theme-normal" data-pb-async="false" data-pb-columns="1" data-pb-name="page-clavis" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="page-clavis|article-posteverything"> 
+     <script>try{if(wp_meta_data){if(!wp_meta_data.clavis){wp_meta_data.clavis={}}(function(){var clavisArray=[];var clavisNames=[];wp_meta_data.clavis.auxiliaries=clavisArray;wp_meta_data.clavis.auxiliary_names=clavisNames})()}}catch(e){};</script> 
+    </div> 
+   </div> 
+   <div id="article-posteverything_1415646902380_643" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-bi-abtest pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="bi-abtest" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="bi-abtest|article-posteverything"> 
+    <script>var TWP=window.TWP||{};(function(w,usrValue,undefined){var usr=w.TWP.ABTestUser=usrValue;w._abtemptyfn=function(){return undefined}})(window,{trackPageviewEventBefore:"onTwpMeterComplete.omniture"||"abtest-noevent",trackPageviewEventAfter:"afterTwpPageTrack.omniture"||"abtest-noevent",trackSetHandler:"TWP.ABTestMfr.track.omniture.trackSetHandler"||"_abtemptyfn",trackUnsetHandler:"TWP.ABTestMfr.track.omniture.trackUnsetHandler"||"_abtemptyfn",trackSendHandler:"s.sendDataToOmniture"||"_abtemptyfn",trackValueDelimeter:","||","});</script> 
+    <script>TWP.ABTestBucket=TWP.ABTestBucket||[];TWP.ABTestBucket.push({"name":"recommendation","features":[{"name":"recommendation-strip","active":true,"increment":0,"end":"1424062800000","_token":"76dde4","defaultTrack":[{"name":"list1","dynamic":false,"value":"recommendation-strip:default"},{"name":"prop56","dynamic":false,"value":"recommendation-strip:default"},{"name":"list1","dynamic":false,"value":"recommendation-strip-76dde4"},{"name":"prop56","dynamic":false,"value":"recommendation-strip-76dde4"}],"variations":[{"customOptions":{"target":"33"},"name":"alt1","track":[{"name":"list1","dynamic":false,"value":"recommendation-strip:alt1"},{"name":"prop56","dynamic":false,"value":"recommendation-strip:alt1"},{"name":"list1","dynamic":false,"value":"recommendation-strip-76dde4"},{"name":"prop56","dynamic":false,"value":"recommendation-strip-76dde4"}]},{"customOptions":{"target":"33"},"name":"sidebar_alt1","track":[{"name":"list1","dynamic":false,"value":"recommendation-strip:sidebar_alt1"},{"name":"prop56","dynamic":false,"value":"recommendation-strip:sidebar_alt1"},{"name":"list1","dynamic":false,"value":"recommendation-strip-76dde4"},{"name":"prop56","dynamic":false,"value":"recommendation-strip-76dde4"}]}]},{"name":"recommendation-mostread","active":true,"increment":1,"end":"1425618000000","_token":"5af7e9","defaultTrack":[{"name":"list1","dynamic":false,"value":"recommendation-mostread:default"},{"name":"prop56","dynamic":false,"value":"recommendation-mostread:default"},{"name":"list1","dynamic":false,"value":"recommendation-mostread-5af7e9"},{"name":"prop56","dynamic":false,"value":"recommendation-mostread-5af7e9"}],"variations":[{"customOptions":{"target":"5"},"name":"chartbeat","track":[{"name":"list1","dynamic":false,"value":"recommendation-mostread:chartbeat"},{"name":"prop56","dynamic":false,"value":"recommendation-mostread:chartbeat"},{"name":"list1","dynamic":false,"value":"recommendation-mostread-5af7e9"},{"name":"prop56","dynamic":false,"value":"recommendation-mostread-5af7e9"}]}]}],"disabled":false});TWP.ABTestBucket.push({"name":"dummy","features":[{"name":"dummy-feature","active":true,"reglock":false,"end":"1418965200000","throttle":3.3333333333333335,"_token":"14376b","defaultTrack":[{"name":"list1","dynamic":false,"value":"dummy-feature:default"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}],"variations":[{"customOptions":{"target":"20"},"name":"easy1","track":[{"name":"list1","dynamic":false,"value":"dummy-feature:easy1"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}]},{"customOptions":{"target":"10"},"name":"easy2","track":[{"name":"list1","dynamic":false,"value":"dummy-feature:easy2"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}]}]}],"disabled":false});TWP.ABTestBucket.push({"name":"header","features":[{"name":"header-mastHead2","active":false,"increment":0,"end":"1416805200000","_token":"c15b6c","blacklist":{"referrers":["","washingtonpost.com"],"track":[{"name":"list1","dynamic":false,"value":"header-mastHead2:direct"}]},"defaultTrack":[{"name":"list1","dynamic":false,"value":"header-mastHead2:default"},{"name":"list1","dynamic":false,"value":"header-mastHead2-c15b6c"}],"variations":[{"customOptions":{"target":"5"},"name":"logoLarge","track":[{"name":"list1","dynamic":false,"value":"header-mastHead2:logoLarge"},{"name":"list1","dynamic":false,"value":"header-mastHead2-c15b6c"}]}]},{"name":"header-leaderboard","active":false,"increment":0,"end":"1423630800000","_token":"1f6567","defaultTrack":[{"name":"list1","dynamic":false,"value":"header-leaderboard:default"},{"name":"list1","dynamic":false,"value":"header-leaderboard-1f6567"}],"variations":[{"customOptions":{"target":"20"},"name":"below_sharebar","track":[{"name":"list1","dynamic":false,"value":"header-leaderboard:below_sharebar"},{"name":"list1","dynamic":false,"value":"header-leaderboard-1f6567"}]}]}],"disabled":false});</script> 
+    <script>(function ABTestMfrAnonymous($,TWP,window,undefined){var user=TWP.ABTestUser;var ABTM={};var trk=ABTM.track={};var omni=trk.omniture={trackSetHandler:function(props){if(!!window.s){var pn;for(pn in props){if(props.hasOwnProperty(pn)){s[pn]=(s[pn]?[s[pn],props[pn]]:[props[pn]]).join(user.trackValueDelimeter);if(/evar/gi.test(pn)){window["wp_"+pn.toLowerCase()]=props[pn]}}}}},trackUnsetHandler:function(props){if(!!window.s){var pn;for(pn in props){if(props.hasOwnProperty(pn)){s[pn]=(s[pn]||"").replace(("string"==typeof props[pn]?[props[pn]]:props[pn]).join(user.trackValueDelimeter),"");if(!s[pn]){s[pn]=undefined}if(/evar/gi.test(pn)){window["wp_"+pn.toLowerCase()]=undefined}}}}},trackSendHandler:function(customLinkName,events,props){if(!!window.s){var originalValues={};originalValues.events=s.events;originalValues.linkTrackEvents=s.linkTrackEvents;if(events){s.events=("string"===typeof events?[events]:events).join(user.trackValueDelimeter)||undefined;s.linkTrackEvents=s.events}omni.trackSetHandler(props);s.tl(true,"o",customLinkName,{linkTrackVars:function(){var results=[];if(events){results.push("events")}var name;for(name in props){if(props.hasOwnProperty(name)){results.push(name)}}return results.join(user.trackValueDelimeter)}()});s.events=originalValues.events;s.linkTrackEvents=originalValues.linkTrackEvents;omni.trackUnsetHandler(props)}}};TWP.ABTestMfr=ABTM})(jQuery,TWP,window);</script> 
+   </div> 
+   <div class="pb-scatter"> 
+    <div id="rsgoquhvbt_e95ufnb0lg-a_1424205684134_963" class="moat-trackable pb-layout-item pb-feature pb-one pb-f-page-targeting pb-f-theme-normal" data-pb-async="false" data-pb-columns="1" data-pb-name="page-targeting" data-pb-content-uri="/pb/posteverything/wp/2015/03/02/right-to-work-for-less-gov-scott-walker-wants-to-lower-worker-pay-in-wisconsin/" data-pb-content-editable="" moat-id="page-targeting|article-posteverything"> 
+    </div> 
+   </div> 
+  </div> 
+  <script src="//js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" async="" data-ad-page-type="responsive" data-ad-site="wp"></script> 
+  <script type="text/javascript" src="/pb/resources/compact/template/rsGOqUHVBT_e95UFnb0Lg-A/javascripts/88e7854521fce907af4cd57b1a513003.js?_=63ea2f"></script> 
+  <script type="text/javascript" src="http://s.troveread.com/moneta/2.x/site/washpost/monetatag-config.js"></script> 
+  <script type="text/javascript" src="http://s.troveread.com/moneta/2.x/js/moneta.min.js"></script> 
+  <script type="text/javascript" src="/pb/resources/compact/template/rsGOqUHVBT_e95UFnb0Lg-A/javascripts/944950b7bffd3c091babf2dd519b2ccd.js?_=63ea2f"></script> 
+  <script type="text/javascript" src="/pb/resource/footjs-rsGOqUHVBT_e95UFnb0Lg-A-eff422a0.js?_=63ea2f"></script> 
+  <script type="text/javascript" src="/pb/resource/instancejs-rsGOqUHVBT_e95UFnb0Lg-A-eff422a0.js?_=63ea2f"></script> 
+  <script type="text/javascript">window.TWPHead.ready("main.js",function(){window.TWP&&TWP.Analytics&&TWP.Analytics.init("production"=="production"?"":{suite:"preproduction"})});</script> 
+  <noscript>
+   <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1" />
+  </noscript> 
+  <script type="text/javascript" src="http://widget.perfectmarket.com/wwwwashingtonpost/load.js"></script> 
+  <script type="text/javascript">(function($){try{if((!!window.localStorage&&!!localStorage.opbandit&&localStorage.opbandit=="F")){$.ajax({dataType:"script",cache:true,url:"//data.opbandit.com/loader.min.js?key=3e6382b012abc555",success:function(data){}})}var $tweetAuthors=$(".tweet-authors");if((!!$tweetAuthors.size()&&!window.twttr)){$.ajax({dataType:"script",cache:true,url:"//platform.twitter.com/widgets.js",success:function(data){$tweetAuthors.find(".pb-twitter-follow.unprocessed").removeClass("unprocessed")}})}$.ajax({dataType:"script",cache:true,url:"//ak.sail-horizon.com/horizon/v1.js",success:function(data){if(window.Sailthru){Sailthru.setup({domain:"horizon.washingtonpost.com"})}}})}catch(e){}})(jQuery);</script> 
+  <script type="text/javascript">!function(){if(!(Math.floor(100*Math.random())>99)){var a,b,c,d="//js.washingtonpost.com/wp-stat/rum/wprum.min.js",e=document.createElement("iframe");e.src="javascript:false",(e.frameElement||e).style.cssText="width: 0; height: 0; border: 0";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(e,c);try{b=e.contentWindow.document}catch(f){a=document.domain,e.src="javascript:var d=document.open();d.domain='"+a+"';void(0);",b=e.contentWindow.document}b.open()._l=function(){var b=this.createElement("script");a&&(this.domain=a),b.id="boomr-if-as",b.src=d,this.body.appendChild(b)},b.write('<body onload="document._l();">'),b.close()}}();</script>  
+ </body>
+</html>

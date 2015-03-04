@@ -1,0 +1,2070 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://ogp.me/ns/fb#">
+ <head profile="http://www.w3.org/1999/xhtml/vocab"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQEUVdbGwEGUlRSAQU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script> 
+  <meta property="fb:app_id" content="263851690471857" /> 
+  <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" /> 
+  <meta http-equiv="REFRESH" content="480" /> 
+  <link rel="apple-touch-icon" sizes="57x57" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-57x57.png" /> 
+  <link rel="apple-touch-icon" sizes="114x114" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-114x114.png" /> 
+  <link rel="shortcut icon" href="http://www.ibtimes.com/sites/www.ibtimes.com/themes/us_ibtimes/favicon.ico" type="image/vnd.microsoft.icon" /> 
+  <meta property="og:site_name" content="International Business Times" /> 
+  <meta property="og:description" content="Accounting change masks new data showing NJ pension fees jumped 50 percent to $600 million in 2014." /> 
+  <link rel="shortlink" href="http://www.ibtimes.com/node/1833872" /> 
+  <meta name="generator" content="Drupal 7 (http://drupal.org)" /> 
+  <meta property="og:type" content="article" /> 
+  <link rel="apple-touch-icon" sizes="72x72" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-72x72.png" /> 
+  <meta property="og:url" content="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" /> 
+  <link rel="apple-touch-icon" sizes="144x144" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-144x144.png" /> 
+  <link rel="icon" type="image/png" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/favicon-16x16.png" sizes="16x16" /> 
+  <link rel="icon" type="image/png" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/favicon-96x96.png" sizes="96x96" /> 
+  <link rel="icon" type="image/png" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/favicon-32x32.png" sizes="32x32" /> 
+  <meta name="msapplication-TileColor" content="#333333" /> 
+  <meta name="msapplication-config" content="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/browserconfig.xml" /> 
+  <meta name="msapplication-TileImage" content="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/mstile-144x144.png" /> 
+  <link rel="icon" type="image/png" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/favicon-160x160.png" sizes="160x160" /> 
+  <link rel="icon" type="image/png" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/favicon-192x192.png" sizes="192x192" /> 
+  <link rel="apple-touch-icon" sizes="120x120" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-120x120.png" /> 
+  <link rel="apple-touch-icon" sizes="60x60" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-60x60.png" /> 
+  <link rel="apple-touch-icon" sizes="76x76" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-76x76.png" /> 
+  <link rel="apple-touch-icon" sizes="152x152" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-152x152.png" /> 
+  <link rel="apple-touch-icon" sizes="180x180" href="/sites/www.ibtimes.com/themes/us_ibtimes/favicons/apple-touch-icon-180x180.png" /> 
+  <meta name="description" content="Accounting change masks new data showing NJ pension fees jumped 50 percent to $600 million in 2014." /> 
+  <meta itemprop="image" content="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_article_large/public/2015/01/15/christie.JPG?itok=f8q1SZEx" /> 
+  <meta property="og:image" content="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_article_large/public/2015/01/15/christie.JPG?itok=f8q1SZEx" /> 
+  <script type="text/javascript">window._taboola = window._taboola || [];_taboola.push({article:'auto'});!function (e, f, u){ e.async = 1; e.src = u; f.parentNode.insertBefore(e, f); }(document.createElement('script'), document.getElementsByTagName('script')[0], 'http://cdn.taboola.com/libtrc/ibt-ibtimes/loader.js');</script> 
+  <meta name="twitter:site" content="@IBTimes" /> 
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:url" content="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" /> 
+  <link rel="canonical" href="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" /> 
+  <script type="text/javascript">var _sf_startpt=(new Date()).getTime();</script> 
+  <link rel="dns-prefetch" href="//s2.ibtimes.com" /> 
+  <meta http-equiv="x-dns-prefetch-control" content="on" /> 
+  <link rel="dns-prefetch" href="//s3.ibtimes.com" /> 
+  <link rel="dns-prefetch" href="//s1.ibtimes.com" /> 
+  <link rel="dns-prefetch" href="//www.ibtimes.com" /> 
+  <meta name="twitter:description" content="Accounting change masks new data showing NJ pension fees jumped 50 percent to $600 million in 2014." /> 
+  <meta name="twitter:image" content="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_article_large/public/2015/01/15/christie.JPG?itok=f8q1SZEx" /> 
+  <meta itemprop="datePublished" content="2015-03-03T08:08:53-05:00" /> 
+  <meta itemprop="dateCreated" content="2015-03-03T08:08:53-05:00" /> 
+  <meta itemprop="dateModified" content="2015-03-03T08:08:53-05:00" /> 
+  <meta itemprop="author" content="David Sirota" /> 
+  <meta itemprop="author" content="Matthew Cunningham-Cook" /> 
+  <meta itemprop="alternativeHeadline" content="Christie Obscures Big Wall Street Gift In Fine Print" /> 
+  <meta itemprop="headline" content="Chris Christie Administration Paid $600M In Financial Fees In 2014" /> 
+  <meta name="twitter:title" content="Chris Christie Administration Paid $600M In Financial Fees In 2014" /> 
+  <meta property="og:title" content="Chris Christie Administration Paid $600M In Financial Fees In 2014" /> 
+  <meta name="news_keywords" content="chris christie cuts pensions, christie pension fees, chris christie pension fees, new jersey pension fees, wall street fees, wall street pension fees, hedge fund fees, chris christie hedge funds, private equity fees, pension corruption" /> 
+  <meta name="DC.date.issued" content="2015-03-03T08:08:53-05:00" /> 
+  <meta itemprop="name" content="Chris Christie Administration Paid $600M In Financial Fees In 2014" /> 
+  <meta itemprop="url" content="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" /> 
+  <title>Chris Christie Administration Paid $600M In Financial Fees In 2014</title> 
+  <link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_jIWnkynhGimdNodF-15wZfpSXxpkGXvNl4jRJp9XKIY.css" media="all" /> 
+  <link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_ramEqEI1fAg0sZcdzx3wz2AuGlh4Qbpcq_RLepBRmZY.css" media="all" /> 
+  <link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_Zb09OHAJJX1cbBdYP_j4mn7cqeXkFC8TLf7gDAnL54E.css" media="all" /> 
+  <link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_CAwPOFd4SvLO3XeGS_Ol3IMqS0Pm1Au1JuKVDp9l-L4.css" media="all" /> 
+  <link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_JKaUnDKu8I2W_z9mlRUcfX_QiICYdRogF7JTrhSZ470.css" media="all" /> 
+  <link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_zFBMjebKe_lbSXWiTLEj1eyr9ffXSd0R8TH0zX_0X0E.css" media="print" /> 
+  <link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_emVhnMlJwQOVaxibHgRMG6PNyaqKpJ5tuQKIdzk3a7E.css" media="all" /> 
+  <!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_xKwUeSwNRKY6PFF6wifYvJGDTTNZyiDNv8yXKz1K7c0.css" media="all" />
+<![endif]--> 
+  <!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_1rH3j7-MTogJ7MuezhhzXu80WUTXgfHlo-o_ftf-v7I.css" media="all" />
+<![endif]--> 
+  <!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" href="http://s2.ibtimes.com/sites/www.ibtimes.com/files/css/css_2QKp38GPJ7u4A1r4q-Wvg1iUIRJSKFOxOhFuZuQBclw.css" media="all" />
+<![endif]--> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_0gj6QcpfRH2jzTbCQqf7kEkm4MXY0UA_sRhwPc8jC1o.js"></script> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_uoy8-mz5cLdRCMTF7FhVDbWjWYimsVAXyU-sdUaXJug.js"></script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var crtg_nid = '3248';
+var crtg_cookiename = 'crtg_ibtimes';
+var crtg_varname = 'crtg_content';
+function crtg_getCookie(c_name){ var i,x,y,ARRCookies=document.cookie.split(";");for(i=0;i<ARRCookies.length;i++){x=ARRCookies[i].substr(0,ARRCookies[i].indexOf("="));y=ARRCookies[i].substr(ARRCookies[i].indexOf("=")+1);x=x.replace(/^\s+|\s+$/g,"");if(x==c_name){return unescape(y);} }return'';}
+var crtg_content = crtg_getCookie(crtg_cookiename);
+var crtg_rnd=Math.floor(Math.random()*99999999999);
+(function(){
+var crtg_url=location.protocol+'//rtax.criteo.com/delivery/rta/rta.js?netId='+escape(crtg_nid);
+crtg_url +='&cookieName='+escape(crtg_cookiename);
+crtg_url +='&rnd='+crtg_rnd;
+crtg_url +='&varName=' + escape(crtg_varname);
+var crtg_script=document.createElement('script');crtg_script.type='text/javascript';crtg_script.src=crtg_url;crtg_script.async=true;
+if(document.getElementsByTagName("head").length>0)document.getElementsByTagName("head")[0].appendChild(crtg_script);
+else if(document.getElementsByTagName("body").length>0)document.getElementsByTagName("body")[0].appendChild(crtg_script);
+})();
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+document.createElement( "picture" );
+//--><!]]>
+</script> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_P7crwj8ROvspESk0jLyecAdWS8oyakiML3tBPvixDnY.js"></script> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_se9mecZD_1KMk0EEY31fErDezWD047LSbbtfOTaxCLU.js"></script> 
+  <script type="text/javascript" src="http://a.postrelease.com/serve/load.js?async=true"></script> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_wGgesw1Jv-gGb_btkf6ImKh7Fy_gM3cpqgznZNv1VVQ.js"></script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=263851690471857&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+//--><!]]>
+</script> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_Nw7FJnaegKGaRHaj-xj-C6EEjIy3p_XmOYf5NTnnvKw.js"></script> 
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fd117ff2700b0d1"></script> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_SEUIwZql15J5Kzi0sf7KKtGogko0sM3oM534jBI2I74.js"></script> 
+  <script type="text/javascript" src="//cdn.optimizely.com/js/811712407.js"></script> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_yAxfX9_PDXgSxY19BEXgUAsVTPO8iD9PLhgnlm7PF7A.js"></script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var addthis_config = {};
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var adslot = 'us.ibtimes/economy/articles'
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.slots = googletag.slots || {};
+(function(){ var gads = document.createElement('script');
+  gads.async = true; gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["top"] = googletag.defineSlot("133596308/us.ibtimes/economy/articles", [[728, 90], [970, 66], [970, 90], [970, 250], [970, 400], [320, 50], [300, 50]], "dfp-ad-top")
+  .addService(googletag.pubads())
+  .setTargeting("pos", ["top","roadblock"]);
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["pageskin"] = googletag.defineSlot("133596308/us.ibtimes/economy/articles", [1828, 1200], "dfp-ad-pageskin")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "pageskin");
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["belowcontent"] = googletag.defineSlot("133596308/us.ibtimes/economy/articles", [[728, 90], [468, 60], [320, 50], [300, 50]], "dfp-ad-belowcontent")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "belowcontent");
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["right1"] = googletag.defineSlot("133596308/us.ibtimes/economy/articles", [[300, 250], [300, 600], [300, 1050]], "dfp-ad-right1")
+  .addService(googletag.pubads())
+  .setTargeting("pos", ["right1","roadblock"]);
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["right2"] = googletag.defineSlot("133596308/us.ibtimes/economy/articles", [[300, 250], [300, 600], [336, 280]], "dfp-ad-right2")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "right2");
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["right3"] = googletag.defineSlot("133596308/us.ibtimes/economy/articles", [[300, 250], [300, 600]], "dfp-ad-right3")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "right3");
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["bottom"] = googletag.defineSlot("133596308/us.ibtimes/economy/articles", [[728, 90], [320, 100]], "dfp-ad-bottom")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "bottom");
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["oop2"] = googletag.defineOutOfPageSlot("133596308/us.ibtimes/economy/articles", "dfp-ad-oop2")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "oop2");
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["oop1"] = googletag.defineOutOfPageSlot("133596308/us.ibtimes/economy/articles", "dfp-ad-oop1")
+  .addService(googletag.pubads())
+  .setTargeting("pos", "oop1");
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+    googletag.cmd.push(function() {
+      //Criteo RTA
+      var crtg_split = crtg_content.split('&');
+      for (var i=1;i<crtg_split.length;i++){ googletag.pubads().setTargeting ("" + (crtg_split[i-1].split('='))[0] + "", "" + (crtg_split[i-1].split('='))[1] + "");}
+    }); 
+      
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+  googletag.pubads().setTargeting("article_id", "1833872");
+
+googletag.enableServices();
+});
+
+//--><!]]>
+</script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"us_ibtimes","theme_token":"uBZsmo586Yu0jkFaOlSZl5lsQ8F-7lu-YTODQRJnaFY","js":{"sites\/all\/modules\/modules-contrib\/picture\/picturefill2\/picturefill.js":1,"sites\/all\/modules\/modules-contrib\/picture\/picture.js":1,"http:\/\/platform.twitter.com\/widgets.js":1,"http:\/\/platform.linkedin.com\/in.js":1,"http:\/\/platform.tumblr.com\/v1\/share.js":1,"0":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_footer\/js\/jquery.pageslide.js":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_footer\/js\/ibtimes_footer.js":1,"sites\/all\/modules\/modules-contrib\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/modules-contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/modules-contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/modules-contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"1":1,"2":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimestv_player\/js\/jwplayer.js":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimestv_player\/js\/ova-jquery.js":1,"sites\/all\/libraries\/chosen\/chosen\/chosen.jquery.min.js":1,"sites\/all\/modules\/modules-contrib\/chosen\/chosen.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/modules-contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/modules-contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/modules-contrib\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_stats\/js\/ibtimes_stats.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_mobile\/js\/ibtmedia_mobile.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_mobile\/js\/sliding_tabs.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_social\/js\/ibtmedia_social.js":1,"http:\/\/a.postrelease.com\/serve\/load.js?async=true":1,"http:\/\/ajax.aspnetcdn.com\/ajax\/jquery.validate\/1.11.1\/jquery.validate.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_content_correction\/js\/ibtmedia_content_correction_script.js":1,"3":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_header\/ibtimes_header.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_slider\/js\/ibtmedia_image_slider.js":1,"sites\/all\/libraries\/swipe\/swipe2.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_story_update\/js\/story_update.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_top_stories\/js\/ibtmedia_top_stories.js":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_header\/ibtimes_header_menu_flyout.js":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_article\/js\/ibtimes_article.js":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_social\/js\/ibtimes_social_buttons.js":1,"http:\/\/s7.addthis.com\/js\/250\/addthis_widget.js#pubid=ra-4fd117ff2700b0d1":1,"misc\/jquery.cookie.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_core\/ibtmedia_core.js":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_dfp\/js\/ibtmedia_dfp.js":1,"\/\/cdn.optimizely.com\/js\/811712407.js":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/js\/html5.js":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/js\/bootstrap.js":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"10":1,"11":1,"12":1,"13":1,"14":1,"15":1,"16":1,"17":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.tabs.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/modules-contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/modules-contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/modules-contrib\/picture\/picture_wysiwyg.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/modules-contrib\/views\/css\/views.css":1,"sites\/all\/libraries\/chosen\/chosen\/chosen.css":1,"sites\/all\/modules\/modules-contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/modules-contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_mobile\/css\/sliding_tabs.css":1,"sites\/all\/modules\/modules-contrib\/node_embed\/plugins\/node_embed\/node_embed.css":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_cache\/ibtmedia_cache.css":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_content_correction\/css\/ibtmedia_content_correction_style.css":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_slider\/css\/ibtmedia_image_slider.css":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_story_update\/css\/story_update.css":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_article\/css\/ibtimes_article_sticky_bar.css":1,"sites\/all\/modules\/modules-custom\/ibtmedia\/ibtmedia_top_stories\/css\/ibtmedia_top_stories.css":1,"sites\/all\/modules\/modules-custom\/ibtimes\/ibtimes_social\/css\/ibtimes_social_buttons.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/bootstrap.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/tabs.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/style.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/article.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/forms.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/corporate.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/coverage.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/pages.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/print.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/bootstrap-responsive-desktop.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/mediaquery-desktop.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/ie8.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/ie7.css":1,"sites\/www.ibtimes.com\/themes\/us_ibtimes\/css\/ie6.css":1}},"chosen":{"selector":"#edit-field-secondary-categories-und","minimum":"20"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"contentCorrection":{"nodeId":"1833872","correctionFormNodeId":"1696672","correctionFormNodetitle":"Chris Christie Administration Paid $600M In Financial Fees In 2014","correctionFormConfirmationMsg":"\u003Ch3\u003EThank you\u003C\/h3\u003E\u003Cp\u003EYour correction has been received and will be reviewed as soon as possible. IBTimes welcomes your feedback on any item that warrants correction.\u003C\/p\u003E","correctionFormNodeURl":"http:\/\/www.ibtimes.com\/chris-christie-administration-paid-600m-financial-fees-2014-1833872"},"ibtimes":{"page_url":"http:\/\/www.ibtimes.com\/chris-christie-administration-paid-600m-financial-fees-2014-1833872"},"ibtmediaDfp":{"debug":false}});
+//--><!]]>
+</script> 
+ </head> 
+ <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1833872 node-type-article story" itemscope="" itemtype="http://schema.org/WebPage"> 
+  <div id="skip-link"> 
+   <a href="#main-menu" class="element-invisible element-focusable">Jump to Navigation</a> 
+  </div> 
+  <header class="page-header clearfix"> 
+   <div id="block-ibtimes-header-header" class="block block-ibtimes-header first odd"> 
+    <div class="content"> 
+     <div class="container"> 
+      <div class="section clearfix row"> 
+       <a class="open pull-left hidden-print" href="#nav"></a> 
+       <div id="logo" class="span8"> 
+        <a href="/" title="Financial news" rel="home" id="logo-link"> <img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/ibt-logo.png" alt="Business news" class="hidden-print" width="605" /> <img src="http://s1.ibtimes.com/sites/www.ibtimes.com/themes/us_ibtimes/images/logo-black.png" class="visible-print" width="605" /> </a> 
+        <p class="timedate visible-desktop hidden-print">Tuesday, March 03, 2015 As of 8:44 PM EST</p> 
+       </div> 
+       <a class="open-search pull-right hidden-print" href="#nav"></a> 
+       <div class="language-block span4 hidden-print"> 
+        <div id="change-edition" class="hidden-phone"> 
+         <div id="change-edition-abb"> 
+          <p>U.S. Edition</p> 
+         </div> 
+         <div id="change-edition-navigate"> 
+          <a href="#"></a> 
+         </div> 
+         <div id="editions-menu"> 
+          <ul class="menu">
+           <li class="first leaf"><a href="http://au.ibtimes.com" title="business news australia" target="_blank">Australia Edition</a></li> 
+           <li class="leaf"><a href="http://cn.ibtimes.com" title="business news china" target="_blank">China Edition</a></li> 
+           <li class="leaf"><a href="http://www.ibtimes.co.in" title="business news india" target="_blank">India Edition</a></li> 
+           <li class="leaf"><a href="http://it.ibtimes.com" title="business news italy" target="_blank">Italy Edition</a></li> 
+           <li class="leaf"><a href="http://jp.ibtimes.com" title="business news japan" target="_blank">Japan Edition</a></li> 
+           <li class="leaf"><a href="http://www.ibtimes.co.uk" title="business news uk" target="_blank">U.K. Edition</a></li> 
+           <li class="last leaf"><a href="http://www.ibtimes.com" title="business news us">U.S. Edition</a></li> 
+          </ul> 
+         </div> 
+        </div> 
+        <div class="newsletters-link visible-desktop">
+         <a href="/newsletters">Subscribe</a>
+        </div> 
+        <div id="header-social" class=""> 
+         <ul class="clearfix"> 
+          <li class="f"><a href="http://www.facebook.com/IBTimes" target="_blank" rel="nofollow"></a></li> 
+          <li class="t"><a href="https://twitter.com/#!/ibtimes" target="_blank" rel="nofollow"></a></li> 
+          <li class="in visible-desktop"><a href="http://www.linkedin.com/company/ibt-media" target="_blank" rel="nofollow"></a></li> 
+          <li class="g"><a href="https://plus.google.com/104251884662423731269" target="_blank" rel="publisher"></a></li> 
+          <li class="home visible-desktop"><a href="javascript:;" class="create_bookmark">| Make IBT your homepage</a></li> 
+         </ul> 
+         <div class="social-drop"> 
+          <ul class="addthis_toolbox addthis_default_style "> 
+           <li class="fb"><a class="addthis_button_facebook_like" fb:like:href="http://www.facebook.com/ibtimes"></a></li> 
+           <li class="twt"><a class="addthis_button_twitter_follow_native" tw:screen_name="ibtimes" tf:show-screen-name="true" tf:show-count="false"></a></li> 
+           <li class="ggl"><a class="addthis_button_google_follow" addthis:userid="104251884662423731269/posts"></a></li> 
+           <li class="rss"><a href="/rss" target="_blank"></a></li> 
+           <li class="mail"><a target="_blank" href="/newsletters"></a></li> 
+          </ul> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /.block ibtimes_header--header --> 
+   <div id="block-system-main-menu" class="block block-system block-menu even"> 
+    <div class="content"> 
+     <div class="container"> 
+      <div class="row"> 
+       <div class="span12"> 
+        <ul class="menu">
+         <li class="first leaf"><a href="/">Home</a></li> 
+         <li class="collapsed politics"><a href="/politics" title="With text, videos, slideshows and multimedia, Politics at IBTimes.com offers news, analysis and insight about geopolitics and policies in Asia, Africa, the Americas, Europe and the Middle East. ">Politics</a></li> 
+         <li class="collapsed economy active-trail"><a href="/economy" title="With text, videos, slideshows and multimedia, Economy at IBTimes.com offers news and insight about economic trends, data and policies in Asia, Africa, the Americas, Europe and the Middle East.">Economy</a></li> 
+         <li class="collapsed markets-finance"><a href="/markets-finance" title="With text, videos, slideshows and multimedia, Markets/Finance at IBTimes.com offers news and insight about markets and the financial sector in Asia, Africa, the Americas, Europe and the Middle East. ">Markets / Finance</a></li> 
+         <li class="collapsed companies"><a href="/companies" title="With text, videos, slideshows and multimedia, Companies at IBTimes.com offers news and insight about multinational and domestic companies in Asia, Africa, the Americas, Europe and the Middle East.">Companies</a></li> 
+         <li class="collapsed technology"><a href="/technology" title="With text, videos, slideshows and multimedia, Technology at IBTimes.com offers news and insight about tech gadgets, games and social media as well as research and advances in science and health. ">Technology</a></li> 
+         <li class="collapsed media-culture"><a href="/media-culture" title="With text, videos, slideshows and multimedia, Media&amp;amp;Culture at IBTimes.com offers news and insight about movies, art, books, the entertainment industry, cultural icons and travel.">Media &amp; Culture</a></li> 
+         <li class="collapsed sports"><a href="/sports" title="With text, videos, slideshows and multimedia, Sports at IBTimes.com covers international sports with an emphasis on soccer, basketball, football, golf, baseball, tennis and hockey. ">Sports</a></li> 
+         <li class="last leaf tv"><a href="http://tv.ibtimes.com" class="tv">Video</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /.block --> 
+   <div id="block-dfp-top" class="block block-dfp odd"> 
+    <div class="content"> 
+     <div id="dfp-ad-top-wrapper" class="dfp-tag-wrapper"> 
+      <div id="dfp-ad-top" class="dfp-tag-wrapper"> 
+       <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-top");
+    });
+  </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /.block dfp--top --> 
+   <div id="block-dfp-pageskin" class="block block-dfp last even"> 
+    <div class="content"> 
+     <div id="dfp-ad-pageskin-wrapper" class="dfp-tag-wrapper"> 
+      <div id="dfp-ad-pageskin" class="dfp-tag-wrapper"> 
+       <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-pageskin");
+    });
+  </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /.block dfp--pageskin --> 
+  </header> 
+  <div id="main-wrapper" class="container"> 
+   <div id="main" class="clearfix row"> 
+    <div class="span12"> 
+    </div> 
+    <div class="main-column span8"> 
+     <div class="inner-wrap"> 
+      <div class="content"> 
+       <div id="block-ibtimes-header-node-social-share-buttons" class="block block-ibtimes-header first odd"> 
+        <div class="content"> 
+         <div class="node-header clearfix"> 
+          <h1 itemprop="headline">Chris Christie Administration Paid $600M In Financial Fees In 2014</h1> 
+          <div class="node-metainfo"> 
+           <span class="byline">By</span>&nbsp; 
+           <span class="author smaller-font"> <span itemtype="http://schema.org/Person" itemprop="author"><a href="/reporters/david-sirota" class="author-name" rel="author" itemprop="name url">David Sirota</a></span> <span class="author-extra"> <a href="http://www.twitter.com/davidsirota" class="author-twitter" target="_blank">@davidsirota</a> <a href="mailto:d.sirota@ibtimes.com" class="author-email" absolute="1">d.sirota@ibtimes.com</a> </span> <br /><span itemtype="http://schema.org/Person" itemprop="author"><a href="/reporters/matthew-cunningham-cook" class="author-name" rel="author" itemprop="name url">Matthew Cunningham-Cook</a></span> <span class="author-extra"> <a href="http://www.twitter.com/mattcunninghamc" class="author-twitter" target="_blank">@mattcunninghamc</a> <a href="mailto:m.cunninghamcook@ibtimes.com" class="author-email" absolute="1">m.cunninghamcook@ibtimes.com</a> </span> </span> on 
+           <span itemprop="datePublished" datetime="2015-03-03T08:08:53-05:00" data-timestamp="1425388133" data-relativeformat="short">March 03 2015 8:08 AM EST</span> 
+          </div> 
+          <ul class="sb-toolbox addthis_toolbox clearfix" addthis:url="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" addthis:title="Chris Christie Administration Paid $600M In Financial Fees In 2014"> 
+           <li class="fb clearfix"><a class="addthis_button_facebook"></a>
+            <div class="facebook-count social-share-count">
+             <span class="count-number">0</span>
+             <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+            </div></li> 
+           <li class="twt clearfix"><a class="addthis_button_twitter"></a>
+            <div class="twitter-count social-share-count">
+             <span class="count-number">0</span>
+             <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+            </div></li> 
+           <li class="ln clearfix"><a class="addthis_button_linkedin"></a>
+            <div class="linkedin-count social-share-count">
+             <span class="count-number">0</span>
+             <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+            </div></li> 
+           <li class="stu clearfix"><a class="addthis_button_stumbleupon_badge" su:badge:style="4"></a></li> 
+           <li class="ggl clearfix"><a class="addthis_button_google_plusone_share"></a></li> 
+           <li class="more clearfix"><a class="addthis_button_compact"></a></li> 
+           <li class="comment clearfix"><a href="#discussion"><span></span></a>
+            <div class="facebook_comments-count social-share-count">
+             <a href="/chris-christie-administration-paid-600m-financial-fees-2014-1833872#discussion" class="count-number active">0</a>
+             <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+            </div></li> 
+          </ul> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /.block ibtimes_header--node_social_share_buttons --> 
+       <div id="block-system-main" class="block block-system even"> 
+        <div class="content"> 
+         <div id="node-1833872" class="node-article node node-article KonaBody node-sidebar view-mode-full clearfix" itemtype="http://schema.org/NewsArticle" itemprop="mainContentOfPage" itemscope=""> 
+          <div itemtype="http://schema.org/ImageObject" itemscope="" class="single-image"> 
+           <div class="slide-wrapper"> 
+            <div class="image-wrapper"> 
+             <div class="image"> 
+              <img itemprop="contentUrl representativeOfPage" src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_article_large/public/2015/01/15/christie.JPG?itok=f8q1SZEx" alt="Christie" title="Christie" /> 
+             </div> 
+            </div> 
+           </div> 
+           <div class="slide-info-wrapper"> 
+            <div class="slide-info"> 
+             <span class="slide-caption" itemprop="caption"> New Jersey Gov. Chris Christie pauses as he delivers his State of the State address at the New Jersey State House on Wednesday. Christie said he won't let anyone decide his time frame for announcing he'll run for president -- or not. </span> 
+             <span class="slide-credit" itemprop="author"> Reuters </span> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="article-story clearfix"> 
+           <div class="article-content" itemprop="articleBody"> 
+            <p dir="ltr">Under Chris Christie, the New Jersey pension system paid more than $600 million in fees to financial firms in 2014 -- 50 percent more than a year ago, and a higher rate than almost any other state reports paying for pension management. The figures are buried within an otherwise routine <a href="http://www.nj.gov/treasury/doinvest/pdf/AnnualReport/2014AnnualReportStateInvestmentCouncil.pdf" rel="nofollow" target="_blank">annual report</a> that appeared to change the way the fees were counted to make them look smaller than they actually are.</p> 
+            <p dir="ltr">That accounting change comes at a time when the Christie administration is under scrutiny for <a href="http://www.ibtimes.com/gov-christie-shifted-pension-cash-wall-street-costing-new-jersey-taxpayers-38-billion-1667622">investing</a> pension money in high-fee firms whose executives made campaign contributions to Republican political groups. The move obscuring the increase in reported fees also comes on the heels of Christie <a href="http://www.nj.com/politics/index.ssf/2014/06/christie_says_he_has_no_idea_how_to_balance_nj_budget_if_judge_rules_agaisnt_penion_plan.html" rel="nofollow" target="_blank">telling</a> New Jersey teachers, firefighters, cops and other public workers that “there are no alternatives” to cutting their retirement benefits because the state pension system is so strapped for cash.</p> 
+            <p dir="ltr">“The lack of transparency, skyrocketing risks and fees and chronic underperformance makes New Jersey the poster child for the kind of shenanigans happening in pension systems across the country,” said former Securities and Exchange Commission attorney Ted Siedle, who conducts forensic investigations of state and local pension systems.</p> 
+            <p dir="ltr">The New Jersey Department of Treasury and Christie’s office did not respond to International Business Times' request for comment.</p> 
+            <p dir="ltr"> </p>
+            <div itemscope="" itemtype="http://schema.org/ImageObject"> 
+             <span class="embedded_node embedded-image  hidden-print"> <img itemprop="contentUrl" src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_article_large/public/2015/03/03/njfees-01.png?itok=pvWKYvFD" alt="njfees-01" /></span> 
+             <span class="embedded-image-caption"> <span class="caption-body" itemprop="caption">Between 2010 and 2014, New Jersey has paid more than $1.5 billion in financial fees.</span> <span class="caption-photo" itemprop="author">&nbsp;International Business Times/Hanna Sender</span> </span> 
+            </div> 
+            <p></p> 
+            <p dir="ltr">The <a href="http://www.nj.gov/treasury/doinvest/pdf/AnnualReport/2014AnnualReportStateInvestmentCouncil.pdf" rel="nofollow" target="_blank">report</a> from the Christie-appointed State Investment Council was released in late January. It shows that taxpayers spent $600.2 million -- or $1.6 million a day -- on fees to private financial firms in 2014. The year before Christie took office, New Jersey’s State Investment Council <a href="https://dspace.njstatelib.org/xmlui/bitstream/handle/10929/17196/2009.pdf?sequence=1&amp;isAllowed=y" rel="nofollow" target="_blank">reported</a> that the pension system paid $125 million in financial management fees. By 2013, the state <a href="http://www.nj.gov/treasury/doinvest/pdf/AnnualReport/2013AnnualReportStateInvestmentCouncil.pdf" rel="nofollow" target="_blank">reported</a> paying $398 million in such fees.</p> 
+            <p dir="ltr">In all, since Christie took office, his administration has spent $1.5 billion of retirees’ pension money on Wall Street fees. That’s more than the <a href="http://www.nj.com/politics/index.ssf/2014/05/christie_unveils_plan_to_cover_800m_budget_shortfall.html" rel="nofollow" target="_blank">cut</a> Christie made to the state’s required pension payment in 2014, and it is more than the state has budgeted for its entire Department of Environmental Protection <a href="http://www.state.nj.us/treasury/omb/publications/10budget/pdf/summaries.pdf" rel="nofollow" target="_blank">over</a> <a href="http://www.state.nj.us/treasury/omb/publications/11budget/pdf/summaries.pdf" rel="nofollow" target="_blank">the</a> <a href="http://www.state.nj.us/treasury/omb/publications/12budget/pdf/summaries.pdf" rel="nofollow" target="_blank">last</a> <a href="http://www.state.nj.us/treasury/omb/publications/13budget/pdf/Section%20B%20-%20Summaries.pdf" rel="nofollow" target="_blank">5</a> <a href="http://www.state.nj.us/treasury/omb/publications/14budget/pdf/Section%20B%20-%20Summaries.pdf" rel="nofollow" target="_blank">years</a>. Had the Christie administration maintained the fee level the state was paying in the year before the governor took office, the pension system would have saved more than $914 million.</p> 
+            <p dir="ltr">The higher fees are a result of the Christie administration <a href="http://www.northjersey.com/news/pension-fund-adding-riskier-investments-1.883744" rel="nofollow" target="_blank">shifting</a> billions of dollars of pension money into high-fee <a href="http://www.pionline.com/article/20140203/PRINT/302039997/healthy-growth-of-hedge-fund-assets-continuing-among-db-plans" rel="nofollow" target="_blank">hedge funds</a>, private equity, venture capital firms and other so-called alternative investments in politically connected Wall Street firms. <a href="https://dspace.njstatelib.org/xmlui/bitstream/handle/10929/17197/annualreport2010.pdf?sequence=1&amp;isAllowed=y" rel="nofollow" target="_blank">State</a> <a href="http://www.nj.gov/treasury/doinvest/pdf/AnnualReport/2014AnnualReportStateInvestmentCouncil.pdf" rel="nofollow" target="_blank">records</a> show the share of alternative investments in the pension portfolio has increased by nearly a third.</p> 
+            <p dir="ltr">The high fees that come with such investments are supposed to buy higher returns than can be made from low-fee stock and bond index funds. Yet, under Christie, the New Jersey pension system has delivered returns that have&nbsp;<a href="http://www.ibtimes.com/gov-christie-shifted-pension-cash-wall-street-costing-new-jersey-taxpayers-38-billion-1667622">trailed</a> the median for similarly sized pension funds. The state’s high-fee alternative investment portfolio has also <a href="http://www.ibtimes.com/under-gov-chris-christie-new-jerseys-wall-street-investments-trailed-sp-500-1680386">lagged behind</a> the S&amp;P 500.</p> 
+            <p dir="ltr">With a recent <a href="http://www.ibtimes.com/chris-christie-council-clears-mass-gov-charlie-baker-new-jersey-pay-play-probe-1799948">pay-to-play investigation</a> of a New Jersey pension contract attracting intense scrutiny of the state’s financial fees, the New Jersey Investment Council’s new <a href="http://www.nj.gov/treasury/doinvest/pdf/AnnualReport/2014AnnualReportStateInvestmentCouncil.pdf" rel="nofollow" target="_blank">annual report</a> in January purports to show a decrease in fees paid to Wall Street. But a close reading of the&nbsp;<a href="http://www.nj.gov/treasury/doinvest/pdf/AnnualReport/2014AnnualReportStateInvestmentCouncil.pdf" rel="nofollow" target="_blank">document</a> shows that state officials in 2014 changed the report’s tables to not count $334 million of payments to financial firms as fees. Instead, the payments were -- without any explicit explanation -- reclassified as performance “allocations.”</p> 
+            <p dir="ltr">That let Christie officials claim that the system spent just $265.4 million on fees -- seemingly less than what it spent in 2013 when&nbsp;<a href="http://www.nj.gov/treasury/doinvest/pdf/AnnualReport/2013AnnualReportStateInvestmentCouncil.pdf" rel="nofollow" target="_blank">that year’s report</a> said the state “paid $378.1 million in management and performance fees” on top of another $20.6 million in adviser fees. The move also let Christie officials claim that in 2014, the state spent only 32 cents on overhead costs per $100 of pension money it manages.</p> 
+            <p dir="ltr">When the $334 million of performance fees is counted, however, the aggregate fee total reveals a huge spike in reported payments to financial firms. It shows that under Christie, New Jersey taxpayers are now spending 67 cents on fees per $100 under management. That is more than triple the fee rate since Christie took office in 2010, and more than 50 percent higher than the median for state pension systems, according to a<a href="http://www.mdpolicy.org/docLib/20130710_MarylandPolicyReport201302.pdf" rel="nofollow" target="_blank"> 2013 report</a> by the Maryland Public Policy Institute.</p> 
+            <p dir="ltr">“The real overhead cost number puts New Jersey’s pension fund’s expense ratio among the highest in the nation, despite the fact that its investment performance is below its peer group,” said investment banker Jeffrey Hooke, who conducted the national study of pension fees. He speculated that Christie officials, uneasy about the New Jersey pension system’s high fees and mediocre results, “papered over the problems by separating big performance fees. The fund unfortunately misleads taxpayers and union members about what is really going on.”</p> 
+            <p dir="ltr">New Jersey <a href="http://www.state.nj.us/oag/ca/bos/laws/NJ-Uniform-Securities-Law.pdf" rel="nofollow" target="_blank">statutes</a> say that it is illegal “to make any untrue statement of a material fact or to omit” key details in financial statements about securities.</p> 
+            <p dir="ltr">Jim Marketti, who served on the State Investment Council from 2008 to 2012, said he believes the shifting of accounting to obscure the Wall Street fees is part of a pattern.</p> 
+            <p dir="ltr">“The most troubling and disgusting aspect of my service on the State Investment Council was the practice of the leadership of the council and the Division of Investment of changing the basis on which they reported goals, data, performance and costs usually from year to year but often from month to month in order to burnish the outcomes they claimed to produce,” Marketti told IBTimes. </p> 
+            <p dir="ltr">Tom Bruno, chairman of New Jersey’s Public Employees Retirement System, told IBTimes that his board of trustees has been kept in the dark about the fee increases.</p> 
+            <p dir="ltr">&quot;A 50 percent fee increase is a huge increase, but the trustees haven’t heard anything about this,” he said. “For the investment council to use language that isn’t even standard market terminology is particularly concerning. Pension fund trustees in New Jersey will apply a high standard of scrutiny to the latest investment council annual report.&quot;</p> 
+            <p dir="ltr">Last week, Christie’s pension commission released a report calling for <a href="http://www.nj.com/politics/index.ssf/2015/02/christie_pension_commission_recommends_plan_for_hu.html" rel="nofollow" target="_blank">cuts</a> to guaranteed retirement income and health benefits for public workers. The&nbsp;<a href="http://www.state.nj.us/treasury/pdf/FinalFebruaryCommissionReport.pdf" rel="nofollow" target="_blank">report</a> did not include trying to reduce financial fees among its suggested pension reforms. The Christie-appointed commission’s chairman is a former partner at Goldman Sachs, whose&nbsp;<a href="http://www.sec.gov/Archives/edgar/data/1375637/000114036114028240/xslFormDX01/primary_doc.xml" rel="nofollow" target="_blank">subsidiary</a> has been paid more than&nbsp;<a href="http://media.philly.com/documents/NJpensionFeesByYear2008to2013.pdf" rel="nofollow" target="_blank">$7.5 million in fees</a> from the New Jersey pension system since 2008. Most members of the commission’s board are current or former executives at investment and financial consulting firms, and the commission’s&nbsp;<a href="http://www.state.nj.us/treasury/pdf/NJPHBSC.pdf" rel="nofollow" target="_blank">executive director</a> is a former executive at the private equity giant KKR.</p> 
+            <p>In recent days, Democratic and Republican lawmakers in New Jersey overwhelmingly passed&nbsp;<a href="http://www.ibtimes.com/chris-christie-faces-new-jersey-bill-restricting-campaign-cash-firms-managing-pension-1831938">legislation</a> that would force the State Investment Council to provide greater disclosure of fees paid to financial firms. The&nbsp;<a href="http://www.njleg.state.nj.us/2014/Bills/S2500/2430_I1.PDF" rel="nofollow" target="_blank">bill</a> is now awaiting Christie’s signature or veto.</p> 
+            <div></div> 
+           </div> 
+          </div> 
+         </div>
+         <!-- /.node --> 
+        </div> 
+       </div>
+       <!-- /.block system--main --> 
+       <div id="block-ibtmedia-story-update-story-updates" class="block block-ibtmedia-story-update odd"> 
+        <div class="content"> 
+        </div> 
+       </div>
+       <!-- /.block ibtmedia_story_update--story_updates --> 
+       <div id="block-ibtimes-article-bottom-social-block" class="block block-ibtimes-article even"> 
+        <div class="content"> 
+         <div class="node-footer"> 
+          <ul class="sb-toolbox addthis_toolbox" addthis:url="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" addthis:title="Chris Christie Administration Paid $600M In Financial Fees In 2014"> 
+           <li class="user-btn btn-correct"> <a href="javascript:void(0)">Submit Correction</a> </li> 
+           <li class="fb clearfix"><a class="addthis_button_facebook"></a>
+            <div class="facebook-count social-share-count">
+             <span class="count-number">0</span>
+             <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+            </div></li> 
+           <li class="twt clearfix"><a class="addthis_button_twitter"></a>
+            <div class="twitter-count social-share-count">
+             <span class="count-number">0</span>
+             <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+            </div></li> 
+           <li class="ln clearfix"><a class="addthis_button_linkedin"></a>
+            <div class="linkedin-count social-share-count">
+             <span class="count-number">0</span>
+             <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+            </div></li> 
+           <li class="stu clearfix"><a class="addthis_button_stumbleupon_badge" su:badge:style="4"></a></li> 
+           <li class="ggl clearfix"><a class="addthis_button_google_plusone_share"></a></li> 
+           <li class="more clearfix"><a class="addthis_button_compact"></a></li> 
+          </ul> 
+          <div class="content-correction-holder"></div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /.block ibtimes_article--bottom_social_block --> 
+       <div id="block-ibtimes-article-related-stories-block" class="block block-ibtimes-article odd"> 
+        <div class="content"> 
+         <div class="related-stories-wrapper hidden-print"> 
+          <div class="clearfix"> 
+           <div class="title">
+            Related
+           </div> 
+           <div class="addthis-buttons addthis_toolbox"> 
+            <div class="node-body-social-buttons"> 
+             <p> <a class="addthis_button_facebook_like" fb:like:href="http://www.facebook.com/IBTimes"></a> <a class="addthis_button_twitter_follow_native" tw:screen_name="ibtimes" tf:show-screen-name="true" tf:show-count="false"></a> </p> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="related-stories"> 
+           <ul> 
+            <li> <a href="/chris-christie-faces-new-jersey-bill-restricting-campaign-cash-firms-managing-pension-1831938" class="article-link">Christie Faces Decision On Bill Limiting Wall Street Donations<span class="overlay article-overlay"></span></a> </li> 
+            <li> <a href="/chris-christie-court-overturns-new-jersey-governors-pension-cuts-1825710" class="article-link">Christie's Pension Cuts Ruled Illegal<span class="overlay article-overlay"></span></a> </li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /.block ibtimes_article--related_stories_block --> 
+       <div id="block-ibtmedia-dfp-ibtmedia-dfp-belowcontent" class="block block-ibtmedia-dfp even"> 
+        <div class="content"> 
+         <div id="contentad10726"></div> 
+         <script type="text/javascript">
+    (function() {
+        var params =
+        {
+            id: "204647be-f1c4-4b84-a30a-c46d4c859471",
+            d:  "aWJ0aW1lcy5jb20=",
+            wid: "10726",
+            cb: (new Date()).getTime(),
+            title: "Ibtimes.com"
+        };
+
+        var qs="";
+        for(var key in params){qs+=key+"="+params[key]+"&"}
+        qs=qs.substring(0,qs.length-1);
+        var s = document.createElement("script");
+        s.type= 'text/javascript';
+        s.src = "http://api.content.ad/Scripts/widget.aspx?" + qs;
+        s.async = true;
+        document.getElementById("contentad10726").appendChild(s);
+    })();
+</script> 
+        </div> 
+       </div>
+       <!-- /.block ibtmedia_dfp--ibtmedia_dfp_belowcontent --> 
+       <div id="block-dfp-belowcontent" class="block block-dfp odd"> 
+        <div class="content"> 
+         <div id="dfp-ad-belowcontent-wrapper" class="dfp-tag-wrapper"> 
+          <div id="dfp-ad-belowcontent" class="dfp-tag-wrapper"> 
+           <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-belowcontent");
+    });
+  </script> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /.block dfp--belowcontent --> 
+       <div id="block-ibtmedia-facebook-facebook-comment" class="block block-ibtmedia-facebook even"> 
+        <div class="content"> 
+         <div id="discussion"> 
+          <div class="fb-comments-title"> 
+           <span>Join the Discussion</span> 
+          </div> 
+          <div class="fb-comments" data-href="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" data-numposts="10" data-colorscheme="light" data-width="100%"></div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /.block ibtmedia_facebook--facebook_comment --> 
+       <div id="block-ibtimes-article-sticky-bar" class="block block-ibtimes-article last odd"> 
+        <div class="content"> 
+         <style>
+#at15s.atm {display: none;}
+</style> 
+         <div class="sticky-bar visible-desktop"> 
+          <div class="container clearfix"> 
+           <a href="/" class="logo pull-left"></a> 
+           <div class="top-stories clearfix hidden"> 
+            <script type="text/javascript">
+  (function() {
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = 'http://cdn.feeds.ibt.com/tm-hits-widget.js?story_type=analysis%2Carticle%2Ccolumn%2Ceditorial%2Cinterview%2Cop_ed%2Copinion&created=1425258990&syndication=1&placeholder_id=top_stories&limit=6&ticker=1&site=www.ibtimes.com';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+  })();
+</script> 
+            <div id="top_stories" class="carousel slide"></div> 
+            <a id="top_stories_toggle_dropdown" class="toggle-dropdown" href="javascript:void(0)"></a> 
+           </div> 
+           <!-- /top stories --> 
+           <ul class="sb-toolbox addthis_toolbox" addthis:url="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" addthis:title="Chris Christie Administration Paid $600M In Financial Fees In 2014"> 
+            <li class="fb clearfix"><a class="addthis_button_facebook"></a>
+             <div class="facebook-count social-share-count">
+              <span class="count-number">0</span>
+              <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+             </div></li> 
+            <li class="twt clearfix"><a class="addthis_button_twitter"></a>
+             <div class="twitter-count social-share-count">
+              <span class="count-number">0</span>
+              <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+             </div></li> 
+            <li class="ln clearfix"><a class="addthis_button_linkedin"></a>
+             <div class="linkedin-count social-share-count">
+              <span class="count-number">0</span>
+              <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-administration-paid-600m-financial-fees-2014-1833872" />
+             </div></li> 
+            <li class="ggl clearfix"><a class="addthis_button_google_plusone_share"></a></li> 
+            <li class="more clearfix"><a class="addthis_button_compact"></a></li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <!-- /.block ibtimes_article--sticky_bar --> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="sidebar span4 hidden-print"> 
+     <div class="inner-wrap"> 
+      <div class="region region-sidebar">
+       <div class="section"> 
+        <div class="ibtimes-tv-blocks single clearfix"> 
+         <h2 class="block-title"><a class="block_title_a" href="http://tv.ibtimes.com">IBTIMES TV</a></h2> 
+         <a class="more" href="http://tv.ibtimes.com" target="_blank">more</a> 
+         <div class="video-main"> 
+          <div class="videoplayer" style="position:relative"> 
+           <style>#bar {left:0;position:absolute;top:244px;z-index:999;font-size:10px;font-weight:bold;padding:0;margin:0;text-transform:uppercase;}
+#bar a {color:#fff;float:left;font-size:10px;text-decoration:none;line-height:16px;}
+#bar #unmute {background:url("http://s3.ibtimes.com/sites/all/libraries/ova/bg_unmute.png") no-repeat scroll left top transparent;padding:0 3px 0 18px; display: none;}
+#bar #mute {background:url("http://s3.ibtimes.com/sites/all/libraries/ova/bg_mute.png") no-repeat scroll left top transparent;padding:0 3px 0 18px; display: none;}</style> 
+           <a id="singleplayer-0"></a>
+           <p id="bar" style="display:none"><a id="singleplayer-0"></a><a href="javascript:;" onclick="jQuery.muteClicked();" id="mute">Mute</a><a href="javascript:;" onclick="jQuery.unmuteClicked();" id="unmute">Unmute</a></p> 
+           <script type="text/javascript">
+jwplayer("singleplayer-0").setup({
+  id: "singleplayer-0",
+  width: 400,
+  height: 300,
+  volume: 1,
+  autostart: true,
+  stretching: "uniform",
+  "controlbar": "none",
+  //"controlbar.position": "bottom",
+  //skin: "http://s3.ibtimes.com/sites/all/modules/modules-custom/ibtimes/ibtimestv_player/jw/ibt-player/ibt-player.zip",
+  modes: [{type:"flash",src:"http://s3.ibtimes.com/sites/all/modules/modules-custom/ibtimes/ibtimestv_player/jw/player.swf",config:{
+    playlist:[{file:'http://pstreaming.ibtimes.com/video/i8promo_2-19-15-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/fitbitsurgepromo_2-19-15-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/EvoXPromo_2-19-15-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/fitbitcharge_promo_12-12-14-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/infinitiq70_promo_11-13-14-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/misfit_shine_promo_10-24-14-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/samsungfitgear_promo_10-21-14-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/fitbit_jawbone_promo_10-16-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/focus_promo_9-16-14-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/samsung_tab_s8.4PROMO_9-12-14.mp4'},{file:'http://pstreaming.ibtimes.com/video/Ford_fiesta_st_review_promo_7-30-14-1.mp4'},{file:'http://pstreaming.ibtimes.com/video/htcone_m8_promo_8-6-14-1.mp4'}]
+  }}],
+  events: {
+    onPlaylistItem: function(event) {
+      var currentPlayListItem = jwplayer().getPlaylistItem();
+      if(!currentPlayListItem.ovaAd == true){
+        comscoreTracking("content_start");
+      }
+    }
+  }
+    ,plugins: {
+    "http://s3.ibtimes.com/sites/all/libraries/ova/ova-jw.js": {
+      "analytics":{"google":{"ova":{"enable":false}}},
+      "useV2APICalls": true,
+      "ads": {
+        "playOnce":false,
+        "linearScaling":"fit",
+        "vpaid": {"terminateOnLogMessage":"errorEvent: No ads available."},
+        "holdingClipUrl": "http://s3.ibtimes.com/sites/all/libraries/ova/holding.mp4",
+        //"companions": {"nativeDisplay":"true","restore":true,"regions":[{"id":"companion_300x250","width":300,"height":250}]},
+        "schedule": [
+  {
+    "position":"pre-roll",
+    "loadOnDemand":true,
+    "refreshOnReplay":true,
+    "server":{
+      "type":"direct",
+      "timeoutInSeconds":"30",
+      "encodeVars":true,
+      "tag":"http://u-ads.adap.tv/a/h/mCCl1FmDH4k1LG9g6pyUfRHCO4eEiwxq?context=subdomain%3Dwww.ibtimes.com&pageUrl=ibtimes.com&cb=__random-number__&eov=eov&pet=preroll&nodeid=1833872&category=economy",
+      "failoverConditions":{
+        "type":"direct",
+        "timeoutInSeconds":"30",
+        "encodeVars":true,
+        "tag":"http://search.spotxchange.com/vast/2.00/103660?VPAID=1&content_page_url=__page-url__&cb=__timestamp__&player_width=400&player_height=300&nodeid=1833872&category=economy"
+      }
+    }
+  },
+  {
+    "position":"post-roll",
+    "loadOnDemand":true,
+    "refreshOnReplay":true,
+    "server":{
+      "type":"direct",
+      "timeoutInSeconds":"30",
+      "encodeVars":true,
+      "tag":"http://search.spotxchange.com/vast/2.00/103660?VPAID=1&content_page_url=__page-url__&cb=__timestamp__&player_width=400&player_height=300&nodeid=1833872&category=economy",
+      "failoverConditions":{
+        "type":"direct",
+        "timeoutInSeconds":"30",
+        "encodeVars":true,
+        "tag":"http://u-ads.adap.tv/a/h/mCCl1FmDH4k1LG9g6pyUfRHCO4eEiwxq?context=subdomain%3Dwww.ibtimes.com&pageUrl=ibtimes.com&cb=__random-number__&eov=eov&pet=preroll&nodeid=1833872&category=economy"
+      }
+    }
+  }
+]      },
+             "debug":{"levels":"none"}
+          }
+  }
+  });
+jwplayer('singleplayer-0').onReady(function(){
+  jQuery.muteClicked = function(){
+    jwplayer('singleplayer-0').setVolume(0);
+    jQuery('#mute').hide();
+    jQuery('#unmute').show();
+    jQuery.cookie('vpmute','y',{expires:1,path:'/'});
+  }
+  jQuery.unmuteClicked = function(){
+    jwplayer('singleplayer-0').setVolume(1);
+    jQuery('#unmute').hide();
+    jQuery('#mute').show();
+    jQuery.cookie('vpmute','n',{expires:1,path:'/'});
+  }
+
+
+  jwplayer("singleplayer-0").onPlay(function(e) {
+   tvPlayerShowMuteButton();
+  });
+
+  jwplayer("singleplayer-0").getPlugin("ova").onVPAIDAdLoaded(function(ad, runtime){
+   tvPlayerShowMuteButton();
+  });
+
+  jwplayer("singleplayer-0").getPlugin('ova').onOVAReadyToPlay(function(){
+   tvPlayerShowMuteButton();
+  });
+  if (typeof(jwplayer("singleplayer-0").getPlugin('ova').onVPAIDAdVolumeChange) != "undefined") {  
+    jwplayer("singleplayer-0").getPlugin('ova').onVPAIDAdVolumeChange(function(){
+     tvPlayerShowMuteButton();
+    });
+  }
+
+  jwplayer('singleplayer-0').getPlugin('ova').onVPAIDAdStart(function(){
+    tvPlayerShowMuteButton();
+    comscoreTracking("adstart");
+  });
+
+  jwplayer('singleplayer-0').getPlugin('ova').onVPAIDAdVolumeChange(function(){
+    tvPlayerShowMuteButton();
+  });
+
+});
+
+function tvPlayerShowMuteButton() {
+  jQuery('#bar').show();
+  if(jQuery.cookie('vpmute') == 'y'){
+    jQuery.muteClicked();
+  }else{
+    jQuery.unmuteClicked();
+  }
+}
+
+function comscoreTracking(trackingType) {
+  var comscoreTrackingUrl = "http://b.scorecardresearch.com/p?c1=1&c2=7922264&c5=02";
+  if (trackingType == "adstart") {
+     comscoreTrackingUrl = "http://b.scorecardresearch.com/p?c1=1&c2=7922264&c5=01";
+  }
+  jQuery('.comscore-tracking').append('<img src="' + comscoreTrackingUrl +'" />');
+}
+
+</script> 
+          </div> 
+          <div class="comscore-tracking" style="display: none;"></div> 
+         </div> 
+         <div class="video-description"> 
+          <p class="title"> <a href="http://tv.ibtimes.com" class="preview">The i8 Is Proof BMW Should Make More Mid...</a> </p> 
+         </div> 
+        </div> 
+        <div id="block-dfp-right1" class="block block-dfp first odd"> 
+         <div class="content"> 
+          <div id="dfp-ad-right1-wrapper" class="dfp-tag-wrapper"> 
+           <div id="dfp-ad-right1" class="dfp-tag-wrapper"> 
+            <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-right1");
+    });
+  </script> 
+           </div> 
+          </div> 
+         </div> 
+        </div>
+        <!-- /.block dfp--right1 --> 
+        <div id="block-search-form" class="block block-search even"> 
+         <div class="content"> 
+          <form action="/chris-christie-administration-paid-600m-financial-fees-2014-1833872" method="post" id="search-block-form" accept-charset="UTF-8">
+           <div> 
+            <div class="searching clearfix"> 
+             <div class="form-item form-type-textfield form-item-search-block-form"> 
+              <label class="element-invisible" for="edit-search-block-form--2">Search </label> 
+              <input title="Enter the terms you wish to search for." onfocus="if (this.value == 'Start searching') {this.value = '';}" type="text" id="edit-search-block-form--2" name="search_block_form" value="Start searching" size="15" maxlength="128" class="form-text" /> 
+             </div> 
+             <div class="form-actions form-wrapper" id="edit-actions">
+              <input type="submit" id="edit-submit" name="op" value="" class="form-submit" />
+             </div>
+             <input type="hidden" name="form_build_id" value="form-a3IpGQqOI1f-M2-cmteM6zj-fQ4BB5qm2wKMbschB2k" /> 
+             <input type="hidden" name="form_id" value="search_block_form" /> 
+             <div class="clearfix"></div> 
+            </div>
+           </div>
+          </form> 
+         </div> 
+        </div>
+        <!-- /.block search--form --> 
+        <div id="block-ibtmedia-yahoo-yahoo-snippet" class="block block-ibtmedia-yahoo odd"> 
+         <div class="content"> 
+          <!-- BEGIN SNIPPET --> 
+          <div class="YAD-1214bf30-5285-3373-a11f-d1a696dedad9"></div> 
+          <script>
+    (function(a,b,c,d,e,f){a[d]||(a[d]=
+    function(){(a[d].q=a[d].q||[]).push([arguments,+new Date])});
+    e=b.createElement(c);f=b.getElementsByTagName(c)[0];
+    e.src='https://s.yimg.com/uq/syndication/yad.js';e.async=true;
+    f.parentNode.insertBefore(e,f)}(window,document,'script','yad'));
+    yad('1214bf30-5285-3373-a11f-d1a696dedad9');
+</script> 
+          <!-- END SNIPPET --> 
+         </div> 
+        </div>
+        <!-- /.block ibtmedia_yahoo--yahoo_snippet --> 
+        <div id="block-ibtimes-picks-latest-news" class="block block-ibtimes-picks even"> 
+         <div class="content"> 
+          <div class="latest-news"> 
+           <div class="block-title">
+             Latest News 
+           </div> 
+           <ul class="clearfix"> 
+            <li class="item-1"> 
+             <div class="ln-image"> 
+              <a href="/sony-release-project-morpheus-vr-headset-early-next-year-it-says-1835196"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/ps4-project-morpheus-sony-price.jpg?itok=AZ1UFa4L" alt="ps4 project morpheus sony price" title="ps4 project morpheus sony price" /></a> 
+             </div> 
+             <div class="ln-section"> 
+              <a href="/technology">Technology</a> 
+             </div> 
+             <div class="ln-title"> 
+              <a href="/sony-release-project-morpheus-vr-headset-early-next-year-it-says-1835196">Sony Says Its Virtual Reality Headset Will Arrive Next Year </a> 
+             </div> </li> 
+            <li class="item-2"> 
+             <div class="ln-image"> 
+              <a href="/floyd-mayweather-vs-manny-pacquiao-2015-50-cent-predicts-money-will-win-may-2-match-1835194"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/floyd-mayweather.jpg?itok=MXH4GJgL" alt="Floyd Mayweather" title="Floyd Mayweather" /></a> 
+             </div> 
+             <div class="ln-section"> 
+              <a href="/sports">Sports</a> 
+             </div> 
+             <div class="ln-title"> 
+              <a href="/floyd-mayweather-vs-manny-pacquiao-2015-50-cent-predicts-money-will-win-may-2-match-1835194">50 Cent Predicts Mayweather Will Beat Pacquiao, Plans To Bet $1.6M</a> 
+             </div> </li> 
+            <li class="item-3"> 
+             <div class="ln-image"> 
+              <a href="/steve-francis-chain-robbery-caught-video-houston-rap-show-fans-react-twitter-1835128"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/steve-francis.jpg?itok=NNCjlHgE" alt="Steve Francis" title="Steve Francis" /></a> 
+             </div> 
+             <div class="ln-section"> 
+              <a href="/sports">Sports</a> 
+             </div> 
+             <div class="ln-title"> 
+              <a href="/steve-francis-chain-robbery-caught-video-houston-rap-show-fans-react-twitter-1835128">Former NBA Star Steve Francis Robbed On Video In Houston</a> 
+             </div> </li> 
+            <li class="item-4"> 
+             <div class="ln-image"> 
+              <a href="/killers-sought-deaths-300000-chickens-south-carolina-1835074"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2014/07/22/chicken_farm.jpg?itok=t5kYSaKb" alt="Chicken Farm" title="Chicken Farm" /></a> 
+             </div> 
+             <div class="ln-section"> 
+              <a href="/politics">Politics</a> 
+             </div> 
+             <div class="ln-title"> 
+              <a href="/killers-sought-deaths-300000-chickens-south-carolina-1835074"> Killers Sought In Deaths Of 300,000 Chickens In SC</a> 
+             </div> </li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div>
+        <!-- /.block ibtimes_picks--latest_news --> 
+        <div id="block-dfp-right2" class="block block-dfp odd"> 
+         <div class="content"> 
+          <div id="dfp-ad-right2-wrapper" class="dfp-tag-wrapper"> 
+           <div id="dfp-ad-right2" class="dfp-tag-wrapper"> 
+            <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-right2");
+    });
+  </script> 
+           </div> 
+          </div> 
+         </div> 
+        </div>
+        <!-- /.block dfp--right2 --> 
+        <div id="block-ibtmedia-top-stories-top-stories" class="block block-ibtmedia-top-stories even"> 
+         <div class="content"> 
+          <div class="most-popular clearfix"> 
+           <ul class="most-tabs"> 
+            <li><a href="#most-popular">Most Read</a></li> 
+            <li><a href="#most-shared">Most Shared</a></li> 
+           </ul> 
+           <div id="most-popular" class="most-list"> 
+            <script type="text/javascript">
+  (function() {
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = 'http://cdn.feeds.ibt.com/tm-hits-widget.js?story_type=analysis%2Carticle%2Ccolumn%2Ceditorial%2Cinterview%2Cop_ed%2Copinion%2Cpulse%2Cslideshow&created=1425260647&syndication=1&numbered=1&placeholder_id=most_popular_widget&include_categories=0&include_images=0&include_shares=0&limit=10&site=www.ibtimes.com';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+  })();
+</script> 
+            <div id="most_popular_widget"></div> 
+           </div> 
+           <div id="most-shared" class="most-list"> 
+            <ul> 
+             <li class="item item-1 clearfix"> 
+              <div class="item-number">
+                1 
+              </div> 
+              <div class="item-link"> 
+               <a href="/dr-seuss-quotes-2015-20-inspirational-sayings-his-111th-birthday-1828636" class="article-link">20 Famous Dr. Seuss Quotes<span class="overlay article-overlay"></span></a> 
+              </div> 
+              <div class="item-shares-wrapper"> 
+               <div class="item-shares social-total-share-count"> 
+                <input type="hidden" name="node_url" value="http://www.ibtimes.com/dr-seuss-quotes-2015-20-inspirational-sayings-his-111th-birthday-1828636" /> 
+                <span class="share-count">9.5k</span> Shares 
+               </div> 
+               <!-- AddThis Button BEGIN --> 
+               <ul class="addthis_toolbox addthis_default_style hidden"> 
+                <li style="width:92px;"><a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="http://www.ibtimes.com/dr-seuss-quotes-2015-20-inspirational-sayings-his-111th-birthday-1828636" addthis:title="Dr. Seuss Quotes 2015: 20 Inspirational Sayings On His 111th Birthday"></a></li> 
+                <li style="width:92px;"><a class="addthis_button_tweet" tw:url="http://www.ibtimes.com/dr-seuss-quotes-2015-20-inspirational-sayings-his-111th-birthday-1828636" addthis:title="Dr. Seuss Quotes 2015: 20 Inspirational Sayings On His 111th Birthday"></a></li> 
+                <li style="width:72px;"><a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:href="http://www.ibtimes.com/dr-seuss-quotes-2015-20-inspirational-sayings-his-111th-birthday-1828636" addthis:title="Dr. Seuss Quotes 2015: 20 Inspirational Sayings On His 111th Birthday"></a></li> 
+               </ul> 
+               <!-- AddThis Button END --> 
+              </div> </li> 
+             <li class="item item-2 clearfix"> 
+              <div class="item-number">
+                2 
+              </div> 
+              <div class="item-link"> 
+               <a href="/chris-christie-settles-exxonmobil-case-after-oil-giant-gave-rga-big-cash-1830752" class="article-link">Christie Settles ExxonMobil Case After Firm Donated to RGA <span class="overlay article-overlay"></span></a> 
+              </div> 
+              <div class="item-shares-wrapper"> 
+               <div class="item-shares social-total-share-count"> 
+                <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-settles-exxonmobil-case-after-oil-giant-gave-rga-big-cash-1830752" /> 
+                <span class="share-count">5.2k</span> Shares 
+               </div> 
+               <!-- AddThis Button BEGIN --> 
+               <ul class="addthis_toolbox addthis_default_style hidden"> 
+                <li style="width:92px;"><a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="http://www.ibtimes.com/chris-christie-settles-exxonmobil-case-after-oil-giant-gave-rga-big-cash-1830752" addthis:title="Chris Christie Settles ExxonMobil Case After Oil Giant Gave RGA Big Cash"></a></li> 
+                <li style="width:92px;"><a class="addthis_button_tweet" tw:url="http://www.ibtimes.com/chris-christie-settles-exxonmobil-case-after-oil-giant-gave-rga-big-cash-1830752" addthis:title="Chris Christie Settles ExxonMobil Case After Oil Giant Gave RGA Big Cash"></a></li> 
+                <li style="width:72px;"><a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:href="http://www.ibtimes.com/chris-christie-settles-exxonmobil-case-after-oil-giant-gave-rga-big-cash-1830752" addthis:title="Chris Christie Settles ExxonMobil Case After Oil Giant Gave RGA Big Cash"></a></li> 
+               </ul> 
+               <!-- AddThis Button END --> 
+              </div> </li> 
+             <li class="item item-3 clearfix"> 
+              <div class="item-number">
+                3 
+              </div> 
+              <div class="item-link"> 
+               <a href="/womens-history-month-2015-quotes-21-inspirational-sayings-influential-women-1831522" class="article-link">21 Inspirational Sayings By Influential Women<span class="overlay article-overlay"></span></a> 
+              </div> 
+              <div class="item-shares-wrapper"> 
+               <div class="item-shares social-total-share-count"> 
+                <input type="hidden" name="node_url" value="http://www.ibtimes.com/womens-history-month-2015-quotes-21-inspirational-sayings-influential-women-1831522" /> 
+                <span class="share-count">3.2k</span> Shares 
+               </div> 
+               <!-- AddThis Button BEGIN --> 
+               <ul class="addthis_toolbox addthis_default_style hidden"> 
+                <li style="width:92px;"><a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="http://www.ibtimes.com/womens-history-month-2015-quotes-21-inspirational-sayings-influential-women-1831522" addthis:title="Women’s History Month 2015 Quotes: 21 Inspirational Sayings By Influential Women"></a></li> 
+                <li style="width:92px;"><a class="addthis_button_tweet" tw:url="http://www.ibtimes.com/womens-history-month-2015-quotes-21-inspirational-sayings-influential-women-1831522" addthis:title="Women’s History Month 2015 Quotes: 21 Inspirational Sayings By Influential Women"></a></li> 
+                <li style="width:72px;"><a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:href="http://www.ibtimes.com/womens-history-month-2015-quotes-21-inspirational-sayings-influential-women-1831522" addthis:title="Women’s History Month 2015 Quotes: 21 Inspirational Sayings By Influential Women"></a></li> 
+               </ul> 
+               <!-- AddThis Button END --> 
+              </div> </li> 
+             <li class="item item-4 clearfix"> 
+              <div class="item-number">
+                4 
+              </div> 
+              <div class="item-link"> 
+               <a href="/immigration-reform-authorities-no-longer-shielding-dapa-eligible-immigrants-1831310" class="article-link">Undocumented Immigrants US Detaining Shouldn't Be Deported <span class="overlay article-overlay"></span></a> 
+              </div> 
+              <div class="item-shares-wrapper"> 
+               <div class="item-shares social-total-share-count"> 
+                <input type="hidden" name="node_url" value="http://www.ibtimes.com/immigration-reform-authorities-no-longer-shielding-dapa-eligible-immigrants-1831310" /> 
+                <span class="share-count">3.1k</span> Shares 
+               </div> 
+               <!-- AddThis Button BEGIN --> 
+               <ul class="addthis_toolbox addthis_default_style hidden"> 
+                <li style="width:92px;"><a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="http://www.ibtimes.com/immigration-reform-authorities-no-longer-shielding-dapa-eligible-immigrants-1831310" addthis:title="Immigration Reform: Authorities No Longer Shielding DAPA-Eligible Immigrants From Deportation Cases"></a></li> 
+                <li style="width:92px;"><a class="addthis_button_tweet" tw:url="http://www.ibtimes.com/immigration-reform-authorities-no-longer-shielding-dapa-eligible-immigrants-1831310" addthis:title="Immigration Reform: Authorities No Longer Shielding DAPA-Eligible Immigrants From Deportation Cases"></a></li> 
+                <li style="width:72px;"><a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:href="http://www.ibtimes.com/immigration-reform-authorities-no-longer-shielding-dapa-eligible-immigrants-1831310" addthis:title="Immigration Reform: Authorities No Longer Shielding DAPA-Eligible Immigrants From Deportation Cases"></a></li> 
+               </ul> 
+               <!-- AddThis Button END --> 
+              </div> </li> 
+             <li class="item item-5 clearfix"> 
+              <div class="item-number">
+                5 
+              </div> 
+              <div class="item-link"> 
+               <a href="/amid-federal-corruption-probe-andrew-cuomo-administration-purges-state-government-1828824" class="article-link">Amid Corruption Probe, Cuomo Officials Begin Purging State Emails<span class="overlay article-overlay"></span></a> 
+              </div> 
+              <div class="item-shares-wrapper"> 
+               <div class="item-shares social-total-share-count"> 
+                <input type="hidden" name="node_url" value="http://www.ibtimes.com/amid-federal-corruption-probe-andrew-cuomo-administration-purges-state-government-1828824" /> 
+                <span class="share-count">3k</span> Shares 
+               </div> 
+               <!-- AddThis Button BEGIN --> 
+               <ul class="addthis_toolbox addthis_default_style hidden"> 
+                <li style="width:92px;"><a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="http://www.ibtimes.com/amid-federal-corruption-probe-andrew-cuomo-administration-purges-state-government-1828824" addthis:title="Amid Federal Corruption Probe, Andrew Cuomo Administration Purges State Government Emails"></a></li> 
+                <li style="width:92px;"><a class="addthis_button_tweet" tw:url="http://www.ibtimes.com/amid-federal-corruption-probe-andrew-cuomo-administration-purges-state-government-1828824" addthis:title="Amid Federal Corruption Probe, Andrew Cuomo Administration Purges State Government Emails"></a></li> 
+                <li style="width:72px;"><a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:href="http://www.ibtimes.com/amid-federal-corruption-probe-andrew-cuomo-administration-purges-state-government-1828824" addthis:title="Amid Federal Corruption Probe, Andrew Cuomo Administration Purges State Government Emails"></a></li> 
+               </ul> 
+               <!-- AddThis Button END --> 
+              </div> </li> 
+             <li class="item item-6 clearfix"> 
+              <div class="item-number">
+                6 
+              </div> 
+              <div class="item-link"> 
+               <a href="/book-deal-andrew-cuomo-backed-bills-helped-news-corporation-1827328" class="article-link">Before Book Deal, Cuomo Backed Bills Helping News Corp<span class="overlay article-overlay"></span></a> 
+              </div> 
+              <div class="item-shares-wrapper"> 
+               <div class="item-shares social-total-share-count"> 
+                <input type="hidden" name="node_url" value="http://www.ibtimes.com/book-deal-andrew-cuomo-backed-bills-helped-news-corporation-1827328" /> 
+                <span class="share-count">3k</span> Shares 
+               </div> 
+               <!-- AddThis Button BEGIN --> 
+               <ul class="addthis_toolbox addthis_default_style hidden"> 
+                <li style="width:92px;"><a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="http://www.ibtimes.com/book-deal-andrew-cuomo-backed-bills-helped-news-corporation-1827328" addthis:title="Before Book Deal, Andrew Cuomo Backed Bills That Helped News Corporation"></a></li> 
+                <li style="width:92px;"><a class="addthis_button_tweet" tw:url="http://www.ibtimes.com/book-deal-andrew-cuomo-backed-bills-helped-news-corporation-1827328" addthis:title="Before Book Deal, Andrew Cuomo Backed Bills That Helped News Corporation"></a></li> 
+                <li style="width:72px;"><a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:href="http://www.ibtimes.com/book-deal-andrew-cuomo-backed-bills-helped-news-corporation-1827328" addthis:title="Before Book Deal, Andrew Cuomo Backed Bills That Helped News Corporation"></a></li> 
+               </ul> 
+               <!-- AddThis Button END --> 
+              </div> </li> 
+             <li class="item item-7 clearfix"> 
+              <div class="item-number">
+                7 
+              </div> 
+              <div class="item-link"> 
+               <a href="/chris-christie-backed-law-lets-him-divert-exxonmobil-settlement-environmental-cleanup-1831558" class="article-link">Christie Can Raid Exxon Mobil Settlement Cash<span class="overlay article-overlay"></span></a> 
+              </div> 
+              <div class="item-shares-wrapper"> 
+               <div class="item-shares social-total-share-count"> 
+                <input type="hidden" name="node_url" value="http://www.ibtimes.com/chris-christie-backed-law-lets-him-divert-exxonmobil-settlement-environmental-cleanup-1831558" /> 
+                <span class="share-count">2.4k</span> Shares 
+               </div> 
+               <!-- AddThis Button BEGIN --> 
+               <ul class="addthis_toolbox addthis_default_style hidden"> 
+                <li style="width:92px;"><a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="http://www.ibtimes.com/chris-christie-backed-law-lets-him-divert-exxonmobil-settlement-environmental-cleanup-1831558" addthis:title="Chris Christie Backed Law That Lets Him Divert ExxonMobil Settlement From Environmental Cleanup"></a></li> 
+                <li style="width:92px;"><a class="addthis_button_tweet" tw:url="http://www.ibtimes.com/chris-christie-backed-law-lets-him-divert-exxonmobil-settlement-environmental-cleanup-1831558" addthis:title="Chris Christie Backed Law That Lets Him Divert ExxonMobil Settlement From Environmental Cleanup"></a></li> 
+                <li style="width:72px;"><a class="addthis_button_google_plusone" g:plusone:size="medium" g:plusone:href="http://www.ibtimes.com/chris-christie-backed-law-lets-him-divert-exxonmobil-settlement-environmental-cleanup-1831558" addthis:title="Chris Christie Backed Law That Lets Him Divert ExxonMobil Settlement From Environmental Cleanup"></a></li> 
+               </ul> 
+               <!-- AddThis Button END --> 
+              </div> </li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> 
+        </div>
+        <!-- /.block ibtmedia_top_stories--top_stories --> 
+        <div id="block-dfp-right3" class="block block-dfp odd"> 
+         <div class="content"> 
+          <div id="dfp-ad-right3-wrapper" class="dfp-tag-wrapper"> 
+           <div id="dfp-ad-right3" class="dfp-tag-wrapper"> 
+            <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-right3");
+    });
+  </script> 
+           </div> 
+          </div> 
+         </div> 
+        </div>
+        <!-- /.block dfp--right3 --> 
+        <div id="block-ibtimes-social-social-buttons" class="block block-ibtimes-social even"> 
+         <div class="content"> 
+          <div class="social-follow visible-desktop"> 
+           <div class="block-title">
+            Follow Us
+           </div> 
+           <ul class="icons clearfix"> 
+            <li class="mail"></li> 
+            <li class="fb"></li> 
+            <li class="twt"></li> 
+            <li class="ln"></li> 
+            <!--li class="ggl"></li--> 
+            <li class="rss"></li> 
+            <!--li class="more"></li--> 
+           </ul> 
+           <ul class="buttons clearfix"> 
+            <li class="mail clearfix"> 
+             <form action="newsletter-popup" id="newsletter_social_form" onsubmit="return false;"> 
+              <input name="email" type="text" class="form-text" placeholder="Enter Your Email" /> 
+              <input name="" type="submit" class="form-submit" value="Subscribe" /> 
+              <div class="np np-error" style="display:none">
+               Please enter a valid email
+              </div> 
+              <div class="np np-email"></div> 
+             </form> </li> 
+            <li class="fb clearfix"> <span class="text">Like us</span> <a class="addthis_button_facebook_like" fb:like:href="http://www.facebook.com/ibtimes"></a> </li> 
+            <li class="twt clearfix"> <span class="text">Follow us</span> <a class="addthis_button_twitter_follow_native" tw:screen_name="ibtimes" tf:show-screen-name="true" tf:show-count="false"></a> </li> 
+            <li class="ln clearfix"> <span class="text">Join us</span> <a class="addthis_button_linkedin_follow" addthis:userid="ibt-media" addthis:usertype="company"></a> </li> 
+            <!--li class="ggl clearfix">
+      <span class="text">Follow us</span>
+      <a class="addthis_button_google_follow" addthis:userid="104251884662423731269/posts"></a>
+    </li--> 
+            <li class="rss clearfix"> <span class="text"><a href="/rss">Full site feed</a></span> </li> 
+            <!--li class="more clearfix">
+      
+    </li--> 
+           </ul> 
+          </div> 
+         </div> 
+        </div>
+        <!-- /.block ibtimes_social--social_buttons --> 
+        <div id="block-ibtimes-article-adviceiq-widget" class="block block-ibtimes-article last odd"> 
+         <div class="content"> 
+          <style>#block-ibtimes-article-adviceiq-widget {text-align:center;}</style> 
+          <iframe src="http://widgets.adviceiq.com/widget/title-list/ibtimes" width="300" height="300"></iframe> 
+         </div> 
+        </div>
+        <!-- /.block ibtimes_article--adviceiq_widget --> 
+       </div>
+      </div>
+      <!-- /.section, /.region --> 
+     </div> 
+    </div> 
+   </div> 
+  </div>
+  <!-- /#main, /#main-wrapper --> 
+  <div class="page-bottom hidden-print"> 
+   <div id="block-dfp-bottom" class="block block-dfp first last odd"> 
+    <div class="content"> 
+     <div id="dfp-ad-bottom-wrapper" class="dfp-tag-wrapper"> 
+      <div id="dfp-ad-bottom" class="dfp-tag-wrapper"> 
+       <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-bottom");
+    });
+  </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /.block dfp--bottom --> 
+  </div> 
+  <footer class="page-footer clearfix hidden-print"> 
+   <div id="block-ibtimes-footer-ibtimes-footer" class="block block-ibtimes-footer first odd"> 
+    <div class="content"> 
+     <div class="wrap-footer-links clearfix hidden-phone"> 
+      <div class="footer-nav clearfix"> 
+       <div class="container"> 
+        <div class="row"> 
+         <div class="sections span12"> 
+          <ul class="links">
+           <li class="menu-5941 first"><a href="/">Home</a></li> 
+           <li class="menu-771"><a href="/politics">Politics</a></li> 
+           <li class="menu-772"><a href="/economy">Economy</a></li> 
+           <li class="menu-773"><a href="/markets-finance">Markets / Finance</a></li> 
+           <li class="menu-782"><a href="/companies">Companies</a></li> 
+           <li class="menu-775"><a href="/technology">Technology</a></li> 
+           <li class="menu-777"><a href="/media-culture">Media &amp; Culture</a></li> 
+           <li class="menu-778"><a href="/sports">Sports</a></li> 
+           <li class="menu-780 last"><a href="http://tv.ibtimes.com" class="tv">Video</a></li> 
+          </ul> 
+         </div> 
+        </div> 
+        <!--/row--> 
+       </div> 
+       <!--/container--> 
+      </div> 
+      <div class="footer-links clearfix"> 
+       <div class="container"> 
+        <div class="row"> 
+         <div class="span12"> 
+          <div class="corporate clearfix"> 
+           <h2>Corporate</h2>
+           <ul class="links">
+            <li class="menu-2453 first"><a href="/corporate/about">About Us</a></li> 
+            <li class="menu-5734"><a href="/corporate/leadership" class="leadership-item">Leadership</a></li> 
+            <li class="menu-2452"><a href="/corporate/advertise-with-us">Advertise with Us</a></li> 
+            <li class="menu-2829"><a href="http://s1.ibtimes.com/sites/www.ibtimes.com/files/about/ibtmedia_mediakit2014_v4.12.pdf" target="_blank">Media Kit</a></li> 
+            <li class="menu-3225"><a href="/corporate/contact">Contact</a></li> 
+            <li class="menu-2825"><a href="/corporate/careers">Careers</a></li> 
+            <li class="menu-2454"><a href="/corporate/terms-services">Terms of Service</a></li> 
+            <li class="menu-2455"><a href="/corporate/privacy-policy">Privacy</a></li> 
+            <li class="menu-2451"><a href="http://corp.ibt.com" target="_blank">IBT Media</a></li> 
+            <li class="menu-3335"><a href="/press-release">Press Releases</a></li> 
+            <li class="menu-5938 last"><a href="http://www.ibtimes.com/sites/www.ibtimes.com/files/bizdev_deck_ver2_2.pdf" target="_blank">Syndication</a></li> 
+           </ul> 
+          </div> 
+          <div class="editions clearfix"> 
+           <h2>Editions</h2>
+           <ul class="links">
+            <li class="menu-789 first"><a href="http://au.ibtimes.com" title="business news australia" target="_blank">Australia</a></li> 
+            <li class="menu-792"><a href="http://cn.ibtimes.com" title="business news china" target="_blank">China</a></li> 
+            <li class="menu-797"><a href="http://www.ibtimes.co.in" title="business news india" target="_blank">India</a></li> 
+            <li class="menu-799"><a href="http://it.ibtimes.com" title="business news italy" target="_blank">Italy</a></li> 
+            <li class="menu-801"><a href="http://jp.ibtimes.com" title="business news japan" target="_blank">Japan</a></li> 
+            <li class="menu-804"><a href="http://www.ibtimes.co.uk" title="business news uk" target="_blank">U.K.</a></li> 
+            <li class="menu-805 last"><a href="http://www.ibtimes.com" title="business news us">U.S.</a></li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div> 
+        <!--/row--> 
+       </div> 
+       <!--/container--> 
+      </div> 
+     </div> 
+     <ul class="m-footer-links clearfix visible-phone"> 
+      <li class="top"><a href="#">Back to Top</a></li> 
+      <li class="home"><a href="/">Back to Home</a></li> 
+      <li class="full"><a href="http://www.ibtimes.com/?v=full">Full Site</a></li> 
+     </ul> 
+     <div class="footer-copyright clearfix"> 
+      <div class="container"> 
+       <div class="row"> 
+        <p class="copy span9">&copy; Copyright 2015 <span><a href="http://corp.ibt.com" target="_blank">IBT Media Inc.</a></span> All Rights Reserved.</p> 
+        <ul class="social span3 clearfix hidden-phone"> 
+         <li class="mail"><a href="/newsletters" title="Newsletters"></a></li> 
+         <li class="rss"><a href="/rss" title="RSS"></a></li> 
+         <li class="g"><a href="https://plus.google.com/104251884662423731269?prsrc=3" target="_blank" rel="nofollow" title="Google +1"></a></li> 
+         <li class="in"><a href="http://www.linkedin.com/company/ibt-media" target="_blank" rel="nofollow" title="LinkedIn"></a></li> 
+         <li class="t"><a href="https://twitter.com/ibtimes" target="_blank" rel="nofollow" title="Twitter"></a></li> 
+         <li class="f"><a href="https://www.facebook.com/IBTimes" target="_blank" rel="nofollow" title="Facebook"></a></li> 
+         <!--li class="ipad"><a href="http://itunes.apple.com/app/international-business-times/id497819307" target="_blank" rel="nofollow">Ipad</a></li--> 
+        </ul> 
+       </div> 
+       <!--/row--> 
+      </div> 
+      <!--/container--> 
+     </div> 
+     <ul class="slidemenu" id="nav"> 
+      <li class="search clearfix"> 
+       <form action="/google-inc-launching-solar-powered-internet-drones-later-year-1835182" method="post" id="search-block-form--2" accept-charset="UTF-8">
+        <div> 
+         <div class="searching clearfix"> 
+          <div class="form-item form-type-textfield form-item-search-block-form"> 
+           <label class="element-invisible" for="edit-search-block-form--4">Search </label> 
+           <input title="Enter the terms you wish to search for." onfocus="if (this.value == 'Start searching') {this.value = '';}" type="text" id="edit-search-block-form--4" name="search_block_form" value="Start searching" size="15" maxlength="128" class="form-text" /> 
+          </div> 
+          <div class="form-actions form-wrapper" id="edit-actions--2">
+           <input type="submit" id="edit-submit--2" name="op" value="" class="form-submit" />
+          </div>
+          <input type="hidden" name="form_build_id" value="form-vBZtArkdpUzsqWQEGuuW3Q8FtbWYHThxmH4L_D1o8EU" /> 
+          <input type="hidden" name="form_token" value="qU7txfUbaDTYBMZY8bTxnrFbx6lgNZBt4Ec8enqjDGI" /> 
+          <input type="hidden" name="form_id" value="search_block_form" /> 
+          <div class="clearfix"></div> 
+         </div>
+        </div>
+       </form> </li> 
+      <li><a href="/">Home</a></li> 
+      <li> 
+       <div class="tab">
+        Politics
+       </div> 
+       <!--submenu start--> 
+       <ul class="drop-column"> 
+        <li><a href="/politics">View All</a></li> 
+        <li><a href="/politics/africa">Africa</a></li> 
+        <li><a href="/politics/asia-pacific">Asia Pacific</a></li> 
+        <li><a href="/politics/europe">Europe</a></li> 
+        <li><a href="/politics/middle-east">Middle East</a></li> 
+        <li><a href="/politics/americas">The Americas</a></li> 
+        <li><a href="/politics/us">US</a></li> 
+       </ul> 
+       <!--submenu end--> </li> 
+      <li> 
+       <div class="tab">
+        Economy
+       </div> 
+       <!--submenu start--> 
+       <ul class="drop-column"> 
+        <li><a href="/economy">View All</a> </li> 
+        <li><a href="/economy/africa">Africa</a></li> 
+        <li><a href="/economy/asia-pacific">Asia Pacific</a></li> 
+        <li><a href="/economy/europe">Europe</a></li> 
+        <li><a href="/economy/middle-east">Middle East</a></li> 
+        <li><a href="/economy/americas">The Americas</a></li> 
+        <li><a href="/economy/us">US</a></li> 
+       </ul> 
+       <!--submenu end--> </li> 
+      <li> 
+       <div class="tab">
+        Markets / Finance
+       </div> 
+       <!--submenu start--> 
+       <ul class="drop-column"> 
+        <li><a href="/markets-finance">View All</a> </li> 
+        <li><a href="/markets-finance/commodities">Commodities</a></li> 
+        <li><a href="/markets-finance/etf">ETF</a></li> 
+        <li><a href="/markets-finance/financial-services">Financial Services</a></li> 
+        <li><a href="/markets-finance/forex">Forex</a></li> 
+        <li><a href="/markets-finance/gold">Gold</a></li> 
+        <li><a href="/markets-finance/precious-metals">Precious Metals</a></li> 
+        <li><a href="http://markets.ibtimes.com/ibtimes">Market Data</a></li> 
+       </ul> 
+       <!--submenu end--> </li> 
+      <li> 
+       <div class="tab">
+        Companies
+       </div> 
+       <!--submenu start--> 
+       <ul class="drop-column"> 
+        <li><a href="/companies">View All</a> </li> 
+        <li><a href="/companies/auto">Autos</a></li> 
+        <li><a href="/companies/basic-materials">Basic Materials</a></li> 
+        <li><a href="/companies/energy">Energy</a></li> 
+        <li><a href="/companies/manufacturing">Manufacturing</a></li> 
+        <li><a href="/companies/real-estate">Real Estate</a></li> 
+        <li><a href="/companies/transportation">Transportation</a></li> 
+        <li><a href="/companies/retailconsumer-goods">Retail/Consumer Goods</a></li> 
+       </ul> 
+       <!--submenu end--> </li> 
+      <li> 
+       <div class="tab">
+        Tech / Sci
+       </div> 
+       <!--submenu start--> 
+       <ul class="drop-column"> 
+        <li><a href="/tech-sci">View All</a></li> 
+        <li><a href="/tech-sci/companies">Companies</a></li> 
+        <li><a href="/tech-sci/mobile">Mobile</a></li> 
+        <li><a href="/tech-sci/computers">Computers</a></li> 
+        <li><a href="/tech-sci/games">Games</a></li> 
+        <li><a href="/tech-sci/internet">Internet</a></li> 
+        <li><a href="/tech-sci/social-media">Social Media</a></li> 
+        <li><a href="/tech-sci/science">Science</a></li> 
+       </ul> 
+       <!--submenu end--> </li> 
+      <li> 
+       <div class="tab">
+        Media &amp; Culture
+       </div> 
+       <!--submenu start--> 
+       <ul class="drop-column"> 
+        <li><a href="/media-culture">View All</a> </li> 
+        <li><a href="/media-culture/art">Art</a></li> 
+        <li><a href="/media-culture/books">Books</a></li> 
+        <li><a href="/media-culture/education">Education</a></li> 
+        <li><a href="/media-culture/entertainment">Entertainment</a></li> 
+        <li><a href="/media-culture/industry-news">Industry News</a></li> 
+        <li><a href="/media-culture/people">People</a></li> 
+        <li><a href="/media-culture/travel">Travel</a></li> 
+       </ul> 
+       <!--submenu end--> </li> 
+      <li> 
+       <div class="tab">
+        Sports
+       </div> 
+       <!--submenu start--> 
+       <ul class="drop-column"> 
+        <li><a href="/sports">View All</a> </li> 
+        <li><a href="/sports/nfl">NFL</a></li> 
+        <li><a href="/sports/mlb">MLB</a></li> 
+        <li><a href="/sports/nba">NBA</a></li> 
+        <li><a href="/sports/nhl">NHL</a></li> 
+        <li><a href="/sports/tennis">Tennis</a></li> 
+        <li><a href="/sports/golf">Golf</a></li> 
+        <li><a href="/sports/soccer">Soccer</a></li> 
+       </ul> 
+       <!--submenu end--> </li> 
+      <li> 
+       <div class="tab">
+        Opinion
+       </div> 
+       <!--submenu start--> 
+       <ul class="drop-column"> 
+        <li><a href="/opinion">View All</a></li> 
+        <li><a href="/opinion/analysis">Analysis</a></li> 
+        <li><a href="/fighting-words">Fighting Words</a></li> 
+        <li><a href="/sportsnet">SportsNet</a></li> 
+       </ul> 
+       <!--submenu end--> </li> 
+      <li><a href="http://tv.ibtimes.com">TV</a></li> 
+     </ul> 
+    </div> 
+   </div>
+   <!-- /.block ibtimes_footer--ibtimes_footer --> 
+   <div id="block-dfp-oop2" class="block block-dfp even"> 
+    <div class="content"> 
+     <div id="dfp-ad-oop2-wrapper" class="dfp-tag-wrapper"> 
+      <div id="dfp-ad-oop2" class="dfp-tag-wrapper"> 
+       <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-oop2");
+    });
+  </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /.block dfp--oop2 --> 
+   <div id="block-dfp-oop1" class="block block-dfp last odd"> 
+    <div class="content"> 
+     <div id="dfp-ad-oop1-wrapper" class="dfp-tag-wrapper"> 
+      <div id="dfp-ad-oop1" class="dfp-tag-wrapper"> 
+       <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-oop1");
+    });
+  </script> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /.block dfp--oop1 --> 
+  </footer> 
+  <div id="block-ibtimes-header-header-flyout" class="block block-ibtimes-header first last odd"> 
+   <div class="content"> 
+    <div class="container"> 
+     <div class="block-menus block-menu-"> 
+      <div class="row"> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-politics"> 
+      <div class="row"> 
+       <div class="drop-left-column span4"> 
+        <div class="news-titles"> 
+         <a href="/western-leaders-hint-more-russian-sanctions-over-ukraine-1835180">Western Leaders Hint At More Russian Sanctions Over Ukraine</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/killers-sought-deaths-300000-chickens-south-carolina-1835074"> Killers Sought In Deaths Of 300,000 Chickens In SC</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/illegal-immigration-2015-aclu-questions-detention-facility-funding-after-dhs-bill-1835052">ACLU Questions Immigrant Detention Facility Funding In DHS Bill</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/irans-government-tries-capitalize-netanyahu-speech-tensions-domestic-political-boost-1834814">Iran Tries To Capitalize On Netanyahu Speech Controversy</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/chris-christies-exxon-settlement-be-blocked-new-jersey-senators-1835190"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/new-jersey-gov-chris-christie.jpeg?itok=RUwzEIPU" alt="New Jersey Gov. Chris Christie" title="New Jersey Gov. Chris Christie" /></a> 
+        <div class="thumb_title"> 
+         <a href="/chris-christies-exxon-settlement-be-blocked-new-jersey-senators-1835190">New Jersey Senators To Block Chris Christie's Exxon Settlement</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/islamic-state-iraq-battle-against-isis-tikrit-led-iran-backed-shiite-militia-forces-1835134"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/kataibhezbollah.jpg?itok=N2gFJDPH" alt="kataibHezbollah" title="kataibHezbollah" /></a> 
+        <div class="thumb_title"> 
+         <a href="/islamic-state-iraq-battle-against-isis-tikrit-led-iran-backed-shiite-militia-forces-1835134">Iran’s Network Of Shiite Militias Leads Battle For Tikrit</a> 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="/politics">Politics</a></p> 
+        <ul class="drop-right-column-left"> 
+         <li><a href="/politics/africa">Africa</a></li> 
+         <li><a href="/politics/asia-pacific">Asia Pacific</a></li> 
+         <li><a href="/politics/europe">Europe</a></li> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+         <li><a href="/politics/middle-east">Middle East</a></li> 
+         <li><a href="/politics/americas">The Americas</a></li> 
+         <li><a href="/politics/us">US</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-economy"> 
+      <div class="row"> 
+       <div class="drop-left-column span4"> 
+        <div class="news-titles"> 
+         <a href="/climate-change-europe-will-fail-meet-ambitious-2050-greenhouse-gas-emission-targets-1834374">Europe Struggles To Meet Long-Term Climate Targets</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/what-are-financial-risks-climate-change-1833160">When Will The Fed Take On Climate Change?</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/chris-christie-administration-paid-600m-financial-fees-2014-1833872">Christie Obscures Big Wall Street Gift In Fine Print</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/strong-german-retail-sales-keep-european-shares-near-7-year-highs-1834064">Strong German Retail Sales Keep European Shares Near 7-Year Highs</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/us-new-auto-sales-truck-demand-boosts-gm-february-buick-sales-32-enclave-encore-1834990"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/gm-trucks.JPG?itok=_rFkjvKQ" alt="GM trucks" title="GM trucks" /></a> 
+        <div class="thumb_title"> 
+         <a href="/us-new-auto-sales-truck-demand-boosts-gm-february-buick-sales-32-enclave-encore-1834990">GM Truck And SUV Sales Hot In February</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/autozone-inc-discrimination-case-185-million-punitive-damages-award-contested-1834588"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2011/12/15/205720-autozone-azo.jpg?itok=vUuySgAF" alt="AutoZone (AZO)" title="AutoZone (AZO)" /></a> 
+        <div class="thumb_title"> 
+         <a href="/autozone-inc-discrimination-case-185-million-punitive-damages-award-contested-1834588">AutoZone Lawsuit: 'What Are We Running Here, A Boutique?'</a> 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="/economy">Economy</a></p> 
+        <ul class="drop-right-column-left"> 
+         <li><a href="/economy/africa">Africa</a></li> 
+         <li><a href="/economy/asia-pacific">Asia Pacific</a></li> 
+         <li><a href="/economy/europe">Europe</a></li> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+         <li><a href="/economy/middle-east">Middle East</a></li> 
+         <li><a href="/economy/americas">The Americas</a></li> 
+         <li><a href="/economy/us">US</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-markets-finance"> 
+      <div class="row"> 
+       <div class="drop-left-column span4"> 
+        <div class="news-titles"> 
+         <a href="/jpmorgan-chase-co-settles-robo-signing-scandal-justice-department-50-million-1834598">JPMorgan Pays $50M For 'Robo-Signing'</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/what-are-financial-risks-climate-change-1833160">When Will The Fed Take On Climate Change?</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/strong-german-retail-sales-keep-european-shares-near-7-year-highs-1834064">Strong German Retail Sales Keep European Shares Near 7-Year Highs</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/barclays-takes-115b-charge-forex-settlement-looms-1833952">Barclays Takes $1.15B Charge As Forex Settlement Looms</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/target-cut-thousands-jobs-eyes-2-billion-cost-cuts-1835072"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/target.jpg?itok=K5XwgJdU" alt="Target" title="Target" /></a> 
+        <div class="thumb_title"> 
+         <a href="/target-cut-thousands-jobs-eyes-2-billion-cost-cuts-1835072">Target To Cut Thousands Of Jobs, Eyes $2B In Cost Cuts</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/best-buy-joins-stock-buyback-boom-strong-earnings-planned-cost-cuts-1834974"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/best-buy-nyc.jpg?itok=t6N3KH-l" alt="best-buy-nyc" title="best-buy-nyc" /></a> 
+        <div class="thumb_title"> 
+         <a href="/best-buy-joins-stock-buyback-boom-strong-earnings-planned-cost-cuts-1834974">Best Buy To Cut Costs, Buy Back Stocks</a> 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="/markets-finance">Markets / Finance</a></p> 
+        <ul class="drop-right-column-left"> 
+         <li><a href="/markets-finance/commodities">Commodities</a></li> 
+         <li><a href="/markets-finance/etf">ETF</a></li> 
+         <li><a href="/markets-finance/financial-services">Financial Services</a></li> 
+         <li><a href="/markets-finance/forex">Forex</a></li> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+         <li><a href="/markets-finance/gold">Gold</a></li> 
+         <li><a href="/markets-finance/precious-metals">Precious Metals</a></li> 
+         <li><a href="http://markets.ibtimes.com/ibtimes">Market Data</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-companies"> 
+      <div class="row"> 
+       <div class="drop-left-column span4"> 
+        <div class="news-titles"> 
+         <a href="/us-new-auto-sales-february-2015-sales-hammered-blizzards-growth-capped-53-lower-1834894">US New Auto Sales Growth Checked By Harsh Winter </a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/autozone-inc-discrimination-case-185-million-punitive-damages-award-contested-1834588">AutoZone Lawsuit: 'What Are We Running Here, A Boutique?'</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/johnson-johnson-jnj-opens-biotech-incubator-south-san-francisco-announces-10-startups-1834626">Johnson &amp; Johnson Opens Bay Area Biotech Incubator </a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/antibiotic-resistance-why-arent-drug-companies-developing-new-medicines-stop-1833248">An Empty Drug Cabinet For Antibiotics </a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/best-buy-joins-stock-buyback-boom-strong-earnings-planned-cost-cuts-1834974"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/best-buy-nyc.jpg?itok=t6N3KH-l" alt="best-buy-nyc" title="best-buy-nyc" /></a> 
+        <div class="thumb_title"> 
+         <a href="/best-buy-joins-stock-buyback-boom-strong-earnings-planned-cost-cuts-1834974">Best Buy To Cut Costs, Buy Back Stocks</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/us-new-auto-sales-truck-demand-boosts-gm-february-buick-sales-32-enclave-encore-1834990"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/gm-trucks.JPG?itok=_rFkjvKQ" alt="GM trucks" title="GM trucks" /></a> 
+        <div class="thumb_title"> 
+         <a href="/us-new-auto-sales-truck-demand-boosts-gm-february-buick-sales-32-enclave-encore-1834990">GM Truck And SUV Sales Hot In February</a> 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="/companies">Companies</a></p> 
+        <ul class="drop-right-column-left"> 
+         <li><a href="/companies/auto">Autos</a></li> 
+         <li><a href="/companies/basic-materials">Basic Materials</a></li> 
+         <li><a href="/companies/energy">Energy</a></li> 
+         <li><a href="/companies/manufacturing">Manufacturing</a></li> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+         <li><a href="/companies/real-estate">Real Estate</a></li> 
+         <li><a href="/companies/transportation">Transportation</a></li> 
+         <li><a href="/companies/retailconsumer-goods">Retail/Consumer Goods</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-technology"> 
+      <div class="row"> 
+       <div class="drop-left-column span4"> 
+        <div class="news-titles"> 
+         <a href="/samsung-galaxy-s6-release-date-verizon-early-q2-us-may-see-only-two-color-options-1834982">Verizon Will Get Galaxy S6 In Q2</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/metal-gear-solid-v-phantom-pain-release-date-confirmed-september-1834976">'Metal Gear Solid V' Coming This Fall</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/samsung-galaxy-s6-edge-price-details-uk-may-not-get-less-costly-32gb-version-1834880">Samsung Galaxy S6 Edge May Be Pricier In UK</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/do-new-yorkers-walk-10000-steps-day-fitbit-calls-new-york-most-active-state-1834806">New York Is Called The Most Active US State</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/sony-release-project-morpheus-vr-headset-early-next-year-it-says-1835196"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/ps4-project-morpheus-sony-price.jpg?itok=AZ1UFa4L" alt="ps4 project morpheus sony price" title="ps4 project morpheus sony price" /></a> 
+        <div class="thumb_title"> 
+         <a href="/sony-release-project-morpheus-vr-headset-early-next-year-it-says-1835196">Sony Says Its Virtual Reality Headset Will Arrive Next Year </a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/google-inc-launching-solar-powered-internet-drones-later-year-1835182"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/google-wireless.jpg?itok=SzlXS59t" alt="google wireless" title="google wireless" /></a> 
+        <div class="thumb_title"> 
+         <a href="/google-inc-launching-solar-powered-internet-drones-later-year-1835182">Google's Solar-Powered Internet Drones Launching Within Months</a> 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="/technology">Technology</a></p> 
+        <ul class="drop-right-column-left"> 
+         <li><a href="/technology/companies">Companies</a></li> 
+         <li><a href="/technology/mobile">Mobile</a></li> 
+         <li><a href="/technology/computers">Computers</a></li> 
+         <li><a href="/technology/games">Games</a></li> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+         <li><a href="/technology/internet">Internet</a></li> 
+         <li><a href="/technology/social-media">Social Media</a></li> 
+         <li><a href="/technology/science">Science</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-media-culture"> 
+      <div class="row"> 
+       <div class="drop-left-column span4"> 
+        <div class="news-titles"> 
+         <a href="/hilary-duff-talks-mike-comrie-divorce-muses-about-long-term-relationships-1834980"> Hilary Duff Talks Mike Comrie Divorce</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/who-bishop-robert-mcelroy-vatican-names-new-leader-san-diego-diocese-1834878">Robert McElroy Named San Diego Bishop</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/robert-pattinson-ready-marry-fka-twigs-sources-close-couple-say-theyre-both-wearing-1834964">Sources Say Robert Pattinson Is Ready To Settle Down With Girlfriend FKA Twigs</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/bobby-brown-releases-statement-about-reality-show-rumor-gives-bobbi-kristina-update-1834970">Bobby Brown Releases Statement About Reality Show Rumor</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/who-bernice-burgos-meet-drakes-alleged-girlfriend-after-australia-photos-picture-1835132"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/drake.jpg?itok=ChlVyEmD" alt="Drake" title="Drake" /></a> 
+        <div class="thumb_title"> 
+         <a href="/who-bernice-burgos-meet-drakes-alleged-girlfriend-after-australia-photos-picture-1835132">Meet Drake’s Alleged Girlfriend</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/can-ronda-rousey-beat-bantamweight-men-ian-mccall-slams-ufc-184-champ-video-1835066"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/ronda-rousey.jpg?itok=g3GO-MX1" alt="Ronda Rousey" title="Ronda Rousey" /></a> 
+        <div class="thumb_title"> 
+         <a href="/can-ronda-rousey-beat-bantamweight-men-ian-mccall-slams-ufc-184-champ-video-1835066">Ronda Rousey Can't Defeat A 'Good Man,' McCall Says</a> 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="/media-culture">Media &amp; Culture</a></p> 
+        <ul class="drop-right-column-left"> 
+         <li><a href="/media-culture/art">Art</a></li> 
+         <li><a href="/media-culture/books">Books</a></li> 
+         <li><a href="/media-culture/education">Education</a></li> 
+         <li><a href="/media-culture/entertainment">Entertainment</a></li> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+         <li><a href="/media-culture/industry-news">Industry News</a></li> 
+         <li><a href="/media-culture/people">People</a></li> 
+         <li><a href="/media-culture/travel">Travel</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-sports"> 
+      <div class="row"> 
+       <div class="drop-left-column span4"> 
+        <div class="news-titles"> 
+         <a href="/arsenal-injury-news-ramsey-coquelin-back-wilshire-flamini-status-qpr-match-1834292">Ramsey Set To Return For Gunners</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/5-nfl-teams-andre-johnson-could-play-2015-1834490">Johnson Expected To Draw Interest</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/pakistan-vs-uae-cricket-2015-match-time-live-streaming-info-tv-channel-world-cup-1834382">Pakistan Seek Win Over UAE</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/ncaa-tournament-betting-odds-2015-which-mens-teams-are-favored-reach-final-four-1834394">Wildcats Big Final Four Favs</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/nba-news-who-will-replace-brian-shaw-long-term-denver-nuggets-coaching-candidates-1834910"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/jackson.jpg?itok=nlZRzD0Z" alt="jackson" title="jackson" /></a> 
+        <div class="thumb_title"> 
+         <a href="/nba-news-who-will-replace-brian-shaw-long-term-denver-nuggets-coaching-candidates-1834910">Nuggets May Turn To Jackson</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/can-san-antonio-spurs-repeat-nba-champions-2015-1835056"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/03/03/spurs.jpg?itok=MkuYlcYO" alt="San Antonio Spurs" title="San Antonio Spurs" /></a> 
+        <div class="thumb_title"> 
+         <a href="/can-san-antonio-spurs-repeat-nba-champions-2015-1835056">Uphill Climb For Spurs</a> 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="/sports">Sports</a></p> 
+        <ul class="drop-right-column-left"> 
+         <li><a href="/sports/nfl">NFL</a></li> 
+         <li><a href="/sports/mlb">MLB</a></li> 
+         <li><a href="/sports/nba">NBA</a></li> 
+         <li><a href="/sports/nhl">NHL</a></li> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+         <li><a href="/sports/tennis">Tennis</a></li> 
+         <li><a href="/sports/golf">Golf</a></li> 
+         <li><a href="/sports/soccer">Soccer</a></li> 
+         <li><a href="/topic/super-bowl">Super Bowl</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-opinion"> 
+      <div class="row"> 
+       <div class="drop-left-column span4"> 
+        <div class="news-titles"> 
+         <a href="/oscar-predictions-2015-5-silly-things-will-probably-happen-87th-annual-academy-awards-1818998">5 Silly Oscar Predictions Ahead Of The 87th Annual Show</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/fifty-shades-grey-movie-5-scenes-book-we-cant-wait-see-big-screen-1810040">5 'Fifty Shades Of Grey' Book Scenes That Must Be In The Movie</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/film-festivals-such-sundance-2015-are-very-diverse-hollywood-not-1805646">When It Comes To Diversity, Hollywood Lags Festivals</a> 
+        </div> 
+        <div class="news-titles"> 
+         <a href="/sundance-film-festival-2015-wrap-our-top-five-favorite-documentary-features-1805204">Top 5 Sundance 2015 Documentary Features</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/hot-tub-time-machine-2-movie-review-can-you-lose-brain-cells-hot-tub-1823048"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/02/20/hottub.png?itok=LIB5tDZ7" alt="hottub" title="hottub" /></a> 
+        <div class="thumb_title"> 
+         <a href="/hot-tub-time-machine-2-movie-review-can-you-lose-brain-cells-hot-tub-1823048">‘Hot Tub Time Machine 2’ Movie Review</a> 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <a href="/oscar-winner-predictions-your-best-bet-2015-academy-awards-1820256"><img src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_small/public/2015/02/18/rtr4pdym.jpg?itok=MpT7wq0j" alt="RTR4PDYM" title="RTR4PDYM" /></a> 
+        <div class="thumb_title"> 
+         <a href="/oscar-winner-predictions-your-best-bet-2015-academy-awards-1820256">Winner Predictions For The 87th Academy Awards</a> 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="/opinion">Opinion</a></p> 
+        <ul class="drop-right-column-left"> 
+         <li><a href="/opinion/analysis">Analysis</a></li> 
+         <li><a href="/fighting-words">Fighting Words</a></li> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+         <li><a href="/sportsnet">SportsNet</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="block-menus block-menu-tv"> 
+      <div class="row"> 
+       <div class="drop-middle-column span2"> 
+        <img src="http://s1.tv.ibtimes.com/sites/tv.ibtimes.com/files/styles/v2_thumbnail/public/2015/02/17/kirby-and-rainbow-curse-review-paint-colors-wind.jpg?itok=yBwVBw60" alt="Nintendo's Newest Kirby Game Is A Total Detour" /> 
+        <div class="thumb_title">
+          Nintendo's Newest Kirby Game Is A Total Detour 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <img src="http://s1.tv.ibtimes.com/sites/tv.ibtimes.com/files/styles/v2_thumbnail/public/2015/02/13/fitbit-surge-review.jpg?itok=tIw5oc-B" alt="Fitbit's First Activity Watch Falls Short" /> 
+        <div class="thumb_title">
+          Fitbit's First Activity Watch Falls Short 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <img src="http://s1.tv.ibtimes.com/sites/tv.ibtimes.com/files/styles/v2_thumbnail/public/2015/01/28/review-dying-light.jpg?itok=DkByOEYv" alt="Dying Light Is The Spiritual Successor To 'Dead Island'" /> 
+        <div class="thumb_title">
+          Dying Light Is The Spiritual Successor To 'Dead Island' 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <img src="http://s1.tv.ibtimes.com/sites/tv.ibtimes.com/files/styles/v2_thumbnail/public/2015/01/22/review-mitsubishi-evo-x-gsr_0.jpg?itok=UBgPs0RL" alt="The Last Mitsubishi Evolution" /> 
+        <div class="thumb_title">
+          The Last Mitsubishi Evolution 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <img src="http://s1.tv.ibtimes.com/sites/tv.ibtimes.com/files/styles/v2_thumbnail/public/2015/01/15/review-bmw-i8.jpg?itok=IjY5dw2l" alt="The i8 Is Proof BMW Should Make More Mid-Engined Cars" /> 
+        <div class="thumb_title">
+          The i8 Is Proof BMW Should Make More Mid-Engined Cars 
+        </div> 
+       </div> 
+       <div class="drop-middle-column span2"> 
+        <img src="http://s1.tv.ibtimes.com/sites/tv.ibtimes.com/files/styles/v2_thumbnail/public/2015/01/13/what-are-quantum-dots-and-why-are-they-important.jpg?itok=PEqp1QIQ" alt="QD Vision Shows Off Cheap 4K TVs" /> 
+        <div class="thumb_title">
+          QD Vision Shows Off Cheap 4K TVs 
+        </div> 
+       </div> 
+       <div class="drop-right-column span4"> 
+        <p>More <a href="http://tv.ibtimes.com">Video</a></p> 
+        <ul class="drop-right-column-left"> 
+        </ul> 
+        <ul class="drop-right-column-right"> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>
+  <!-- /.block ibtimes_header--header_flyout --> 
+  <script type="text/javascript">
+  //<![CDATA[
+    (function(){
+    window.gravityInsightsParams = {
+      'type': 'content',
+      'action': '',
+      'site_guid': 'daef24e833cc9a2355de42f4324b87ea'
+    };
+    var b,c;b="https:"===document.location.protocol?"https://b-ssl.grvcdn.com/moth-min.js":"http://b.grvcdn.com/moth-min.js";window.grvMakeScript=function(d){var a;a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=d;return a};c=document.getElementsByTagName("script")[0];b&&c.parentNode.insertBefore(window.grvMakeScript(b),c);})();
+  //]]>
+</script> 
+  <div id="fb-root"></div>
+  <!-- START OF SmartSource Data Collector TAG v10.2.91 --> 
+  <!-- Copyright (c) 2013 Webtrends Inc.  All rights reserved. --> 
+  <script>
+window.webtrendsAsyncInit=function(){
+    var dcs=new Webtrends.dcs().init({
+        dcsid: "dcspby6b7vz5bdrprzryf783n_3l7l",
+        domain: "statse.webtrendslive.com",
+        timezone: -5,
+        i18n:true,
+        offsite: true,
+        download: true,
+        downloadtypes: "xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip",
+        anchor: true,
+        javascript: true,
+        onsitedoms: ".ibtimes.com",
+        fpcdom: ".ibtimes.com",
+        plugins:{
+            //hm:{src:"//s.webtrends.com/js/webtrends.hm.js"},
+            //facebook:{src:"//s.webtrends.com/js/webtrends.fb.js"}
+        }
+    });
+    dcs.DCSext.w_edition = "us";
+    dcs.DCSext.w_language = "en";
+    dcs.DCSext.w_nid = "1833872";
+    dcs.DCSext.w_left_sidebar = "no";
+    dcs.DCSext.w_longform = "1";
+    dcs.DCSext.w_section = "economy";
+    dcs.DCSext.w_sitepage = "us.newibtimes/economy/articles";
+    dcs.DCSext.w_source = "ibtimes";
+    dcs.DCSext.w_articleid = "1833872";
+    dcs.DCSext.w_writer = "david sirota";
+    dcs.DCSext.w_author_edition = "usa";
+    dcs.DCSext.w_author_city = "denver";
+    dcs.DCSext.w_pubdate = "2015-03-03";
+    dcs.DCSext.w_pubmonth = "2015-03";
+    dcs.DCSext.w_content_type = "article";
+    dcs.DCSext.w_catid = "24";
+    dcs.WT.cg_n = "economy";
+    dcs.WT.ti = "chris christie administration paid $600m in financial fees in 2014";
+    dcs.track();
+};
+(function(){
+    var s=document.createElement("script"); s.async=true; s.src="http://s3.ibtimes.com/sites/all/modules/modules-custom/ibtmedia/ibtmedia_stats/js/webtrends.min.js";    
+    var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+}());
+</script> 
+  <noscript>
+   <img alt="dcsimg" id="dcsimg" width="1" height="1" src="//statse.webtrendslive.com/dcspby6b7vz5bdrprzryf783n_3l7l/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.2.91&amp;dcssip=www.ibtimes.com" />
+  </noscript> 
+  <!-- END OF SmartSource Data Collector TAG v10.2.91 --> 
+  <!-- Start Google --> 
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+      _gaq.push(['_setCustomVar',2,'Source','IBTimes',3]);
+    
+      _gaq.push(['_setCustomVar',3,'Edition','us',3]);
+  
+      _gaq.push(['_setCustomVar',4,'Sections','economy',3]);
+  
+      _gaq.push(['_setCustomVar',5,'Writers','David Sirota',3]);
+    
+      _gaq.push(['_setAccount', 'UA-5652780-41']);
+    
+      _gaq.push(['_setDomainName', 'ibtimes.com']);
+    _gaq.push(['_trackPageview']);
+  
+      _gaq.push(['_setAccount', 'UA-5652780-46']);
+    _gaq.push(['_trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> 
+  <!-- End Google --> 
+  <!-- Start Chartbeat --> 
+  <script type="text/javascript">
+var _sf_async_config={uid:23870,domain:"ibtimes.com"};
+_sf_async_config.sections = "economy";
+ 
+_sf_async_config.authors = "David Sirota";
+(function(){
+    function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src',
+           (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+           "js/chartbeat.js");
+        document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+    loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script> 
+  <!-- End Chartbeat -->
+  <!-- Start of Quantcast Code --> 
+  <script type="text/javascript">
+var _qevents = _qevents || [];
+(function() {
+    var elem = document.createElement('script');
+    elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+    elem.async = true;
+    elem.type = "text/javascript";
+    var scpt = document.getElementsByTagName('script')[0];
+    scpt.parentNode.insertBefore(elem, scpt);
+})();
+_qevents.push({qacct:"p-2dmAXlpkDJWYc"});
+</script> 
+  <noscript>
+   <div style="display:none;">
+    <img src="//pixel.quantserve.com/pixel/p-2dmAXlpkDJWYc.gif" border="0" height="1" width="1" alt="Quantcast" />
+   </div>
+  </noscript> 
+  <!-- End of Quantcast Code -->
+  <!-- Start of comScore Code --> 
+  <script>
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "7922264" });
+(function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+})();
+</script> 
+  <noscript>
+   <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=7922264&amp;cv=2.0&amp;cj=1" />
+  </noscript> 
+  <!-- End of comScore Code -->
+  <!-- Start Getclicky --> 
+  <script type="text/javascript">
+var clicky_site_ids = clicky_site_ids || [];
+clicky_site_ids.push(238279);
+(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//static.getclicky.com/js';
+  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+})();
+</script> 
+  <noscript>
+   <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/238279ns.gif" /></p>
+  </noscript> 
+  <!-- Start Compete --> 
+  <script type="text/javascript">
+__compete_code = 'cf989e388556442ae01927112437f5d8'; 
+(function () { 
+var s = document.createElement('script'), 
+    e = document.getElementsByTagName('script')[0], 
+    t = document.location.protocol.toLowerCase() === 'https:' ? 'https://c.compete.com/bootstrap/' : 'http://c.compete.com/bootstrap/'; 
+    s.src = t + __compete_code + '/bootstrap.js'; 
+    s.type = 'text/javascript'; 
+    s.async = true; 
+    if (e) { e.parentNode.insertBefore(s, e); } 
+}()); 
+</script> 
+  <!-- End Compete --> 
+  <!-- Start BuzzFeed --> 
+  <div id="BF_WIDGET_1">
+   &nbsp;
+  </div> 
+  <script type="text/javascript">
+(function( ){
+BF_WIDGET_JS=document.createElement("script"); BF_WIDGET_JS.type="text/javascript";
+BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=ibtimes.com&to=1&or=vb&wid=1&cb=" + (new Date()).getTime();
+setTimeout(function() {document.getElementById("BF_WIDGET_1").appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+})();
+</script> 
+  <!-- End BuzzFeed --> 
+  <!-- Start Exelate --> 
+  <script type="text/javascript">
+    var xl8_script = document.createElement("script");
+    xl8_script.src = "http://loadus.exelator.com/load/?p=539&g=001&c=1547567&ctg=ibtimes&subctg=&ag=&gd=&j=d";
+    xl8_script.type = "text/javascript";
+    xl8_script.async = true;
+    document.body.appendChild(xl8_script);
+</script> 
+  <!-- End Exelate --> 
+  <script type="text/javascript">
+  (function($){
+    var id = '1833872';
+    var site = 'www.ibtimes.com';
+    var title = 'Christie+Obscures+Big+Wall+Street+Gift+In+Fine+Print';
+    var category = 'Economy';
+    var category_id = '24';
+    var category_url = 'http%3A%2F%2Fwww.ibtimes.com%2Feconomy';
+    var story_type = 'article';
+    var syndication = '1';
+    var created = '1425388133';
+    var uid = '13536';
+    var image = 'http%3A%2F%2Fs1.ibtimes.com%2Fsites%2Fwww.ibtimes.com%2Ffiles%2Fstyles%2Fthumbnail%2Fpublic%2F2015%2F01%2F15%2Fchristie.JPG%3Fitok%3DP6c8PrNl';
+    var url = 'http%3A%2F%2Fwww.ibtimes.com%2Fchris-christie-administration-paid-600m-financial-fees-2014-1833872';
+    var src = 'http://feeds.ibt.com/track.gif?type=tm_hits&id=' + id + '&site=' + site + '&title=' + title + '&category=' + category + '&category_id=' + category_id + '&category_url=' + category_url + '&story_type=' + story_type + '&syndication=' + syndication + '&created=' + created + '&uid=' + uid + '&image=' + image + '&url=' + url;
+    src += '&t=' + new Date().getTime();
+    src += '&st=' + '1425433524';
+    var img = new Image();  
+    $(img).load(function () {}).attr('src', src);  
+  })(jQuery)
+</script> 
+  <script type="text/javascript">document.write('<img src="http://rpt.anchorfree.net/'+new Date().getTime()+'/afrpt.gif?afcid=3780E&afUh=www.ibtimes.com&afUp=empty&afUs=empty&affr=impr" style="border:0;width:1px;height:1px;"/>');</script>
+  <!-- BEGIN SNIPPET --> 
+  <div class="YAD-e0d21813-440f-35d7-b90c-d6a3a15a398d"></div> 
+  <script>
+    (function(a,b,c,d,e,f){a[d]||(a[d]=
+    function(){(a[d].q=a[d].q||[]).push([arguments,+new Date])});
+    e=b.createElement(c);f=b.getElementsByTagName(c)[0];
+    e.src='https://s.yimg.com/uq/syndication/yad.js';e.async=true;
+    f.parentNode.insertBefore(e,f)}(window,document,'script','yad'));
+    yad('e0d21813-440f-35d7-b90c-d6a3a15a398d');
+</script> 
+  <!-- END SNIPPET --> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_6TAnF117heNLUe_NSA6QrMWPUlMbDthN85wxrI4UFUM.js"></script> 
+  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
+  <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script> 
+  <script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+//--><!]]>
+</script> 
+  <script type="text/javascript" src="http://s3.ibtimes.com/sites/www.ibtimes.com/files/js/js_TXcCk_umypZ1ECeIIaMEZbMjegRVtK_vOx78WbKBCcU.js"></script> 
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"9c7f57b23b","applicationID":"2665064","transactionName":"ZANTYEJUXktQVBIKDF1JcFdEXF9WHlkJBwZsFlBTVWpGUVRA","queueTime":0,"applicationTime":829,"ttGuid":"","agentToken":"","atts":"SERQFgpOTUU=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script>  
+ </body>
+</html>

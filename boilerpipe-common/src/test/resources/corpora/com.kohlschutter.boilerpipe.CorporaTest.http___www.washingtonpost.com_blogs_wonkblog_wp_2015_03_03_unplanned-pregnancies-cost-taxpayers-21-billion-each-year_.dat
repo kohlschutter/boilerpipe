@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.5, maximum-scale=2.0" /> 
+  <meta name="keywords" content="unplanned pregnancy, guttmacher, abortion" /> 
+  <meta name="description" content="Mapping the cost of unplanned pregnancy in the U.S." /> 
+  <meta name="news_keywords" content="unplanned pregnancy, guttmacher, abortion" /> 
+  <meta name="twitter:site" value="@WashingtonPost" /> 
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta property="og:description" content="Mapping the cost of unplanned pregnancy in the U.S." /> 
+  <meta property="og:type" content="article" /> 
+  <meta property="og:site_name" content="Washington Post" /> 
+  <meta property="og:image" content="http://img.washingtonpost.com/blogs/wonkblog/files/2015/03/2566700164_7c38338b65_o.jpg" /> 
+  <meta property="og:title" content="Unplanned pregnancies cost taxpayers $21 billion each year" /> 
+  <meta property="article:publisher" content="https://www.facebook.com/washingtonpost" /> 
+  <meta property="fb:admins" content="1513210492" /> 
+  <meta property="fb:app_id" content="41245586762" /> 
+  <meta property="fb:admins" content="1244584375" /> 
+  <meta property="fb:admins" content="4403963" /> 
+  <meta property="fb:admins" content="2724956" /> 
+  <meta property="fb:admins" content="500835072" /> 
+  <meta property="og:url" content="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" /> 
+  <meta name="section" content="/business/wonkblog" /> 
+  <meta name="commercialNode" content="/business" /> 
+  <link rel="canonical" href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" /> 
+  <link rel="alternate" href="android-app://com.washingtonpost.android/wp-android/www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" /> 
+  <title>Unplanned pregnancies cost taxpayers $21 billion each year - The Washington Post</title> 
+  <meta property="twitter:creator" content="@_cingraham" /> 
+  <link rel="author" content="https://plus.google.com/105540143579821731381" /> 
+  <!--[if (gt IE 8) | (IEMobile)]><!--> 
+  <link rel="stylesheet" href="/pb/resources/css/headerfonts.css?_=63ea2f" /> 
+  <!--<![endif]--> 
+  <!--[if (lt IE 9) & (!IEMobile)]><link rel="stylesheet" href="/pb/resources/css/headerfonts_ie.css?_=63ea2f"/><![endif]--> 
+  <link rel="stylesheet" href="/pb/resources/compact/type/default/styles/bc9d233e62887b11846ddc11bf4175c8.css?_=63ea2f" /> 
+  <link rel="stylesheet" href="/pb/resources/compact/template/rZcHWoZzuToaTieQLcQMUOw/styles/ca81b2e4d5b093e7f72fbfe70484081e.css?_=63ea2f" /> 
+  <link rel="stylesheet" href="/pb/resource/style-rZcHWoZzuToaTieQLcQMUOw-f87fbb05.css?_=63ea2f" /> 
+  <script>window.head_conf={head:"TWPHead"};</script> 
+  <script src="/pb/resources/js/head.min.js"></script> 
+  <script type="text/javascript" src="/pb/resources/compact/type/default/headJS/068d3c1f0e80ba3b4dc4a0d195ab9bcb.js?_=63ea2f"></script> 
+  <script type="text/javascript" src="/pb/resource/headjs-rZcHWoZzuToaTieQLcQMUOw-f87fbb05.js?_=63ea2f"></script> 
+  <script>(function(r){r.pageName="";r.templateName="rZcHWoZzuToaTieQLcQMUOw";r.contextPath="/pb";r.isAdmin=false;r.layoutEngineName="off";r.environment="production"}(window.wp_pb||{}));var commercialNode="/business";</script> 
+  <script type="text/javascript">wp_pb=window.wp_pb||{};var isMobile={Android:function(){return navigator.userAgent.match(/Android/i)?true:false},AndroidOld:function(){return navigator.userAgent.match(/Android 2.3.3/i)?true:false},AndroidTablet:function(){return(navigator.userAgent.match(/Android/i)&&!navigator.userAgent.match(/Mobile/i))?true:false},Kindle:function(){return navigator.userAgent.match(/Kindle/i)?true:false},KindleFire:function(){return navigator.userAgent.match(/KFOT/i)?true:false},Silk:function(){return navigator.userAgent.match(/Silk/i)?true:false},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)?true:false},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)?true:false},iPhone:function(){return navigator.userAgent.match(/iPhone|iPod/i)?true:false},iPad:function(){return navigator.userAgent.match(/iPad/i)?true:false},Windows:function(){return navigator.userAgent.match(/IEMobile/i)?true:false},FirefoxOS:function(){return(navigator.userAgent.match(/Mozilla/i)&&navigator.userAgent.match(/Mobile/i))?true:false},Retina:function(){return(window.retina||window.devicePixelRatio>1)?true:false},any:function(){return(isMobile.Android()||isMobile.Kindle()||isMobile.KindleFire()||isMobile.Silk()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Windows()||isMobile.FirefoxOS())},all:function(){return(navigator.userAgent)},tablet:function(){return(isMobile.AndroidTablet()||isMobile.iPad()||isMobile.Kindle()||isMobile.KindleFire()||isMobile.Silk())}};var mobile_browser=isMobile.any()?1:0,iphone_browser=isMobile.iPhone()?1:0,ipad_browser=isMobile.iPad()?1:0,android_browser=isMobile.Android()?1:0,android233_browser=isMobile.AndroidOld()?1:0,kindle_browser=isMobile.Kindle()?1:0,retina_browser=isMobile.Retina()?1:0,mobile_tablet=isMobile.tablet()?1:0;TWP=window.TWP||{};TWP.PostTV=TWP.PostTV||{};TWP.PostTV.BrowserInfo=TWP.PostTV.BrowserInfo||{init:function(){this.browser=this.searchString(this.dataBrowser)||"An unknown browser";this.version=this.searchVersion(navigator.userAgent)||this.searchVersion(navigator.appVersion)||"an unknown version";this.OS=this.searchString(this.dataOS)||"an unknown OS"},searchString:function(data){for(var i=0;i<data.length;i++){var dataString=data[i].string;var dataProp=data[i].prop;this.versionSearchString=data[i].versionSearch||data[i].identity;if(dataString){if(dataString.indexOf(data[i].subString)!=-1){return data[i].identity}}else{if(dataProp){return data[i].identity}}}},searchVersion:function(dataString){var index=dataString.indexOf(this.versionSearchString);if(index==-1){return}return parseFloat(dataString.substring(index+this.versionSearchString.length+1))},dataBrowser:[{string:navigator.userAgent,subString:"Chrome",identity:"Chrome"},{string:navigator.userAgent,subString:"OmniWeb",versionSearch:"OmniWeb/",identity:"OmniWeb"},{string:navigator.vendor,subString:"Apple",identity:"Safari",versionSearch:"Version"},{prop:window.opera,identity:"Opera",versionSearch:"Version"},{string:navigator.vendor,subString:"iCab",identity:"iCab"},{string:navigator.vendor,subString:"KDE",identity:"Konqueror"},{string:navigator.userAgent,subString:"Firefox",identity:"Firefox"},{string:navigator.vendor,subString:"Camino",identity:"Camino"},{string:navigator.userAgent,subString:"Netscape",identity:"Netscape"},{string:navigator.userAgent,subString:"MSIE",identity:"Explorer",versionSearch:"MSIE"},{string:navigator.userAgent,subString:"Gecko",identity:"Mozilla",versionSearch:"rv"},{string:navigator.userAgent,subString:"Mozilla",identity:"Netscape",versionSearch:"Mozilla"}],dataOS:[{string:navigator.platform,subString:"Win",identity:"Windows"},{string:navigator.platform,subString:"Mac",identity:"Mac"},{string:navigator.userAgent,subString:"iPhone",identity:"iPhone"},{string:navigator.userAgent,subString:"iPad",identity:"iPad"},{string:navigator.userAgent,subString:"Android",identity:"Android"},{string:navigator.platform,subString:"Linux",identity:"Linux"}]};TWP.PostTV.BrowserInfo.init();TWP.PostTV.getCookie=function(name){var nameEQ=name+"=";var ca=document.cookie.split(";");for(var i=0;i<ca.length;i++){var c=ca[i];while(c.charAt(0)==" "){c=c.substring(1,c.length)}if(c.indexOf(nameEQ)==0){return c.substring(nameEQ.length,c.length)}}return null};wp_pb.BrowserInfo=wp_pb.BrowserInfo||{};wp_pb.BrowserInfo.mobile_browser=mobile_browser;wp_pb.BrowserInfo.tablet=mobile_tablet;wp_pb.BrowserInfo.OS=TWP.PostTV.BrowserInfo.OS;wp_pb.BrowserInfo.browser=TWP.PostTV.BrowserInfo.browser;wp_pb.BrowserInfo.version=TWP.PostTV.BrowserInfo.version;wp_pb.BrowserInfo.OS=TWP.PostTV.BrowserInfo.OS;</script> 
+  <script type="text/javascript">if(typeof wp_meta_data=="undefined"){try{wp_meta_data={platform:"pagebuilder",showAds:true,showPreRollAds:false,isHomepage:false,isErrorPage:false,isMultimedia:false,wt:"BlogStory",contentName:["wonkblog"],page_id:["wonkblog124953"],author:["Christopher Ingraham"],keywords:["unplanned pregnancy","guttmacher","abortion"],clavis:{keywords:[],topics:[],ct:[]},breaking_news:[false],contentType:["BlogStory"]}}catch(e){}};</script> 
+  <script type="text/javascript">(function(){TWP=(typeof TWP=="undefined")?{}:TWP;TWP.Data=(typeof TWP.Data=="undefined")?{}:TWP.Data;TWP.Data["Tracking"]={init:function(){this.props={};this.props.platform="pagebuilder";this.props.page_type="";this.props.page_name="business:blog:wonkblog - 124953 - 20150303 - unplanned-pregnancies-cost-taxpayers-21-billion-each-year";this.props.section="business";this.props.channel="wp - business";this.props.subsection="business";this.props.hierarchy="business|blog";this.props.content_type="blog";this.props.story_type="";this.props.headline="Unplanned pregnancies cost taxpayers $21 billion each year";this.props.author="Christopher Ingraham";this.props.source="The Washington Post";this.props.content_id="wonkblog124953";this.props.page_num="";this.props.op_ranking="no sentiment - no ideology";this.props.columnname="";this.props.blogname="wonkblog";this.props.published="";this.props.news_or_commercial="News";this.props.commercial_node="/business";this.props.content_category="Business";this.props.sectionfront="";this.props.track_scrolling=true}};TWP.Data["Tracking"].init()})();</script> 
+  <script type="text/javascript">(function(){var a=document,b=a.createElement("script"),a=a.getElementsByTagName("script")[0];b.type="text/javascript";b.async=!0;b.src="http://s.moatads.com/washpost421KqtH31/moatcontent.js";a.parentNode.insertBefore(b,a)})();</script> 
+  <script id="twp-identity" src="//js.washingtonpost.com/1h/twp-global.js"></script> 
+ </head> 
+ <body class="pb-theme-normal pb-full-fluid"> 
+  <script type="text/javascript" src="//js.washingtonpost.com/wp-stat/otto/js/mbox.js"></script> 
+  <div class="mboxDefault"></div> 
+  <div class="pb-container " id="pb-root"> 
+   <div id="article-business_1399492794482_885" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-page-header-v2 pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="page-header-v2" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-header-v2|article-business"> 
+    <!--[if lt IE 9]><style>.lt-ie9 body.left-menu #site-menu{left:-50px}.lt-ie9 #wp-logo{background:transparent url(/pb/resources/img/washingtonpost_black_32.png) no-repeat 0 8px}.lt-ie9 header.dark #wp-logo{background:transparent url(/pb/resources/img/washingtonpost_white_32.png) no-repeat 0 8px}</style><![endif]--> 
+    <!--[if lt IE 8]><header class="ie ie7 lte9 lte8 lte7 abt-not-loaded "><![endif]--> 
+    <!--[if IE 8]><header class="ie ie8 lte9 lte8 abt-not-loaded "><![endif]--> 
+    <!--[if IE 9]><header class="ie ie9 lte9 abt-not-loaded "><![endif]--> 
+    <!--[if gt IE 9]><header class="ie abt-not-loaded "><![endif]--> 
+    <!--[if !IE]><!--> 
+    <header id="wp-header" class="nie abt-not-loaded ">
+     <!--<![endif]--> 
+     <nav id="site-menu" class="nav-menu"> 
+      <form id="nav-search-mobile" method="get" action="http://www.washingtonpost.com/pb/newssearch/"> 
+       <button type="submit" class="fa fa-search"></button> 
+       <input type="text" placeholder="Search" name="query" autocomplete="off" /> 
+      </form> 
+      <ul id="site-menu-sections"> 
+       <li id="nav-screenreader-link"><a class="screenreader-link" href="http://www.washingtonpost.com/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/?resType=accessibility">Accessibility for screenreader</a></li> 
+       <li id="nav-sign-in-mobile" class="hidden mobile-only"><a href="#">Sign In</a></li> 
+       <li id="nav-user-mobile" class="hidden mobile-only"><a href="#">Username</a></li> 
+       <li><a href="http://www.posttv.com/?nid=top_pb_posttv">PostTV</a></li> 
+       <li><a href="http://www.washingtonpost.com/politics?nid=top_pb_politics">Politics</a></li> 
+       <li><a href="http://www.washingtonpost.com/opinions?nid=top_pb_opinions">Opinions</a></li> 
+       <li><a href="http://www.washingtonpost.com/local?nid=top_pb_local">Local</a></li> 
+       <li><a href="http://www.washingtonpost.com/sports?nid=top_pb_sports">Sports</a></li> 
+       <li><a href="http://www.washingtonpost.com/national?nid=top_pb_national">National</a></li> 
+       <li><a href="http://www.washingtonpost.com/world?nid=top_pb_world">World</a></li> 
+       <li><a href="http://www.washingtonpost.com/business?nid=top_pb_business">Business</a></li> 
+       <li><a href="http://www.washingtonpost.com/business/technology?nid=top_pb_technology">Tech</a></li> 
+       <li><a href="http://www.washingtonpost.com/lifestyle?nid=top_pb_lifestyle">Lifestyle</a></li> 
+       <li><a href="http://www.washingtonpost.com/entertainment?nid=top_pb_entertainment">Entertainment</a></li> 
+       <li><a href="http://www.washingtonpost.com/classifieds?nid=top_pb_classifieds">Classifieds</a></li> 
+       <li><a href="http://www.washingtonpost.com/jobs?nid=top_pb_jobs">Jobs</a></li> 
+       <li><a href="http://www.washingtonpost.com/realestate?nid=top_pb_realestate">Real Estate</a></li> 
+       <li><a href="http://www.washingtonpost.com/goingoutguide?nid=top_pb_goingoutguide">Events</a></li> 
+       <li><a href="http://www.washingtonpost.com/rentals?nid=top_pb_rentals">Rentals</a></li> 
+       <li><a href="http://www.washingtonpost.com/cars/?nid=top_pb_cars">Cars</a></li> 
+       <li><a href="http://www.washingtonpost.com/sf/brand-connect/?nid=top_pb_brandconnect">WP BrandConnect</a></li> 
+       <li id="nav-subscribe-mobile" class="hidden mobile-only"><a href="https://subscribe.washingtonpost.com/acquisition/?nid=top_pb_subscribe&amp;destination=http://www.washingtonpost.com/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/">Subscribe</a></li> 
+       <li><a href="https://account.washingtonpost.com/actmgmt/registration/addnewsletter/default/">Newsletters &amp; Alerts</a></li> 
+      </ul> 
+      <div id="site-menu-info"> 
+       <p class="site-attribution"> <a href="http://www.washingtonpost.com"><strong>washingtonpost.com</strong></a> <span class="copyright">&copy; 1996-2015 The Washington Post</span> </p> 
+       <p><a href="http://www.washingtonpost.com/actmgmt/help/">Help and Contact Us</a></p> 
+       <p><a href="http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></p> 
+       <p><a href="http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></p> 
+       <p><a href="http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submissions and Discussion Policy</a></p> 
+       <p><a href="http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></p> 
+       <p><a href="http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></p> 
+      </div> 
+     </nav> 
+     <div id="user-menu" class="nav-menu">
+      <ul></ul>
+     </div> 
+     <div id="nav-bar"> 
+      <div class="nav-left nav-section"> 
+       <div id="site-menu-btn" class="nav-btn"> 
+        <span class="nav-btn-label">Sections</span> 
+        <i class="fa fa-bars"></i> 
+       </div> 
+       <div id="wp-logo"> 
+        <a href="http://www.washingtonpost.com?nid=top_pb_wplogo">The Washington Post</a> 
+       </div> 
+       <div id="wp-logo-for-print"> 
+        <img src="//www.washingtonpost.com/pb/resources/img/washingtonpost_black_32.png" alt="The Washington Post" /> 
+       </div> 
+      </div> 
+      <div class="nav-middle nav-section"> 
+       <div id="nav-page-title" data-show-on-scroll="true">
+        Unplanned pregnancies cost taxpayers $21 billion each year
+       </div> 
+      </div> 
+      <div class="nav-right nav-section"> 
+       <form id="nav-search" method="get" action="http://www.washingtonpost.com/newssearch/"> 
+        <input type="text" placeholder="Search" name="query" autocomplete="off" /> 
+        <button type="submit" class="fa fa-search"></button> 
+       </form> 
+       <div id="nav-ad">
+        <div id="wpni_adi_88x31"></div>
+       </div> 
+       <a id="nav-sign-in" class="nav-btn hidden" href="#">Sign In</a> 
+       <div id="nav-user" class="nav-btn hidden" data-menu="user-menu" data-show-identity="true"> 
+        <span class="username">Username</span> 
+        <i class="fa fa-caret-down"></i> 
+       </div> 
+       <a id="nav-subscribe" class="nav-btn hidden" href="https://subscribe.washingtonpost.com/acquisition/?nid=top_pb_subscribe&amp;destination=http://www.washingtonpost.com/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/">Subscribe</a> 
+      </div> 
+     </div> 
+    </header> 
+    <div id="wp-topper" class="abt-not-loaded"> 
+     <a id="wp-logo-large" href="http://www.washingtonpost.com?nid=top_pb_wplogo"></a> 
+     <div class="top-timestamp"></div> 
+    </div> 
+   </div> 
+   <div id="article-business_1399492818975_810" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-ad-leaderboard pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="ad-leaderboard" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="ad-leaderboard|article-business"> 
+    <div class="leaderboard ad-hideable"> 
+     <div id="slug_leaderboard" data-ad-type="leaderboard" class="pb-ad-container" style="display:none;"> 
+     </div> 
+    </div> 
+    <div class="mobile-leaderboard ad-hideable"> 
+     <div id="slug_mob_av" data-ad-type="mob_av" style="display:none;"></div> 
+    </div> 
+    <div class="mobile-fixed ad-hideable"> 
+     <div id="slug_t" data-ad-type="t" class="pb-ad-container-mobile" style="display:none;"> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="article-business_1401912612813_574" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-article-article-topper pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="article-article-topper" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="article-article-topper|article-business"> 
+    <div id="article-topper" class="article-topper"> 
+     <div class="headline-kicker">
+      <a href="http://www.washingtonpost.com/blogs/wonkblog/">Wonkblog</a>
+     </div> 
+     <h1>Unplanned pregnancies cost taxpayers $21 billion each year</h1> 
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+   <div id="article-business_1409076983270_679" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-sharebars-top-share-bar pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="sharebars-top-share-bar" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="sharebars-top-share-bar|article-business"> 
+    <style>.hideText{position:absolute;left:-10000px}</style> 
+    <div id="top-sharebar_9212" class="top-sharebar-wrapper color-top unprocessed" data-postshare="facebook,twitter"> 
+     <div class="social-tools-wrapper"> 
+      <div class="social-tools-primary margin-top"> 
+       <div class="social-tools "> 
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'https://www.facebook.com/sharer/sharer.php?u=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '' , 'width=658,height=354,scrollbars=no');}catch(err){ window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwapo.st%2F1GgACwL','share_facebook','width=658,height=354,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="facebook tool first desktop mobile">
+          <span class="hideText">Share on Facebook</span>
+          <span class="fa fa-facebook-square"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'https://twitter.com/share?url=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '&amp;text=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year' , 'width=550, height=350, scrollbars=no');}catch(err){ window.open('https://twitter.com/share?url=http%3A%2F%2Fwapo.st%2F1GgACwL&amp;text=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year','share_twitter','width=550, height=350, scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="twitter tool desktop mobile">
+          <span class="hideText">Share on Twitter</span>
+          <span class="fa fa-twitter"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'http://www.linkedin.com/shareArticle?mini=true&amp;url=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '&amp;title=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year' , 'width=830,height=460,scrollbars=no');}catch(err){ window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwapo.st%2F1GgACwL&amp;title=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year','share_linkedin','width=830,height=460,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="linkedin tool desktop">
+          <span class="hideText">Share on LinkedIn</span>
+          <span class="fa fa-linkedin"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'mailto:?subject=Unplanned%20pregnancies%20cost%20taxpayers%20%2421%20billion%20each%20year from The Washington Post&amp;body=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '' , null);}catch(err){ window.location.href = 'mailto:?subject=Unplanned%20pregnancies%20cost%20taxpayers%20%2421%20billion%20each%20year from The Washington Post&amp;body=http%3A%2F%2Fwapo.st%2F1GgACwL'; }return false;" tabindex="_tbidx_"> 
+         <div class="email tool desktop">
+          <span class="hideText">Share via Email</span>
+          <span class="fa fa-envelope"></span>
+         </div> </a>
+        <a onclick="return false;"> 
+         <div class="more tool last desktop mobile">
+          <span class="hideText" tabindex="_tbidx_">More Options</span>
+          <span class="fa fa-plus"> </span>
+         </div> </a>
+       </div> 
+      </div> 
+      <div class="social-tools-additional margin-top"> 
+       <div class="social-tools "> 
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'mailto:?subject=Unplanned%20pregnancies%20cost%20taxpayers%20%2421%20billion%20each%20year from The Washington Post&amp;body=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '' , null);}catch(err){ window.location.href = 'mailto:?subject=Unplanned%20pregnancies%20cost%20taxpayers%20%2421%20billion%20each%20year from The Washington Post&amp;body=http%3A%2F%2Fwapo.st%2F1GgACwL'; }return false;" tabindex="_tbidx_"> 
+         <div class="email tool first mobile">
+          <span class="hideText">Share via Email</span>
+          <span class="fa fa-envelope"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'whatsapp://send?text=Unplanned%20pregnancies%20cost%20taxpayers%20%2421%20billion%20each%20year - ', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '' , null);}catch(err){ window.location.href = 'whatsapp://send?text=Unplanned%20pregnancies%20cost%20taxpayers%20%2421%20billion%20each%20year - http%3A%2F%2Fwapo.st%2F1GgACwL'; }return false;" tabindex="_tbidx_"> 
+         <div class="whatsapp tool mobile">
+          <span class="hideText">Share on Whatsapp</span>
+          <span class="fa fa-whatsapp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAEhwAABIcBblSwhwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKMSURBVEiJnZVLSFVRFIb/czORKEqjJI0EoVKILMxB0cBJjYJGRhMD6TVs0kAhpw2qSdkoCGoSQkENehBKUSARCtqggiJudUGjh4+KEDW/BmftXB3OuXr7YbH3Wa9/r33WWScCtAg2S9olqdnWHZLGJA05GZb0KzMDkCV1QD9LwzhwJCtXlFHJCUkXJK2SNCnpiZ14UNKIpA2SWqyyPZK2WdxdSScljRarZAXw0J3wFrC+SLVBOoBJi5kADnh70vmyOX4GDi0huZda4J4jqk0j2QfMAzNAU4kEXsJNPEiSrAEKZux2AduBO8ClEkg2uqs77kl6TDkElJkuB3xgATtLIOqwmO9ApYAI+GTK/c5xN//iYonX9sri2nPWhtWSkPTcNV51oq1bMj+2dDyz9WBO0lZ7eCtpyjkNuP28pM4SSYZsbchJqrGHwYTTF0lPbT+peHSUgpCvJiep3CVN4pSkGUlVkq6WSDJua0VOUt4eGlMcRyR12b5N0hlJkbMvl1SZQdJs65jvokJGl0RAr+uyfuLhWQEMANPWecnxc878HwuoAmZNUZ9BtAy44Yh+APlEi38zvxDzyPRdQRESXCvS9xFwzJKlIe98G61CgIagbDHFHNBQhEjAOqALeOEI3rEwEcqAQdNfJzEg35uhbRESL1uI51vkdN2WpwCs9iT1ZvhJ/E/53wncTjzFwY2oYOw0Q68LaLJTLiV5NfG0Dujx9rAZNuNZ4LzdccB9oBUoTyReCewFTgNfzXcKOJo8RLjXNEwQ/8QC5oy8D3gN/E749wGb0ir1LwrgI/GH1Urc8/VW3WjKIaaJ/z9XgMNpyYNEwE1JbyTd1sLkTMNaSXWSaiUVJL2UNFvE/y/+AObPwGxY9EFMAAAAAElFTkSuQmCC" /></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, '//pinterest.com/pin/create/button/?url=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '&amp;media=http://www.washingtonpost.com/blogs/wonkblog/files/2015/03/2566700164_7c38338b65_o.jpg&amp;description=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year' , 'width=550,height=450,scrollbars=no');}catch(err){ window.open('//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwapo.st%2F1GgACwL&amp;media=http://www.washingtonpost.com/blogs/wonkblog/files/2015/03/2566700164_7c38338b65_o.jpg&amp;description=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year','share_linkedin','width=550,height=450,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="pinterest tool desktop mobile">
+          <span class="hideText">Share on Pinterest</span>
+          <span class="fa fa-pinterest"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'https://plus.google.com/share?url=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '' , 'width=832,height=472,scrollbars=no');}catch(err){ window.open('https://plus.google.com/share?url=http%3A%2F%2Fwapo.st%2F1GgACwL','share_google-plus','width=832,height=472,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="google-plus tool desktop mobile">
+          <span class="hideText">Share on Google Plus</span>
+          <span class="fa fa-google-plus"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'http://www.linkedin.com/shareArticle?mini=true&amp;url=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '&amp;title=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year' , 'width=830,height=460,scrollbars=no');}catch(err){ window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwapo.st%2F1GgACwL&amp;title=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year','share_linkedin','width=830,height=460,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="linkedin tool mobile">
+          <span class="hideText">Share on LinkedIn</span>
+          <span class="fa fa-linkedin"></span>
+         </div> </a>
+        <a onclick="try{this.postShare.callPostShare(this, this.postShareObject, 'http://www.tumblr.com/share/link?url=', 'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/', '&amp;name=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year&amp;description=' , 'width=550,height=450,scrollbars=no');}catch(err){ window.open('http://www.tumblr.com/share/link?url=http%3A%2F%2Fwapo.st%2F1GgACwL&amp;name=Unplanned+pregnancies+cost+taxpayers+%2421+billion+each+year&amp;description=','share_tumblr','width=550,height=450,scrollbars=no'); }return false;" tabindex="_tbidx_"> 
+         <div class="tumblr tool last desktop">
+          <span class="hideText">Share on Tumblr</span>
+          <span class="fa fa-tumblr"></span>
+         </div> </a>
+       </div> 
+      </div> 
+     </div> 
+     <div id="slug_tiffany_tile" data-ad-type="tiffany_tile" class="left" style="display:none;padding-left:20px !important;height:auto;max-height:60px;overflow:hidden;"> 
+      <div id="wpni_adi_tiffany_tile" class="ads slug tiffany_tile header"></div> 
+     </div> 
+     <div class=" utility-tools-wrapper"> 
+      <div class="utility-tools-primary margin-top"> 
+       <div class="social-tools "> 
+        <div class="textresizer tool first mobile">
+         <span class="hideText" tabindex="_tbidx_">Resize Text</span>
+         <span class="fa fa-font"></span>
+        </div>
+        <a onclick="window.print();" tabindex="_tbidx_"> 
+         <div class="print tool mobile">
+          <span class="hideText">Print Article</span>
+          <span class="fa fa-print"></span>
+         </div> </a>
+        <a href="#" onclick="wp_pb.report('comments', 'showComments',{elm:$(this),guid:'http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/'}); return false;" tabindex="_tbidx_"> 
+         <div class="comments tool last mobile">
+          <span class="hideText">Comments</span>
+          <span class="fa fa-comments"></span> 
+          <span id="echo_container" class="echo_container comment-vars echo-counter text" guid="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/"></span>
+         </div> </a>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="clear"></div> 
+   </div> 
+   <div class="pb-scatter"> 
+    <div id="main-content" class="pb-layout-item pb-chain pb-two col-lg-8 col-md-8 col-sm-12 col-xs-12 main-content" data-pb-columns="2"> 
+     <div id="article-business_1401912605633_632" class="moat-trackable pb-feature pb-chained pb-f-article-article-body pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="article-article-body" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="article-article-body|article-business"> 
+      <div id="article-body" class="article-body"> 
+       <div class="pb-sig-line hasnt-headshot has-0-headshots hasnt-bio is-not-column"> 
+        <span class="pb-byline">By <a href="http://www.washingtonpost.com/people/christopher-ingraham">Christopher Ingraham</a></span> 
+        <span class="pb-timestamp">March 3 at 2:38 PM</span> 
+        <span class="pb-tool email"><a href="mailto:christopher.ingraham@washpost.com?subject=Reader feedback for 'Unplanned pregnancies cost taxpayers $21 billion each year'"><span class="fa fa-envelope"></span></a></span> 
+        <span class="tweet-authors"><span class="pb-twitter-follow unprocessed"><a href="https://twitter.com/@_cingraham" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @_cingraham</a></span> </span> 
+       </div> 
+       <article>
+        <div class="inline-content inline-photo inline-photo-normal"> 
+         <a name="4fe9f617d2"></a> 
+         <img class="unprocessed" data-hi-res-src="//www.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/blogs/wonkblog/files/2015/03/2566700164_7c38338b65_o.jpg&amp;w=1484" data-low-res-src="//www.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/blogs/wonkblog/files/2015/03/2566700164_7c38338b65_o.jpg&amp;w=480" src="//www.washingtonpost.com/wp-apps/imrs.php?src=http://img.washingtonpost.com/blogs/wonkblog/files/2015/03/2566700164_7c38338b65_o.jpg&amp;w=480" />
+         <br /> 
+         <span class="pb-caption"><a href="https://www.flickr.com/photos/pinkmoose/2566700164/in/photolist-4UP1x7-63XnZy-7BhtFi-7Bhtte-rWDwg-rWDmn-AUksH-7dZKHG-gYP4my-4Hbppe-6YjLR5-Pyuhr-cjtJe-eBo6F-aVBnqr-4SVtxv-8qUnuN-bPWLtZ-iBjFBt-pCYamt-6nhU6m-3cbPiG-7Bmhq7-nyYHAv-6zsXFb-6QXZWj-6NzYM-5toCVi-cZhmud-6BiCQT-quJa6D-buckND-3a4TF7-bsYvz1-73ay2-6xyKJL-5cB4dy-hrUAE-5chUxS-4XaWVD-7Mo3Ez-9dcrhF-8aKXmu-b3Qinz-db2qcC-7VP1ot-3a4SaE-6FoNAH-ebXX9z-7PZhur" target="_blank">Flickr user Anthony Easton</a> (CC)</span> 
+        </div> 
+        <p>Unintended pregnancies cost American taxpayers $21 billion each year, according to <a href="http://www.guttmacher.org/pubs/public-costs-of-UP-2010.pdf" target="_blank">a new analysis</a> released by the Guttmacher Institute. That averages out to a cost of about $366 per every woman of childbearing age in the U.S. Overall, more than half of U.S. pregnancies are unintended, and roughly 1-in-20 American women of reproductive age have an unplanned pregnancy each year.</p> 
+        <p>Nationally there were 1.5 million unplanned births in 2010. Public insurance programs like Medicaid paid for 68 percent of those births. &quot;On average, a publicly funded birth cost $12,770 in prenatal care, labor and delivery, postpartum care and the first 12 months of infant care; care for months 13–60 cost, on average, another $7,947, for a total cost per birth of $20,716,&quot; the study found.</p> 
+        <p><iframe data-preserve-height="true" frameborder="0" height="550" scrolling="no" src="http://www.washingtonpost.com/wp-srv/special/business/unintended-pregnancies/index.html?template=iframe" width="100%"></iframe></p> 
+        <p>Both the rate and cost of unplanned birth vary considerably by state. As a percent of all births, unplanned births ranged from 31.8 percent in New Hampshire to 56.8 percent in Mississippi. Overall, states in New England and on the West coast had the lowest rates of unplanned birth, while Southern states had the highest.</p> 
+        <p>In some states -- Georgia, Mississippi and Oklahoma -- more than 80 percent of unplanned births were paid for by public dollars. Georgia taxpayers spent nearly $1 billion on unplanned births in 2010, as did taxpayers in Chicago. California spent $1.8 billion, while unplanned births cost the state of Texas nearly $3 billion dollars in 2010.</p> 
+        <p>If these numbers seem high, they could be a lot higher. <a href="http://onlinelibrary.wiley.com/enhanced/doi/10.1111/1468-0009.12080/" target="_blank">Current investments in family planning services</a>, like contraception, family visits and STD testing, save taxpayers $15.8 billion and prevent 760,000 abortions each year, according to a 2014 analysis in the Milbank Quarterly. Guttmacher estimates that expanding these services further could cut the cost of unintended pregnancies by an additional $15 billion.</p>
+       </article> 
+       <div class="clear"></div> 
+       <div class="post-body-sig-line">
+        <a href="http://www.washingtonpost.com/people/christopher-ingraham"><img class="post-body-headshot-left" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/blogs/the-switch/files/2014/02/christopher-ingraham.jpg&amp;h=180&amp;w=180" /></a>
+        <div class="post-body-bio has-photo">
+         Christopher Ingraham writes about politics, drug policy and all things data. He previously worked at the Brookings Institution and the Pew Research Center.
+        </div>
+        <div class="clear"></div>
+       </div> 
+      </div> 
+     </div> 
+     <div id="article-business_1399492829376_241" class="moat-trackable pb-feature pb-chained pb-f-page-share-bar pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-share-bar" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-share-bar|article-business"> 
+      <div class="social-tools-wrapper-bottom "> 
+       <ul class="social-tools-bottom inline"> 
+        <li data-sharetype="facebook" class="left facebook"> <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwapo.st%2F1GgACwL','share_facebook','width=658,height=354,scrollbars=no'); return false;" tabindex="_tbidx_"> <span class="fa fa-facebook-square">&nbsp;</span><span class="longname">Share on Facebook</span><span class="shortname">Share</span> </a> </li> 
+        <li data-sharetype="twitter" class="right twitter"> <a href="#" onclick="window.open('https://twitter.com/share?url=http%3A%2F%2Fwapo.st%2F1GgACwL&amp;text=Unplanned pregnancies cost taxpayers $21 billion each year','share_twitter','width=550, height=350, scrollbars=no'); return false;" tabindex="_tbidx_"> <span class="fa fa-twitter">&nbsp;</span> <span class="longname">Share on Twitter</span><span class="shortname">Tweet</span> </a> </li> 
+       </ul> 
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div id="article-business_1402342504319_850" class="moat-trackable pb-feature pb-chained pb-f-page-comments pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-comments" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-comments|article-business"> 
+      <div data-allow-comments="true" class="pb-comment-wrapper "> 
+       <div id="comment_summary_pb_comments" class="comment-summary jump "> 
+        <div class="comment-summary-count">
+         <span class="fa fa-comments"></span>
+         <span id="echo_container" class="echo_container comment-vars echo-counter" guid="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/"></span>
+        </div> 
+        <div class="comment-summary-display">
+         <span class="comment-display"> Comments</span>
+        </div> 
+       </div> 
+      </div> 
+      <style>.pb-feature.pb-f-page-comments .pb-comment-wrapper{padding-right:0;border-bottom:0}.pb-feature.pb-f-page-comments{border-right:1px solid #d5d5d5;padding-right:50px}</style> 
+     </div> 
+     <div id="article-business_1402342509758_904" class="moat-trackable pb-feature pb-chained pb-f-page-recommended-strip pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-recommended-strip" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-recommended-strip|article-business"> 
+      <script type="text/javascript">(function($){TWP=window.TWP||{};TWP.Features=TWP.Features||{};TWP.Features.Page=TWP.Features.Page||{};TWP.Features.Page.RecommendedStrip={};TWP.Features.Page.RecommendedStrip.endpointServer="//recommendation.wpdigital.net";TWP.Features.Page.RecommendedStrip.canonicalUrl="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/"})(jQuery);</script> 
+      <div class="content-strip-marker recommended rs-alt1-true"> 
+      </div> 
+     </div> 
+     <div id="article-business_1402342510843_771" class="moat-trackable pb-feature pb-chained pb-f-page-trending-strip pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-trending-strip" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-trending-strip|article-business"> 
+      <script type="text/javascript">(function($){TWP=window.TWP||{};TWP.Features=TWP.Features||{};TWP.Features.Page=TWP.Features.Page||{};TWP.Features.Page.TrendingStrip={}})(jQuery);</script> 
+      <div class="content-strip-marker trending"></div> 
+     </div> 
+     <div id="article-business_1399492834009_602" class="moat-trackable pb-feature pb-chained pb-f-page-comments pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-comments" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-comments|article-business"> 
+      <div data-allow-comments="true" class="pb-comment-wrapper lockfix "> 
+       <div id="comment_summary_pb_comments" class="comment-summary summary-expanded-mobile"> 
+        <div class="comment-summary-count">
+         <span class="fa fa-comments"></span>
+         <span id="echo_container" class="echo_container comment-vars echo-counter" guid="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/"></span>
+        </div> 
+        <div class="comment-summary-display">
+         <span class="comment-display"> Show Comments</span>
+        </div> 
+       </div> 
+       <div id="echo_container_placeholder" class="echo_container_placeholder"> 
+        <div id="echo_container_pb_comments" class="echo_container canvas comment-vars comments unprocessed defer deferMobile count submitbox stream " guid="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" allow_comments="true" allow_photos="false" allow_videos="false" commentpermalinkurlfacet="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" defaultsort="reverseChronological" defaulttab="all" isallcomments="true" includepause="true" includepermalink="false" includerecommend="true" includereport="true" includereply="true" includeshare="true" includesorts="true" includetabs="" includeverifiedcommenters="true" includevoteofftopic="false" markerdisplay="'post_commenter':'Post Commenter','staff':'Post Writer','top_commenter':'Post Forum','top_local':'Washingtologist','top_sports':'SuperFan','fact_checker':'Fact Checker','post_recommended':'Post Recommended','world_watcher':'World Watcher','cultuer_connoisseur':'Culture Connoisseur','weather_watcher':'Capital Weather Watcher','post_contributor':'Post Contributor'" markersall="" maxitems="7" maxitemstop="2" moderationrequired="" primarynode="business" sectionid="" columnname="" source="washpost.com" streamid="" tabs="{}" usermarkers="" usermarkersall="" webtype="blog" data-canvas-id="washpost.com/km4ey0dajm" data-app-instance="6634zxcgfd"> 
+         <div class="echo-header-container"> 
+          <div id="comment-info-links" class="right"> 
+           <span class="discussion-policy"><a href="http://www.washingtonpost.com/blogs/ask-the-post/discussion-and-submission-guidelines/" target="_policy">Discussion Policy</a> </span> 
+          </div> 
+          <div class="comment-count-label">
+           <span class="echo-counter"></span> Comments
+          </div> 
+         </div> 
+         <div id="echo_stream_container" class="echo-stream-container echo-comment-container echo-canvas canvas canvas-methode-allcomments echo-stream" data-canvas-id="washpost.com/km4ey0dajm" data-app-instance="6634zxcgfd"> 
+         </div> 
+        </div> 
+        <div class="badgetext hide hidden"> 
+         <div id="echo-top_sports" class="echo-badge-info"> 
+          <div class="marker echo-item-user-top_sports"></div>
+          <p class="title">SuperFan Badge</p> 
+          <p>SuperFan badge holders consistently post smart, timely comments about Washington area sports and teams.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-culture_connoisseur" class="echo-badge-info"> 
+          <div class="marker echo-item-user-culture_connoisseur"></div>
+          <p class="title">Culture Connoisseur Badge</p> 
+          <p>Culture Connoisseurs consistently offer thought-provoking, timely comments on the arts, lifestyle and entertainment.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-fact_checker" class="echo-badge-info"> 
+          <div class="marker echo-item-user-fact_checker"></div>
+          <p class="title">Fact Checker Badge</p> 
+          <p>Fact Checkers contribute questions, information and facts to <a target="_badgeinfo" href="http://www.washingtonpost.com/blogs/fact-checker">The Fact Checker</a>.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-top_local" class="echo-badge-info"> 
+          <div class="marker echo-item-user-top_local"></div>
+          <p class="title">Washingtologist Badge</p> 
+          <p>Washingtologists consistently post thought-provoking, timely comments on events, communities, and trends in the Washington area.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-staff" class="echo-badge-info"> 
+          <div class="marker echo-item-user-staff" style="float:left;"></div>
+          <p class="title">Post Writer Badge</p> 
+          <p>This commenter is a Washington Post editor, reporter or producer.</p> 
+         </div> 
+         <div id="echo-top_commenter" class="echo-badge-info"> 
+          <div class="marker echo-item-user-top_commenter"></div>
+          <p class="title">Post Forum Badge</p> 
+          <p>Post Forum members consistently offer thought-provoking, timely comments on politics, national and international affairs.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-weather_watcher" class="echo-badge-info"> 
+          <div class="marker echo-item-user-weather_watcher"></div>
+          <p class="title">Weather Watcher Badge</p> 
+          <p>Weather Watchers consistently offer thought-provoking, timely comments on climates and forecasts.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-world_watcher" class="echo-badge-info"> 
+          <div class="marker echo-item-user-world_watcher"></div>
+          <p class="title">World Watcher Badge</p> 
+          <p>World Watchers consistently offer thought-provoking, timely comments on international affairs.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-post_contributor" class="echo-badge-info"> 
+          <div class="marker echo-item-user-post_contributor"></div>
+          <p class="title">Post Contributor Badge</p> 
+          <p>This commenter is a Washington Post contributor. Post contributors aren’t staff, but may write articles or columns. In some cases, contributors are sources or experts quoted in a story.</p> 
+          <p class="echo-badge-info-link"><a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">More about badges</a> | <a target="_badgeinfo" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html">Request a badge</a></p> 
+         </div> 
+         <div id="echo-post_recommended" class="echo-badge-info"> 
+          <div class="marker echo-item-marker-post_recommended"></div>
+          <p class="title">Post Recommended</p> 
+          <p>Washington Post reporters or editors recommend this comment or reader post.</p> 
+         </div> 
+         <div id="echo-anon-report"> 
+          <p>You must be logged in to report a comment.</p> 
+          <div class="inline padding-right-9">
+           <a class="echo-sign-in icon right-arrow" href=""><strong>Sign in here</strong></a>
+          </div> 
+         </div> 
+         <div id="echo-anon-recommend"> 
+          <p>You must be logged in to recommend a comment.</p> 
+          <div class="inline padding-right-9">
+           <a class="echo-sign-in icon right-arrow" href=""><strong>Sign in here</strong></a>
+          </div> 
+         </div> 
+         <div id="echo-comments-overview"> 
+          <p>Comments our editors find particularly useful or relevant are displayed in <strong>Top Comments</strong>, as are comments by users with these badges: <strong><span class="badge-list"></span></strong>. Replies to those posts appear here, as well as posts by staff writers.</p>
+          <p>All comments are posted in the <strong>All Comments</strong> tab.</p> 
+          <div class="inline padding-right-9 left">
+           <a class="icon right-arrow" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html"><strong>More about badges</strong></a>
+          </div>
+          <div class="inline padding-right-9 right">
+           <a class="icon right-arrow" href="http://www.washingtonpost.com/wp-srv/interactivity/get-a-badge.html"><strong>Get a badge</strong></a>
+          </div> 
+          <div class="clear padding-top-10"> 
+           <p>To pause and restart automatic updates, click &quot;Live&quot; or &quot;Paused&quot;. If paused, you'll be notified of the number of additional comments that have come in.</p> 
+          </div> 
+         </div> 
+         <div id="echo-more-comments-top"> 
+          <div style="font-size: 11px;">
+           <br />Comments our editors find particularly useful or relevant are displayed in 
+           <strong>Top Comments</strong>, as are comments by users with these badges: 
+           <strong><span class="badge-list"></span></strong>. Replies to those posts appear here, as well as posts by staff writers.
+          </div> 
+         </div> 
+        </div> 
+        <div class="hide hidden utils"> 
+         <div id="comment-flag-container"> 
+          <div id="comment-flag-list"> 
+           <div class="arrow-one"></div> 
+           <div class="arrow-two"></div> 
+           <div class="flag-list"> 
+            <ul> 
+             <li id="flag-spam" class="report-button">Spam</li> 
+             <li id="flag-offensive" class="report-button">Offensive</li> 
+             <li id="flag-disagree" class="report-button">Disagree</li> 
+             <li id="flag-offtopic" class="report-button">Off-Topic</li> 
+            </ul> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <!--[if IE 7]><style type="text/css">.comment-share-info #newsharebar li .more{position:relative;margin-left:-220px}.comment-share-info #newsharebar li .morebottom{height:110px;position:relative;top:10px;z-index:998}.comment-share-info #newsharebar li .morebottom .left,.comment-share-info #newsharebar li .morebottom .right{z-index:1000;height:110px}.comment-share-info #newsharebar li .morebottom ul li{width:100px}.comment-share-info #newsharebar li .arrow-one,.comment-share-info #newsharebar li .arrow-two{position:absolute;z-index:999;left:229px}.comment-share-info #newsharebar li .arrow-one{top:9px}.comment-share-info #newsharebar li .arrow-two{top:11px}</style><![endif]--> 
+        <div class="comment-share-info hide hidden"> 
+         <div id="newsharebar"> 
+          <div class="newshare"> 
+           <ul class="share mega-menu inline-list"> 
+            <li class="sharetop"> 
+             <div class="more" style="display: none;"> 
+              <div class="arrow-one"></div> 
+              <div class="arrow-two"></div> 
+              <div class="morebottom"> 
+               <div class="left"> 
+                <ul> 
+                 <li>
+                  <div class="shareitems facebook"></div> <a href="javascript:void(0)" class="facebook-link" onclick="window.open('http://www.facebook.com/share.php?u={shareURL}','','width=658,height=354,scrollbars=no');return false;">Facebook</a></li> 
+                 <li>
+                  <div class="shareitems twitter"></div> <a href="javascript:void(0)" onclick="window.open('http://www.twitter.com/intent/tweet?text={headline}&amp;url={shareURL}','','width=550, height=350, scrollbars=no')">Twitter</a></li> 
+                 <li>
+                  <div class="shareitems reddit"></div> <a href="javascript:void(0)" onclick="window.open('http://reddit.com/submit?url={shareURL}%3Ftid%3Dsm_btn_reddit&amp;title={headline}','','width=550, height=350, scrollbars=no')">Reddit</a></li> 
+                </ul> 
+               </div> 
+               <div class="right"> 
+                <ul> 
+                 <li>
+                  <div class="shareitems stumbleupon"></div><a href="http://www.stumbleupon.com/submit?url={shareURL}%3Ftid%3Dsm_btn_su&amp;title={headline}">StumbleUpon</a></li> 
+                 <li>
+                  <div class="shareitems digg"></div> <a href="http://digg.com/submit?phase=2&amp;url={shareURL}%3Ftid%3Dsm_btn_digg&amp;title={headline}">Digg</a></li> 
+                 <li>
+                  <div class="shareitems delicious"></div> <a href="http://www.delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url={shareURL}%3Ftid%3Dsm_btn_delicious&amp;title={headline}">Delicious</a></li> 
+                </ul> 
+               </div> 
+               <div style="clear:both;"></div> 
+              </div> 
+             </div> </li> 
+           </ul> 
+          </div> 
+         </div> 
+        </div>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="right-rail" class="pb-layout-item pb-chain pb-one col-lg-4 col-md-4 col-sm-12 col-xs-12 right-rail" data-pb-columns="1"> 
+     <div id="rzchwozzutoatieqlcqmuow_1421785167982_543" class="moat-trackable pb-feature pb-chained pb-f-page-newsletter pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-newsletter" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-newsletter|article-business"> 
+      <div id="newsLetter-signup-box" class="pb-feature-inside-wrapper "> 
+       <p id="newsletter-section">business</p> 
+       <p id="newsletter-subsection"></p> 
+       <p id="newsletter-blogname">wonkblog</p> 
+       <p class="headline" id="newsletter-headline"></p> 
+       <p class="title" id="newsletter-tagline"></p> 
+       <form method="post" action="http://link.washingtonpost.com/s"> 
+        <input type="text" name="email" id="newsLetter-input" class="newsLetter-field" placeholder="E-mail address" /> 
+        <input type="submit" value="Add" class="newsLetter-btn" id="subscribe-newsLetter" /> 
+        <input type="hidden" name="template" value="" id="template-var" /> 
+        <input type="hidden" name="vars[simple_signup]" value="1" /> 
+        <input type="hidden" name="vars[simple]" value="1" /> 
+        <input type="hidden" name="" value="1" id="variable-var" /> 
+        <input type="hidden" name="redirect" value="" id="redirect-url" /> 
+       </form> 
+       <p class="newsLetter-error-msg"> Please enter a valid email address </p> 
+      </div> 
+     </div> 
+     <div id="article-business_1409240003194_922" class="moat-trackable pb-feature pb-chained pb-f-ad-flex pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="ad-flex" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="ad-flex|article-business"> 
+      <div id="slug_flex_ss_bb_hp" class="pb-ad-container" style="display:none;" data-ad-type="flex_ss_bb_hp"></div> 
+     </div> 
+     <div id="article-business_1409240010906_564" class="moat-trackable pb-feature pb-chained pb-f-page-post-most pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-post-most" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-post-most|article-business"> 
+      <div id="post-most-rr" class="post-most"> 
+       <div class="header-mobile-border"></div> 
+       <div class="pb-module-header">
+        Most Read 
+        <span class="section">Business</span>
+       </div> 
+       <ul class="large def-feed"> 
+        <li> <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/a-scientific-explanation-of-what-makes-indian-food-so-delicious/?tid=pm_business_pop"> 
+          <div class="number left">
+           1
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/wonkblog/201503/Images/iStock_000026844728_Full1425323581.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/wonkblog/201503/Images/iStock_000026844728_Full1425323581.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Scientists have figured out what makes Indian food so delicious
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/blogs/the-switch/wp/2015/03/03/freak-flaw-undermines-security-for-apple-and-google-users-researchers-discover/?tid=pm_business_pop"> 
+          <div class="number left">
+           2
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/the-switch/201503/Images/Screen-Shot-2013-10-09-at-1.00.08-PM.png" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/the-switch/201503/Images/Screen-Shot-2013-10-09-at-1.00.08-PM.png" width="138" height="92" /> 
+          <div class="headline ">
+           'FREAK' flaw undermines security for Apple and Google users, researchers discover
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/business/economy/netanyahu-says-us-is-on-verge-of-bad-deal-with-iran-over-nuclear-program/2015/03/03/8dbb2774-c1c8-11e4-ad5c-3b8ce89f1b89_story.html?tid=pm_business_pop"> 
+          <div class="number left">
+           3
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/2010-2019/WashingtonPost/2015/03/03/National-Enterprise/Videos/Images/20150303_netanyahu_3.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/2010-2019/WashingtonPost/2015/03/03/National-Enterprise/Videos/Images/20150303_netanyahu_3.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Netanyahu says U.S. is on verge of 'bad deal' with Iran over nuclear program
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/02/dea-warns-of-stoned-rabbits-if-utah-passes-medical-marijuana/?tid=pm_business_pop"> 
+          <div class="number left">
+           4
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/wonkblog/201503/Images/8742229679_6d16d24630_k.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/wonkblog/201503/Images/8742229679_6d16d24630_k.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           DEA warns of stoned rabbits if Utah passes medical marijuana
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li class="last"> <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/01/this-is-the-best-explanation-of-gerrymandering-you-will-ever-see/?tid=pm_business_pop"> 
+          <div class="number left">
+           5
+          </div> 
+          <div class="headline no-photo">
+           This is the best explanation of gerrymandering you will ever see
+          </div> 
+          <div class="clear"></div> </a> </li> 
+       </ul> 
+       <ul class="large alt-feed"> 
+        <li> <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/a-scientific-explanation-of-what-makes-indian-food-so-delicious/?tid=pm_business_pop_b"> 
+          <div class="number left">
+           1
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/wonkblog/201503/Images/iStock_000026844728_Full1425323581.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/wonkblog/201503/Images/iStock_000026844728_Full1425323581.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Scientists have figured out what makes Indian food so delicious
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/business/economy/netanyahu-says-us-is-on-verge-of-bad-deal-with-iran-over-nuclear-program/2015/03/03/8dbb2774-c1c8-11e4-ad5c-3b8ce89f1b89_story.html?tid=pm_business_pop_b"> 
+          <div class="number left">
+           2
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/post-politics/201503/Images/US_Israel_Netanyahu-00848-018.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/post-politics/201503/Images/US_Israel_Netanyahu-00848-018.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Netanyahu says U.S. is on verge of ‘bad deal’ with Iran over nuclear program
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/02/dea-warns-of-stoned-rabbits-if-utah-passes-medical-marijuana/?tid=pm_business_pop_b"> 
+          <div class="number left">
+           3
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/wonkblog/201503/Images/8742229679_6d16d24630_k.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/wonkblog/201503/Images/8742229679_6d16d24630_k.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           DEA warns of stoned rabbits if Utah passes medical marijuana
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li> <a href="http://www.washingtonpost.com/news/energy-environment/wp/2015/03/03/proof-hes-the-science-guy-bill-nye-is-changing-his-mind-about-gmos/?tid=pm_business_pop_b"> 
+          <div class="number left">
+           4
+          </div> <img class="photo right small-img" src="http://img.washingtonpost.com/rf/image_60x60/WashingtonPost/Content/Blogs/energy-environment/201503/Images/Evolution_Debate-09a1a.jpg" width="60" height="60" /> <img class="photo right big-img" src="http://img.washingtonpost.com/rf/image_138x92/WashingtonPost/Content/Blogs/energy-environment/201503/Images/Evolution_Debate-09a1a.jpg" width="138" height="92" /> 
+          <div class="headline ">
+           Proof he’s the Science Guy: Bill Nye is changing his mind about GMOs
+          </div> 
+          <div class="clear"></div> </a> </li> 
+        <li class="last"> <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/01/this-is-the-best-explanation-of-gerrymandering-you-will-ever-see/?tid=pm_business_pop_b"> 
+          <div class="number left">
+           5
+          </div> 
+          <div class="headline no-photo">
+           This is the best explanation of gerrymandering you will ever see
+          </div> 
+          <div class="clear"></div> </a> </li> 
+       </ul> 
+       <div id="slug_postmost" data-ad-type="postmost" style="display:none;width:100%;"></div> 
+      </div> 
+     </div> 
+     <div id="article-business_1410205915966_362" class="moat-trackable pb-feature pb-chained pb-f-most-sidebar pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="most-sidebar" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="most-sidebar|article-business"> 
+      <style>.the-most ul.large li{display:none}</style> 
+      <div id="the-most-rr" class="the-most"> 
+       <div class="header-mobile-border"></div> 
+       <div class="pb-module-header">
+        <a class="the-most-sb-header" href="http://www.washingtonpost.com/themost?tid=themost_sb_header">The Most <span class="section">Popular All Over</span></a>
+       </div> 
+       <ul class="large"> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.stltoday.com/tncms/asset/editorial/ef6a0bb2-b7c0-5c2b-b9fc-f849a888322b/"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/7/48/748e9d7c-497f-52a1-a290-b66f4d858269/54f51dfe23a12.image.jpg?resize=300%2C212&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/7/48/748e9d7c-497f-52a1-a290-b66f4d858269/54f51dfe23a12.image.jpg?resize=300%2C212&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.stltoday.com"> 
+           <div class="feedname">
+            St. Louis Post-Dispatch
+           </div> </a> 
+          <a target="_blank" href="http://www.stltoday.com/tncms/asset/editorial/ef6a0bb2-b7c0-5c2b-b9fc-f849a888322b/"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Riverfront stadium gets new frills, keeps some historic buildings
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="https://www.thedodo.com/dogs-in-deep-snow-1021626946.html"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=https://assets.rbl.ms/569711/300x.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=https://assets.rbl.ms/569711/300x.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.thedodo.com"> 
+           <div class="feedname">
+            The Dodo
+           </div> </a> 
+          <a target="_blank" href="https://www.thedodo.com/dogs-in-deep-snow-1021626946.html"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             12 Dogs Who Really Didn't Expect The Snow To Be This Deep
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.wnyc.org/story/family-business-xi-famous-foods/"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=https://media2.wnyc.org/i/1500/1000/c/80/1/xianfamousfoods_getty.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=https://media2.wnyc.org/i/1500/1000/c/80/1/xianfamousfoods_getty.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.wnyc.org"> 
+           <div class="feedname">
+            WNYC - New York Public Radio
+           </div> </a> 
+          <a target="_blank" href="http://www.wnyc.org/story/family-business-xi-famous-foods/"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             The Family Business: Xi'an Famous Foods
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.theatlantic.com/health/archive/2015/03/the-abominable-k-cup-coffee-pod-environment-problem/386501/"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://cdn.theatlantic.com/static/newsroom/img/mt/2015/03/0130_KCups_1-1/lead_large.jpg?nkndjp&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://cdn.theatlantic.com/static/newsroom/img/mt/2015/03/0130_KCups_1-1/lead_large.jpg?nkndjp&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.theatlantic.com"> 
+           <div class="feedname">
+            The Atlantic
+           </div> </a> 
+          <a target="_blank" href="http://www.theatlantic.com/health/archive/2015/03/the-abominable-k-cup-coffee-pod-environment-problem/386501/"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             A Brewing Problem
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.baltimoresun.com/sports/orioles/bs-sp-schmuck-column-0304-20150303-column.html?track=rss"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.trbimg.com/img-54f64155/turbine/bs-sp-schmuck-column-0304-20150303&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.trbimg.com/img-54f64155/turbine/bs-sp-schmuck-column-0304-20150303&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.baltimoresun.com"> 
+           <div class="feedname">
+            The Baltimore Sun
+           </div> </a> 
+          <a target="_blank" href="http://www.baltimoresun.com/sports/orioles/bs-sp-schmuck-column-0304-20150303-column.html?track=rss"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Adam Jones: 'I deserve a little bit of respect' from Orioles front office
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.pri.org/stories/2015-03-02/perhaps-worlds-most-humble-leader-humbly-steps-down"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://pri-113a.kxcdn.com/sites/default/files/styles/story_main/public/story/images/mujica.jpg?itok=YGvJELCn&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://pri-113a.kxcdn.com/sites/default/files/styles/story_main/public/story/images/mujica.jpg?itok=YGvJELCn&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.pri.org"> 
+           <div class="feedname">
+            PRI
+           </div> </a> 
+          <a target="_blank" href="http://www.pri.org/stories/2015-03-02/perhaps-worlds-most-humble-leader-humbly-steps-down"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Perhaps the world's most humble leader — humbly steps down
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.toledoblade.com/local/2015/03/03/National-Socialists-plan-April-18-rally.html"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.toledoblade.com/image/2015/03/03/600x_a4-3_cCM/CTY-Nazi10p-2005.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.toledoblade.com/image/2015/03/03/600x_a4-3_cCM/CTY-Nazi10p-2005.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.toledoblade.com"> 
+           <div class="feedname">
+            The Toledo Blade
+           </div> </a> 
+          <a target="_blank" href="http://www.toledoblade.com/local/2015/03/03/National-Socialists-plan-April-18-rally.html"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             National Socialists to return to Toledo
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.washingtonpost.com/politics/decrying-insult-some-democrats-seethe-after-netanyahu-address/2015/03/03/2414c30c-c1c8-11e4-9271-610273846239_story.html?tid=pm_pop"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/rf/image_1024w/2010-2019/Wires/Videos/2015-03-03/AP/Images/Congress_Netanyahu-05b6d.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.washingtonpost.com/rf/image_1024w/2010-2019/Wires/Videos/2015-03-03/AP/Images/Congress_Netanyahu-05b6d.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.washingtonpost.com"> 
+           <div class="feedname">
+            The Washington Post
+           </div> </a> 
+          <a target="_blank" href="http://www.washingtonpost.com/politics/decrying-insult-some-democrats-seethe-after-netanyahu-address/2015/03/03/2414c30c-c1c8-11e4-9271-610273846239_story.html?tid=pm_pop"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Decrying 'insult,' House Democrats seethe after Netanyahu address
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+        <li> 
+         <div class="outer-div"> 
+          <a target="_blank" href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"> <img height="60" width="60" class="photo right small-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg.CROP.rectangle-large.jpg&amp;h=60&amp;w=60" /> <img height="92" width="138" class="photo right big-img" src="http://img.washingtonpost.com/wp-apps/imrs.php?src=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg.CROP.rectangle-large.jpg&amp;h=92&amp;w=138" /> </a> 
+          <a target="_blank" href="http://www.slate.com"> 
+           <div class="feedname">
+            Slate
+           </div> </a> 
+          <a target="_blank" href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"> 
+           <div class="line-outer"> 
+            <div class="line headline">
+             Netanyahu Just Did Obama a Big Favor
+            </div> 
+           </div> </a> 
+         </div> 
+         <div class="clear"></div> </li> 
+       </ul> 
+       <a href="http://www.washingtonpost.com/themost?tid=themost_sb_img"> <img width="100%" src="/pb/resources/img/themost-290x60.png" /> </a> 
+      </div> 
+     </div> 
+     <div id="article-business_1409240017498_319" class="moat-trackable pb-feature pb-chained pb-f-ad-flex-2 pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="ad-flex-2" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="ad-flex-2|article-business"> 
+      <div id="slug_flex_ss_bb_hp_2" class="pb-ad-container" style="display:none;" data-ad-type-placeholder="flex_ss_bb_hp|2" data-ad-delivery="vi"></div> 
+     </div> 
+     <div id="article-business_1414477165152_294" class="moat-trackable pb-feature pb-chained pb-f-games-gamesWidget pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="games-gamesWidget" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="games-gamesWidget|article-business"> 
+      <div class="right-rail game-module position-rel html5"> 
+       <div class="games-intro"> 
+        <h4>Our Online Games</h4> 
+        <p>Play right from this page</p> 
+       </div> 
+       <div class="position-abs on-right game-player-container ghide"> 
+        <div class="position-rel full-width full-height game-player-container-inner overflow-hidden"> 
+         <iframe frameborder="0"></iframe> 
+         <img class="screenshot position-abs on-left" /> 
+        </div> 
+        <div class="close-button position-abs">
+         <i class="fa fa-2x fa-times-circle"></i>
+        </div> 
+       </div> 
+       <div class="full-width module component"> 
+        <div class="game-widgets-container position-rel"> 
+         <div id="online-game-carousel-right-rail"> 
+          <ul class="games"> 
+           <li> <a data-toggle="game-trigger" href="javascript:void(0)" class="clear block flash"> 
+             <div class="game-item" onlineembeddedgameurl="http://games.washingtonpost.com/API/en-US/games/sudoku/flash?type=gamesembed" onlinegamecodelanguage="flash" iframewidth="650px" iframeheight="470"> 
+              <img src="http://cdn.arenaconnect.arkadiumhosted.com/games-storage/sudoku/img/148x148.png" alt="sudoku" /> 
+              <div> 
+               <h4>Sudoku</h4> 
+               <h5>Genre(s):</h5>
+               <span>&nbsp;&nbsp;Strategy</span> 
+               <p> Put on your Sudoku hat and get ready for a challenging Sudoku puzzle! </p> 
+              </div> 
+             </div> </a> </li> 
+           <li> <a data-toggle="game-trigger" href="javascript:void(0)" class="clear block flash"> 
+             <div class="game-item" onlineembeddedgameurl="http://games.washingtonpost.com/API/en-US/games/daily-crossword/flash?type=gamesembed" onlinegamecodelanguage="flash" iframewidth="650px" iframeheight="450"> 
+              <img src="http://cdn.arenaconnect.arkadiumhosted.com/games-storage/daily-crossword/img/148x148.png" alt="daily-crossword" /> 
+              <div> 
+               <h4>Daily Crossword</h4> 
+               <h5>Genre(s):</h5>
+               <span>&nbsp;&nbsp;Word</span> 
+               <p> Same fun of crosswords but online! </p> 
+              </div> 
+             </div> </a> </li> 
+           <li> <a data-toggle="game-trigger" href="javascript:void(0)" class="clear block flash"> 
+             <div class="game-item" onlineembeddedgameurl="http://games.washingtonpost.com/API/en-US/games/just-words/flash?type=gamesembed" onlinegamecodelanguage="flash" iframewidth="650px" iframeheight="455"> 
+              <img src="http://amsarkadium-a.akamaihd.net/assets/80A67319-A53A-42DF-AFBE-56492553AF10/game/masque-just-words/cd871f3f-efdf-4ae5-999b-7b2b914e3723/148x148.png" alt="masque-just-words" /> 
+              <div> 
+               <h4>Just Words</h4> 
+               <h5>Genre(s):</h5>
+               <span>&nbsp;&nbsp;Word</span> 
+               <p> Get ready to be wowed with wonderful word fun! </p> 
+              </div> 
+             </div> </a> </li> 
+           <li> <a data-toggle="game-trigger" href="javascript:void(0)" class="clear block html5"> 
+             <div class="game-item" onlineembeddedgameurl="http://games.washingtonpost.com/API/en-US/games/trizzle/html5?type=gamesembed" onlinegamecodelanguage="html5" iframewidth="650px" iframeheight="0"> 
+              <img src="http://cdn.arenaconnect.arkadiumhosted.com/games-storage/html5-trizzle/img/292x194.png" alt="html5-trizzle" /> 
+              <div> 
+               <h4>Trizzle</h4> 
+               <h5>Genre(s):</h5>
+               <span>&nbsp;&nbsp;Strategy</span> 
+               <p> Experience the joy of Trizzle! </p> 
+              </div> 
+             </div> </a> </li> 
+          </ul> 
+         </div> 
+         <a href="#" id="ui-carousel-prev" class="up-arrow position-abs on-top on-right"><i class="icon-chevron-up icon-2x"></i></a> 
+         <a href="#" id="ui-carousel-next" class="down-arrow position-abs on-bottom on-right"><i class="icon-chevron-down icon-2x"></i></a> 
+        </div> 
+       </div> 
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div id="article-business_1409240022429_936" class="moat-trackable pb-feature pb-chained pb-f-page-moneta-8 pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-moneta-8" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-moneta-8|article-business"> 
+      <div id="rev_ad_8"></div> 
+     </div> 
+     <div id="article-business_1409240029666_516" class="moat-trackable pb-feature pb-chained pb-f-page-editors-picks pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-editors-picks" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-editors-picks|article-business"> 
+     </div> 
+     <div id="article-business_1409240036732_683" class="moat-trackable pb-feature pb-chained pb-f-page-footer-v2 pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="page-footer-v2" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-footer-v2|article-business"> 
+      <ul class="footer-v2 plain"> 
+       <li><a href="http://www.washingtonpost.com"><b>washingtonpost.com</b></a></li> 
+       <li>&copy; 1996-2015 The Washington Post</li> 
+       <li>&nbsp;</li> 
+       <li><a href="http://www.washingtonpost.com/actmgmt/help/">Help and Contact Us</a></li> 
+       <li><a href="http://www.washingtonpost.com/terms-of-service/2011/11/18/gIQAldiYiN_story.html">Terms of Service</a></li> 
+       <li><a href="http://www.washingtonpost.com/privacy-policy/2011/11/18/gIQASIiaiN_story.html">Privacy Policy</a></li> 
+       <li><a href="http://www.washingtonpost.com/discussion-and-submission-guidelines/2011/11/21/gIQAuvIbiN_story.html">Submissions and Discussion Policy</a></li> 
+       <li><a href="http://www.washingtonpost.com/rss-terms-of-service/2012/01/16/gIQAadFYAQ_story.html">RSS Terms of Service</a></li> 
+       <li><a href="http://www.washingtonpost.com/how-can-i-opt-out-of-online-advertising-cookies/2011/11/18/gIQABECbiN_story.html">Ad Choices</a></li> 
+      </ul> 
+     </div> 
+     <div id="article-business_1409240042494_825" class="moat-trackable pb-feature pb-chained pb-f-ad-flex-3 pb-f-theme-normal" data-pb-async="false" data-pb-columns="" data-pb-name="ad-flex-3" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="ad-flex-3|article-business"> 
+      <div id="slug_flex_ss_bb_hp_3" class="pb-ad-container" style="display:none;" data-ad-type-placeholder="flex_ss_bb_hp|3" data-ad-delivery="vi"></div> 
+     </div> 
+    </div>
+   </div> 
+   <div id="article-business_1401912648216_112" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-article-next-story pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="article-next-story" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="article-next-story|article-business"> 
+    <div class="next-story-wrapper"> 
+     <div class="next-story has-bg-photo">
+      <div class="kicker">
+       Next Story
+      </div>
+      <div class="heading heading2">
+       <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/what-the-debate-over-amnesty-bonuses-reveals-about-the-gops-immigration-problem/">What the debate over &quot;amnesty bonuses&quot; reveals about the GOP's immigration problem</a>
+      </div>
+      <div class="sigline">
+       <span class="author">Max Ehrenfreund</span> &middot; 
+       <span class="date">7 hours ago</span>
+      </div>
+     </div> 
+     <a href="http://www.washingtonpost.com/blogs/wonkblog/wp/2015/03/03/what-the-debate-over-amnesty-bonuses-reveals-about-the-gops-immigration-problem/"><span id="next-story-bg" class="next-story-bg" style="background:url('http://www.washingtonpost.com/blogs/wp-content/themes/wapo-blogs-v2/imrs.php?w=250&amp;h=250&amp;src=http://www.washingtonpost.com/blogs/wonkblog/files/2015/01/AP100609081037.jpg') no-repeat center top;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></span></a> 
+    </div> 
+    <script type="text/javascript">(function($){TWP=window.TWP||{};TWP.Features=TWP.Features||{};TWP.Features.Article=TWP.Features.Article||{};TWP.Features.Article.NextStory=TWP.Features.Article.NextStory||{};TWP.Features.Article.NextStory.tnUrl="http://www.washingtonpost.com/blogs/wonkblog/files/2015/01/AP100609081037.jpg"})(jQuery);</script> 
+   </div> 
+   <div id="article-business_1401913151279_677" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-ad-leaderboard-2 pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="ad-leaderboard-2" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="ad-leaderboard-2|article-business"> 
+    <div id="slug_leaderboard_bottom" data-ad-type="leaderboard_bottom" class="pb-ad-container leaderboard-2" style="display:none;"> 
+    </div> 
+   </div> 
+   <div class="pb-scatter"> 
+    <div id="rzchwozzutoatieqlcqmuow_1423588473636_766" class="moat-trackable pb-layout-item pb-feature pb-one pb-f-page-clavis pb-f-theme-normal" data-pb-async="false" data-pb-columns="1" data-pb-name="page-clavis" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-clavis|article-business"> 
+     <script>try{if(wp_meta_data){if(!wp_meta_data.clavis){wp_meta_data.clavis={}}(function(){var clavisArray=[];var clavisNames=[];clavisArray.push("RW0");clavisNames.push("Child 2");clavisArray.push("KTT");clavisNames.push("New Auxiliary 30");clavisArray.push("sa6");clavisNames.push("New Auxiliary 37");clavisArray.push("4hr");clavisNames.push("New Auxiliary 38");clavisArray.push("g5c");clavisNames.push("New Auxiliary 39");clavisArray.push("3fv");clavisNames.push("New Auxiliary 40");clavisArray.push("8z8");clavisNames.push("Aux 100714");clavisArray.push("z0s");clavisNames.push("Copy of New Auxiliary 20");clavisArray.push("n8g");clavisNames.push("Copy of New Auxiliary 20");clavisArray.push("5k4");clavisNames.push("China_HongKong%20Exclusion%2012-12-14");clavisArray.push("7f3");clavisNames.push("Copy of New Auxiliary 26");clavisArray.push("14h");clavisNames.push("Investing%20Gurus%202.12.15");clavisArray.push("lf3");clavisNames.push("Family%20Matter%202.12.15");clavisArray.push("o95");clavisNames.push("Copy%20of%20Investing%20Gurus%202.12.15");wp_meta_data.clavis.auxiliaries=clavisArray;wp_meta_data.clavis.auxiliary_names=clavisNames})()}}catch(e){};</script> 
+    </div> 
+    <div id="rzchwozzutoatieqlcqmuow_1424205096940_6" class="moat-trackable pb-layout-item pb-feature pb-one pb-f-page-targeting pb-f-theme-normal" data-pb-async="false" data-pb-columns="1" data-pb-name="page-targeting" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="page-targeting|article-business"> 
+    </div> 
+   </div> 
+   <div id="article-business_1415646289433_293" class="moat-trackable pb-layout-item pb-feature pb-three pb-f-bi-abtest pb-f-theme-normal" data-pb-async="false" data-pb-columns="3" data-pb-name="bi-abtest" data-pb-content-uri="/pb/blogs/wonkblog/wp/2015/03/03/unplanned-pregnancies-cost-taxpayers-21-billion-each-year/" data-pb-content-editable="" moat-id="bi-abtest|article-business"> 
+    <script>var TWP=window.TWP||{};(function(w,usrValue,undefined){var usr=w.TWP.ABTestUser=usrValue;w._abtemptyfn=function(){return undefined}})(window,{trackPageviewEventBefore:"onTwpMeterComplete.omniture"||"abtest-noevent",trackPageviewEventAfter:"afterTwpPageTrack.omniture"||"abtest-noevent",trackSetHandler:"TWP.ABTestMfr.track.omniture.trackSetHandler"||"_abtemptyfn",trackUnsetHandler:"TWP.ABTestMfr.track.omniture.trackUnsetHandler"||"_abtemptyfn",trackSendHandler:"s.sendDataToOmniture"||"_abtemptyfn",trackValueDelimeter:","||","});</script> 
+    <script>TWP.ABTestBucket=TWP.ABTestBucket||[];TWP.ABTestBucket.push({"name":"recommendation","features":[{"name":"recommendation-strip","active":true,"increment":0,"end":"1424062800000","_token":"76dde4","defaultTrack":[{"name":"list1","dynamic":false,"value":"recommendation-strip:default"},{"name":"prop56","dynamic":false,"value":"recommendation-strip:default"},{"name":"list1","dynamic":false,"value":"recommendation-strip-76dde4"},{"name":"prop56","dynamic":false,"value":"recommendation-strip-76dde4"}],"variations":[{"customOptions":{"target":"33"},"name":"alt1","track":[{"name":"list1","dynamic":false,"value":"recommendation-strip:alt1"},{"name":"prop56","dynamic":false,"value":"recommendation-strip:alt1"},{"name":"list1","dynamic":false,"value":"recommendation-strip-76dde4"},{"name":"prop56","dynamic":false,"value":"recommendation-strip-76dde4"}]},{"customOptions":{"target":"33"},"name":"sidebar_alt1","track":[{"name":"list1","dynamic":false,"value":"recommendation-strip:sidebar_alt1"},{"name":"prop56","dynamic":false,"value":"recommendation-strip:sidebar_alt1"},{"name":"list1","dynamic":false,"value":"recommendation-strip-76dde4"},{"name":"prop56","dynamic":false,"value":"recommendation-strip-76dde4"}]}]},{"name":"recommendation-mostread","active":true,"increment":1,"end":"1425618000000","_token":"5af7e9","defaultTrack":[{"name":"list1","dynamic":false,"value":"recommendation-mostread:default"},{"name":"prop56","dynamic":false,"value":"recommendation-mostread:default"},{"name":"list1","dynamic":false,"value":"recommendation-mostread-5af7e9"},{"name":"prop56","dynamic":false,"value":"recommendation-mostread-5af7e9"}],"variations":[{"customOptions":{"target":"5"},"name":"chartbeat","track":[{"name":"list1","dynamic":false,"value":"recommendation-mostread:chartbeat"},{"name":"prop56","dynamic":false,"value":"recommendation-mostread:chartbeat"},{"name":"list1","dynamic":false,"value":"recommendation-mostread-5af7e9"},{"name":"prop56","dynamic":false,"value":"recommendation-mostread-5af7e9"}]}]}],"disabled":false});TWP.ABTestBucket.push({"name":"dummy","features":[{"name":"dummy-feature","active":true,"reglock":false,"end":"1418965200000","throttle":3.3333333333333335,"_token":"14376b","defaultTrack":[{"name":"list1","dynamic":false,"value":"dummy-feature:default"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}],"variations":[{"customOptions":{"target":"20"},"name":"easy1","track":[{"name":"list1","dynamic":false,"value":"dummy-feature:easy1"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}]},{"customOptions":{"target":"10"},"name":"easy2","track":[{"name":"list1","dynamic":false,"value":"dummy-feature:easy2"},{"name":"list1","dynamic":false,"value":"dummy-feature-14376b"}]}]}],"disabled":false});TWP.ABTestBucket.push({"name":"header","features":[{"name":"header-mastHead2","active":false,"increment":0,"end":"1416805200000","_token":"c15b6c","blacklist":{"referrers":["","washingtonpost.com"],"track":[{"name":"list1","dynamic":false,"value":"header-mastHead2:direct"}]},"defaultTrack":[{"name":"list1","dynamic":false,"value":"header-mastHead2:default"},{"name":"list1","dynamic":false,"value":"header-mastHead2-c15b6c"}],"variations":[{"customOptions":{"target":"5"},"name":"logoLarge","track":[{"name":"list1","dynamic":false,"value":"header-mastHead2:logoLarge"},{"name":"list1","dynamic":false,"value":"header-mastHead2-c15b6c"}]}]},{"name":"header-leaderboard","active":false,"increment":0,"end":"1423630800000","_token":"1f6567","defaultTrack":[{"name":"list1","dynamic":false,"value":"header-leaderboard:default"},{"name":"list1","dynamic":false,"value":"header-leaderboard-1f6567"}],"variations":[{"customOptions":{"target":"20"},"name":"below_sharebar","track":[{"name":"list1","dynamic":false,"value":"header-leaderboard:below_sharebar"},{"name":"list1","dynamic":false,"value":"header-leaderboard-1f6567"}]}]}],"disabled":false});TWP.ABTestBucket.push({"name":"subscription","features":[{"name":"subscription-popup","active":false,"increment":0,"end":"1425531600000","_token":"cb51bd","defaultTrack":[{"name":"list1","dynamic":false,"value":"subscription-popup:default"},{"name":"prop56","dynamic":false,"value":"subscription-popup:default"},{"name":"list1","dynamic":false,"value":"subscription-popup-cb51bd"},{"name":"prop56","dynamic":false,"value":"subscription-popup-cb51bd"}],"variations":[{"customOptions":{"target":"20"},"name":"enabled","track":[{"name":"list1","dynamic":false,"value":"subscription-popup:enabled"},{"name":"prop56","dynamic":false,"value":"subscription-popup:enabled"},{"name":"list1","dynamic":false,"value":"subscription-popup-cb51bd"},{"name":"prop56","dynamic":false,"value":"subscription-popup-cb51bd"}]}]},{"name":"subscription-mobilePopup","active":true,"increment":0,"end":"1426132800000","_token":"26a8c3","defaultTrack":[{"name":"list1","dynamic":false,"value":"subscription-mobilePopup:default"},{"name":"prop56","dynamic":false,"value":"subscription-mobilePopup:default"},{"name":"list1","dynamic":false,"value":"subscription-mobilePopup-26a8c3"},{"name":"prop56","dynamic":false,"value":"subscription-mobilePopup-26a8c3"}],"variations":[{"customOptions":{"target":"5"},"name":"enabled","track":[{"name":"list1","dynamic":false,"value":"subscription-mobilePopup:enabled"},{"name":"prop56","dynamic":false,"value":"subscription-mobilePopup:enabled"},{"name":"list1","dynamic":false,"value":"subscription-mobilePopup-26a8c3"},{"name":"prop56","dynamic":false,"value":"subscription-mobilePopup-26a8c3"}]}]},{"name":"subscription-rightRailText","active":true,"increment":0,"end":"1425618000000","_token":"419734","defaultTrack":[{"name":"list1","dynamic":false,"value":"subscription-rightRailText:default"},{"name":"prop56","dynamic":false,"value":"subscription-rightRailText:default"},{"name":"list1","dynamic":false,"value":"subscription-rightRailText-419734"},{"name":"prop56","dynamic":false,"value":"subscription-rightRailText-419734"}],"variations":[{"customOptions":{"target":"25"},"name":"version2","track":[{"name":"list1","dynamic":false,"value":"subscription-rightRailText:version2"},{"name":"prop56","dynamic":false,"value":"subscription-rightRailText:version2"},{"name":"list1","dynamic":false,"value":"subscription-rightRailText-419734"},{"name":"prop56","dynamic":false,"value":"subscription-rightRailText-419734"}]},{"customOptions":{"target":"25"},"name":"version3","track":[{"name":"list1","dynamic":false,"value":"subscription-rightRailText:version3"},{"name":"prop56","dynamic":false,"value":"subscription-rightRailText:version3"},{"name":"list1","dynamic":false,"value":"subscription-rightRailText-419734"},{"name":"prop56","dynamic":false,"value":"subscription-rightRailText-419734"}]},{"customOptions":{"target":"25"},"name":"version4","track":[{"name":"list1","dynamic":false,"value":"subscription-rightRailText:version4"},{"name":"prop56","dynamic":false,"value":"subscription-rightRailText:version4"},{"name":"list1","dynamic":false,"value":"subscription-rightRailText-419734"},{"name":"prop56","dynamic":false,"value":"subscription-rightRailText-419734"}]}]}],"disabled":false});</script> 
+    <script>(function ABTestMfrAnonymous($,TWP,window,undefined){var user=TWP.ABTestUser;var ABTM={};var trk=ABTM.track={};var omni=trk.omniture={trackSetHandler:function(props){if(!!window.s){var pn;for(pn in props){if(props.hasOwnProperty(pn)){s[pn]=(s[pn]?[s[pn],props[pn]]:[props[pn]]).join(user.trackValueDelimeter);if(/evar/gi.test(pn)){window["wp_"+pn.toLowerCase()]=props[pn]}}}}},trackUnsetHandler:function(props){if(!!window.s){var pn;for(pn in props){if(props.hasOwnProperty(pn)){s[pn]=(s[pn]||"").replace(("string"==typeof props[pn]?[props[pn]]:props[pn]).join(user.trackValueDelimeter),"");if(!s[pn]){s[pn]=undefined}if(/evar/gi.test(pn)){window["wp_"+pn.toLowerCase()]=undefined}}}}},trackSendHandler:function(customLinkName,events,props){if(!!window.s){var originalValues={};originalValues.events=s.events;originalValues.linkTrackEvents=s.linkTrackEvents;if(events){s.events=("string"===typeof events?[events]:events).join(user.trackValueDelimeter)||undefined;s.linkTrackEvents=s.events}omni.trackSetHandler(props);s.tl(true,"o",customLinkName,{linkTrackVars:function(){var results=[];if(events){results.push("events")}var name;for(name in props){if(props.hasOwnProperty(name)){results.push(name)}}return results.join(user.trackValueDelimeter)}()});s.events=originalValues.events;s.linkTrackEvents=originalValues.linkTrackEvents;omni.trackUnsetHandler(props)}}};TWP.ABTestMfr=ABTM})(jQuery,TWP,window);</script> 
+   </div> 
+  </div> 
+  <script src="//js.washingtonpost.com/wp-srv/ad/loaders/latest/js/min/loader.min.js" async="" data-ad-page-type="responsive" data-ad-site="wp"></script> 
+  <script type="text/javascript" src="/pb/resources/compact/template/rZcHWoZzuToaTieQLcQMUOw/javascripts/cd3facb93dab53ddfe1ce0ea3bacb2a3.js?_=63ea2f"></script> 
+  <script type="text/javascript" src="http://s.troveread.com/moneta/2.x/site/washpost/monetatag-config.js"></script> 
+  <script type="text/javascript" src="http://s.troveread.com/moneta/2.x/js/moneta.min.js"></script> 
+  <script type="text/javascript" src="/pb/resources/compact/template/rZcHWoZzuToaTieQLcQMUOw/javascripts/944950b7bffd3c091babf2dd519b2ccd.js?_=63ea2f"></script> 
+  <script type="text/javascript" src="/pb/resource/footjs-rZcHWoZzuToaTieQLcQMUOw-f87fbb05.js?_=63ea2f"></script> 
+  <script type="text/javascript" src="/pb/resource/instancejs-rZcHWoZzuToaTieQLcQMUOw-f87fbb05.js?_=63ea2f"></script> 
+  <script type="text/javascript">window.TWPHead.ready("main.js",function(){window.TWP&&TWP.Analytics&&TWP.Analytics.init("production"=="production"?"":{suite:"preproduction"})});</script> 
+  <noscript>
+   <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=3005617&amp;cv=2.0&amp;cj=1" />
+  </noscript> 
+  <script type="text/javascript" src="http://widget.perfectmarket.com/wwwwashingtonpost/load.js"></script> 
+  <script type="text/javascript">(function($){try{if((!!window.localStorage&&!!localStorage.opbandit&&localStorage.opbandit=="F")){$.ajax({dataType:"script",cache:true,url:"//data.opbandit.com/loader.min.js?key=3e6382b012abc555",success:function(data){}})}var $tweetAuthors=$(".tweet-authors");if((!!$tweetAuthors.size()&&!window.twttr)){$.ajax({dataType:"script",cache:true,url:"//platform.twitter.com/widgets.js",success:function(data){$tweetAuthors.find(".pb-twitter-follow.unprocessed").removeClass("unprocessed")}})}$.ajax({dataType:"script",cache:true,url:"//ak.sail-horizon.com/horizon/v1.js",success:function(data){if(window.Sailthru){Sailthru.setup({domain:"horizon.washingtonpost.com"})}}})}catch(e){}})(jQuery);</script> 
+  <script type="text/javascript">!function(){if(!(Math.floor(100*Math.random())>99)){var a,b,c,d="//js.washingtonpost.com/wp-stat/rum/wprum.min.js",e=document.createElement("iframe");e.src="javascript:false",(e.frameElement||e).style.cssText="width: 0; height: 0; border: 0";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(e,c);try{b=e.contentWindow.document}catch(f){a=document.domain,e.src="javascript:var d=document.open();d.domain='"+a+"';void(0);",b=e.contentWindow.document}b.open()._l=function(){var b=this.createElement("script");a&&(this.domain=a),b.id="boomr-if-as",b.src=d,this.body.appendChild(b)},b.write('<body onload="document._l();">'),b.close()}}();</script>  
+ </body>
+</html>

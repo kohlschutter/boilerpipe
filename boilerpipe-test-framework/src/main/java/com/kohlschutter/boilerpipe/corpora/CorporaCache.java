@@ -34,6 +34,8 @@ public class CorporaCache {
 
         File file = new File( ROOT, path );
 
+        System.out.printf( "Writing cache data to: %s\n", file.getAbsolutePath() );
+
         Files.createDirectories( Paths.get( file.getParent() ) );
 
         try( OutputStream out = new FileOutputStream( file ) ) {
@@ -49,6 +51,9 @@ public class CorporaCache {
         String path = computePath( key );
 
         try (InputStream is = parent.getResourceAsStream( path )) {
+
+            if ( is == null )
+                return null;
 
             byte[] data = ByteStreams.toByteArray( is );
 

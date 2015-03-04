@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 modePublish"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 modePublish"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 modePublish"> <![endif]-->
+<!--[if IE 9]> <html class="no-js modePublish"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js gt-ie9 modePublish">
+ <!--<![endif]-->
+ <head> 
+  <!-- Begin comScore Tag --> 
+  <script>
+      var _comscore = _comscore || [];
+      _comscore.push({ c1: "2", c2: "18406752" });
+      (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+      })();
+    </script> 
+  <noscript> 
+  </noscript>
+ </head>
+ <body class="article story">
+  <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=18406752&amp;cv=2.0&amp;cj=1" />  
+  <!-- End comScore Tag --> 
+  <script>
+      //Reload to canonical if you try to paste in the print page
+      if (window.location.search.indexOf("print") > -1) {
+        if (document.referrer.indexOf("http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html") != 0) {
+          window.location = "http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html";
+        }
+      }
+      //-- Stop hiding script -->
+    </script> 
+  <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQ4OUFNbGwEGU1dUAwE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(3),t(4),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:6,4:5,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t);try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:21,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=e(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var f=0;c>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],10:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:19,2:20,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.licenseKey&&t.applicationID&&u&&u.body){s(h,function(e,n){e in t||(t[e]=n)}),l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=u.createElement("script");e.src=l.proto+t.agent,u.body.appendChild(e)}}function r(){"complete"===u.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),u=c.document,f="addEventListener",d="attachEvent",p=(""+location).split("?")[0],h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},l=e.exports={offset:i(),origin:p,features:{}};u[f]?(u[f]("DOMContentLoaded",o,!1),c[f]("load",n,!1)):(u[d]("onreadystatechange",r),c[d]("onload",n)),a("mark",["firstbyte",i()])},{1:19,2:10,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],19:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script> 
+  <script type="text/javascript">
+      var slate_public_url = "http://www.slate.com/";
+      window._sf_startpt=(new Date()).getTime();
+    </script> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <title>Benjamin Netanyahu did President Obama a big favor: The Israeli prime minister didn’t offer any better alternative to dealing with Iran.</title> 
+  <meta name="description" content="Israeli Prime Minister Benjamin Netanyahu did President Obama an enormous favor Tuesday. Given the opportunity, on perhaps the world’s biggest political stage, to articulate the best possible case against the nuclear deal currently being negotiated with Iran, Netanyahu came up empty. He whiffed. His shot sailed so wide of the..." /> 
+  <meta name="keywords" content="Benjamin Netanyahu, Benjamin Netanyahu Congress, Benjamin Netanyahu speech, Netanyahu, Netanyahu Obama, Netanyahu Iran, Netanyahu nuclear negotiations, Netanyahu Iran nukes, Netanyahu nuclear deal, Netanyahu Rouhani, Netanyahu Iran threat, Netanyahu Iran deterrence, Netanyahu Israeli intelligence, Netanyahu missed opportunity" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+  <script>
+      
+      var commercialNode = 'news/foreigners';
+      
+      var commercialPageType = 'article';
+      var selectedText = "";
+    </script> 
+  <!-- Facebook OG --> 
+  <meta id="ogtitle" property="og:title" content="Netanyahu Just Did Obama a Big Favor" /> 
+  <meta property="article:publisher" content="http://www.facebook.com/Slate" /> 
+  <meta property="og:type" content="article" /> 
+  <meta id="ogurl" property="og:url" content="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html" /> 
+  <meta id="ogimage" property="og:image" content="http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" /> 
+  <meta property="og:site_name" content="Slate Magazine" /> 
+  <meta id="ogdescription" property="og:description" content="Israeli Prime Minister Benjamin Netanyahu did President Obama an enormous favor Tuesday. Given the opportunity, on perhaps the world’s biggest political stage, to articulate the best possible case against the nuclear deal currently being negotiated with Iran, Netanyahu came up empty. He whiffed. His shot sailed so wide of the..." /> 
+  <meta property="fb:app_id" content="142011022527753" /> 
+  <!-- Twitter --> 
+  <meta name="twitter:card" value="summary" /> 
+  <meta name="twitter:site" value="@slate" /> 
+  <meta name="twitter:creator" value="" /> 
+  <meta name="twitter:url" value="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html" /> 
+  <meta name="twitter:title" value="Netanyahu Just Did Obama a Big Favor" /> 
+  <meta name="twitter:description" value="Israeli Prime Minister Benjamin Netanyahu did President Obama an enormous favor Tuesday. Given the opportunity, on perhaps the world’s biggest political stage, to articulate the best possible case against the nuclear deal currently being negotiated with Iran, Netanyahu came up empty. He whiffed. His shot sailed so wide of the..." /> 
+  <meta name="twitter:image" value="http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" /> 
+  <link type="text/css" href="http://static.cdnslate.com/etc/designs/slate/css/story.21710bd1.css" rel="stylesheet" /> 
+  <script data-ad-site="slate" src="http://static.cdnslate.com/etc/designs/slate/js/libs/require.js"></script> 
+  <script>
+    requirejs.config({
+      "baseUrl": "http://static.cdnslate.com/etc/designs/slate/js",
+      "waitSeconds": 0,
+      "paths": {
+        "jquery": "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min",
+        "jqueryui": "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min",
+        "modernizr": "/etc/designs/slate/js/libs/modernizr-2.6.1.min",
+        "announcements": "/etc/designs/slate/js/announcements",
+        "slate": "/etc/designs/slate/lib",
+        "hogan": "libs/hogan-2.0.0",
+        "facebook": "//connect.facebook.net/en_US/all",
+        "livefyre": "http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre",
+        "livefyresidenotes": "//cdn.livefyre.com/Livefyre",
+        "brightcove": "http://admin.brightcove.com/js/BrightcoveExperiences",
+        "brightcovetracking": "/etc/designs/slate/js/brightcovetracking",
+        "mobileredirection": "libs/redirection_mobile_1.0.0.min",
+        "optimizely": "//cdn.optimizely.com/js/37441550",
+        "outbrain": "//widgets.outbrain.com/outbrain",
+        "shared": "http://static.cdnslate.com/etc/designs/shared/js",
+        "instafeed": "/etc/designs/slate/js/instafeed",
+        "campaigns": "http://campaigns.slate.com/campaigns/slate",
+        "clipboard": "libs/zeroclipboard/ZeroClipboard.min",
+        "tinypass": "//cdn.tinypass.com/api/tinypass.min"
+      },
+      "shim": {
+        "shared/devicemode": ["modernizr"],
+        "hcs/script": ["jquery", "modernizr", "shared/devicemode"],
+        "libs/jquery-plugins/jquery.browser": ["jquery"],
+        "hcs/plugins/jquery.transit": ["jquery"],
+        "hcs/plugins/SGFootnote.jquery": ["jquery"],
+        "hcs/plugins/SGSocialIcons.jquery": ["jquery", "hcs/script"],
+        "hcs/plugins/SGNavDropdown.jquery": ["jquery"],
+        "hcs/plugins/SGComments.jquery": ["jquery", "hcs/script"],
+        "hcs/plugins/SGRollup.jquery": ["jquery", "hcs/script"],
+        "hcs/plugins/SGGlobalNav.jquery": ["jquery", "hcs/script"],
+        "hcs/plugins/SGLightbox.jquery": ["jquery"],
+        "hcs/plugins/jQuery.highlighter": ["jquery"],
+        "hcs/libs/swipe": ["jquery"],
+        "hcs/libs/magnific": ["jquery"],
+        "hcs/plugins/jquery.swipebox": ["jquery"],
+        "hcs/plugins/SGBigSlider.jquery": ["jquery", "hcs/script", "hcs/libs/swipe"],
+        "hcs/plugins/jquery.placeholder.min": ["jquery"],
+        "libs/jquery-plugins/jquery.timeago": ["jquery"],
+        "libs/jquery-plugins/jquery.form": ["jquery"],
+        "libs/jquery-plugins/jquery.cookie": ["jquery"],
+        "libs/jquery-plugins/jquery.fittext": ["jquery"],
+        "libs/jquery-plugins/jquery.backgroundSize": ["jquery"],
+        "libs/jquery-plugins/jquery.flexslider": ["jquery"],
+        "libs/jquery-plugins/purl": ["jquery"],
+        "libs/jquery-plugins/jquery.colorbox": [ "jquery" ],
+        "libs/jquery-plugins/jquery.sticky": ["jquery"],
+        "libs/jquery-plugins/jquery.autoComplete": ["jquery"],
+        "libs/jquery-plugins/jquery.boxfit": ["jquery"],
+        "libs/jquery-plugins/jquery.dateformat": ["jquery"],
+        "libs/jquery-plugins/jquery.lazyloadxt": ["jquery"],
+        "libs/jquery-plugins/jquery.lazyloadxt.extra": ["jquery"],
+        "libs/jquery-plugins/jquery.lazyloadxt.bg": ["jquery"],
+        "libs/jquery-plugins/jquery.lazyloadxt.widget": ["jquery"],
+        "libs/jquery-plugins/jquery.visible": ["jquery"],
+        "optimizely": ["jquery"],
+        "facebook": {
+            deps: ["identity/wapo_site_bottom"],
+            exports: "FB"
+        },
+        "livefyre": {
+            exports: "fyre"
+        },
+        "brightcove": {
+          	"exports": "brightcove"
+        },
+        "mobileredirection": {
+                "exports": "mobileredirection"
+        },
+        "hogan": {
+          	"exports": "Hogan"
+        },
+        "outbrain": {
+          "exports": "OBR"
+        }
+      }
+    });
+
+
+    
+    define("config", {
+      "env": {
+        "edit": false,
+        "environment": "prod"
+      },
+      "identity": {
+		"fb_xd_receiver": "http://www.slate.com/xd_receiver.htm",
+		"fb_app_id": 142011022527753,
+		"publicationName": "Slate",
+		"site_base_domain": "slate.com",
+		"site_path": "/",
+		"wapo_secure_protocol": "https:",
+		"wapo_site_url": "//id.slate.com/identity/",
+		"site_url": "//www.slate.com/",
+		"wapo_public_protocol": "http:",
+		"myslate_domain": "//my.slate.com/",
+		"myslate_https": true,
+		"enabled": true
+	  },
+	  "livefyre": {
+	    "network": "slate.fyre.co",
+	    "jsSourceUrl": "http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js",
+	    "siteId": "337720",
+      "loadTiming": "demand",
+	  },
+      "campaigns": {
+         "domain":"campaigns.slate.com"
+       },
+       "site": {
+         "site": "slate",
+         "title": "Slate",
+         "staticUrl": "http://static.cdnslate.com",
+         "omniturePrefix": "sl"
+       },
+       "data_domain": "http://www.slate.com/",
+       "page": {
+         "articleId": "100150303016",
+         "roadblocked": false,
+         "embeddedContent": false,
+         "slateplus": false
+       },
+      "ads": {
+        "enableHomepageViewability": false,
+        "enableStoryViewability": true,
+        "viewabilityEnabled": true,
+        "viewability": {
+          "leaderboardRollup": true,
+          "leaderboardRollupDisabledList": "arts/tvreview",
+          "refreshInterval": "30",
+          "refreshPolar": false,
+          "testPageList": "news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts,news,life,arts,sports,technology,blogs,business,science,doublex,video,podvideo,podcasts",
+          "lazyload": {
+            "homepageBB": true,
+            "leaderboard_2": true,
+            "tiffTiles": true,
+            "rightflex": true
+          }
+        }
+      },
+      "tinypass": {
+        "aid": "Ey9jlGV74T",
+        "contentCreated": "2015-03-03T14:47:48",
+        "contentAuthor": ["Matthew Duss"],
+        "contentSection": "News and Politics"
+      },
+      "_log": [],
+      "log": function(data) {
+         requirejs(["config"], function(config) {
+           if (typeof console != "undefined" &&
+               typeof console.log != "undefined") {
+             console.log(data);
+           }
+           config._log.push(data);
+         });
+       }
+    });
+    var homepagePolarSpot = 'b1';
+    </script> 
+  <script src="http://static.cdnslate.com/etc/designs/slate/js/main.min.c44b6251.js"></script> 
+  <script type="text/javascript" language="javascript">
+requirejs(["s_code"], function(s) {
+
+        s.currencyCode="usd";
+        s.charSet="utf-8";
+        s.trackDownloadLinks=true;
+        s.trackExternalLinks=true;
+        s.trackInlineStats=true;
+        s.linkDownloadFileTypes="exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls";
+        s.linkInternalFilters="javascript:,slate.com,traffic.outbrain.com";
+        s.linkTrackVars="none";
+        s.linkTrackEvents="none";
+        s.pageName="news and politics:article - 20150303 - benjamin netanyahu did president obama a big favor: the israeli prime minister didn’t offer any better alternative to dealing with iran.";
+        s.channel="sl - news and politics";
+        s.server="www.slate.com";
+        s.prop2="foreigners";
+        s.prop3="article";
+        s.prop4="slate";
+        s.prop5="matthew duss";
+        s.prop12="100150303016";
+        s.prop13="benjamin netanyahu did president obama a big favor: the israeli prime minister didn’t offer any better alternative to dealing with iran.";
+        s.prop14="1";
+        s.prop34="3.63.2";
+        s.prop36="general";
+        s.prop39="news/foreigners";
+        s.hier1="news and politics|foreigners|article";
+        s.eVar8="matthew duss";
+        s.eVar17="article";
+s.t();
+});
+</script> 
+  <script>               
+      var _isNavMoving = false; // acts as a global (sorry) mutex for keeping track of when our nav panels are moving around. Allows us to prevent overlapping actions.
+    </script> 
+  <!-- Google Sitemap --> 
+  <meta name="google-site-verification" content="jXqoqqPSmx_PWchRdG-IXu-X616Ee2Ptf_AiElI9LzQ" /> 
+  <link rel="canonical" href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html" /> 
+  <link rel="image_src" href="http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg.CROP.thumbnail-small.jpg" /> 
+  <!-- Parsely --> 
+  <meta name="parsely-page" content="{
+  &quot;title&quot;: &quot;Netanyahu Just Did Obama a Big Favor&quot;,
+  &quot;link&quot;: &quot;http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html&quot;,
+  &quot;image_url&quot;: &quot;http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg.CROP.thumbnail-small.jpg&quot;,
+  &quot;type&quot;: &quot;post&quot;,
+  &quot;post_id&quot;: &quot;100150303016&quot;,
+  &quot;pub_date&quot;: &quot;2015-03-03T14:47:48Z&quot;,
+  &quot;section&quot;: &quot;News and Politics&quot;,
+  &quot;author&quot;: &quot;Matthew Duss&quot;,
+  &quot;tags&quot;: [
+    &quot;politics&quot;,
+    &quot;obama&quot;,
+    &quot;benjamin netanyahu&quot;,
+    &quot;iran&quot;
+  ]
+}" /> 
+  <!-- RSS --> 
+  <link rel="alternate" type="application/rss+xml" title="News and Politics (RSS 2.0)" href="http://www.slate.com/articles/news_and_politics.fulltext.all.rss" /> 
+  <script>var wp_meta_data = {"authors":["Matthew Duss"],"contentType":"article","page_id":"100150303016","keywords":"Foreigners,politics,obama,benjamin netanyahu,iran,Benjamin Netanyahu, Benjamin Netanyahu Congress, Benjamin Netanyahu speech, Netanyahu, Netanyahu Obama, Netanyahu Iran, Netanyahu nuclear negotiations, Netanyahu Iran nukes, Netanyahu nuclear deal, Netanyahu Rouhani, Netanyahu Iran threat, Netanyahu Iran deterrence, Netanyahu Israeli intelligence, Netanyahu missed opportunity","section":"News and Politics","rubric":"Foreigners"};</script> 
+  <!--[if gte IE 8]--> 
+  <script type="text/javascript">
+    requirejs(['pagenav', 'jquery'], function(pagenav, $) {
+      var SlateNextbox = {};
+
+      SlateNextbox.data = {
+        'headline': 'The Gross Hypocrisy of Benjamin Netanyahu',
+        'subhead': 'Don\u2019t pretend Bibi didn\u2019t mean to offend Obama. He is a bully and a liar.&nbsp;',
+        'url': 'http:\/\/www.slate.com\/articles\/news_and_politics\/foreigners\/2015\/03\/benjamin_netanyahu_is_a_hypocrite_he_intended_to_offend_president_obama.html',
+        'article_id': '100150303014',
+        'hasImage': true,
+        
+        'image': 'http:\/\/www.slate.com\/content\/dam\/slate\/articles\/news_and_politics\/foreigners\/2015\/03\/150303_FOR_BibiCampaign.jpg.CROP.rectangle-small.jpg',
+        
+      
+        'section': 'News and Politics',
+      
+        'subscribe_type': 'section'
+      };
+      $.data(window, "SlateNextbox", SlateNextbox);
+      pagenav.addStory(SlateNextbox.data);
+    });
+
+    </script> 
+  <!--[endif]--> 
+  <!-- sailthru meta --> 
+  <meta name="sailthru.tags" content="Benjamin Netanyahu, Benjamin Netanyahu Congress, Benjamin Netanyahu speech, Netanyahu, Netanyahu Obama, Netanyahu Iran, Netanyahu nuclear negotiations, Netanyahu Iran nukes, Netanyahu nuclear deal, Netanyahu Rouhani, Netanyahu Iran threat, Netanyahu Iran deterrence, Netanyahu Israeli intelligence, Netanyahu missed opportunity" /> 
+  <meta name="sailthru.author" content="Matthew Duss" /> 
+  <meta name="sailthru.date" content="2015-03-03T14:47:48Z" /> 
+  <meta name="sailthru.description" content="Israeli Prime Minister Benjamin Netanyahu did President Obama an enormous favor Tuesday. Given the opportunity, on perhaps the world’s biggest political stage, to articulate the best possible case against the nuclear deal currently being negotiated with Iran, Netanyahu came up empty. He whiffed. His shot sailed so wide of the..." /> 
+  <meta name="sailthru.image.full" content="http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" /> 
+  <meta name="sailthru.headline" content="Netanyahu Just Did Obama a Big Favor" /> 
+  <meta name="sailthru.subheadline" content="Bibi’s speech inadvertently proved that the current negotiations are our best strategy for dealing with Iran." /> 
+  <meta name="sailthru.promoheadline" content="Netanyahu Just Did Obama a Big Favor" />   
+  <div id="slug_teads" class="ad " data-ad-type="teads" data-ad-mode="large"></div> 
+  <input type="hidden" id="currPath" value="/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister" /> 
+  <!-- HCS: shared/roll_ups/tablet --> 
+  <!-- This is the header bar we always show in tablet mode --> 
+  <header class="roll-up" id="tablet_header"> 
+   <div class="container"> 
+    <div class="main"> 
+    </div> 
+    <div class="sidebar"> 
+     <section class="nav-panel"> 
+      <div class="nav-header"> 
+       <a class="slate-logo" href="/"><span class="logo">Slate</span></a> 
+       <a href="#" class="user-link "></a> 
+       <a href="#" class="search-link "></a> 
+       <a href="#" class="global-nav-handle "></a> 
+       <div class="buttons"> 
+        <span class="link option "><a class="first nav-option sign-in-link" href="#" id="sign_in_link">Sign In</a></span> 
+        <span class="link option "><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span> 
+       </div> 
+      </div> 
+     </section> 
+    </div> 
+   </div>
+   <!-- /.container --> 
+  </header>
+  <!-- /.header.roll-up --> 
+  <!-- HCS END: shared/roll_ups/tablet --> 
+  <div class="top"> 
+   <div id="slug_teads" class="ad " data-ad-type="teads" data-ad-mode="large"></div> 
+   <div id="slug_t" class="tAd ad " data-ad-type="t" data-ad-mode="mobile"></div> 
+   <div id="slug_leaderboard" class="banner ad " data-ad-type="leaderboard" data-ad-mode="large"></div> 
+   <div id="slug_pushdown" class="banner ad " data-ad-type="pushdown" data-ad-mode="large"></div> 
+  </div>
+  <!-- end #top --> 
+  <!-- HCS END: layouts/shared/top --> 
+  <!-- this is the rollup for basic article, no multipart fun --> 
+  <header class="roll-up with-dropdown" id="article_rollup"> 
+   <div class="container"> 
+    <div class="main"> 
+     <div class="titles centered-titles"> 
+      <h1 class="primary centered-primary">Netanyahu Just Did Obama a Big Favor</h1> 
+     </div> 
+     <div class="social social-with-popup sharing-buttons"> 
+      <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&amp;p[title]=Netanyahu+Just+Did+Obama+a+Big+Favor&amp;p[summary]=Israeli+Prime+Minister+Benjamin+Netanyahu+did+President+Obama+an+enormous+favor+Tuesday.+Given+the+opportunity,+on+perhaps+the+world’s+biggest+political+stage,+to+articulate+the+best+possible+case+against+the+nuclear+deal+currently+being+negotiated+with+Iran,+Netanyahu+came+up+empty.+He+whiffed.+His+shot+sailed+so+wide+of+the...&amp;p[ref]=sl_live&amp;p[images][0]=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg&amp;p[url]=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_dt_fb_ru" class="facebook first"> <span class="icon"></span> <span class="count"></span> </a> 
+      <div class="twitter"> 
+       <a href="#" data-share="http://twitter.com/share?text=Netanyahu+just+did+Obama+a+big+favor.+By+%40mattduss%3A&amp;count=none&amp;via=slate&amp;url=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_dt_tw_ru" class="twitter"> <span class="icon"></span> <span class="count"></span> </a> 
+      </div> 
+      <a href="#comments" class="comments"> <span class="icon"></span> </a> 
+      <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&amp;body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0ANetanyahu%20Just%20Did%20Obama%20a%20Big%20Favor%0Ahttp://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_dt_em_ru" class="email"> <span class="icon"></span> </a> 
+     </div> 
+    </div> 
+    <div class="sidebar"> 
+     <section class="nav-panel"> 
+      <div class="nav-header"> 
+       <a class="slate-logo" href="/"><span class="logo">Slate</span></a> 
+       <a href="#" class="user-link "></a> 
+       <a href="#" class="search-link "></a> 
+       <a href="#" class="global-nav-handle "></a> 
+       <div class="buttons"> 
+        <span class="link option "><a class="first nav-option sign-in-link" href="#" id="sign_in_link">Sign In</a></span> 
+        <span class="link option "><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span> 
+       </div> 
+      </div> 
+     </section> 
+    </div> 
+   </div>
+   <!-- /.container --> 
+   <a href="#" class="mobile-social-toggle"><span></span></a> 
+   <!-- only shown in mobile --> 
+  </header>
+  <!-- /.header.roll-up --> 
+  <div class="page"> 
+   <article class="main"> 
+    <div class="parsys contentWellTop iparsys">
+     <div class="section">
+      <div class="new"></div> 
+     </div>
+     <div class="iparys_inherited">
+      <div class="parsys contentWellTop iparsys"> 
+      </div> 
+     </div> 
+    </div> 
+    <header class="article-header" id="article_header"> 
+     <div class="meta"> 
+      <div class="prop-name print-only">
+       <a href="http://www.slate.com">Slate</a>
+      </div>
+      <div class="prop-name">
+       <a href="http://www.slate.com/articles/news_and_politics/foreigners.html">Foreigners</a>
+      </div>
+      <div class="prop-desc">
+       Opinions about events beyond our borders.
+      </div>
+      <div class="pub-date">
+       March 3 2015 2:47 PM
+      </div> 
+     </div> 
+     <h1 class="hed">Netanyahu Just Did Obama a Big Favor</h1> 
+     <div class="social social-with-popup sharing-buttons" id="header_social"> 
+      <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&amp;p[title]=Netanyahu+Just+Did+Obama+a+Big+Favor&amp;p[summary]=Israeli+Prime+Minister+Benjamin+Netanyahu+did+President+Obama+an+enormous+favor+Tuesday.+Given+the+opportunity,+on+perhaps+the+world’s+biggest+political+stage,+to+articulate+the+best+possible+case+against+the+nuclear+deal+currently+being+negotiated+with+Iran,+Netanyahu+came+up+empty.+He+whiffed.+His+shot+sailed+so+wide+of+the...&amp;p[ref]=sl_live&amp;p[images][0]=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg&amp;p[url]=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_dt_fb_top" class="facebook"> <span class="icon"></span> <span class="count"></span> </a> 
+      <div class="twitter"> 
+       <a href="#" data-share="http://twitter.com/share?text=Netanyahu+just+did+Obama+a+big+favor.+By+%40mattduss%3A&amp;count=none&amp;via=slate&amp;url=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_dt_tw_top" class="twitter"> <span class="icon"></span> </a> 
+       <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"><span class="count"></span></a> 
+      </div> 
+      <a href="#comments" class="comments"> <span class="icon"></span> <span class="count"></span> </a> 
+     </div> 
+     <h2 class="dek">Bibi’s speech inadvertently proved that the current negotiations are our best strategy for dealing with Iran.</h2> 
+     <div class="byline" id="main_byline">
+       By 
+      <a rel="author" href="http://www.slate.com/authors.matthew_duss.html">Matthew Duss</a> 
+     </div> 
+     <div class="social horiz-counts-mobile centered sharing-buttons"> 
+      <div class="comments"> 
+       <a class="mobile-comments" href="#comments"> <span class="icon"></span> <span class="count"></span> </a> 
+      </div> 
+      <div class="facebook"> 
+       <a href="#" data-share="http://www.facebook.com/sharer.php?m2w&amp;s=100&amp;p[title]=Netanyahu+Just+Did+Obama+a+Big+Favor&amp;p[summary]=Israeli+Prime+Minister+Benjamin+Netanyahu+did+President+Obama+an+enormous+favor+Tuesday.+Given+the+opportunity,+on+perhaps+the+world’s+biggest+political+stage,+to+articulate+the+best+possible+case+against+the+nuclear+deal+currently+being+negotiated+with+Iran,+Netanyahu+came+up+empty.+He+whiffed.+His+shot+sailed+so+wide+of+the...&amp;p[ref]=sl_live&amp;p[images][0]=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg&amp;p[url]=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_mob_fb_top" class="share facebook" target="_blank"> <span class="icon"></span> <span class="count"></span> </a> 
+      </div> 
+      <div class="twitter"> 
+       <a href="#" data-share="http://twitter.com/share?text=Netanyahu+just+did+Obama+a+big+favor.+By+%40mattduss%3A&amp;count=none&amp;via=slate&amp;url=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_mob_tw_top" class="twitter"> <span class="icon"></span> </a> 
+       <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"><span class="count"></span></a> 
+      </div> 
+      <div class="whatsapp"> 
+       <a href="whatsapp://send?text=Netanyahu%20just%20did%20Obama%20a%20big%20favor.%20By%20%40mattduss%3A%20http%3A%2F%2Fwww.slate.com%2Farticles%2Fnews_and_politics%2Fforeigners%2F2015%2F03%2Fbenjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html%3Fwpsrc%3Dsh_all_mob_wa_top" class="whatsapp"> <span class="icon"></span> </a> 
+      </div> 
+      <div class="email"> 
+       <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&amp;body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0ANetanyahu%20Just%20Did%20Obama%20a%20Big%20Favor%0Ahttp://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_mob_em_top" class="email"> <span class="icon"></span> <span class="count">&nbsp;</span> </a> 
+      </div> 
+     </div> 
+    </header>
+    <!-- /header --> 
+    <section class="content"> 
+     <div class="parsys iparsys editorsNote">
+      <div class="section">
+       <div class="new"></div> 
+      </div>
+      <div class="iparys_inherited">
+       <div class="parsys iparsys editorsNote"> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="newbody body parsys"> 
+      <div class="parbase image slate_image section"> 
+       <div class=""> 
+        <figure class="image inline " style="width: 590px;  display: block;margin: 0 auto;float: none;"> 
+         <img title="150303_FOR_NetanyahuWrong" alt="Israeli Prime Minister Benjamin Netanyahu is greeted by members of Congress as he arrives to speak during a joint meeting of the United States Congress." src="/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg.CROP.promo-mediumlarge.jpg" /> 
+         <figcaption class="caption">
+          <span>Israeli Prime Minister Benjamin Netanyahu is greeted by members of Congress as he arrives to speak at the Capitol on March 3, 2015, in Washington, D.C.</span>
+         </figcaption> 
+         <p class="credit">Photo by Chip Somodevilla/Getty Images</p> 
+        </figure> 
+       </div> 
+       <script>
+        requirejs(["jquery"], function($) {
+            if ($(window).width() < 640) {
+                $(".slate_image figure").width("100%");
+            }
+        });
+        </script> 
+      </div> 
+      <div class="text text-1 parbase section"> 
+       <p>Israeli Prime Minister Benjamin Netanyahu did President Obama an enormous favor Tuesday. Given the opportunity, on perhaps the world’s biggest political stage, to articulate the best possible case against the nuclear deal currently being negotiated with Iran, Netanyahu came up empty. He whiffed. His shot sailed so wide of the rim that it went up into the bleachers and struck a small child in the face.</p> 
+      </div> 
+      <div class="text-2 text parbase section"> 
+       <p>Given how much buildup the speech received—and how much of America’s time has been wasted with the controversy surrounding it—it’s simply amazing that Netanyahu didn’t use the chance to offer any new or interesting ideas, any viable path to achieving the prevention of an Iranian nuclear weapon—which he insists is a shared goal with the United States—other than the one we are on now.</p> 
+      </div> 
+      <div class="text-3 text parbase section"> 
+       <p>From the first moment, the speech rang false. Netanyahu declared himself “deeply humbled” to be speaking before the Congress. Upon leaving Israel, he described his trip in wildly grandiose terms, declaring it a “historic mission.” Netanyahu may be many things, but humble isn’t one.</p> 
+      </div> 
+      <div class="tablet-ad">
+        Advertisement
+       <br /> 
+       <div id="slug_midarticleflex" class="ad " data-ad-type="midarticleflex" data-ad-mode="tabletPortrait"></div> 
+       <div id="slug_mob_bigbox" class="ad " data-ad-type="mob_bigbox" data-ad-mode="mobile"></div> 
+      </div> 
+      <div class="text parbase text-4 section"> 
+       <p>He then voiced his “regret that some perceive my being here as political. That was never my intention.” Can Netanyahu really have not understood that an invitation planned in secret between his ambassador and the Republican House speaker would be seen as political?</p> 
+      </div> 
+      <div class="text parbase text-5 section"> 
+       <p>Aside from the initial ceremonial throat-clearing, however, the speech resembled those Netanyahu has given countless times before.</p> 
+      </div> 
+      <div class="pullquotebox section"> 
+       <aside class="pullquote"> 
+        <p class="quote">It’s simply amazing that Netanyahu didn’t use this chance to offer any new or interesting ideas.</p> 
+       </aside> 
+      </div> 
+      <div class="text text-6 parbase section"> 
+       <p>Once again we heard Netanyahu’s view that the Iranian regime is irretrievably hostile to the West, dismissing the notion that the current administration of Iranian President Hassan Rouhani represents any sort of change for the better. “Two years ago we were told to give President Rouhani and Foreign Minister [Mohammad Javad] Zarif a chance to bring change and moderation to Iran,” he said. “Some change! Some moderation!” It’s worth pointing out here that, as on much else, Israel’s own security chiefs disagree with their prime minister. In late 2013 a <a href="http://thinkprogress.org/security/2013/12/31/3107561/report-israeli-military-intelligence-disagrees-netanyahu-iran/">leaked report</a> from Israel’s military intelligence revealed that<strong> </strong>Israel’s “[e]xpert analysis does not view Rouhani’s election as a deception by Khamenei intended solely to mislead the West, but rather as an authentic leader who is creating an independent power center,” and that “a deep strategic change was being played out in Iran, expressed in [Rouhani’s] election victory.”</p> 
+      </div> 
+      <div class="brightcovevideosingle section"> 
+       <!-- Start of Brightcove Player --> 
+       <div id="containing-block-2637" class="bc-containing-block default"></div> 
+       <script type="text/javascript">
+requirejs(["jquery","bcvideo"], function($,bcvideo) {
+  var videoId = 4091290645001,
+      video;
+  if (videoId) {
+    video = {
+      adServerURL:          'http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/91898098/slate.video',
+      autoplay:             false,
+      experienceID:         '2637',
+      featuredVideoID:      false,
+      height:               270,
+      playerType:           "single",
+      playerSize:           "default",
+      customWidth:          "558",
+      playlistSize:         "small",
+      playlistItemSize:     90,
+      linkBaseURL:          'http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html',
+      playerID:             '3884567576001',
+      playerKey:            'AQ~~,AAAAAASoY90~,_gW1ZHvKG_316hV-puPIJaN07MCUfVcK',
+      playlistID:           false,
+      showAds:              true,
+      width:                480,
+      videoID:              videoId,
+      templateLoadHandler:  'onTemplateLoaded',
+      templateReadyHandler: 'onTemplateReady',
+      fullBleed:            true,
+      targetId:             '#containing-block-2637',
+      containingBlock:      '#containing-block-2637',
+    };
+  }
+  bcvideo.init(video);
+});
+
+
+var mobileCheckOnLoaded = function (experienceID) {
+  if (mobileMode()) {
+    var bp = brightcove.api.getExperience(experienceID);
+    var be = bp.getModule(brightcove.api.modules.APIModules.EXPERIENCE);
+    if (Modernizr.mq('all and (max-width : 320px)')) {
+      be.setSize(270, 480);
+      $("#tsgp-2637").attr("width", "270").attr("height", "480");
+    } else {
+      be.setSize(480, 270);
+      $("#tsgp-2637").attr("width", "480").attr("height", "270");
+    }
+  }
+  return myTemplateLoaded(experienceID);
+}
+</script> 
+       <!-- End of Brightcove Player --> 
+      </div> 
+      <div class="text parbase text-7 section"> 
+       <p>Once again we heard that there is no meaningful distinction between Shiite Iran and Sunni ISIS, despite the fact that the two are currently at war. “Both want to impose a militant Islamic empire first on the region and then on the entire world,” Netanyahu said. “They just disagree among themselves who will be the ruler of that empire.” If the last decade should have taught us anything, it’s that it’s far wiser to disaggregate our adversaries than treat them as a monolith.</p> 
+      </div> 
+      <div class="text parbase text-8 section"> 
+       <p>This isn’t to disregard the threat posed by Iran, which is quite real. It is clear that Iran has been able to exploit regional instability in a bid to increase its regional influence, but we should remember that one of the main triggers of that instability was the U.S. invasion of Iraq, an invasion that Netanyahu himself supported, in testimony before Congress in 2002 when he insisted that the invasion “will have enormous positive reverberations in the region.”</p> 
+      </div> 
+      <div class="text parbase text-9 section"> 
+       <p>We heard the familiar “apocalyptic mullah” argument. Iran is ruled by religious zealots driven to “fulfill the ideological mission of jihad,” he said. The message here is that, under such a government, Iran is uniquely immune to cost-benefit analysis that underpins conventional theories of deterrence, something I refer to as the “martyr state myth.” Again, this view is at odds with a strong U.S. and Israeli intelligence consensus, which holds that Iran pursues its national interests rationally. It’s precisely Tehran’s rational cost-benefit analysis that the U.S. and its partners in the P5+1 have been attempting to influence through the nuclear negotiations.</p> 
+      </div> 
+      <div class="text parbase text-10 section"> 
+       <p>After running down the list of Iran’s offenses, it came time for Netanyahu to offer his own alternative. And it was this: “The alternative to this bad deal is a much better deal.” That’s it. Negotiate harder, threaten more, and increase the pressure. Then Iran will capitulate. We talked about this speech for a month—for this?</p> 
+      </div> 
+      <aside class="top-comment top-comment-link"> 
+       <a href="#lf_comment=277699488" class="primary"></a> 
+       <p class="title"><span>Top Comment</span></p> 
+       <div class="quote"> 
+        <p> The House Representatives would like to thank their Republican colleague from the Great State of Israel for pointing out the failings of US Foreign policy, and giving them proper guidance about how they should govern in the future. &nbsp;<a>More...</a> </p> 
+        <p style="text-align:right; margin-bottom:-5px; margin-top:-18px;">-NunyaBidniss</p> 
+       </div> 
+       <p class="comment-options"> <a href="#comments" class="count labeled"></a> <a href="#comments" class="join-in">Join In</a> </p> 
+      </aside> 
+      <div class="text-11 text parbase section"> 
+       <p>A lot of us would love a perfect deal that dismantled Iran’s whole program and removed any possibility whatsoever of an Iranian nuclear capability, but that’s not one of the options here. The question is whether we want the United States and its partners to walk away from a good-enough deal that keeps Iran far away from a nuke and puts its program under the heaviest inspections regime ever in the hope that we could possibly get a slightly better deal later. In the meantime, Iran would continue to move its program forward. That’s not a good idea.</p> 
+      </div> 
+      <div class="text-12 text parbase section"> 
+       <p>Netanyahu had the chance Tuesday to offer a better plan, with the whole world watching. He failed miserably, and in so doing demonstrated conclusively that there isn’t one. To the extent that this buttresses the Obama administration’s case for a deal—and it certainly should—the American people should be grateful to him.</p> 
+      </div> 
+     </div> 
+     <script>
+        requirejs(["jquery"], function($) {
+            function getDropCappedString(firstParagraphObj) {
+                var textString = firstParagraphObj.html().trim();
+                if (textString.length > 0) {
+                    var firstLetter = textString[0].match(/[A-Za-z0-9]/);
+                    if (firstLetter != null) {
+                        return '<span class="drop-capped">' +
+                            firstLetter + '</span>' + textString.substr(1);
+                    }
+                }
+                return null;
+            };
+
+
+            $(function() {
+                var $p = $(".main div.body div.text:first p:first");
+                if ($p.length != 0 && $p.find("span.drop-capped").length==0 ) {
+                   var newString = getDropCappedString($p);
+                   if (newString != null && 1 < 2) {
+                       $p.html(newString);
+                   }
+                }
+                if($(".main div.body div.sectionheader").length!=0) {
+                    //apply to first par of each section of fresca
+                    $(".main div.body div.sectionheader").each(
+                            function(index) {
+                                if($(this).nextAll("div.text").first().find("p:first span.drop-capped").length==0)  {
+                                    var $p = $(this).nextAll("div.text").first().find("p:first"),
+                                     newString = getDropCappedString($p);
+                                    if (newString != null) {
+                                        $p.html(newString);
+                                    }
+                                }
+                            }
+                    )
+                }
+
+            });
+        });
+    </script> 
+    </section> 
+    <footer> 
+     <section class="about-the-author multi"> 
+      <div class="author-bio"> 
+       <p> </p>
+       <p>Matthew Duss is the president of the Foundation for Middle East Peace.</p> 
+       <p></p> 
+      </div> 
+     </section> 
+     <div class="pagination"> 
+      <div class="social social-with-popup sharing-buttons"> 
+       <div class="plus-popup"> 
+        <a href="http://www.slatereprints.com/reprint-products-quote-request/?cf2_field_17=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html&amp;cf2_field_18=www.slate.com&amp;cf2_field_19=Netanyahu+Just+Did+Obama+a+Big+Favor&amp;cf2_field_20=09%2F20%2F2013" class="reprint">REPRINT</a> 
+        <a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.single.html?print" target="_blank" class="print">PRINT</a> 
+        <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&amp;body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0ANetanyahu%20Just%20Did%20Obama%20a%20Big%20Favor%0Ahttp://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_dt_em_bot" class="email">EMAIL</a> 
+        <div class="arrow-border"></div> 
+        <div class="arrow"></div> 
+       </div> 
+       <a href="#" class="plus"> <span class="icon"></span> </a> 
+       <a href="#" data-share="http://www.facebook.com/sharer.php?s=100&amp;p[title]=Netanyahu+Just+Did+Obama+a+Big+Favor&amp;p[summary]=Israeli+Prime+Minister+Benjamin+Netanyahu+did+President+Obama+an+enormous+favor+Tuesday.+Given+the+opportunity,+on+perhaps+the+world’s+biggest+political+stage,+to+articulate+the+best+possible+case+against+the+nuclear+deal+currently+being+negotiated+with+Iran,+Netanyahu+came+up+empty.+He+whiffed.+His+shot+sailed+so+wide+of+the...&amp;p[ref]=sl_live&amp;p[images][0]=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg&amp;p[url]=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_dt_fb_bot" class="facebook"> <span class="icon"></span> <span class="count"></span> </a> 
+       <div class="twitter"> 
+        <a href="#" data-share="http://twitter.com/share?text=Netanyahu+just+did+Obama+a+big+favor.+By+%40mattduss%3A&amp;count=none&amp;via=slate&amp;url=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_dt_tw_bot" class="twitter"> <span class="icon"></span> </a> 
+        <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"><span class="count"></span></a> 
+       </div> 
+       <a href="#comments" class="comments"> <span class="icon"></span> <span class="count"></span> </a> 
+      </div> 
+     </div>
+     <!-- /.pagination --> 
+     <div class="social horiz-counts-mobile centered sharing-buttons"> 
+      <div class="comments"> 
+       <a class="mobile-comments" href="#comments"> <span class="icon"></span> <span class="count"></span> </a> 
+      </div> 
+      <div class="facebook"> 
+       <a href="#" data-share="http://www.facebook.com/sharer.php?m2w&amp;s=100&amp;p[title]=Netanyahu+Just+Did+Obama+a+Big+Favor&amp;p[summary]=Israeli+Prime+Minister+Benjamin+Netanyahu+did+President+Obama+an+enormous+favor+Tuesday.+Given+the+opportunity,+on+perhaps+the+world’s+biggest+political+stage,+to+articulate+the+best+possible+case+against+the+nuclear+deal+currently+being+negotiated+with+Iran,+Netanyahu+came+up+empty.+He+whiffed.+His+shot+sailed+so+wide+of+the...&amp;p[ref]=sl_live&amp;p[images][0]=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg&amp;p[url]=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_mob_fb_bot" class="share facebook" target="_blank"> <span class="icon"></span> <span class="count"></span> </a> 
+      </div> 
+      <div class="twitter"> 
+       <a href="#" data-share="http://twitter.com/share?text=Netanyahu+just+did+Obama+a+big+favor.+By+%40mattduss%3A&amp;count=none&amp;via=slate&amp;url=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_mob_tw_bot" class="twitter"> <span class="icon"></span> </a> 
+       <a class="tw-count" href="http://twitter.com/search?q=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"><span class="count"></span></a> 
+      </div> 
+      <div class="whatsapp"> 
+       <a href="whatsapp://send?text=Netanyahu%20just%20did%20Obama%20a%20big%20favor.%20By%20%40mattduss%3A%20http%3A%2F%2Fwww.slate.com%2Farticles%2Fnews_and_politics%2Fforeigners%2F2015%2F03%2Fbenjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html%3Fwpsrc%3Dsh_all_mob_wa_bot" class="whatsapp"> <span class="icon"></span> </a> 
+      </div> 
+      <div class="email"> 
+       <a href="mailto:?subject=Check%20out%20this%20piece%20on%20Slate&amp;body=I%20thought%20you%20might%20like%20this%20article%20on%20Slate:%0ANetanyahu%20Just%20Did%20Obama%20a%20Big%20Favor%0Ahttp://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html?wpsrc=sh_all_mob_em_bot" class="email"> <span class="icon"></span> <span class="count">&nbsp;</span> </a> 
+      </div> 
+     </div> 
+     <div class="row up-next" id="up-next-box"></div> 
+     <div class="footer-tiles"> 
+      <div class="row"> 
+       <div id="outbrain_placeholder"></div> 
+       <div class="sl-outbrain-divider"></div> 
+       <script type="text/javascript">
+  requirejs(["jquery","myslate"], function($,myslate) {
+    var isCommentUser = $.cookie("s_segs") && $.cookie("s_segs").indexOf('commenter') > -1;
+    if(!myslate.isSlatePlusUser) {
+      var createOutbrainDivs = function(widgetId) {
+        var divHtml = '<div class="OUTBRAIN" data-src="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html" data-widget-id="' + widgetId + '" data-ob-template="SlateMag" ></div>';
+        $("#outbrain_placeholder").append(divHtml);
+      }
+      if (mobileMode()) {
+        createOutbrainDivs("MB_1");
+      } else {
+        createOutbrainDivs("AR_3");
+        createOutbrainDivs("AR_17");
+      }
+      $('<script>', {src: '//widgets.outbrain.com/outbrain.js'}).appendTo('body');
+    }
+  });
+  </script> 
+      </div> 
+     </div> 
+     <!-- /.footer-tiles --> 
+    </footer> 
+    <div id="comments" class="comments-container" data-lf-hash="MzM3NzIwOmNxLTEwMDE1MDMwMzAxNg=="> 
+     <div id="livefyre"> 
+      <div class="button-container lf-loader" style="text-align:center;"> 
+       <button class="push-button comments-push-button" style="padding: 0 15px;">Load Comments</button> 
+      </div> 
+     </div> 
+     <div id="powered_by_livefyre_new">
+      <a href="http://livefyre.com" target="_blank">Powered by Livefyre</a>
+     </div> 
+    </div> 
+    <div id="comments-ads" class="comments-ads-container"> 
+    </div> 
+    <script type="text/javascript">
+requirejs(['config'], function(config) {
+  $.extend(config.livefyre, {
+    collectionMeta: 'eyJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6Ik5ldGFueWFodSBKdXN0IERpZCBPYmFtYSBhIEJpZyBGYXZvciIsInVybCI6Imh0dHA6Ly93d3cuc2xhdGUuY29tL2FydGljbGVzL25ld3NfYW5kX3BvbGl0aWNzL2ZvcmVpZ25lcnMvMjAxNS8wMy9iZW5qYW1pbl9uZXRhbnlhaHVfZGlkX3ByZXNpZGVudF9vYmFtYV9hX2JpZ19mYXZvcl90aGVfaXNyYWVsaV9wcmltZV9taW5pc3Rlci5odG1sP3dwaXNyY1x1MDAzZGxmIiwidGFncyI6InBvbGl0aWNzLG9iYW1hLGJlbmphbWluIG5ldGFueWFodSxpcmFuIiwiY2hlY2tzdW0iOiJjZjFkMzBiYTkyMjYwZjBmMmM2MDlhMjZmMzE1MmRlNCIsImFydGljbGVJZCI6ImNxLTEwMDE1MDMwMzAxNiJ9.FWT5HQwfRzC_UBdgwYFXkKjHLhA2VXSNeYQT84lRjPQ'
+  });
+});
+requirejs(['slate-livefyre']);
+</script> 
+    <div class="parsys iparsys contentWellBottom">
+     <div class="section">
+      <div class="new"></div> 
+     </div>
+     <div class="iparys_inherited">
+      <div class="parsys iparsys contentWellBottom"> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="abridgedhomepage"> 
+     <div class="twocolumn-stories"> 
+      <div class="twocolumn-stories__left large-tiles tiles"> 
+       <div class="parsys homepageSectionStoriesLeft">
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: News &amp; Politics" class="story-box-news-politics"> 
+          <header class="black-header"> 
+           <a href="http://www.slate.com/articles/news_and_politics.html" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> News &amp; Politics
+          </header> 
+          <div class="tile stacked long-hed " style="background-image: url('http://www.slate.com/content/dam/slate/articles/news_and_politics/politics/2015/03/150303_POL_HillaryClinton.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/news_and_politics/politics/2015/03/150303_POL_HillaryClinton.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/articles/news_and_politics/politics/2015/03/hillary_clinton_and_private_email_account_how_she_responds_will_tell_us.html" class="primary"></a> 
+           <span class="rubrik">Politics</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">March 3 2015 7:16 PM</span> 
+            <!-- <span class="hed">Command, Control, Delete</span> --> 
+            <span class="hed">Command, Control, Delete</span> 
+            <span class="dek">How Clinton’s team responds to questions about her private email account will tell us a lot about how the Clinton White House would operate.</span> 
+            <span class="byline">John Dickerson</span> 
+           </div> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/news_and_politics/politics/2015/03/hillary_clinton_private_email_scandal_no_one_gives_the_clintons_the_benefit.html" class="primary">Why Hillary Clinton Is Cursed</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/news_and_politics/war_stories/2015/03/benjamin_netanyahu_speech_to_congress_the_israeli_prime_minister_wants_an.html" class="primary">Only Two Things Would Please Netanyahu: Regime Change or War</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html" class="primary">Netanyahu Just Did Obama a Big Favor</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_is_a_hypocrite_he_intended_to_offend_president_obama.html" class="primary">Benjamin Netanyahu Is a Bully and a Hypocrite</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/news_and_politics/supreme_court_dispatches/2015/03/arizona_state_legislature_and_redistricting_commission_arguments_supreme.html" class="primary">The Supreme Court Is Poised to Make Congressional Races Even Less Democratic</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/news_and_politics/politics/2015/03/tamir_rice_shooting_why_do_good_police_stand_behind_their_reckless_dangerous.html" class="primary">The Tamir Rice Case Is Another Example of Good Police Standing Behind Reckless, Dangerous Colleagues</a> 
+          </div> 
+          <div class="section-list  last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/news_and_politics/politics/2015/03/jeb_bush_turns_on_the_u_s_export_import_bank.html" class="primary">Jeb Bush Denounces the Obscure Federal Institution That Helped His Business 20 Years Ago</a> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: Business" class="story-box-business"> 
+          <header class="black-header"> 
+           <a href="http://www.slate.com/articles/business.html" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> Business
+          </header> 
+          <div class="tile stacked long-hed " style="background-image: url('http://www.slate.com/content/dam/slate/blogs/moneybox/2015/03/03/apple_overtakes_samsung_the_iphone_was_the_best_selling_smartphone_in_q4/iphone_6_gold.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/moneybox/2015/03/03/apple_overtakes_samsung_the_iphone_was_the_best_selling_smartphone_in_q4/iphone_6_gold.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/blogs/moneybox/2015/03/03/apple_overtakes_samsung_the_iphone_was_the_best_selling_smartphone_in_q4.html" class="primary"></a> 
+           <span class="rubrik">Moneybox</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">March 3 2015 6:37 PM</span> 
+            <!-- <span class="hed">Samsung Can Mock Apple All It Wants, but the iPhone Is Officially Outselling It</span> --> 
+            <span class="hed">Samsung Can Mock Apple All It Wants, but the iPhone Is Officially Outselling It</span> 
+            <span class="dek"></span> 
+            <span class="byline">Alison Griswold</span> 
+           </div> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/moneybox/2015/03/03/how_americans_define_rich_somebody_who_has_more_money_than_they_do.html" class="primary">There Are No Rich People in America</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/business_insider/2015/03/03/sweet_briar_college_closing_why_the_wealthy_virginia_school_is_closing_its.html" class="primary">Virginia’s Sweet Briar College Has a $94 Million Endowment. Why Is It Closing?</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/moneybox/2015/03/03/jpmorgan_robo_signing_settlement_bank_pays_up_for_not_reviewing_bankruptcy.html" class="primary">JPMorgan Adds Another $50 Million to Its Gigantic Settlements Tally</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/moneybox/2015/03/03/law_schools_drop_the_lsat_bad_idea.html" class="primary">Some Law Schools Will Now Accept Students Who Didn’t Take the LSAT. That’s an Awful Idea.</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/business/moneybox/2015/03/baby_boomers_delaying_retirement_it_s_a_myth_because_retirement_is_inevitable.html" class="primary">Ignore the Gurus, Baby Boomers. Your Retirement Is Inevitable.</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/moneybox/2015/03/02/tinder_plus_pay_for_passport_rewind_and_unlimited_right_swipes.html" class="primary">Are You 30? Tinder Has Officially Decided You’re Old.</a> 
+          </div> 
+          <div class="section-list  last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/moneybox/2015/03/02/uber_launches_momentum_magazine_why_not_communicate_with_drivers_in_print.html" class="primary">Overfunded Uber Will Sink Excess Money Into Print Magazine</a> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: Life" class="story-box-life"> 
+          <header class="black-header"> 
+           <a href="http://www.slate.com/articles/life.html" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> Life
+          </header> 
+          <div class="tile stacked long-hed " style="background-image: url('http://www.slate.com/content/dam/slate/blogs/outward/2015/03/03/nebraska_doesn_t_care_if_a_lesbian_sally_waters_dies_before_she_can_get/115974538-gay-pride-and-an-american-flag-hang-from-a-shoulder-bag.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/outward/2015/03/03/nebraska_doesn_t_care_if_a_lesbian_sally_waters_dies_before_she_can_get/115974538-gay-pride-and-an-american-flag-hang-from-a-shoulder-bag.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/blogs/outward/2015/03/03/nebraska_doesn_t_care_if_a_lesbian_sally_waters_dies_before_she_can_get.html" class="primary"></a> 
+           <span class="rubrik">Outward</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">March 3 2015 2:17 PM</span> 
+            <!-- <span class="hed">Nebraska to Lesbian: We Don’t Care if You Die Before You Can Get Married</span> --> 
+            <span class="hed">Nebraska to Lesbian: We Don’t Care if You Die Before You Can Get Married</span> 
+            <span class="dek"></span> 
+            <span class="byline">Mark Joseph Stern</span> 
+           </div> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/quora/2015/03/03/how_does_a_professional_race_car_driver_navigate_normal_traffic.html" class="primary">How Does a Professional Race Car Driver Navigate Normal Traffic?</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/the_vault/2015/03/03/history_of_marriage_a_list_of_100_19th_century_marriages.html" class="primary">A Tragic Catalog of 100 Mostly-Miserable 19th-Century Marriages&nbsp;</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/atlas_obscura/2015/03/03/ueno_zoo_escaped_animal_drill_in_tokyo.html" class="primary">Ueno Zoo’s Emergency Drills Involve Staff Dressed as Zebras</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/life/food/2015/03/farmstead_meatsmith_videos_can_humane_animal_slaughter_compete_with_cooking.html" class="primary">These Online Cooking Videos Bring Meat From Farm to Table. Step 1: Kill a Pig.</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/life/dear_prudence/2015/03/dear_prudence_my_husband_keeps_sexting_me.html" class="primary">Help! My Husband Pressures Me to Sext With Him.</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/outward/2015/03/02/russell_tovey_s_effeminate_masc_comments_reveal_femmephobia_in_the_looking.html" class="primary"><em>Looking</em>’s Russell Tovey Is Glad He’s Not An “Effeminate,” “Tapdancing Freak.”</a> 
+          </div> 
+          <div class="section-list  last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/outward/2015/03/02/the_case_against_marriage_the_state_should_stay_out_of_it.html" class="primary">An Anti-Gay Alabama Justice Wants to End Civil Marriage. Bring It!</a> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: Double X" class="story-box-double-x"> 
+          <header class="black-header"> 
+           <a href="http://www.slate.com/articles/double_x.html" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> Double X
+          </header> 
+          <div class="tile stacked long-hed " style="background-image: url('http://www.slate.com/content/dam/slate/blogs/xx_factor/2015/03/03/john_v_women_there_are_more_men_named_john_running_large_companies_than/461277997-yahoo-president-and-ceo-marissa-mayer-delivers-a.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/xx_factor/2015/03/03/john_v_women_there_are_more_men_named_john_running_large_companies_than/461277997-yahoo-president-and-ceo-marissa-mayer-delivers-a.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/blogs/xx_factor/2015/03/03/john_v_women_there_are_more_men_named_john_running_large_companies_than.html" class="primary"></a> 
+           <span class="rubrik">The XX Factor</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">March 3 2015 5:32 PM</span> 
+            <!-- <span class="hed">There Are More Men Named John Than Women Running Large Companies &nbsp;</span> --> 
+            <span class="hed">There Are More Men Named John Than Women Running Large Companies &nbsp;</span> 
+            <span class="dek"></span> 
+            <span class="byline">Amanda Marcotte</span> 
+           </div> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/xx_factor/2015/03/02/meitiv_decision_cps_finds_free_range_parents_responsible_for_unsubstantiated.html" class="primary">CPS Finds&nbsp;“Free Range” Parents Responsible for Unsubstantiated Child Neglect. Now What?</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/xx_factor/2015/03/02/barbara_mikulski_longtime_maryland_senator_to_retire_in_2016.html" class="primary">How Barbara Mikulski Transformed the Senate&nbsp;</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/xx_factor/2015/03/02/poor_women_have_more_abortions_even_though_middle_class_women_abort_more.html" class="primary">Why Do Poor Women Have More Abortions?</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/double_x/doublex/2015/02/the_hunting_ground_a_campus_rape_documentary_that_fails_to_provide_a_full.html" class="primary">What’s Wrong With the New Documentary About Rape on College Campuses</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/xx_factor/2015/02/27/todd_akin_might_run_for_senate_to_help_his_party_focus_on_abortion.html" class="primary">Todd Akin Is Thinking About Running for Senate. Legitimately.</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/xx_factor/2015/02/25/binge_eating_disorder_vyvanse_may_not_be_the_right_treatment_but_the_problem.html" class="primary">This Drug for Binge-Eating Disorder May Be Shady. That Doesn’t Mean the Disease Isn't Real.</a> 
+          </div> 
+          <div class="section-list  last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/xx_factor/2015/02/25/republican_women_are_more_religious_and_theocratic_than_republican_men_new.html" class="primary">Why Do Women Vote Republican? &nbsp;</a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="twocolumn-stories__right large-tiles tiles"> 
+       <div class="parsys homepageSectionStoriesRight">
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: Slate Plus" class="story-box-slate-plus"> 
+          <header class="black-header"> 
+           <a href="/plus/home?wpisrc=sp_all_native-by-section" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> Slate Plus
+          </header> 
+          <div class="tile stacked long-hed slateplus-preview" style="background-image: url('http://www.slate.com/content/dam/slate/articles/podcasts/gabfest/Podcast_Political_Gabfest_Promo_Large.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/podcasts/gabfest/Podcast_Political_Gabfest_Promo_Large.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/articles/podcasts/gabfest/2015/03/the_best_tv_shows_about_politics_the_political_gabfest_discusses_the_legacy.html?wpsrc=sp_all_native_by-section" class="primary"></a> 
+           <span class="rubrik">Political Gabfest</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">March 3 2015 1:39 PM</span> 
+            <!-- <span class="hed">The “Most Pleasurable Portrayal of Libertarianism“ Bonus Segment</span> --> 
+            <span class="hed">The “Most Pleasurable Portrayal of Libertarianism“ Bonus Segment</span> 
+            <span class="dek">David, Emily, and John discuss what <em>Parks and Recreation</em> got right about government.</span> 
+            <span class="byline">Emily Bazelon, David Plotz, and John Dickerson</span> 
+           </div> 
+          </div> 
+          <div class="section-list slateplus-preview" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/life/the_chat_room/2015/03/how_to_write_for_slate_ask_a_slate_commenter_how_she_became_a_slate_writer.html?wpsrc=sp_all_native_by-section" class="primary">I Was a <strong><em>Slate</em></strong> Commenter; Now I’m a <strong><em>Slate</em></strong> Writer. Ask Me Anything.</a> 
+          </div> 
+          <div class="section-list slateplus-preview" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/podcasts/tv_club/2014/10/slate_s_the_walking_dead_podcast_recap_and_spoiler_special.html?wpsrc=sp_all_native_by-section" class="primary"><em>Walking Dead</em> Podcast Early Release:&nbsp;Episode 12, &quot;Remember&quot;&nbsp;</a> 
+          </div> 
+          <div class="section-list slateplus-preview" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/arts/tv_club/2015/03/slate_s_downton_abbey_podcast_recap_and_spoiler_special_episode_9.html?wpsrc=sp_all_native_by-section" class="primary">A Spoiler-Filled Podcast on <em>Downton Abbey </em>Episode 9</a> 
+          </div> 
+          <div class="section-list slateplus-preview last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/news_and_politics/politics/2015/02/slate_s_weekly_roundup_josh_keating_on_what_he_read_about_venmo_the_oscars.html?wpsrc=sp_all_native_by-section" class="primary">Josh Keating on His Favorite Reads From <strong><em>Slate </em></strong>This Week</a> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: Arts" class="story-box-arts"> 
+          <header class="black-header"> 
+           <a href="http://www.slate.com/articles/arts.html" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> Arts
+          </header> 
+          <div class="tile stacked long-hed " style="background-image: url('http://www.slate.com/content/dam/slate/blogs/browbeat/2015/03/03/kennedy_s_last_days_the_children_s_book_by_bill_o_reilly_on_the_jfk_assassination/135989747-bill-oreilly-host-of-foxs-the-oreilly-factor-at-fox.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/browbeat/2015/03/03/kennedy_s_last_days_the_children_s_book_by_bill_o_reilly_on_the_jfk_assassination/135989747-bill-oreilly-host-of-foxs-the-oreilly-factor-at-fox.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/blogs/browbeat/2015/03/03/kennedy_s_last_days_the_children_s_book_by_bill_o_reilly_on_the_jfk_assassination.html" class="primary"></a> 
+           <span class="rubrik">Brow Beat</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">March 3 2015 5:11 PM</span> 
+            <!-- <span class="hed">A Close Read of Bill O’Reilly’s “Nonfiction” Children’s Book</span> --> 
+            <span class="hed">A Close Read of Bill O’Reilly’s “Nonfiction” Children’s Book</span> 
+            <span class="dek"></span> 
+            <span class="byline">Katy Waldman</span> 
+           </div> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/browbeat/2015/03/03/nutella_s_say_it_with_nutella_viral_marketing_campaign_what_we_can_learn.html" class="primary">Nutella’s Attempts to Keep People From Calling It “Poop” Are Valiant but Futile</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/browbeat/2015/03/03/community_season_6_trailer_the_yahoo_produced_sitcom_returns_with_old_characters.html" class="primary">The&nbsp;<em>Community&nbsp;</em>Season 6&nbsp;Trailer Suggests We May Be in for the Darkest Timeline Yet</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/arts/books/2015/03/roman_muradov_s_comic_in_a_sense_lost_and_found_reviewed.html" class="primary">A Kafka-Inspired Comic by a Crazily Talented Illustrator</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/arts/books/2015/03/ongoingness_by_sarah_manguso_reviewed.html" class="primary">Sarah Manguso’s Ongoingness Reveals the Many Perils of Writing About Yourself</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/browbeat/2015/03/03/will_forte_interview_last_man_on_earth_star_showrunner_on_his_unusual_new.html" class="primary">Will Forte on <em>Last Man on Earth</em>, <em>MacGruber 2</em>, and His <em>SNL</em> 40 Experience</a> 
+          </div> 
+          <div class="section-list  last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/behold/2015/03/03/_river_hijano_photographs_the_dry_lakes_racers_australia_s_speed_week.html" class="primary">Do You Have What It Takes to Race on Australia’s Salt Flats During Speed Week?</a> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: Technology" class="story-box-technology"> 
+          <header class="black-header"> 
+           <a href="http://www.slate.com/articles/technology.html" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> Technology
+          </header> 
+          <div class="tile stacked long-hed " style="background-image: url('http://www.slate.com/content/dam/slate/articles/technology/technology/2015/03/150303_FT_Liberty.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/technology/technology/2015/03/150303_FT_Liberty.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/articles/technology/technology/2015/03/google_wireless_how_the_freedompop_model_could_disrupt_verizon_at_t.html" class="primary"></a> 
+           <span class="rubrik">Technology</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">March 3 2015 7:23 PM</span> 
+            <!-- <span class="hed">You’re Paying Too Much for Wireless</span> --> 
+            <span class="hed">You’re Paying Too Much for Wireless</span> 
+            <span class="dek">Here’s how Google will change that.</span> 
+            <span class="byline">Will Oremus</span> 
+           </div> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/future_tense/2015/03/03/is_using_a_consumer_email_service_a_good_or_bad_decision_for_the_secretary.html" class="primary">Did Hillary Clinton Compromise Her Email Security or Make It Stronger?</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/future_tense/2015/03/03/_3_d_printing_company_markforged_refused_to_sell_printers_to_gun_group_does.html" class="primary">Can a 3-D Printing Company Stop People From Printing Their Own Guns?</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/future_tense/2015/03/03/designing_for_happiness_the_ultimate_sustainability_solution.html" class="primary">Designing for Happiness: The Ultimate Sustainability Solution?</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/technology/users/2015/03/reddit_and_suicide_intervention_how_social_media_is_changing_the_cry_for.html" class="primary">How Reddit Is Changing Suicide Intervention</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/technology/future_tense/2015/03/isis_arrests_how_the_fbi_followed_the_digital_breadcrumbs.html" class="primary">How to Distinguish Online Nutcases From Honest-to-God Villains</a> 
+          </div> 
+          <div class="section-list  last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/technology/future_tense/2015/03/webmd_and_self_diagnosis_how_the_internet_is_changing_medical_decisions.html" class="primary">How the Digital Era Is Changing the Way We Make Medical Decisions</a> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: Health &amp; Science" class="story-box-health-science"> 
+          <header class="black-header"> 
+           <a href="http://www.slate.com/articles/health_and_science.html" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> Health &amp; Science
+          </header> 
+          <div class="tile stacked long-hed " style="background-image: url('http://www.slate.com/content/dam/slate/blogs/bad_astronomy/2015/03/03/rosetta_shadow590.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/blogs/bad_astronomy/2015/03/03/rosetta_shadow590.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/blogs/bad_astronomy/2015/03/03/rosetta_shadow_on_a_comet.html" class="primary"></a> 
+           <span class="rubrik">Bad Astronomy</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">March 3 2015 12:00 PM</span> 
+            <!-- <span class="hed">Rosetta Sees Its Shadow on a Comet</span> --> 
+            <span class="hed">Rosetta Sees Its Shadow on a Comet</span> 
+            <span class="dek"></span> 
+            <span class="byline">Phil Plait</span> 
+           </div> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/wild_things/2015/03/03/weasel_on_a_woodpecker_photo_photographer_says_it_s_a_real_weaselpecker.html" class="primary">That Photo of a Weasel on a Flying Woodpecker Is Real. Here’s How The Photographer Got the Shot.</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/bad_astronomy/2015/03/03/ceres_dawn_animation_of_it_spinning.html" class="primary">Dawn Sees Sunset on an Alien World</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/bad_astronomy/2015/03/02/waterspout_video_vortex_terrifies_beachgoers.html" class="primary">Watch as a Waterspout Terrifies Brazilian Beachgoers</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/health_and_science/science/2015/03/what_color_do_you_think_the_dress_is_a_poll_on_sunlight_vision_perception.html" class="primary">Tell Us What Color You Thought the Dress Was: Poll</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/bad_astronomy/2015/03/02/crash_course_astronomy_episode_7_gravity.html" class="primary">Look, I Can’t Force You to Understand Gravity. But I Can Accelerate the Process.</a> 
+          </div> 
+          <div class="section-list  last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/blogs/bad_astronomy/2015/03/02/political_anti_science_a_week_of_nonsense.html" class="primary">The Week in Political Buffoonery</a> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="storyboxgroupquery section"> 
+         <div data-vr-zone="Story Box: Sports" class="story-box-sports"> 
+          <header class="black-header"> 
+           <a href="http://www.slate.com/articles/sports.html" class="primary"></a> 
+           <span class="see-all">&nbsp;</span> Sports
+          </header> 
+          <div class="tile stacked long-hed " style="background-image: url('http://www.slate.com/content/dam/slate/articles/sports/sports_nut/2015/02/150226_SNUT_DenysMolchanov.jpg.CROP.promo-medium2.jpg');" data-vr-contentbox="" data-promo-image="http://www.slate.com/content/dam/slate/articles/sports/sports_nut/2015/02/150226_SNUT_DenysMolchanov.jpg.CROP.promo-medium2.jpg"> 
+           <a href="http://www.slate.com/articles/sports/sports_nut/2015/02/denys_molchanov_match_fixing_allegations_pro_tennis_has_a_match_fixing_problem.html" class="primary"></a> 
+           <span class="rubrik">Sports Nut</span> 
+           <div class="full-tile"> 
+            <span class="timestamp">Feb. 26 2015 7:41 PM</span> 
+            <!-- <span class="hed">Game, Set, and (Fixed) Match</span> --> 
+            <span class="hed">Game, Set, and (Fixed) Match</span> 
+            <span class="dek">Pro tennis has a match-fixing problem in its lower ranks.</span> 
+            <span class="byline">Ben Rothenberg</span> 
+           </div> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/sports/sports_nut/2015/02/hardest_shot_in_bowling_it_s_not_the_7_10_split_it_s_the_greek_church.html" class="primary">What’s the Hardest Shot in Bowling? It’s Not the 7-10 Split.</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/sports/sports_nut/2015/02/asu_curtain_of_distraction_has_arizona_state_university_discovered_the_holy.html" class="primary">Has ASU Discovered the Holy Grail of Free-Throw Distraction?</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/sports/sports_nut/2015/02/john_wall_versus_steph_curry_how_the_washington_wizards_point_guard_became.html" class="primary">How John Wall Became the Most Entertaining Player in the NBA</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/sports/sports_nut/2015/02/dean_smith_obit_the_legendary_university_of_north_carolina_basketball_coach.html" class="primary">Dean Smith’s Political Approach to Being a Coach Is Missed Now More Than Ever</a> 
+          </div> 
+          <div class="section-list " data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/sports/sports_nut/2015/02/_2022_world_cup_why_the_2015_men_s_handball_world_championship_in_qatar.html" class="primary">Why Handball’s World Championship in Qatar Should Worry World Cup Fans</a> 
+          </div> 
+          <div class="section-list  last" data-vr-contentbox=""> 
+           <a href="http://www.slate.com/articles/sports/sports_nut/2015/02/pete_carroll_s_play_call_didn_t_lose_the_super_bowl_bill_belichick_tom_brady.html" class="primary">Seattle Didn’t Throw Away the Super Bowl. The Patriots Won It.</a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </article>
+   <!-- /.main --> 
+   <aside class="sidebar" id="main_sidebar"> 
+    <div class="sidebar-wrapper"> 
+     <section class="nav-panel" id="slate_logo"> 
+      <div class="nav-header"> 
+       <a class="slate-logo" href="/"><span class="logo">Slate</span></a> 
+       <a href="#" class="user-link sidebar-handle"></a> 
+       <a href="#" class="search-link sidebar-handle"></a> 
+       <a href="#" class="global-nav-handle sidebar-handle"></a> 
+       <div class="buttons"> 
+        <span class="link option "><a class="first nav-option sign-in-link" href="#" id="sign_in_link">Sign In</a></span> 
+        <span class="link option "><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span> 
+       </div> 
+      </div> 
+     </section> 
+     <div class="parsys iparsys contentSidebar">
+      <div class="section">
+       <div class="new"></div> 
+      </div>
+      <div class="iparys_inherited">
+       <div class="parsys iparsys contentSidebar">
+        <div class="renderHtml section"> 
+         <style type="text/css">
+.mostshared {display: none;}
+.mostpopular {display: none;}
+</style> 
+        </div> 
+        <div class="mostpopular section"> 
+         <section class="items"> 
+          <a class="header" href="#">Most Read</a> 
+          <ul class="numbered-list"> 
+           <li><a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"><small>1.</small> <span>Netanyahu Just Did Obama a Big Favor</span></a></li> 
+           <li><a href="http://www.slate.com/articles/life/dear_prudence/2015/03/dear_prudence_my_husband_keeps_sexting_me.html"><small>2.</small> <span>Help! My Husband Pressures Me to Sext With Him.</span></a></li> 
+           <li><a href="http://www.slate.com/articles/news_and_politics/war_stories/2015/03/benjamin_netanyahu_speech_to_congress_the_israeli_prime_minister_wants_an.html"><small>3.</small> <span>Only Two Things Would Please Netanyahu: Regime Change or War</span></a></li> 
+           <li><a href="http://www.slate.com/articles/business/moneybox/2015/03/baby_boomers_delaying_retirement_it_s_a_myth_because_retirement_is_inevitable.html"><small>4.</small> <span>Ignore the Gurus, Baby Boomers. Your Retirement Is Inevitable.</span></a></li> 
+           <li><a href="http://www.slate.com/blogs/wild_things/2015/03/03/weasel_on_a_woodpecker_photo_photographer_says_it_s_a_real_weaselpecker.html"><small>5.</small> <span>That Photo of a Weasel on a Flying Woodpecker Is Real. Here’s How The Photographer Got the Shot.</span></a></li> 
+          </ul> 
+         </section> 
+        </div> 
+        <div class="mostshared section"> 
+         <section data-vr-zone="Most Shared"> 
+          <header class="black-header">
+           Most Shared
+          </header> 
+          <ul class="numbered-list"> 
+           <li data-vr-contentbox=""> <a href="http://www.slate.com/blogs/wild_things/2015/03/03/weasel_on_a_woodpecker_photo_photographer_says_it_s_a_real_weaselpecker.html"> <small>1.</small> <span>That Photo of a Weasel on a Flying Woodpecker Is Real. Here’s How The Photographer Got the Shot.</span> </a> </li> 
+           <li data-vr-contentbox=""> <a href="http://www.slate.com/blogs/xx_factor/2015/03/02/meitiv_decision_cps_finds_free_range_parents_responsible_for_unsubstantiated.html"> <small>2.</small> <span>CPS Finds&nbsp;“Free Range” Parents Responsible for Unsubstantiated Child Neglect. Now What?</span> </a> </li> 
+           <li data-vr-contentbox=""> <a href="http://www.slate.com/blogs/the_slatest/2015/03/03/penis_researchers_measure_average_penis_size_in_comprehensive_new_penis.html"> <small>3.</small> <span>Here Is the Average Penis Size According to the Latest in Penis Measuring Science</span> </a> </li> 
+           <li data-vr-contentbox=""> <a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html"> <small>4.</small> <span>Netanyahu Just Did Obama a Big Favor</span> </a> </li> 
+           <li data-vr-contentbox=""> <a href="http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_is_a_hypocrite_he_intended_to_offend_president_obama.html"> <small>5.</small> <span>Benjamin Netanyahu Is a Bully and a Hypocrite</span> </a> </li> 
+          </ul> 
+         </section> 
+        </div> 
+        <div class="rightrailstories section"> 
+         <section class="items"> 
+          <div id="rr-results" data-track-module="smart-rr" data-omit-views="true"> 
+           <div class="smallvideos"> 
+            <div class="row"> 
+             <section class="video-gallery" id="small_videos" style="display: none;"> 
+              <div id="small_video_gallery_mobile_wrap"> 
+               <div class="current-video"> 
+                <img src="http://www.slate.com/content/dam/slate/articles/video/video/2015/03/villarrica_explosion_footage_lava_fountain_in_chile_volcano_eruption_video/tnc150303_villarrica_1280.jpg.CROP.hd-large.jpg" /> 
+                <a href="http://www.slate.com/articles/video/video/2015/03/villarrica_explosion_footage_lava_fountain_in_chile_volcano_eruption_video.html?wpisrc=seg_video" class="primary"> <span class="play-button"></span> <span class="main-title">Chile’s “Lava Fountain”</span> </a> 
+               </div> 
+              </div> 
+             </section> 
+            </div> 
+            <script>
+requirejs(["jquery"], function($) {
+	if ($.cookie("s_segs") && $.cookie("s_segs").indexOf('video') > -1) {
+      $([
+        '#small_videos',
+        '#small_video_gallery_mobile_wrap',
+        '.current-video'
+      ].join(',')).show();
+      if (mobileMode()) {
+        $('#video_gallery_mobile').show();
+      }
+      $(".video-gallery").css('height','auto');
+      $(window).load(function() {
+        var dataCount3 = $('.rr-block[data-count="3"]');
+        dataCount3.addClass('repositioned');
+        $('.rr-block[data-count="9"]').before(dataCount3);
+      });
+	}
+});
+</script>
+           </div> 
+           <div class="rr-block" data-count="3"></div> 
+           <div class="item ad-container"> 
+            <div class="ad rightflex" data-ad-mode="desktop" data-ad-type="rightflex"></div> 
+            <div id="slug_rightflex" class="ad " data-ad-type="rightflex" data-ad-mode="tabletLandscape"></div> 
+           </div> 
+           <div class="rr-block" data-count="9"></div> 
+           <div class="sl-art-ad-midflex"> 
+            <div class="item ad-container"> 
+             <div class="ad rightflex-2" data-ad-mode="desktop" data-ad-type="rightflex|2"></div> 
+             <div id="slug_rightflex_2" class="ad " data-ad-type="rightflex|2" data-ad-mode="tabletLandscape"></div> 
+            </div> 
+           </div> 
+           <div class="rr-block"></div> 
+          </div> 
+         </section> 
+         <script type="text/javascript">
+requirejs(["jquery","rrstories"], function($,rrs) {
+  if (!mobileMode()) {
+    rrs.init(40,14,"trending");
+  } else {
+    $(".rightrailstories section").remove();
+  }
+});
+</script> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div>
+    <!-- /.sidebar-wrapper --> 
+   </aside>
+   <!-- /.sidebar --> 
+   <footer id="article_footer_tiles"> 
+   </footer> 
+  </div>
+  <!-- /.page --> 
+  <!-- HCS: layout --> 
+  <style type="text/css">
+      body > .bottom {
+        text-align: center;
+        padding: 10px 0;
+      }
+      .bottom > #slug_leaderboard_2 {
+        position: relative;
+        width: auto;
+        text-align: center;
+      }
+    </style> 
+  <div class="bottom"> 
+   <div class="ad leaderboard-2" data-ad-type="leaderboard|2" data-ad-mode="desktop"></div> 
+  </div> 
+  <footer class="footer-base"> 
+   <div class="container"> 
+    <div class="sub-slate-row"> 
+     <div class="left"> 
+      <span class="label">FOLLOW SLATE</span> 
+      <a href="https://twitter.com/slate" class="twitter"><img src="http://static.cdnslate.com/etc/designs/slate/images/social/yellow-twitterNew.821dc365.png" /></a> 
+      <a href="http://www.facebook.com/Slate" class="facebook"><img src="http://static.cdnslate.com/etc/designs/slate/images/social/yellow-facebookNew.74981e6f.png" /></a> 
+     </div> 
+     <div class="left slate-on"> 
+      <span class="label">SLATE ON</span> 
+      <a href="http://itunes.apple.com/us/app/slate-magazine/id384914589?mt=8">IPAD</a> 
+      <a href="http://itunes.apple.com/us/app/slate-com/id357555242?mt=8">IPHONE</a> 
+      <a href="https://market.android.com/details?id=com.wapo.slate.android">ANDROID</a> 
+      <a href="http://www.amazon.com/gp/product/B000IOMTC0?ie=UTF8&amp;tag=slatmaga-20&amp;link_code=as3&amp;camp=211189&amp;creative=373489&amp;creativeASIN=B000IOMTC0/">KINDLE</a> 
+     </div> 
+     <div class="right"> 
+      <a href="http://www.slatereprints.com" class="label reprints">REPRINTS</a> 
+      <a href="http://innovate.slate.com/" class="label advertise-with-us" target="_blank">ADVERTISE WITH US</a> 
+     </div> 
+    </div> 
+   </div>
+   <!-- /.container --> 
+  </footer> 
+  <footer class="footer-base-toc"> 
+   <div class="container"> 
+    <div class="footer-link-cols"> 
+     <ul> 
+      <li><a href="/articles/news_and_politics/slate_fare/2006/08/about_us.html">ABOUT US</a></li> 
+      <li><a href="/articles/briefing/contact_us/2006/08/whereto_find_slate_staff.html">CONTACT US</a></li> 
+      <li><a href="/articles/news_and_politics/slate_fare/2008/04/a_job_for_you_at_slate.html">WORK WITH US</a></li> 
+     </ul> 
+     <ul class="center"> 
+      <li><a href="/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_terms_of_service.html">USER AGREEMENT</a></li> 
+      <li><a href="/articles/briefing/slate_user_agreement_and_privacy_policy/2012/12/slate_s_privacy_policy.html">PRIVACY POLICY</a></li> 
+      <li><a href="/articles/briefing/slate_fare/2011/12/commenting_on_slate_frequently_asked_questions.html">FAQ</a></li> 
+     </ul> 
+     <ul class="last"> 
+      <li><a href="mailto:feedback@slate.com">FEEDBACK</a></li> 
+      <li><a href="/articles/news_and_politics/corrections.html">CORRECTIONS</a></li> 
+     </ul> 
+    </div> 
+    <ul class="copyright unstyled"> 
+     <li><a href="http://www.slate.com"><img src="http://static.cdnslate.com/etc/designs/slate/images/the-slate-group-logo.12cbe5ac.png" /></a></li> 
+     <li><a href="http://www.theroot.com"><img src="http://static.cdnslate.com/etc/designs/slate/images/the-root-logo.74009c0a.png" /></a></li> 
+     <li class="blurb">Slate is published by The Slate Group, a Graham Holdings Company. All contents &copy; 2014 The Slate Group LLC. All rights reserved.</li> 
+    </ul> 
+   </div>
+   <!-- /.container --> 
+  </footer> 
+  <!-- /.footer-base-toc --> 
+  <!-- HCS END: layout --> 
+  <!-- HCS: layouts/shared/bottom --> 
+  <div id="sidebar_toggle"> 
+   <a href="#" id="sidebar_handle"></a> 
+  </div> 
+  <script src="http://slate-ad-scripts.s3.amazonaws.com/wp-srv/ad/loaders/latest/js/min/polar_config.min.js"></script> 
+  <script>
+
+
+requirejs(["jquery", "hcs/libs/iscroll-lite", "modernizr", "hcs/script", "hcs/plugins/SGGlobalNav.jquery", "hcs/plugins/jQuery.highlighter","hcs/plugins/SGGlobalNav.jquery","libs/jquery-plugins/jquery.timeago","announcements","myslate"], function($, iScroll, unused0, unused1, unused2, unused3, unused4, unused5, announcements, myslate) {
+  $(document).ready(function() {
+    announcements.deleteOldCookies();
+    
+    $("span.timeago").timeago();
+  });
+  function pageLoadedForScrolling(){
+
+
+    scroller = new iScroll('main_sidebar', {
+      hScroll: false,
+      hScrollbar: false,
+      bounce: false
+    });
+
+    if(!mobileMode() && tabletMode() && $('html').hasClass('touch')){
+      // Nav gets iScroll if we're on an actual tablet.
+      window.tabletScroller = new iScroll('nav_sections', {
+        hScroll: false,
+        hScrollbar: false,
+        bounce: false,
+        onBeforeScrollStart: function (e) {
+          var target = e.target;
+          while (target.nodeType != 1) target = target.parentNode;
+
+          if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA')
+          e.preventDefault();
+        }
+      });
+    }
+
+  }
+
+  // We institute fancy scrolling on iscroll only on mobile webkit.
+
+  // Webkit detection script
+  Modernizr.addTest('webkit', function(){
+    return RegExp(" AppleWebKit/").test(navigator.userAgent);
+  });
+
+  // Mobile Webkit
+  Modernizr.addTest('mobile', function(){
+    return RegExp(" Mobile/").test(navigator.userAgent);
+  });
+
+  if(Modernizr.webkit && Modernizr.mobile){
+    if (document.addEventListener){
+      document.addEventListener('DOMContentLoaded', function () { setTimeout(pageLoadedForScrolling, 200); }, false);
+    } else if (document.attachEvent){
+      document.attachEvent('DOMContentLoaded', function () { setTimeout(pageLoadedForScrolling, 200); }, false);
+    }
+  }
+
+
+
+  $(function(){
+
+    watchSidebar();
+
+    if ($('body').hasClass('home')
+        || $('body').hasClass('landing')
+        || $('body').hasClass('settings')) {
+      $('.nav-header').SGGlobalNav({
+        noRollup: true, // Need to tell the homepage and landing etc that there's no rollup here, which causes things to behave differently.
+        noBurgerScroll: $('body').hasClass('no-burger-scroll'),
+        isSlatePlusUser: myslate.isSlatePlusUser
+      });
+    } else {
+      $('.nav-header').SGGlobalNav({
+        isSlatePlusUser: myslate.isSlatePlusUser
+      });
+    }
+
+
+    // Input field placeholder plugin to account for placeholder fallbacks.
+    jQuery(document).ready(function($) {
+      $(".field-with-placeholder").placeholder();
+    });
+
+
+    $('.content').highlighter({
+      'selector': '.highlighter-container',
+      'noHighlightIds': $('#podcast-slateplus-page'),
+      'minWords': 0,
+      'complete': function (data) {
+        // Here we have the selected string for use.
+        // console.log(data);
+        selectedText = data;
+      }
+    });
+
+  });
+
+
+  $(document).ready(function() {
+    $(".sticky").each(function() {
+      var stickyTop = $(".sticky").offset().top; // returns number
+      $(window).scroll(function() { // scroll event
+        var windowTop = $(window).scrollTop() + 57 + parseInt($(".sticky").css("margin-top").split("px")[0]); // returns number
+        if (stickyTop < windowTop) {
+          $(".sticky").css({ position: "fixed", top: "53px" });
+        } else {
+          $(".sticky").css("position","static");
+        }
+      });
+    })
+  });
+
+  watchSocialWelcomeNotifications();
+
+});
+    </script> 
+  <script>
+requirejs(["jquery", "myslate", "hcs/script", "hcs/plugins/SGNavDropdown.jquery",
+		"hcs/plugins/SGBigSlider.jquery","hcs/plugins/SGFootnote.jquery","hcs/plugins/SGRollup.jquery",
+		"hcs/plugins/SGNavDropdown.jquery","hcs/plugins/SGComments.jquery","hcs/plugins/SGLightbox.jquery",
+		"hcs/plugins/SGSocialIcons.jquery"],
+		function($, myslate, unused0, unused1, unused2, unused3, unused4, unused5, unused6, unused7, unused8) {
+
+    $(function(){
+
+      $('#big_slider').SGBigSlider({
+        type: 'home'
+      });
+
+      $('.footnote').SGFootnote();
+      var multipartArticleRollup = $('#article_rollup');
+
+      var subHed = $('#sub_hed');
+      if(subHed.length > 0){
+        subHed.SGNavDropdown({ // Multipart rollup triggered by tapping the subhed.
+          extraId: 'subhed', // Used to name events inside the plugin, so we can be sure to bind/unbind the correct stuff.
+          targetId: '#multipart_nav', // The thing to show.
+          leftOffset: function(){ return $('#sub_hed').position().left; },
+          topOffset: function(){ return $('#sub_hed').position().top + $('#sub_hed').outerHeight(true); },
+          onShow: function(){
+            $('#multipart_nav').css('position', 'absolute');
+            $('#multipart_nav').css('height', 'auto');
+            $('#multipart_nav').css('overflow', 'auto');
+            // subHed.find('.toggle').addClass('open-toggle');
+          },
+          onHide: function(){
+            // subHed.find('.toggle').removeClass('open-toggle');
+          }
+        });
+      }
+
+      if($('#article_header').length > 0){
+        // The roll up.
+        $('#main_sidebar').SGRollup({ // The main element assigned to this plugin is used to trigger the drop of the rollup on desktop mode.
+          rollupEl: multipartArticleRollup,
+          topOffset: $('#slate_logo').height(),
+          leftOffset: $('#article_header').offset().left,
+          tablet: {el: $('#article_header'), topOffset: $('#article_header').height()}, // Indicate the visibility triggers for tablet mode.
+          mobile: {el: $('#tablet_header'), topOffset: $('#tablet_header').height()},// Indicate the visibility triggers for mobile mode.
+          onHide: function(){
+            // On roll back up make sure to hide the nav if it's open, assuming it was opened by the rollup toggle.
+            if(multipartArticleRollup.data('plugin_SGNavDropdown').isTargetVisible() && $('#multipart_nav').data('openedByRollup')){
+              multipartArticleRollup.data('plugin_SGNavDropdown').close();
+            }
+            if (!myslate.isSlatePlusUser) {
+              if ($('#comments').length > 0) {
+                $('#comments').data('plugin_SGComments').close();
+              }
+            }
+          }
+        });
+      }
+
+    // Multipart dropdown triggered by the rollup in the multipart nav.
+      multipartArticleRollup.SGNavDropdown({
+        targetId: '#multipart_nav', // The thing to show.
+        extraSpecificHandle: '.handle',
+        extraId: 'multipart', // Used to name events inside the plugin, so we can be sure to bind/unbind the correct stuff.
+        leftOffset: function(){ return multipartArticleRollup.find('.main').offset().left; },
+        topOffset: function(){
+          return multipartArticleRollup.outerHeight(true)
+        },
+        onShow: function(){
+          $('#multipart_nav').css('position', ''); // undo the absolute bit we might have affixed in subHed.SGNavDropdown().
+          $('#multipart_nav').addClass('fixed').data('openedByRollup', true);
+          $('#multipart_nav').css('max-height', (mobileMode() ? $(window).outerHeight(true) + 10 : $(window).height() - $('#article_rollup').height()));
+          $('#multipart_nav').css('overflow', 'scroll');
+          if(mobileMode()){
+            $('#multipart_nav').css('right', 0);
+          }
+        },
+        onHide: function(){
+          $('#multipart_nav').data('openedByRollup', false);
+        }
+      });
+
+
+      if (!myslate.isSlatePlusUser) {
+        $('#comments').SGComments({
+          handles: $('.social .comments, .comment-options a'),
+          rollUp: $('#main_sidebar').data('plugin_SGRollup'),
+          leftOffset: function(){
+            // The intent is for the right side of the comments to line up with the sidebar.
+            if(tabletMode()){
+              return 0;
+            } else {
+              return $('#main_sidebar').offset().left - $('#comments').outerWidth() - 11;
+            }
+          },
+          topOffset: function(){ return $('#article_rollup').height(); },
+          onShow: function(){
+            if(multipartArticleRollup.data('plugin_SGNavDropdown').isTargetVisible()){
+              multipartArticleRollup.data('plugin_SGNavDropdown').close();
+            }
+            //if ($("#livefyre .fyre").size() == 0) {
+            //  loadLivefyre();
+            //}
+          },
+          mobile: {
+            handle: $('#see_more_comments') // This both triggers the mobile comments and indicates where to drop the content in the DOM.
+          }
+
+        });
+      }
+
+
+      // Trigger the slideshow lightbox for from the .slideshow-preview example.
+        $('#slideshow_preview_link').SGLightbox({
+          type: 'slideshow',
+          slideshowElement: $('#the_slideshow')
+        });
+
+
+      $('.social-with-popup').SGSocialIcons({});
+
+      watchMobileRollupSocialToggle();
+
+      $('.expandable').find('.toggle').click(function(e){
+        $(this).closest('.social').toggleClass('visible');
+        $('#main_byline').toggle();
+        e.preventDefault();
+      });
+
+      $('.full-width').setFullWidth();
+
+      myslate.benefits();
+
+    });
+});
+    </script> 
+  <script>
+    // Manage the social horizontal toggles on the landing pages.
+requirejs(["jquery", "hcs/script"],
+		function($, unused0) {
+
+      $(function(){
+        $('.social').find('.toggle').click(function(e){
+          e.preventDefault();
+          $(this).closest('.social').toggleClass('visible');
+        });
+      });
+});
+    </script> 
+  <script>
+    requirejs(["facebook"], function(unused0) {
+      $(function(){
+        FB.XFBML.parse();
+      });
+    });
+    </script> 
+  <!-- Buzzfeed --> 
+  <!-- Chartbeat --> 
+  <script type="text/javascript">
+
+var _sf_async_config={uid:9250,domain:"slate.com"};
+_sf_async_config.useCanonical = true;
+if (wp_meta_data) {
+    var sectionsArray = new Array();
+    if (wp_meta_data.section !== undefined) {
+        sectionsArray.push(wp_meta_data.section);
+    }
+    if (wp_meta_data.rubric !== undefined) {
+        sectionsArray.push(wp_meta_data.rubric);
+    }
+    if (wp_meta_data.blog !== undefined) {
+        sectionsArray.push(wp_meta_data.blog);
+    }
+    _sf_async_config.sections = sectionsArray.join(",");
+    if (wp_meta_data.authors !== undefined) {
+        _sf_async_config.authors = wp_meta_data.authors.join(",");
+    }
+}
+
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script> 
+  <!-- Parsely --> 
+  <div id="parsely-root" style="display: none"> 
+   <div id="parsely-cfg" data-parsely-site="slate.com"></div> 
+  </div> 
+  <script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script> 
+  <!-- END Parse.ly Include --> 
+  <script>
+            requirejs(["shared/sgads"], function(slateads) {
+                slateads.wire("http://js.slate.com/wp-srv/ad/loaders/latest/js/min/loader.min.js");
+            });
+        </script> 
+  <div class="nav-header" id="magic_nav_header"> 
+   <a class="slate-logo" href="/"><span class="logo">Slate</span></a> 
+   <div class="buttons"> 
+    <span class="link option"><a class="first nav-option sign-in-link" href="#" id="sign_in_link"> Sign In </a></span> 
+    <span class="link option"><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span> 
+   </div> 
+  </div>
+  <!-- /.nav-header --> 
+  <!-- HCS: layouts/shared/nav/nav --> 
+  <div id="nav_sections"></div> 
+  <!-- HCS END: layouts/shared/nav/nav --> 
+  <section class="nav-panel" id="nav_header_for_rollup_magic"> 
+   <div class="nav-header"> 
+    <a class="slate-logo" href="/"><span class="logo">Slate</span></a> 
+    <a href="#" class="user-link sidebar-handle"></a> 
+    <a href="#" class="search-link sidebar-handle"></a> 
+    <a href="#" class="global-nav-handle sidebar-handle"></a> 
+    <div class="buttons"> 
+     <span class="link option "><a class="first nav-option sign-in-link" href="#" id="sign_in_link">Sign In</a></span> 
+     <span class="link option "><a href="#" class="nav-option sign-up-link" id="sign_up_link">Sign Up</a></span> 
+    </div> 
+   </div> 
+  </section> 
+  <div id="nav_animation_mask"> 
+  </div> 
+  <span class="highlighter-container"> 
+   <div class="social social-with-popup sharing-buttons"> 
+    <a href="#" data-share="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html&amp;p[images][0]=http://www.slate.com/content/dam/slate/articles/news_and_politics/foreigners/2015/03/150303_FOR_NetanyahuWrong.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg&amp;p[title]=Netanyahu+Just+Did+Obama+a+Big+Favor&amp;p[summary]=Israeli+Prime+Minister+Benjamin+Netanyahu+did+President+Obama+an+enormous+favor+Tuesday.+Given+the+opportunity%2C+on+perhaps+the+world%E2%80%99s+biggest+political+stage%2C+to+articulate+the+best+possible+case+against+the+nuclear+deal+currently+being+negotiated+with+Iran%2C+Netanyahu+came+up+empty.+He+whiffed.+His+shot+sailed+so+wide+of+the..." class="facebook share highlighter"> <span class="icon"></span> </a> 
+    <a href="#" data-share="http://twitter.com/share?url=http://www.slate.com/articles/news_and_politics/foreigners/2015/03/benjamin_netanyahu_did_president_obama_a_big_favor_the_israeli_prime_minister.html&amp;count=none&amp;via=slate" class="twitter"> <span class="icon"></span> </a> 
+    <a href="#comments" class="comments" style="display: none;"> <span class="icon"></span> </a> 
+   </div> 
+   <div class="arrow-border"></div> 
+   <div class="arrow"></div> </span> 
+  <!-- Sailthru Horizon --> 
+  <script>
+    requirejs(['jquery'], function($) {
+      (function() {
+        function loadHorizon() {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js';
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+        loadHorizon();
+        var oldOnLoad = window.onload;
+        window.onload = function() {
+          if (typeof oldOnLoad === 'function') {
+            oldOnLoad();
+          }
+          Sailthru.setup({
+            domain: 'horizon.slate.com'
+          });
+        };
+      })();
+    });
+    </script> 
+  <!-- HCS END: layouts/shared/bottom --> 
+  <!-- Campaigns --> 
+  <script>
+     requirejs(["shared/campaignManager", "optimizely"], function(campaigns, optimizely) {
+       // setTimeout.  Boo.
+       setTimeout(campaigns.execute, 400);
+     });
+    </script> 
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"2676640","applicationTime":177,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"f3154255a5","transactionName":"YwEAY0tTXkJYURBYVlpLLFhLX1FdUEgBVWxGDU1WS0ZZUlVXFx5XURMRaFhcVG5JXQhYTV0HERhfXUJUUFUKVEtHS0gYEx1SVFdYBVxQWjsMUk1TXkhYWhFuXV0APUdLV0NYXVcKRWZbBgNaWG1RbltbA25fVRINRWZGWFRmWxdDWFEIC2hJQFlcXG0JWFddFxZSSxxYRVRe","agent":"js-agent.newrelic.com\/nr-536.min.js","errorBeacon":"bam.nr-data.net"}</script> 
+  <!--
+Page Loading starts on 2015/03/03 20:42:52, Total time elapsed to render is 0.16934507 seconds, Server: pub2w.slate.com
+-->   
+ </body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/boilerpipe-common/boilerpipe-common.iml" filepath="$PROJECT_DIR$/boilerpipe-common/boilerpipe-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boilerpipe-demo/boilerpipe-demo.iml" filepath="$PROJECT_DIR$/boilerpipe-demo/boilerpipe-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boilerpipe-parent.iml" filepath="$PROJECT_DIR$/boilerpipe-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boilerpipe-test-framework/boilerpipe-test-framework.iml" filepath="$PROJECT_DIR$/boilerpipe-test-framework/boilerpipe-test-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nekohtml/nekohtml.iml" filepath="$PROJECT_DIR$/nekohtml/nekohtml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nekohtml-relocated/nekohtml-relocated.iml" filepath="$PROJECT_DIR$/nekohtml-relocated/nekohtml-relocated.iml" />
+    </modules>
+  </component>
+</project>
