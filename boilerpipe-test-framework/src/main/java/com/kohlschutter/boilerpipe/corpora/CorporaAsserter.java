@@ -15,7 +15,7 @@ public class CorporaAsserter {
      * This allows us to bulk approve a large number of tests if we've updated
      * an algorithm and think that all of them pass.
      */
-    public static boolean UPDATE_MODE = true;
+    public static boolean UPDATE_MODE = false;
 
     private final CorporaCache corporaCache;
 

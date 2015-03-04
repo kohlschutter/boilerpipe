@@ -12,9 +12,7 @@ import java.nio.file.Paths;
  */
 public class CorporaCache {
 
-    // TODO: I need an easy way to configure this locally...
-
-    private static String ROOT = "./boilerpipe-common/src/test/resources/";
+    private static String ROOT = "src/test/resources/";
 
     private final Class<?> parent;
 
