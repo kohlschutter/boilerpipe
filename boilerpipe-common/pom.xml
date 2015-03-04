@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.kohlschutter.boilerpipe</groupId>
     <artifactId>boilerpipe-parent</artifactId>
-    <version>2.0-spinn3r-1</version>
+    <version>2.0-spinn3r-2</version>
   </parent>
   <name>boilerpipe-common</name>
   <properties>
@@ -43,7 +43,7 @@
     <dependency>
       <groupId>com.kohlschutter.boilerpipe.corpora</groupId>
       <artifactId>boilerpipe-test-framework</artifactId>
-      <version>2.0-spinn3r-1</version>
+      <version>2.0-spinn3r-2</version>
       <scope>test</scope>
     </dependency>
 
