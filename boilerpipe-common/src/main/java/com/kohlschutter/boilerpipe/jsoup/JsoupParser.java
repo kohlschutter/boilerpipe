@@ -54,13 +54,13 @@ public class JsoupParser {
      *
      * @return
      */
-    public TextDocument parse( Document document ) throws SAXException {
+    public TextDocument parse( Element element ) throws SAXException {
 
         BoilerpipeHTMLContentHandler contentHandler = new BoilerpipeHTMLContentHandler();
 
         JsoupSAXParser jsoupSAXParser = new JsoupSAXParser( contentHandler );
 
-        jsoupSAXParser.parse( document );
+        jsoupSAXParser.parse( element );
 
         return contentHandler.toTextDocument();
 
