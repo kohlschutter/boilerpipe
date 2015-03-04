@@ -54,27 +54,22 @@
             <groupId>org.apache.maven.plugins</groupId>
             <version>3.2</version>
 
-            <!-- turning off the eclipse incremental compiler for now because
-                 I think it causes a bug with mvn deploy which prevents deploying
-                 to a maven repo.  It causes a recompilation during the build
-                 but then neko isn't found which then breaks the build -->
-
-            <!--<configuration>-->
-              <!--<compilerId>eclipse</compilerId>-->
-              <!--<compilerArguments>-->
-                <!--<properties>${basedir}/../java7/java7-eclipse-${eclipse-warnings}.prefs</properties>-->
-              <!--</compilerArguments>-->
-              <!--<compilerArgs>-->
-                <!--<arg>-Werror</arg>-->
-              <!--</compilerArgs>-->
-            <!--</configuration>-->
-            <!--<dependencies>-->
-              <!--<dependency>-->
-                <!--<groupId>org.codehaus.plexus</groupId>-->
-                <!--<artifactId>plexus-compiler-eclipse</artifactId>-->
-                <!--<version>2.4</version>-->
-              <!--</dependency>-->
-            <!--</dependencies>-->
+            <configuration>
+              <compilerId>eclipse</compilerId>
+              <compilerArguments>
+                <properties>${basedir}/../java7/java7-eclipse-${eclipse-warnings}.prefs</properties>
+              </compilerArguments>
+              <compilerArgs>
+                <arg>-Werror</arg>
+              </compilerArgs>
+            </configuration>
+            <dependencies>
+              <dependency>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-compiler-eclipse</artifactId>
+                <version>2.4</version>
+              </dependency>
+            </dependencies>
 
           </plugin>
         </plugins>

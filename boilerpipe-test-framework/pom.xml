@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.kohlschutter.boilerpipe</groupId>
+    <groupId>com.kohlschutter.boilerpipe.corpora</groupId>
     <artifactId>boilerpipe-test-framework</artifactId>
 
     <dependencies>
