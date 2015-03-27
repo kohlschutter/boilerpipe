@@ -20,11 +20,11 @@
     </license>
   </licenses>
   <scm>
-    <url>scm:git:https://github.com/kohlschuetter/boilerpipe</url>
+    <url>scm:git:https://github.com/kohlschutter/boilerpipe</url>
   </scm>
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/kohlschuetter/boilerpipe/issues</url>
+    <url>https://github.com/kohlschutter/boilerpipe/issues</url>
   </issueManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
