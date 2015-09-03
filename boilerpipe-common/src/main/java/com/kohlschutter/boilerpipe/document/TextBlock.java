@@ -162,10 +162,24 @@ public class TextBlock implements Cloneable {
     return offsetBlocksEnd;
   }
 
+  @Override
   public String toString() {
-    return "[" + offsetBlocksStart + "-" + offsetBlocksEnd + ";tl=" + tagLevel + "; nw=" + numWords
-        + ";nwl=" + numWrappedLines + ";ld=" + linkDensity + "]\t"
-        + (isContent ? "CONTENT" : "boilerplate") + "," + labels + "\n" + getText();
+    return "TextBlock{" +
+             "isContent=" + isContent +
+             ", text=" + text +
+             ", labels=" + labels +
+             ", offsetBlocksStart=" + offsetBlocksStart +
+             ", offsetBlocksEnd=" + offsetBlocksEnd +
+             ", numWords=" + numWords +
+             ", numWordsInAnchorText=" + numWordsInAnchorText +
+             ", numWordsInWrappedLines=" + numWordsInWrappedLines +
+             ", numWrappedLines=" + numWrappedLines +
+             ", textDensity=" + textDensity +
+             ", linkDensity=" + linkDensity +
+             ", containedTextElements=" + containedTextElements +
+             ", numFullTextWords=" + numFullTextWords +
+             ", tagLevel=" + tagLevel +
+             '}';
   }
 
   /**
