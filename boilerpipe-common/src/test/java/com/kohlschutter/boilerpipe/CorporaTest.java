@@ -17,11 +17,11 @@
  */
 package com.kohlschutter.boilerpipe;
 
-import com.kohlschutter.boilerpipe.corpora.CorporaAsserter;
-import com.kohlschutter.boilerpipe.corpora.CorporaCache;
 import com.kohlschutter.boilerpipe.document.TextDocument;
 import com.kohlschutter.boilerpipe.extractors.ArticleExtractor;
 import com.kohlschutter.boilerpipe.jsoup.JsoupParser;
+import com.spinn3r.artemis.corpus.test.CorporaAsserter;
+import com.spinn3r.artemis.corpus.test.CorporaCache;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.junit.Test;
@@ -92,7 +92,7 @@ public class CorporaTest {
 
         TextDocument textDocumentFromJsoup = new JsoupParser().parse( html );
 
-        corporaAsserter.assertCorpora( key + "-text", articleExtractor.getText( textDocumentFromJsoup ) );
+        corporaAsserter.assertEquals( key + "-text", articleExtractor.getText( textDocumentFromJsoup ) );
 
     }
 
@@ -103,7 +103,7 @@ public class CorporaTest {
         ArticleExtractor articleExtractor = ArticleExtractor.getInstance();
 
         TextDocument textDocumentFromJsoup = new JsoupParser().parse( html );
-        corporaAsserter.assertCorpora( key + "-html", articleExtractor.getHTML( textDocumentFromJsoup ) );
+        corporaAsserter.assertEquals( key + "-html", articleExtractor.getHTML( textDocumentFromJsoup ) );
 
     }
 

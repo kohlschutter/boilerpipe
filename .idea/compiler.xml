@@ -30,12 +30,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="boilerpipe-common" target="1.7" />
-      <module name="boilerpipe-demo" target="1.7" />
-      <module name="boilerpipe-parent" target="1.7" />
-      <module name="boilerpipe-test-framework" target="1.7" />
-      <module name="nekohtml" target="1.7" />
-      <module name="nekohtml-relocated" target="1.7" />
+      <module name="boilerpipe-common" target="1.8" />
+      <module name="boilerpipe-demo" target="1.8" />
+      <module name="boilerpipe-parent" target="1.8" />
+      <module name="boilerpipe-test-framework" target="1.8" />
+      <module name="nekohtml" target="1.8" />
+      <module name="nekohtml-relocated" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -17,17 +17,16 @@
  */
 package com.kohlschutter.boilerpipe;
 
-import com.kohlschutter.boilerpipe.corpora.CorporaAsserter;
-import com.kohlschutter.boilerpipe.corpora.Formatter;
 import com.kohlschutter.boilerpipe.document.TextDocument;
 import com.kohlschutter.boilerpipe.sax.BoilerpipeSAXInput;
 import com.kohlschutter.boilerpipe.sax.HTMLDocument;
 import com.kohlschutter.boilerpipe.sax.HTMLFetcher;
+import com.spinn3r.artemis.corpus.test.CorporaAsserter;
 import org.junit.Test;
 
 import java.net.URL;
 
-import static com.kohlschutter.boilerpipe.corpora.Formatter.*;
+import static com.kohlschutter.boilerpipe.Formatter.table;
 
 public class TextDocumentParserTest {
 
@@ -38,7 +37,7 @@ public class TextDocumentParserTest {
 
         TextDocument doc = parse( "/test1.html" );
 
-        corporaAsserter.assertCorpora( "testBasicDocument1", doc.getTextBlocks().toString() );
+        corporaAsserter.assertEquals( "testBasicDocument1", doc.getTextBlocks().toString() );
 
     }
 
@@ -47,7 +46,7 @@ public class TextDocumentParserTest {
 
         TextDocument doc = parse( "/test2.html" );
 
-        corporaAsserter.assertCorpora( "testBasicDocument2", doc.getTextBlocks().toString() );
+        corporaAsserter.assertEquals( "testBasicDocument2", doc.getTextBlocks().toString() );
 
     }
 
@@ -61,7 +60,7 @@ public class TextDocumentParserTest {
         // for div,p ... in jsoup and then taking the text from the elements to
         // build a  TextBlock
 
-        corporaAsserter.assertCorpora( "testBasicDocument3", table( doc.getTextBlocks() ) );
+        corporaAsserter.assertEquals( "testBasicDocument3", table( doc.getTextBlocks() ) );
 
     }
 

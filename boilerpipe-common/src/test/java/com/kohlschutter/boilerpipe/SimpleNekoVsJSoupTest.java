@@ -27,7 +27,7 @@ import org.junit.Test;
 
 import java.net.URL;
 
-import static com.kohlschutter.boilerpipe.corpora.Formatter.*;
+import static com.kohlschutter.boilerpipe.Formatter.table;
 import static org.junit.Assert.*;
 
 /**
