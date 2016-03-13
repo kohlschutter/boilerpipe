@@ -45,7 +45,10 @@ public class HTMLFetcher {
    * @throws IOException
    */
   public static HTMLDocument fetch(final URL url) throws IOException {
+
     final URLConnection conn = url.openConnection();
+    conn.setRequestProperty("User-Agent", "Mozilla/5.0 (X11; Linux i686; rv:10.0) Gecko/20100101 Firefox/10.0");
+
     final String ct = conn.getContentType();
 
     if (ct == null || !(ct.equals("text/html") || ct.startsWith("text/html;"))) {
