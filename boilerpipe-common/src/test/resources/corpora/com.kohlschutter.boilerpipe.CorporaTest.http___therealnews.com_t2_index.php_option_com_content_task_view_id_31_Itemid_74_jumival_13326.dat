@@ -1,0 +1,1098 @@
+<!--<![if !IE]>
+
+<script type="text/javascript">
+var popurls=new Array()
+popurls[0]="http://therealnews.com/web4/fundraising_pop.php"
+
+
+function openpopup(popurl){
+var winpops=window.open(popurl,"","width=700px,height=800px,status")
+}
+
+function get_cookie(Name) {
+  var search = Name + "="
+  var returnvalue = "";
+  if (document.cookie.length > 0) {
+    offset = document.cookie.indexOf(search)
+    if (offset != -1) { // if cookie exists
+      offset += search.length
+      // set index of beginning of value
+      end = document.cookie.indexOf(";", offset);
+      // set index of end of cookie value
+      if (end == -1)
+         end = document.cookie.length;
+      returnvalue=unescape(document.cookie.substring(offset, end))
+      }
+   }
+  return returnvalue;
+}
+
+popfrequency="1 days"
+
+function resetcookie(){
+var expireDate = new Date()
+expireDate.setDate(expireDate.getDate()-10)
+document.cookie = "jkpopunder=;path=/;expires=" + expireDate.toGMTString()
+}
+
+function loadornot(){
+if (get_cookie('jkpopunder')==''){
+openpopup(popurls[Math.floor(Math.random()*(popurls.length))])
+var expireDate = new Date()
+expireDate.setDate(expireDate.getDate()+parseInt(popfrequency))
+document.cookie = "jkpopunder="+parseInt(popfrequency)+";path=/;expires=" + expireDate.toGMTString()
+}
+}
+
+if (get_cookie('jkpopunder')!=parseInt(popfrequency))
+resetcookie()
+loadornot()
+</script>
+
+<![endif]>
+--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+ <head> 
+  <base href="http://therealnews.com/t2/index.php" /> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+  <meta name="robots" content="index, follow" /> 
+  <meta name="keywords" content="the real news, real news, trnn, the real news network, independent television news, independent video news, daily blogs, breaking news,non-profit news, best of the web, headline news, canadian news, us news, political news, international news, aggregated news, afghanistan news, africa news, asia news, economy news, health care news, latin america news, middle east news, honduras news, greek news, libya news, israel news, palestine news, iran news, japan news, alternative news, non-profit news, independent television news, independent video news, television news, Paul Jay,Gore Vidal, Naomi Klein, David Suzuki, Phil Donahue, Eric Margolis, news television us presidential debates, union protests, wisconsin unions, doha debates, living wage debate, arab spring, zelaya honduras, wikileaks debate, netanyahu congress, furkan dogan murder, greece protests, war in afghanistan, kabul war, g20 toronto, g20 toronto protest, g20 toronto lawsuit, g20 toronto aftermath, AIPAC protests, Bob McChesney collapse of journalism, robert pollen economics, leo panitch economics, lawrence wilkerson us foreign policy, paul jay interview, paul jay editorial, 'syed saleem shahzad interview', orville schell capitalism chinese style, Hamid Dabashi, Libya, Jesse Freeston Honduras, Syria protests, Egypt protests, Lawrence Wilkerson Military, Dick Cheney, George Bush, Robert Pollin Economics Political Economy Research Institute PERI, Greece economy, Canada postal strike, Israel Palestine Occupied Territories, Middle East, Austerity Speculation Mortgage crisis, Economic news, Sarah Palin 2012 elections, GOP elections downhill, Barak Obama 2012, Military Industrial Complex, Unions Labor movement, Pakistan, Afghanistan, Wisconsin, Venezuela, Mark Weisbrot Center for Economic Policy Research CEPR Latin America economics capitalism, Dean Baker Center for Economic Policy Research CEPR economy recession employment unemployment, United States financial finance, 'economic news', roundtable debate, town halls, investigative journalism, frontline journalism, collaborative news, community news, participatory journalism, verifiable journalism, fact-based journalism, donor-supported news, member supported news, global news, local news, internship opportunity, first nation news, aboriginal news, labour news, union news, austerity measures, union busting, libya, Egyptian workers, 'japan tsunami aftermath', nuclear power, Baltimore schools and prisons, slut walks, first nations schools, Osama Bin Laden death, isreal flotilla, female protesters, green activism, 'Ha-Joon Chang 23 Things', Jeff Madrick Age of Greed, Antero Pietilla Baltimore,'Rob Ford Toronto news, PERI, PERI TRNN, McClatchy TRNN, McClatchy The Real News Network, David Harvey economist, Sharmini Peries TRNN, Sharmini Peries The Real News Network, Aine McGlynn, Danya Nadar, David Dougherty, Jesse Freeston, Hezvo Mpunga, Lia Tarachansky, Ziggy Jeffery, Ania Smolenskaia, Lynn Fries, Bob Pollin, Leo Panitch, William Engdahl, Tom Ferguson, Robert Johnson, Gerald Epstien, Kevin Hall, Gerard Dumenil, William Black, Doug Henwood, Yves Smith, Danny Schecter, James Gallbraith, Noam Chomsky, Jim Stanford, Justin Fox, Sam Gindin, Robert Kuttner, Richard Wolff, Sony Kapoor, Jomo KS, Greg Gordon, Andrew Cockburn, James Heintz, Glen Ford, James Crotty, James Boyce, Middle East bureau" /> 
+  <meta name="custome_page_title" content="Nurses Unite to Stop TPP Fast Track" /> 
+  <meta name="thumbnail" content="http://therealnews.com/media/trn_2015-02-01/jessica0227.jpg" /> 
+  <meta name="title" content="Nurses Unite to Stop TPP Fast Track" /> 
+  <meta name="author" content="The Real News Network" /> 
+  <meta name="description" content="TRNN's Jessica Desvarieux speaks with National Nurses United nurses who met with Congressional lawmakers about the lack of transparency and potential health risks the TPP poses to everyday citizens" /> 
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" /> 
+  <title>Nurses Unite to Stop TPP Fast Track</title> 
+  <link href="/t2/templates/gk_twn/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+  <link rel="stylesheet" href="/t2/plugins/system/jcemediabox/css/jcemediabox.css?v=108" type="text/css" /> 
+  <link rel="stylesheet" href="/t2/plugins/system/jcemediabox/themes/light/css/style.css?version=108" type="text/css" /> 
+  <script type="text/javascript" src="/t2/plugins/system/jcemediabox/js/mediaobject.js?v=108"></script> 
+  <script type="text/javascript" src="/t2/plugins/system/jcemediabox/js/jcemediabox.js?v=108"></script> 
+  <script type="text/javascript" src="/t2/plugins/system/jcemediabox/addons/default.js?v=108"></script> 
+  <script type="text/javascript" src="/t2/plugins/system/jcemediabox/addons/twitter.js?v=108"></script> 
+  <script type="text/javascript" src="/t2/media/system/js/mootools.js"></script> 
+  <script type="text/javascript" src="/t2/media/system/js/caption.js"></script> 
+  <script type="text/javascript">
+	JCEMediaObject.init('/t2/', {flash:"10,0,22,87",windowmedia:"5,1,52,701",quicktime:"6,0,2,0",realmedia:"7,0,0,0",shockwave:"8,5,1,0"});JCEMediaBox.init({popup:{width:1000,height:"",legacy:0,resize:1,icons:1,overlay:1,overlayopacity:0.8,overlaycolor:"#000000",fadespeed:500,scalespeed:500,hideobjects:0,scrolling:"fixed",labels:{'close':'Close','next':'Next','previous':'Previous','cancel':'Cancel','numbers':'{$current} of {$total}'}},tooltip:{className:"tooltip",opacity:0.8,speed:150,position:"br",offsets:{x: 16, y: 16}},base:"/t2/",imgpath:"plugins/system/jcemediabox/img",theme:"light",themecustom:"",themepath:"plugins/system/jcemediabox/themes"});
+  </script> 
+  <link rel="image_src" href="http://therealnews.com/media/trn_2015-02-01/jessica0227.jpg" /> 
+  <link rel="shortcut icon" href="/t2/images/favicon.ico" /> 
+  <link rel="stylesheet" href="/t2/templates/system/css/system.css" type="text/css" /> 
+  <link rel="stylesheet" href="/t2/templates/system/css/general.css" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/layouts/css/layout.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/addons.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/modules.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/template.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/menu/suckerfish.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/joomla.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/typography.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/gk_stuff.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/css3.css" rel="stylesheet" media="all" type="text/css" /> 
+  <link href="http://therealnews.com/t2/templates/gk_twn/css/style1.css" rel="stylesheet" media="all" type="text/css" /> 
+  <!--[if IE 6]><link href="http://therealnews.com/t2/templates/gk_twn/css/ie6_css.css" rel="stylesheet" type="text/css" /><![endif]--> 
+  <!--[if IE 7]><link href="http://therealnews.com/t2/templates/gk_twn/css/ie7_css.css" rel="stylesheet" type="text/css" /><![endif]--> 
+  <script type="text/javascript">$template_path = 'http://therealnews.com/t2/templates/gk_twn';</script> 
+  <script type="text/javascript" src="http://therealnews.com/t2/templates/gk_twn/lib/scripts/template_scripts.js"></script> 
+  <style type="text/css">
+	.template_width { width:1000px; }
+	#gk_wrapper     { width:1000px; }
+	#gk_mainbody    { margin: 18px 0px 0px 0px;padding:0;border-width:0;}
+	#gk_left        { width:0px;margin: 0px 18px 0px 0px;padding: 0px 18px 0px 0px;border-width:0; }
+	#gk_right       { width:0px;margin: 0px 0px 0px 18px;padding: 0px 0px 0px 18px;border-width:0; }
+	#left_one       { width:0px;margin:0;padding:0;border-width:0; }
+	#left_two       { width:100%;margin:0;padding:0;border-width:0; }
+	#right_one      { width:0px;margin:0;padding:0;border-width:0; }
+	#right_two      { width:100%;margin: 0px 0px 0px 18px;padding: 0px 0px 0px 18px;border-width:0; }
+	#inset_left     { width:0px;margin:0;padding:0;border-width:0; }
+	#inset_right    { width:0px;margin:0;padding:0;border-width:0; }
+	#gk_content     { width:1000px;margin:0;padding:0;border-width:0; }
+	#gk_current     { width:1000px;margin:0;padding:0;border-width:0; }
+	#gk_bottom      { margin: 18px 0px 0px 0px;padding:0;border-width:0; }
+	#gk_bottom1     { margin:0;padding:0;border-width:0; }
+	#gk_bottom2     { margin:0;padding:0;border-width:0; }
+	#gk_footer     { margin: 18px 0px 18px 0px;padding: 6px 0px 6px 0px;border-width: 1px 0px 4px 0px; }
+	
+	
+	body {
+		font-size: 70%;
+				font-family: Tahoma, Geneva, sans-serif;
+			}
+
+	div.moduletable h3, 
+	div.moduletable_menu h3, 
+	div.moduletable_text h3, 
+	div.moduletable_ver1 h3, 
+	div.moduletable_ver2 h3,
+	div.moduletable_ver2a h3, 
+	div.moduletable_ver2b h3, 
+	div.moduletable_ver3 h3,
+	div.moduletable_ver3a h3, 
+	div.moduletable_ver3b h3, 
+	div.moduletable_ver4 h3,
+	div.moduletable_ver4a h3,
+	div.moduletable_ver4b h3,
+	div.gk_news_section h2
+	{
+		font-size: 105%;
+				font-family: Tahoma, Geneva, sans-serif;
+			}
+	h4.gk_news_intro_title, 
+	h4.gk_npro_header,
+	div.joomla h1.title, 
+	div.joomla div.multicolumns h1.title, 
+	#jc h4, h1.pagetitle, 
+	div.joomla div.morearticles h3, 
+	.gk_is_text_block h4, 
+	div.joomla div.contact h1
+	{
+		font-size: 105%;
+				font-family: Tahoma, Geneva, sans-serif;
+			}
+	
+				</style> 
+ </head> 
+ <body> 
+  <div id="gk_wrapper"> 
+   <div id="top_wrap" class="clearfix"> 
+    <a href="/t2/./" id="logo"> <img src="http://therealnews.com/t2/templates/gk_twn/images/logo3.png" alt="logo" height="91" width="122" /> </a> 
+    <div id="top_b"> 
+     <table border="0" width="850"> 
+      <tbody> 
+       <tr> 
+        <td rowspan="2" valign="top" width="650" align="center"> 
+         <table cellpadding="2px">
+          <tbody>
+           <tr> 
+            <td align="center"><a href="http://facebook.com/therealnews" target="_blank"><img src="http://therealnews.com/permalinkedgraphics/fblikefp.png" border="0" width="140" /></a></td> 
+            <td align="center"><a href="http://twitter.com/therealnews" target="_blank"><img src="http://therealnews.com/permalinkedgraphics/twfollowfp.png" border="0" width="108" /></a></td> 
+            <td align="center"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=321"><img src="http://therealnews.com/permalinkedgraphics/subfp.png" border="0" width="130" /></a> </td> 
+            <td> 
+             <!--<a href="http://therealnews.com/t2/about-us/mission/740"><img src="http://therealnews.com/permalinkedgraphics/hiring.png" border="0" width="110" /></a>--> </td> 
+           </tr> 
+           <tr> 
+            <td height="60px" align="center" colspan="4"> 
+             <center>
+              <h6>NO ADVERTISING, GOVERNMENT OR CORPORATE FUNDING</h6>
+             </center> </td> 
+           </tr> 
+          </tbody>
+         </table> </td> 
+        <td align="right" valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=822" target="_top"><img src="http://therealnews.com/images/buttons/login.jpg" border="0" /></a> <p> </p>
+         <form action="index.php?option=com_content&amp;task=view&amp;id=850" method="get"> 
+          <table>
+           <tbody>
+            <tr>
+             <td> <input type="hidden" name="option" value="com_content" /> <input type="hidden" name="task" value="view" /> <input type="hidden" name="id" value="850" /> <input name="q" id="mod_search_searchword" maxlength="40" alt="search" class="inputbox" type="text" size="25" value="" onblur="if(this.value=='') this.value='search...';" onfocus="if(this.value=='search...') this.value='';" /> </td>
+             <td width="5"></td>
+             <td><input name="search" type="image" src="http://therealnews.com/images/buttons/search_btn.jpg" /></td>
+            </tr>
+           </tbody>
+          </table> 
+         </form> </td> 
+       </tr>  
+      </tbody>
+     </table>    
+    </div> 
+   </div> 
+   <div id="menu_wrap"> 
+    <div class="addons"> 
+    </div> 
+    <div class="clearfix"> 
+     <table width="100%">
+      <tbody>
+       <tr>
+        <td></td>
+        <td align="right" valign="top"><a href="http://therealnews.com/donate"><img src="http://therealnews.com/images/buttons/donate.png" border="0" /></a></td>
+       </tr>
+      </tbody>
+     </table> 
+     <p> </p>
+    </div> 
+   </div> 
+   <div id="gk_banner" class="clearfix"> 
+    <link href="http://therealnews.com/web4/menu_css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" /> 
+    <link href="http://therealnews.com/web4/menu_css/dropdown/dropdown.vertical.rtl.css" media="screen" rel="stylesheet" type="text/css" /> 
+    <link href="http://therealnews.com/web4/menu_css/dropdown/themes/default/default.css" media="screen" rel="stylesheet" type="text/css" /> 
+    <table width="100%">
+     <tbody>
+      <tr>
+       <td> 
+        <ul id="nav" class="dropdown dropdown-horizontal"> 
+         <li><a href="/t2/index.php">Home</a></li> 
+         <li><a href="http://therealnews.com/t2/continuous-players">Continuous Players</a></li> 
+         <li><a href="http://therealnews.com/t2/member-benefits">Member Benefits</a></li> 
+         <li><a href="http://therealnews.com/t2/my-real-news">my Real News</a></li> 
+         <li><a href="/t2/component/hwdvideoshare/frontpage">Best of the Web</a></li> 
+         <li class="dir"><a href="http://therealnews.com/t2/about-us/mission">About Us</a></li> 
+         <ul> 
+          <li><a href="http://therealnews.com/t2/about-us/mission">Mission</a></li> 
+          <li><a href="http://therealnews.com/t2/about-us/network-update">Network Update</a></li> 
+          <li><a href="http://therealnews.com/t2/about-us/board-of-directors">Board of Directors</a></li> 
+          <li><a href="http://therealnews.com/t2/about-us/staff">Staff</a></li> 
+          <li><a href="http://www.therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=383">Press</a></li> 
+          <li><a href="http://therealnews.com/t2/about-us/volunteer-opportunities">Volunteer Opportunities</a></li> 
+         </ul> 
+         <li><a href="http://therealnews.com/shop/index.php?route=common/home">Shop</a></li> 
+         <li><a href="http://therealnews.com/t2/site-help">Site Help</a> </li> 
+         <li><a href="http://therealnews.com/t2/contact-us">Contact Us</a></li> 
+         <li><a href="http://therealnews.com/t2/about-us/mission/740">Jobs</a></li> 
+        </ul><style type="text/css">
+.grey {
+	overflow: hidden;
+	border-top: 0px solid #414141; /*bottom horizontal line that runs beneath tabs*/
+}
+.grey ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 10px; /*offset of tabs relative to browser left edge*/
+	font: 12px arial;
+	list-style-type: none;
+}
+.grey li {
+	display: inline;
+	margin: 0;
+}
+.grey li a {
+	float: center;
+	display: block;
+	text-decoration: none;
+	font: 12px arial;
+	margin: 0;
+	padding: 5px 5px; /*padding inside each tab*/
+	border-right: 1px solid ffc20e; /*right divider between tabs*/
+	color: #fff;
+	background: #414141; /*background of tabs (default state)*/
+}
+.grey li a:visited {
+	color: white;
+}
+.grey li a:hover, .grey li.selected a {
+	background: #ffc20e; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+	color: black;
+}
+.yellow {
+	overflow: hidden;
+	border-bottom: 0px solid #fff; /*bottom horizontal line that runs beneath tabs*/
+}
+.yellow ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 10px; /*offset of tabs relative to browser left edge*/
+	font: 12px arial;
+	list-style-type: none;
+}
+.yellow li {
+	display: inline;
+	margin: 0;
+}
+.yellow li a {
+	float: center;
+	display: block;
+	text-decoration: none;
+	font: 12px arial;
+	margin: 0;
+	padding: 5px 5px; /*padding inside each tab*/
+	border-right: 0px solid black; /*right divider between tabs*/
+	color: #414141;
+	background: #ffc20e; /*background of tabs (default state)*/
+}
+.yellow li a:visited {
+	color: #1414141;
+}
+.yellow li a:hover, .yellow li.selected a {
+	background: #414141; /*background of tabs for hover state, plus tab with "selected" class assigned to its LI */
+	color: white;
+}
+</style> 
+        <link href="http://therealnews.com/web4/menu_css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" /> 
+        <link href="http://therealnews.com/web4/menu_css/dropdown/dropdown.vertical.rtl.css" media="screen" rel="stylesheet" type="text/css" /> 
+        <link href="http://therealnews.com/web4/menu_css/dropdown/themes/default/default.css" media="screen" rel="stylesheet" type="text/css" /> 
+        <table width="100%">
+         <tbody>
+          <tr>
+           <td> 
+            <!--<ul id="nav" class="dropdown dropdown-horizontal">
+	<li><a href="/t2/index.php">Home</a></li>
+    <li><a href="http://therealnews.com/t2/continuous-players">Continuous Players</a></li>
+    <li><a href="http://therealnews.com/t2/member-benefits">Member Benefits</a></li>
+    <li><a href="http://therealnews.com/t2/my-real-news">my Real News</a></li>
+    <li><a href="/t2/component/hwdvideoshare/frontpage">Best of the Web</a></li>
+	<li class="dir"><a href="http://therealnews.com/t2/about-us/mission">About Us</a></li>
+		<ul>
+        <li><a href="http://therealnews.com/t2/about-us/mission">Mission</a></li>
+			<li><a href="http://therealnews.com/t2/about-us/network-update">Network Update</a></li>
+			<li><a href="http://therealnews.com/t2/about-us/board-of-directors">Board of Directors</a></li>
+			<li><a href="http://therealnews.com/t2/about-us/staff">Staff</a></li>
+					<li><a href="http://www.therealnews.com/t2/index.php?option=com_content&task=view&id=383">Press</a></li>
+					<li><a href="http://therealnews.com/t2/about-us/volunteer-opportunities">Volunteer Opportunities</a></li>
+					
+				</ul>
+			
+			<li><a href="http://therealnews.com/shop/index.php?route=common/home">Shop</a></li>
+			
+			<li><a href="http://therealnews.com/t2/site-help">Site Help</a>
+				</li>
+					<li><a href="http://therealnews.com/t2/contact-us">Contact Us</a></li>
+				
+</ul>
+--> </td> 
+           <td align="right" valign="top">
+            <!--<a href="http://therealnews.com/donate"><img src="http://therealnews.com/images/buttons/donate.png" border="0"/></a>--></td>
+          </tr> 
+         </tbody>
+        </table> 
+        <table width="100%"> 
+         <tbody>
+          <tr> 
+          </tr>
+          <tr> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/latest-news" target="_top">Latest News</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/home/pitch-a-story" target="_top">Pitch a Story</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/make-real-news2" target="_top">Work with a Journalist</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/home/join-the-blog-squad" target="_top">Join the Blog Squad</a></li></td> 
+          </tr> 
+         </tbody>
+        </table> 
+        <table bgcolor="#414141" width="100%"> 
+         <tbody>
+          <tr> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=834" target="_top">Afghanistan</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=835" target="_top">Africa</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=836" target="_top">Asia</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=833" target="_top">Baltimore</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=837" target="_top">Canada</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=838" target="_top">Egypt</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=839" target="_top">Europe</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=840" target="_top">Latin America</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=841" target="_top">Middle East</a></li></td> 
+           <td align="center" class="grey"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=958" target="_top">Russia</a></li></td> 
+          </tr> 
+         </tbody>
+        </table> 
+        <table bgcolor="#ffc20e" width="100%"> 
+         <tbody>
+          <tr> 
+          </tr>
+          <tr> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=842" target="_top">Economy</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=843" target="_top">Environment</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=844" target="_top">Health Care</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=845" target="_top">Military</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=846" target="_top">Occupy</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=846" target="_top">Organize This</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=731" target="_top">Reality Asserts Itself</a></li></td> 
+           <td align="center" class="yellow"><li><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=847" target="_top">US Politics</a></li></td> 
+          </tr> 
+         </tbody>
+        </table> 
+        <table>
+         <tbody>
+          <tr>
+           <td height="10px"></td>
+          </tr>
+         </tbody>
+        </table>  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3258091-1', 'therealnews.com');
+  ga('send', 'pageview');
+
+</script> <script type="text/javascript">
+	var $mcGoal = {'settings':{'uuid':'156b1ee6f1','dc':'us6'}};
+	(function() {
+		 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+		sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+	})(); 
+</script> 
+        <div id="gk_mainbody" class="both_columns"> 
+         <div id="gk_mainbody_wrap"> 
+          <div id="gk_mainbody_wrap2" class="clearfix"> 
+           <div id="gk_content"> 
+            <div id="content_wrap" class="clear"> 
+             <div id="gk_current"> 
+              <div id="gk_current_wrap"> 
+               <div id="component_wrap" class="clear"> 
+                <div id="component"> 
+                 <div class="joomla "> 
+                  <div class="article"> 
+                   <p>
+                    <meta http-equiv="X-UA-Compatible" content="IE=8" />  
+                    <link rel="stylesheet" type="text/css" href="/t2/scroller/css/style.css" /> <script type="text/javascript" src="/t2/scroller/js/jquery-1.2.6.min.js"></script> <script type="text/javascript" src="/t2/scroller/js/jScrollPane.js"></script> <script type="text/javascript">
+		$(function(){
+			$('.scroll-pane').jScrollPane({
+				scrollbarWidth: 12
+			});
+		});
+	</script> <style type="text/css">
+body,td,th {
+ 
+}
+h1 {
+}
+.box
+{
+  margin-top:5px;
+  width:200px;
+  height:35px;
+  border-style:solid;
+  border-color:lightgray; border-width:1px;
+  width:auto;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:5px;
+  padding-right:5px;
+}
+.seeepisode {
+float: left;
+font:  16px Georgia;
+color: white;
+text-decoration: none;
+padding: 2px 5px;
+}
+.h3 {
+	text-transform: capitalize;
+}
+
+
+p {
+    padding: 0 0 0 10px;
+}
+
+#wrapper {
+    width: 1000px;
+}
+
+#heading {
+    float: left;
+     width: 1000px;
+    background: #ffc20e;
+	padding-left:10px;
+	padding-top:10px;
+}
+
+#vidplayer {
+	margin: 0 auto!important;
+    float: left;
+     width: 990px;
+    background: #fff;
+	padding-left:0px;
+	padding-top:0px;
+}
+
+#main {
+    float: left;
+    background: #FFFFFF;
+    width: 760px;
+}
+
+#rightcolumn {
+    background: #d5d5d;
+    width: 230px;
+    float: right;
+}
+h3{
+	background-color:#d5d5d5;
+	color:#000;
+	padding: 5px;
+}
+</style> </p>
+                   <div id="wrapper"> 
+                    <div id="heading"> 
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div></td>
+      </tr>
+      <tr>
+       <td><h1 class="h1" style="line-height: 120%;"> Nurses Unite to Stop TPP Fast Track </h1><br /></td> 
+      </tr>
+      <tr>
+       <td colspan="2"> TRNN's Jessica Desvarieux speaks with National Nurses United nurses who met with Congressional lawmakers about the lack of transparency and potential health risks the TPP poses to everyday citizens <em><b> - &nbsp; 
+          <nobr>
+           <font style="color: #000;">February 28, 2015</font>
+          </nobr></b></em></td>
+      </tr>
+     </tbody>
+    </table> 
+   </div> 
+   <div id="vidplayer"> 
+    <table width="1000px">
+     <tbody>
+      <tr>
+       <td valign="top" width="760px"> 
+        <div id="VIDEO_PLAYER" style="margin-top: 10px;">
+         <div id="advplayer"></div>
+        </div> 
+        <div id="advinfo">
+          Members don't see ads. If you are a member, and you're seeing this appeal, 
+         <a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=343">click here</a>
+         <div id="advplayer"> 
+         </div> 
+         <script type="text/javascript" src="/web4/swfobject_2_1.js"></script> 
+         <script language="JavaScript">
+<!--
+function FIND(item) {
+   if( window.mmIsOpera ) return(document.getElementById(item));
+   if (document.all) return(document.all[item]);
+   if (document.getElementById) return(document.getElementById(item));
+   return(false);
+};
+
+function PlayStory() {
+FIND("advinfo").innerHTML="";
+var strDisp = "<iframe width=\"760\" height=\"500\" src=\"http://www.youtube.com/embed/rUKlBejOlTU?rel=0&autoplay=0&showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>";
+FIND("VIDEO_PLAYER").innerHTML=strDisp;
+};
+
+function PlayAdv() {
+
+var params = { allowScriptAccess: "always" };
+var atts = { id: "advytplayer" };
+swfobject.embedSWF("http://www.youtube.com/apiplayer?enablejsapi=1&playerapiid=ytplayer&autoplay=1&fs=1&rel=0&showsearch=0&showinfo=0", 
+                       "advplayer", "760", "500", "8", null, null, params, atts);
+
+};
+
+function onYouTubePlayerReady(playerId) {
+  ytplayer = document.getElementById("advytplayer");
+  ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+  ytplayer.loadVideoById("u20mlOCfcC8", 0);
+  ytplayer.play();
+
+}
+
+function onytplayerStateChange(newState) {
+//   alert("Player's new state: " + newState);
+  if ( newState == 0 )
+  {
+	swfobject.removeSWF("advytplayer");
+	PlayStory();
+  }
+}
+
+function showMessage() {
+//  FIND("VIDEO_PLAYER").innerHTML="<div style='width:890px;height:500'>Videos older than 14 days are only availible to donor members.</div>";
+  FIND("VIDEO_PLAYER").innerHTML="<div style=\"width:760px;height:500\"> <table bgcolor=\"#2d2d2d\"><tr><td><div style=\"padding: 3em;color:#ffffff\"><h4><center>You are trying to view an archived video.</center><p>Archived videos are older than 15 days and are only available to members who have a current monthly donation or who have donated within the past year.  <p> If you are a current member, <a href=\"http://therealnews.com/t2/index.php?option=com_content&c=paywall&task=view&id=822\">log in</a> to watch this video.  <p> If you are having trouble logging in, please <a href=\"http://therealnews.com/t2/about-us/contact-us\">email</a> us, and we will fix the problem quickly.  <p> <center><a href=\"http://therealnews.com/donate/?c=paywall\"><img src=\"http://therealnews.com/images/buttons/donate.png\" border=\"0\"></a><p> Donate today and help us make Real News.</center> <p> <center>Not ready to donate yet? Watch our most recent stories for free <a href=\"http://therealnews.com/t2/\">here</a>.<p></h4></div> </td></tr></table> </div>";
+}
+
+// ||||<br>
+PlayStory();
+//-->
+</script> 
+        </div></td>
+       <td valign="top"><style>
+*					{ margin: 0; padding: 0; }
+ 
+
+#page-wrap			{ width: 250px; margin: 10px auto; position: relative; background:#000;   font-size:10px; }
+
+.scroll-pane 		{ width: 234px; overflow: auto; padding-right: 10px; height: 500px; }
+
+.bottomshadow 		{ position: absolute; top: 375px; left: -47px; z-index: 9999; }
+
+.jScrollPaneContainer 	{ position: relative; overflow: hidden; z-index: 1; }
+
+.jScrollPaneTrack 		{ position: absolute; cursor: pointer; right: 0; top: 0; height: 100%;
+						  background: url(scroller/images/bar.jpg) top center repeat-y; padding: 3px; }
+
+.jScrollPaneDrag	{ position: absolute; background: url(scroller/images/ball.png) center center no-repeat;
+					  cursor: pointer; overflow: hidden; }
+					  .relatedhead {
+						  color:#ccc!important;
+						  font-size:12px;
+					  }
+					  
+					  </style> <script type="text/javascript" src="/t2/scroller/js/jquery-1.2.6.min.js"></script> <script type="text/javascript" src="/t2/scroller/js/jScrollPane.js"></script> <script type="text/javascript">
+		$(function(){
+			$('.scroll-pane').jScrollPane({
+				scrollbarWidth: 12
+			});
+		});
+	</script> 
+        <div id="page-wrap"> 
+         <div class="scroll-pane"> 
+          <br />
+          <h3>Full Episode</h3>
+          <br />
+          <h5><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=832&amp;Itemid=74&amp;jumival=1312">Trans-Pacific Partnership</a></h5>
+          <table cellpadding="0" cellspacing="0" border="0">
+           <tbody>
+            <tr>
+             <td valign="top"><a href="index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13326"><img style="padding:0; padding: 5px 5px 0px 0px; float:left;" src="../media/trn_2015-02-01/jessica0227-thumb.jpg" /></a></td>
+             <td valign="top"> <a href="index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13326"><span class="relatedhead">Nurses Unite to Stop TPP Fast Track</span></a></td>
+            </tr>
+            <tr>
+             <td height="10"></td>
+            </tr>
+           </tbody>
+          </table>
+          <table cellpadding="0" cellspacing="0" border="0">
+           <tbody>
+            <tr>
+             <td valign="top"><a href="index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=12378"><img style="padding:0; padding: 5px 5px 0px 0px; float:left;" src="../media/trn_2014-09-01/alevine0910pt2-thumb.jpg" /></a></td>
+             <td valign="top"> <a href="index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=12378"><span class="relatedhead">What Drives Obama's Foreign Policy?</span></a></td>
+            </tr>
+            <tr>
+             <td height="10"></td>
+            </tr>
+           </tbody>
+          </table>
+          <table cellpadding="0" cellspacing="0" border="0">
+           <tbody>
+            <tr>
+             <td valign="top"><a href="index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=11178"><img style="padding:0; padding: 5px 5px 0px 0px; float:left;" src="../media/trn_2013-12-01/kzeese1212tpp-thumb.jpg" /></a></td>
+             <td valign="top"> <a href="index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=11178"><span class="relatedhead">Wikileaks TPP Revelations Prove US in &quot;Left Field&quot; With Trade Deal</span></a></td>
+            </tr>
+            <tr>
+             <td height="10"></td>
+            </tr>
+           </tbody>
+          </table>
+          <table cellpadding="0" cellspacing="0" border="0">
+           <tbody>
+            <tr>
+             <td valign="top"><a href="index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=9985"><img style="padding:0; padding: 5px 5px 0px 0px; float:left;" src="../media/trn_2013-03-01/KZeeseTPP0329-thumb.jpg" /></a></td>
+             <td valign="top"> <a href="index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=9985"><span class="relatedhead">Everyone but China TPP Trade Deal Threatens Sovereignty and Public Ownership</span></a></td>
+            </tr>
+            <tr>
+             <td height="10"></td>
+            </tr>
+           </tbody>
+          </table>
+          <br /> 
+         </div> 
+        </div></td>
+      </tr>
+      <tr> 
+       <td colspan="2" bgcolor="#fff" align="center"> 
+        <!--<h4><font color="#FF0000">If the video has no sound, check the volume slider in the bottom left of the video player and drag it to the right</font></h4>--> </td>
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+   <div id="main"> 
+    <table width="760">
+     <tbody>
+      <tr>
+       <td valign="top" colspan="5"> <br /></td> 
+      </tr>
+      <tr> 
+       <td valign="top" colspan="5"> 
+        <!-- AddThis Button BEGIN --> 
+        <table>
+         <tbody>
+          <tr>
+           <td valign="top"> <a class="addthis_button_facebook"><img src="http://therealnews.com/permalinkedgraphics/fb_share.png" border="0" alt="Share to Facebook" /></a> </td>
+           <td valign="top"> <a class="addthis_button_twitter"><img src="http://therealnews.com/permalinkedgraphics/twtr_share.png" border="0" alt="Share to Twitter" /></a> </td>
+           <td valign="top"> 
+            <table>
+             <tbody>
+              <tr>
+               <td valign="top"> 
+                <form action="mailto:" method="get"> 
+                 <input name="subject" type="hidden" value="Nurses&nbsp;Unite&nbsp;to&nbsp;Stop&nbsp;TPP&nbsp;Fast&nbsp;Track" /> 
+                 <input name="body" type="hidden" value="Watch&nbsp;this&nbsp;video&nbsp;from&nbsp;The&nbsp;Real&nbsp;News&nbsp;Network,&nbsp;I&nbsp;think&nbsp;you'll&nbsp;find&nbsp;it&nbsp;interesting&nbsp;
+
+http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13326" /> 
+                 <input type="image" style=" border-color:#FFF" src="http://therealnews.com/permalinkedgraphics/eml_share2.png" alt="Email Story" /> 
+                </form> </td>
+               <td valign="top"> <a class="addthis_button_email"><img src="http://therealnews.com/permalinkedgraphics/webml_share.png" /></a> <script src="http://s7.addthis.com/js/250/addthis_widget.js" type="text/javascript"></script> </td>
+              </tr>
+             </tbody>
+            </table> </td>
+           <td valign="top"><a href="http://therealnews.com/donate"><img src="http://therealnews.com/t2/images/donate_btn.png" border="0" /></a> </td>
+          </tr>
+         </tbody>
+        </table> <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e81f13d06354a7d"></script> <script>
+var addthis_share = {
+     // ... other options
+     url_transforms : {
+          shorten: {
+               twitter: 'bitly'
+          }
+     }, 
+     shorteners : {
+          bitly : {} 
+     }
+}
+</script> 
+        <!-- AddThis Button END --> </td> 
+      </tr>
+      <tr>
+       <td valign="top"> <a rel="lightbox" class="jcepopup" href="http://therealnews.com/web4/members_only.html"><img src="http://therealnews.com/scripts/dlvideo.jpg" /></a><br /> <a rel="lightbox" class="jcepopup" href="http://therealnews.com/web4/members_only.html"><img src="http://therealnews.com/scripts/savetofav.jpg" /></a><br /> </td>
+       <td valign="top" align="center"> 
+        <table>
+         <tbody>
+          <tr>
+           <td>
+            <blockquote>
+             <div class="blockquote4">
+              <div>
+               I support the real news because they deal with real issues, not meaningless articles and sound bites - 
+               <em>Gary</em>
+              </div>
+             </div>
+            </blockquote> </td>
+          </tr>
+          <tr>
+           <td valign="top" height="20" align="center"> Log in and tell us why you support TRNN </td>
+          </tr>
+         </tbody>
+        </table> </td> 
+      </tr>
+     </tbody>
+    </table> 
+    <p> </p>
+    <p> </p> 
+    <h3>Bio</h3>
+    <p><font style="font-size: 130%; line-height: 130%;">Jessica Desvarieux is a multimedia journalist who serves as the Capitol Hill correspondent for the Real News Network. Most recently, Jessica worked as a producer for the ABC Sunday morning program, This Week with Christianne Amanpour. Before moving to Washington DC, Jessica served as the Haiti corespondent for TIME Magazine and TIME.com. Previously, she was as an on-air reporter for New York tri-state cable outlet Regional News Network, where she worked before the 2010 earthquake struck her native country of Haiti. From March 2008 - September 2009, she lived in Egypt, where her work appeared in various media outlets like the Associated Press, Voice of America, and the International Herald Tribune - Daily News Egypt. She graduated from Northwestern University's Medill School of Journalism with a Master of Science degree in journalism. She is proficient in French, Spanish, Haitian Creole, and has a working knowledge of Egyptian Colloquial Arabic. Follow her @Jessica_Reports.</font> </p>
+    <h3><a name="Transcript">Transcript</a></h3>
+    <img src="http://therealnews.com/media/trn_2015-02-01/jessica0227-240.jpg" alt="Nurses Unite to Stop TPP Fast Track" style="border:10px double #ffffff; float:left; " />
+    <font style="font-size: 130%; line-height: 130%;">JESSICA DESVARIEUX, TRNN PRODUCER: On Capitol Hill, there's growing buzz that a bill granting fast-track authority for the Trans-Pacific Partnership, or TPP, could be up for a vote next week. The TPP involves 40 percent of the global economy. And if this bill moves forward, Congress would be allowed to pass it with a simple up or down vote, with no debate. <p></p><p></p>But that's not going over very well with the nurses representing the union National Nurses United. They gathered in Washington, D.C., on Thursday with one simple message for members of Congress.<p></p><p></p>JEAN ROSS, COPRESIDENT, NATIONAL NURSES UNITED: Well, we want Congress to not abdicate its responsibility. Right now, if you look at this, what you know of it--and we know very little, because it's negotiated in secret, right? Corporations have input. They're basically writing a law for the people. The corporations are writing it. So the few people from Congress that have seen it, that's one thing. You're not supposed to abdicate your responsibility for debating, for amending, for asking what you should be asking: how does it affect the public that I represent? That's what we expect them to do. And fast track is a way of totally abdicating that responsibility. It just says yes or no. You might even be able to see it in front of you, the many, many, many pages of it. There's 29 chapters, and only five of them deal with trade. So their specious argument about you shouldn't be against free trade--we're not against trade. Trade has to happen. But we care how it's done and how it affects us.<p></p><p></p>DESVARIEUX: How the TPP will affect everyday people is still largely unknown, which is why some members of Congress, like Connecticut Democratic representative Rosa DeLauro, says that transparency must be demanded by the public.<p></p><p></p>ROSA DELAURO, U.S. REPRESENTATIVE (D-CT-3): --as [incompr.] as taxpayers, as the American public have a right to have more member of Congress have input into a process that has wide-ranging effects on every aspect of our lives. That's simply what we are asking for.<p></p><p></p>DESVARIEUX: But not all members of the Democratic Party are as vocal. Ranking member of the Senate Finance Committee Ron Wyden is joining Republicans who will be pushing for fast-track authority. Currently, lawmakers can request to see chapters of the text being negotiated but are not allowed to bring aides. Also, the text has not been released to the public. What is known about the TPP deal is through documents leaked to WikiLeaks. One of those chapters released is the health care annex, which would affect medicine prices.<p></p><p></p>DEBORAH BURGER, COPRESIDENT, NATIONAL NURSES UNITED: --the everyday life of nurses providing health care and nursing care to our patients. I'm sure you've heard many people talk about the expansion of the protections for brand-name drugs from, quote, eight years up to 12 years. And who knows? It might even go up to 20. Canada already has an eight-year limit on brand names. This is going to change that.<p></p><p></p>DESVARIEUX: Higher prices for medication would hurt the already suffering middle class, says nurse Beverly VanBuren. She said her patients are already struggling to pay for medications now.<p></p><p></p>BEVERLY VANBUREN, NATIONAL NURSES UNITED: A patient that had a transplant that ended up going back on dialysis because that patient cannot afford medication to keep the transplanted organ alive, survival. And now, after thousands and thousands of dollars we spent transplanting this organ, this poor person is back on dialysis.<p></p><p></p>DESVARIEUX: Another major issue with the TPP deal is how it handles legal matters. It creates extrajudicial tribunals outside of a country's legal system. Critics say this will undermine a country's legal system, placing corporations' ambitions over people, something Nurse Burger says has happened with past free trade agreements, like the North American Free Trade Agreement, known as NAFTA.<p></p><p></p>BURGER: And we already know that under NAFTA, Eli Lilly did sue the Canadian government over their bulk purchase agreements, and also sued successfully the Australian government over their plain package labeling for cigarette smoking and tobacco sales. And they have won those in the under the NAFTA agreement. <p></p><p></p>If you look at the Trans-Pacific Partnership agreement, that is NAFTA on steroids. It gives a star chamber--three lawyers that have a conflict of interest in deciding whether a corporation wins or loses their lawsuit against a certain state. <p></p><p></p>But it's not a two-way street. In laws, you can go to a court and actually appeal a decision. In this process, under the Trans-Pacific Partnership agreement, there is a star chamber with three lawyers that get paid $700 an hour to make a decision by the courts in that group, and their decision is final and binding on all signatories to the treaty.<p></p><p></p>DESVARIEUX: The TPP is still not final, and nurses from the National Nurses United are pressuring members of Congress to reject a fast-track proposal, something they say they will remember next election cycle.<p></p><p></p>ROSS: You know, if you don't do the will of the people, the real people, and not corporation, which is a thing, not a person, then yes, we do need to look at that, because you need to start listening to what we're saying and how it's affecting us.<p></p><p></p>DESVARIEUX: For The Real News Network, Jessica Desvarieux, Washington.<p></p><p></p><h3>End</h3><p></p><p></p><i>DISCLAIMER: Please note that transcripts for The Real News Network are typed from a recording of the program. TRNN cannot guarantee their complete accuracy.</i></font>
+    <p></p>
+    <hr width="80%" />
+    <p> </p>
+    <p> </p>
+    <p> <a name="comments"></a> </p>
+    <h4>Comments</h4> Our automatic spam filter blocks comments with multiple links and multiple users using the same IP address. Please make thoughtful comments with minimal links using only one user name. If you think your comment has been mistakenly removed please email us at contact@therealnews.com
+    <br /> 
+    <div id="disqus_thread"></div> 
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    //var disqus_shortname = 'example'; // required: replace example with your forum shortname
+
+    //var disqus_developer = 1; // developer mode is on
+
+    var disqus_shortname = 'therealnewsnetwork'; // required: replace example with your forum shortname
+
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+    // var disqus_identifier = 'unique_dynamic_id_1234';
+    // var disqus_url = 'http://example.com/permalink-to-page.html';
+     var disqus_identifier = 'therealnews_uid_13326';
+     var disqus_url = 'http://therealnews.com/t2/index.php?option=com_content&task=view&id=31&Itemid=74&jumival=13326';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script> 
+    <noscript>
+     Please enable JavaScript to view the 
+     <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript> 
+   </div> 
+   <div id="rightcolumn"> 
+    <a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13326#comments"><h3>Comments </h3></a>
+    <br /> 
+    <h3>Latest Stories </h3>
+    <br /> 
+    <table cellpadding="5">
+     <tbody>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13343"><img src="/t2/../media/trn_2015-03-01/aabunimah0303speech-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13343">Netanyahu Invokes Biblical Armageddon in US Congress</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13334"><img src="/t2/../media/trn_2015-03-01/lwilkerson0302israel-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13334">Netanyahu says Iran Intends to Destroy Israel</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13333"><img src="/t2/../media/trn_2015-03-01/jhalper0302israel-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13333">What Do Ordinary Israelis Think of Netanyahu's U.S. Visit?</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13335"><img src="/t2/../media/trn_2015-03-01/gford0302report-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13335">LAPD Shooting of Unarmed Homeless Man Underscores Holder's Failures</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13340"><img src="/t2/../media/trn_2015-03-01/jnoor0302aipac-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13340">AIPAC Conference Pushes War on Iran</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13341"><img src="/t2/../media/trn_2015-03-01/thedges0302telavivconference-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13341">Is Iran or Netanyahu a Threat to Israel's National Security?</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13338"><img src="/t2/../media/trn_2015-03-01/gford0302reportpt2-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13338">At Least 18 Black Caucus Members Boycotting Netanyahu's Speech</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13339"><img src="/t2/../media/trn_2015-02-01/econway0211blackhistory-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13339">Soul School and Black History (1/2)</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13327"><img src="/t2/../media/trn_2015-02-01/malcolmx-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13327">X: Malcolm's Final Years</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13312"><img src="/t2/../media/trn_2015-02-01/lbroadwater0227baltimore-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13312">Baltimore's Harbor-Front Development at the Expense of City Infrastructure and Schools</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13328"><img src="/t2/../media/trn_2015-02-01/rnader0227minimumwage-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13328">Walmart Minimum Wage Hike to $10 Still Below 1968 Levels</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13332"><img src="/t2/../media/trn_2015-02-01/pironside0226gazapt2-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13332">Winter in the Ruins of Gaza (2/2)</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13069"><img src="/t2/../media/trn_2015-01-01/dhenwood0129hillary-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13069">Clinton Dynasty Revisited</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13308"><img src="/t2/../media/trn_2015-02-01/dhatch0227chicago-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13308">How Progressive Agendas Came to Dominate Chicago Alderman Races</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13307"><img src="/t2/../media/trn_2015-02-01/japowell0227moynihan-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13307">Public Policy and Blaming Poor Black Communities For Their Own Poverty</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13299"><img src="/t2/../media/trn_2015-02-01/pironside0226gaza-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13299">Winter in the Ruins of Gaza (1/2)</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13293"><img src="/t2/../media/trn_2015-02-01/pbennis0225mossad-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13293">Netanyahu on a Destructive Path</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13234"><img src="/t2/../media/trn_2015-02-01/bblack0217hsbc-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13234">HSBC Offshore Tax-Evading Scandal Widening</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13331"><img src="/t2/../media/trn_2015-02-01/sdana0205egpytpt3-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13331">The Class That Ruled Egypt Under Mubarak Remains in Power</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13326"><img src="/t2/../media/trn_2015-02-01/jessica0227-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13326">Nurses Unite to Stop TPP Fast Track</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13309"><img src="/t2/../media/trn_2015-02-01/cmitchell0227internet-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13309">Is FCC Approval of Net Neutrality a Real Win for Consumers?</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13298"><img src="/t2/../media/trn_2015-02-01/mreutter1211raipt3-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13298">What Happened to Making Steel in Baltimore? - Mark Reutter on Reality Asserts Itself (3/3)</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13310"><img src="/t2/../media/trn_2015-02-01/rnader0227canada-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13310">Nader: Canadian Anti-Terrorism Bill Follows America's Lead</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13300"><img src="/t2/../media/trn_2015-02-01/mratner0226report-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13300">Why the $655 Million Verdict Against the PA is Not A Victory for Human Rights</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13325"><img src="/t2/../media/trn_2015-02-01/munchel022714charters-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13325">Unions Fight Controversial Charter School Expansion Bill</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13301"><img src="/t2/../media/trn_2015-02-01/mtinkersalas0226venezuela-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13301">Venezuelan Gov. Releases Audio of Coup Plotters</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13320"><img src="/t2/../media/trn_2015-02-01/jkgalbraith0225greecept2-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13320">The Greek Debt and the German Acquiescence</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13318"><img src="/t2/../media/trn_2015-02-01/jnoor02262015police-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13318">Maryland Police Reform Advocates and Opponents Speak Out Prior to Hearing</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13319"><img src="/t2/../media/trn_2015-02-01/econway0227sojournerdouglass-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13319">Baltimore College Fights To Keep Accreditation Status</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+       <td valign="top"><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13235"><img src="/t2/../media/trn_2015-02-01/bblack0217ireland-thumb.jpg" width="80px" /></a></td>
+       <td width="10"></td>
+       <td valign="top"><b><a href="http://therealnews.com/t2/index.php?option=com_content&amp;task=view&amp;id=31&amp;Itemid=74&amp;jumival=13235">An Irish-Style Banking Inquiry into the 2008 Financial Crisis</a></b></td>
+      </tr>
+      <tr></tr>
+      <tr>
+       <td height="10" colspan="3"></td>
+      </tr>
+      <tr> 
+      </tr>
+     </tbody>
+    </table> 
+    <br /> 
+   </div> 
+  </div> 
+  <p></p>            
+  <div id="gk_footer" class="clearfix"> 
+   <!-- Copyright Information --> 
+  </div>
+  <div id="gk_banner3" class="clearfix"> 
+   <table style="width: 100%;" border="0"> 
+    <tbody> 
+     <tr> 
+      <td align="center">RealNewsNetwork.com, Real News Network, Real News, Real News For Real People, IWT are trademarks and service marks of IWT.TV inc. &quot;The Real News&quot; is the flagship show of IWT and Real News Network. <p>All original content on this site is copyright of The Real News Network.&nbsp; <a href="/t2/component/content/881?task=view">Click here for more</a></p> <p>Problems with this site? Please <a href="/t2/contact-us">let us know</a></p> <p><a href="http://www.stardothosting.com/" target="_blank"><img src="/t2/images/stories/hostedbystardot.png" border="0" alt="Linux VPS Hosting by Star Dot Hosting" /> </a></p> </td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </div>   
+ </body>
+</html>

@@ -17,6 +17,8 @@
  */
 package com.kohlschutter.boilerpipe.document;
 
+import org.jsoup.select.Elements;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -80,7 +82,15 @@ public class TextDocument implements Cloneable {
    * @return The content text.
    */
   public String getContent() {
-    return getText(true, false);
+    return getText( true, false );
+  }
+
+  public String getContentAsHTML() {
+    return getHTML( true, false );
+  }
+
+  public Elements getContentAsHTMLElements() {
+    return getHTMLElements( true, false );
   }
 
   /**
@@ -91,7 +101,59 @@ public class TextDocument implements Cloneable {
    * @return The text.
    */
   public String getText(boolean includeContent, boolean includeNonContent) {
+
     StringBuilder sb = new StringBuilder();
+
+    List<TextBlock> textBlocks = filterTextBlocks( includeContent, includeNonContent );
+
+    for (TextBlock textBlock : textBlocks) {
+      String text = textBlock.getText();
+      sb.append(text);
+      sb.append('\n');
+
+    }
+
+    return sb.toString();
+
+  }
+
+  public String getHTML(boolean includeContent, boolean includeNonContent) {
+
+    StringBuilder sb = new StringBuilder();
+
+    List<TextBlock> textBlocks = filterTextBlocks( includeContent, includeNonContent );
+
+    for (TextBlock textBlock : textBlocks) {
+      String html = textBlock.getHTML();
+      sb.append(html);
+      sb.append('\n');
+
+    }
+
+    return sb.toString();
+
+  }
+
+  public Elements getHTMLElements(boolean includeContent, boolean includeNonContent) {
+
+    Elements result = new Elements();
+
+    List<TextBlock> textBlocks = filterTextBlocks( includeContent, includeNonContent );
+
+    for (TextBlock textBlock : textBlocks) {
+      result.addAll( textBlock.getElements() );
+    }
+
+    return result;
+
+  }
+
+
+
+  public List<TextBlock> filterTextBlocks(boolean includeContent, boolean includeNonContent) {
+
+    List<TextBlock> result = new ArrayList<>();
+
     LOOP : for (TextBlock block : getTextBlocks()) {
       if (block.isContent()) {
         if (!includeContent) {
@@ -102,11 +164,12 @@ public class TextDocument implements Cloneable {
           continue LOOP;
         }
       }
-      sb.append(block.getText());
-      sb.append('\n');
+      result.add( block );
     }
-    return sb.toString();
+
+    return result;
   }
+
 
   /**
    * Returns detailed debugging information about the contained {@link TextBlock}s.
@@ -123,10 +186,19 @@ public class TextDocument implements Cloneable {
   }
 
   public TextDocument clone() {
-    final List<TextBlock> list = new ArrayList<TextBlock>(textBlocks.size());
+    final List<TextBlock> list = new ArrayList<>(textBlocks.size());
     for (TextBlock tb : textBlocks) {
       list.add(tb.clone());
     }
     return new TextDocument(title, list);
   }
+
+  @Override
+  public String toString() {
+    return "TextDocument{" +
+             "textBlocks=" + textBlocks +
+             ", title='" + title + '\'' +
+             '}';
+  }
+
 }

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+ <!--<![endif]-->
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta property="twitter:account_id" content="250188760" /> 
+  <meta property="fb:admins" content="715747892" /> 
+  <meta name="twitter:widgets:csp" content="on" /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:site_name" content="Sen. Bernie Sanders" /> 
+  <meta property="og:locale" content="en_US" /> 
+  <meta name="twitter:card" content="summary_large_image" /> 
+  <meta name="twitter:site" content="@sensanders" /> 
+  <title>Senators to U.S. Trade Rep: End Trade Deal Secrecy - Senator Bernie Sanders of Vermont</title> 
+  <!-- googleoff:all --> 
+  <meta name="date" content="2015-02-28" /> 
+  <meta name="title" content="Senators to U.S. Trade Rep: End Trade Deal Secrecy" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <meta property="og:url" content="http://www.sanders.senate.gov/newsroom/press-releases/senators-to-us-trade-rep-end-trade-deal-secrecy" /> 
+  <meta property="og:title" content="Senators to U.S. Trade Rep: End Trade Deal Secrecy" /> 
+  <meta property="twitter:title" content="Senators to U.S. Trade Rep: End Trade Deal Secrecy" /> 
+  <meta name="description" content="The Official U.S. Senate website of Senator Bernie Sanders of Vermont." /> 
+  <link rel="shortcut icon" href="http://www.sanders.senate.gov/themes/sanders/images/favicon.ico" /> 
+  <link rel="apple-touch-icon" href="http://www.sanders.senate.gov/themes/sanders/images/apple-touch-icon.png" /> 
+  <link rel="apple-touch-icon" sizes="72x72" href="http://www.sanders.senate.gov/themes/sanders/images/apple-touch-icon-72x72.png" /> 
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.sanders.senate.gov/themes/sanders/images/apple-touch-icon-114x114.png" /> 
+  <link rel="apple-touch-startup-image" href="http://www.sanders.senate.gov/themes/sanders/images/iphone_startup.png" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-title" content="Sen. Sanders" /> 
+  <script src="/scripts/vendor/modernizr/modernizr.js?cachebuster=1378979920"></script> 
+  <script type="text/javascript" src="http://fast.fonts.net/jsapi/69d71878-5234-4178-8e7b-d7b9bc64ea8f.js"></script> 
+  <!--[if !IE 6]><!--> 
+  <link rel="stylesheet" href="/themes/sanders/styles/responsive.css?cachebuster=1378981125" /> 
+  <link rel="stylesheet" href="/themes/sanders/styles/bootstrap.css?cachebuster=1398674961" /> 
+  <link rel="stylesheet" href="/themes/sanders/styles/sidetogglemenu.css?cachebuster=1381497770" /> 
+  <link rel="stylesheet" href="/themes/sanders/styles/css/cerabox.css" /> 
+  <!--<![endif]--> 
+  <!--[if lte IE 6]>
+			<link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection">
+		<![endif]--> 
+  <script type="text/javascript">
+   var addToHomeConfig = {
+		animationIn: 'bubble',
+		animationOut: 'drop',
+		lifespan:10000,
+		expire:3600,
+		touchIcon:true,
+		message:'Install Senator Sanders` web app on your <strong>%device</strong>: Tap `%icon`. and then `Add to Home Screen`.'
+	};
+	if ('standalone' in navigator && !navigator.standalone && (/iphone|ipod|ipad/gi).test(navigator.platform) && (/Safari/i).test(navigator.appVersion)) {
+		document.write('<link rel="stylesheet" href="http://www.sanders.senate.gov/themes/sanders/styles/add2home.css">');
+		document.write('<script type="application/javascript" src="http://www.sanders.senate.gov/themes/sanders/scripts/add2home.js"><\/s' + 'cript>');
+
+
+	}
+</script> 
+ </head> 
+ <body id="about" class=" bg1 two-col "> 
+  <div class="container"> 
+   <a href="#main-nav" class="hide">Skip to primary navigation</a> 
+   <a href="#content" class="hide">Skip to main content</a> 
+   <div class="row-fluid"> 
+    <div class="masthead span12" id="index"> 
+     <div id="toolbar" class="pull-right"> 
+      <div class="social-media"> 
+       <ul class="pull-left"> 
+        <li class="facebook"><a href="http://www.senate.gov/cgi-bin/exitmsg?url=https://www.facebook.com/senatorsanders" target="_blank">Facebook</a></li> 
+        <li class="twitter"><a href="http://www.senate.gov/cgi-bin/exitmsg?url=https://twitter.com/@sensanders" target="_blank">Twitter</a></li> 
+        <li class="google"><a href="http://www.senate.gov/cgi-bin/exitmsg?url=https://plus.google.com/+BernieSanders/posts" target="_blank">google</a></li> 
+        <li class="youtube"><a href="http://www.senate.gov/cgi-bin/exitmsg?url=http://www.youtube.com/senatorsanders" target="_blank">Youtube</a></li> 
+       </ul> 
+      </div> 
+      <div class="pull-left newsletter"> 
+       <form class="form-inline" id="newsletter-signup" method="post" action="/buzz" enctype="application/x-www-form-urlencoded"> 
+        <input type="email" class="input-medium" placeholder="EMAIL ADDRESS" name="email_address" id="email_address" required="" /> 
+        <button type="submit" class="btn pull-right">Sign Up for the Bernie Buzz</button> 
+       </form> 
+       <!--[if lt IE 8 ]> <img src="/themes/sanders/images/masthead/stack.png"> <![endif]--> 
+      </div> 
+     </div> 
+     <div class="logo-mobile"> 
+      <h1><a href="/">Bernie Sanders</a></h1> 
+     </div> 
+     <h1><a href="/">Senator Bernie Sanders</a></h1> 
+    </div> 
+    <!--
+		<header class="masthead" role="banner">
+			<div class="container">
+				<h1><a href="http://www.sanders.senate.gov/">[SENATOR], Senator for [STATE]</a></h1>
+			</div>
+		</header>
+		//--> 
+    <!-- googleon:all --> 
+   </div> 
+   <button onclick="menu1.toggle();" class="sideviewtoggle tabletmenu tabletmenustyles"></button> 
+   <div id="togglemenu1" class="sidetogglemenu"> 
+    <ul class="menu-turnoff"> 
+     <li class="pull-left">Menu</li> 
+     <li class="pull-right"> <button onclick="menu1.toggle();" class="close-slidetoggle">X</button> </li> 
+    </ul> 
+    <div id="mobilenav-container"> 
+     <!--googleoff: all--> 
+     <div class="nav-collapse collapse"> 
+      <ul class="nav nav-pills nav-stacked"> 
+       <li class="no-descriptions"> <a href="http://www.sanders.senate.gov/">Home</a> </li> 
+       <li class="no-descriptions"> <a href="http://www.sanders.senate.gov/vermont">Vermont</a> </li> 
+       <li class="dropdown multiple-descriptions"> <a href="http://www.sanders.senate.gov/services">Services</a> 
+        <ul class="dropdown-menu"> 
+         <li> <a href="http://www.sanders.senate.gov/services/casework">Assistance Request </a> </li> 
+         <li> <a href="/services/federal-government-resources">Federal Government Resources </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/visiting">Tour Requests </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/students">Students </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/internships">Internships </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/academies">Academies </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/flags">Flag Requests </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/grants">Grants </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/veterans">Veterans </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/housing">Housing </a> </li> 
+        </ul> </li> 
+       <li class="active dropdown multiple-descriptions"> <a href="http://www.sanders.senate.gov/newsroom">Newsroom</a> 
+        <ul class="dropdown-menu"> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/press-releases" class="selected">Press Releases </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/must-read">Must Read </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/newswatch">News Watch </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/recent-business">Recent Business </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/video-audio">Video/Audio </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/photos">Photos </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/events">Events </a> </li> 
+        </ul> </li> 
+       <li class="no-descriptions"> <a href="http://www.sanders.senate.gov/legislation">Legislation</a> </li> 
+       <li class="dropdown no-descriptions"> <a href="http://www.sanders.senate.gov/about">About Bernie</a> 
+        <ul class="dropdown-menu"> 
+         <li> <a href="http://www.sanders.senate.gov/about/committees">Committee Assignments </a> </li> 
+        </ul> </li> 
+       <li class="no-descriptions"> <a href="http://www.sanders.senate.gov/contact">Contact</a> </li> 
+      </ul> 
+      <!-- // menu --> 
+     </div> 
+     <!-- // main-nav --> 
+     <!--googleon: all--> 
+    </div> 
+   </div> 
+   <script type="text/template" class="deferred-script">
+    $('.tabletmenu').click(function() {
+    $('#togglemenu1').addClass('togglemenu1');
+});
+</script> 
+   <div class="row-fluid"> 
+    <div class="left-column"> 
+     <!--googleoff: all--> 
+     <div class="nav-collapse collapse"> 
+      <ul class="nav nav-pills nav-stacked"> 
+       <li class="no-descriptions"> <a href="http://www.sanders.senate.gov/">Home</a> </li> 
+       <li class="no-descriptions"> <a href="http://www.sanders.senate.gov/vermont">Vermont</a> </li> 
+       <li class="dropdown multiple-descriptions"> <a href="http://www.sanders.senate.gov/services">Services</a> 
+        <ul class="dropdown-menu"> 
+         <li> <a href="http://www.sanders.senate.gov/services/casework">Assistance Request </a> </li> 
+         <li> <a href="/services/federal-government-resources">Federal Government Resources </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/visiting">Tour Requests </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/students">Students </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/internships">Internships </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/academies">Academies </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/flags">Flag Requests </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/grants">Grants </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/veterans">Veterans </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/services/housing">Housing </a> </li> 
+        </ul> </li> 
+       <li class="active dropdown multiple-descriptions"> <a href="http://www.sanders.senate.gov/newsroom">Newsroom</a> 
+        <ul class="dropdown-menu"> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/press-releases" class="selected">Press Releases </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/must-read">Must Read </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/newswatch">News Watch </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/recent-business">Recent Business </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/video-audio">Video/Audio </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/newsroom/photos">Photos </a> </li> 
+         <li> <a href="http://www.sanders.senate.gov/events">Events </a> </li> 
+        </ul> </li> 
+       <li class="no-descriptions"> <a href="http://www.sanders.senate.gov/legislation">Legislation</a> </li> 
+       <li class="dropdown no-descriptions"> <a href="http://www.sanders.senate.gov/about">About Bernie</a> 
+        <ul class="dropdown-menu"> 
+         <li> <a href="http://www.sanders.senate.gov/about/committees">Committee Assignments </a> </li> 
+        </ul> </li> 
+       <li class="no-descriptions"> <a href="http://www.sanders.senate.gov/contact">Contact</a> </li> 
+      </ul> 
+      <!-- // menu --> 
+     </div> 
+     <!-- // main-nav --> 
+     <!--googleon: all--> 
+     <div class="twitterhold socialbox"> 
+      <ul id="myTab" class="unstyled"> 
+       <li class="active"><a href="#twitter" data-toggle="tab">Twitter</a></li> 
+       <li><a href="#facebook" data-toggle="tab">Facebook</a></li> 
+      </ul> 
+      <div id="myTabContent" class="tab-content"> 
+       <div class="tab-pane fade in active" id="twitter"> 
+        <a class="twitter-timeline" href="https://twitter.com/SenSanders" height="267" data-chrome="noheader nofooter noborders" data-widget-id="368158662503587840">Tweets by @SenSanders</a> 
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
+        <div class="twitterbottom"> 
+         <a href="https://twitter.com/SenSanders" class="twitter-follow-button" data-show-count="false">Follow @SenSanders</a> 
+         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
+        </div> 
+       </div> 
+       <div class="tab-pane fade" id="facebook"> 
+        <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsenatorsanders&amp;width=250&amp;height=267&amp;colorscheme=light&amp;show_faces=false&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=216787631679886" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%;height:267px;" allowtransparency="true"></iframe> 
+        <div class="twitterbottom"> 
+         <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width=273&amp;layout=button&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=80&amp;appId=178127398911465" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:52px; height:80px;" allowtransparency="true"></iframe>
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="sidelinks"> 
+      <ul class="unstyled pull-left span12"> 
+       <li> 
+        <div style="background-color:#676452;height:20px;width:20px;float:left;margin-right:5px;"></div> <a href="http://sanders.senate.gov/polls/netanyahu-speech">Take the Poll</a> </li> 
+       <li> 
+        <div style="background-color:#676452;height:20px;width:20px;float:left;margin-right:5px;"></div> <a href="http://www.sanders.senate.gov/newsroom/video-audio">Video/Audio</a> </li> 
+       <li> 
+        <div style="background-color:#676452;height:20px;width:20px;float:left;margin-right:5px;"></div> <a href="javascript:openSenateWin('http://www.veterans.senate.gov/')">Senate Veterans' Affairs Committee</a> </li> 
+       <li> 
+        <div style="background-color:#676452;height:20px;width:20px;float:left;margin-right:5px;"></div> <a href="http://sanders.senate.gov/help">Subcommittee on Primary Care and Retirement Security</a> </li> 
+       <li> 
+        <div style="background-color:#676452;height:20px;width:20px;float:left;margin-right:5px;"></div> <a href="/events">Upcoming Events</a> </li> 
+      </ul> 
+     </div> 
+     <div class="gallery"> 
+      <h1>Recent Photos</h1> 
+      <h3><a href="http://www.sanders.senate.gov/newsroom/photos/sen-bernie-sanders-meets-with-american-legion">Sen. Bernie Sanders Meets with American Legion</a></h3> 
+      <a href="http://www.sanders.senate.gov/newsroom/photos/sen-bernie-sanders-meets-with-american-legion" title="Sen. Bernie Sanders meets with members of the Vermont American Legion delegation in his office in Washington, D.C." class="pull-right img"> <img src="http://www.sanders.senate.gov/imo/media/image/galleries/5e57a4dd-5056-a032-520a-d84519cc20d2/DSC_0129.JPG" title="Sen. Bernie Sanders meets with members of the Vermont American Legion delegation in his office in Washington, D.C." alt="Sen. Bernie Sanders Meets with American Legion" width="228" /> </a>  
+     </div> 
+    </div> 
+    <div id="site-search"> 
+     <div id="search-icon"> 
+      <a><img class="pull-right" src="/themes/sanders/images/search/search.png" alt="search" /></a> 
+     </div> 
+     <div id="searchform"> 
+      <form id="sitesearch" role="search" method="get" action="/search" class="form-search pull-right"> 
+       <input type="search" id="search-field" name="q" placeholder="SEARCH FOR…" value="SEARCH FOR…" onclick="this.value='';" /> 
+       <input type="hidden" name="access" value="p" /> 
+       <input type="hidden" name="as_dt" value="i" /> 
+       <input type="hidden" name="as_epq" value="" /> 
+       <input type="hidden" name="as_eq" value="" /> 
+       <input type="hidden" name="as_lq" value="" /> 
+       <input type="hidden" name="as_occt" value="any" /> 
+       <input type="hidden" name="as_oq" value="" /> 
+       <input type="hidden" name="as_q" value="" /> 
+       <input type="hidden" name="as_sitesearch" value="" /> 
+       <input type="hidden" name="client" value="wyden" /> 
+       <input type="hidden" name="sntsp" value="0" /> 
+       <input type="hidden" name="filter" value="0" /> 
+       <input type="hidden" name="getfields" value="" /> 
+       <input type="hidden" name="lr" value="" /> 
+       <input type="hidden" name="num" value="15" /> 
+       <input type="hidden" name="numgm" value="3" /> 
+       <input type="hidden" name="oe" value="UTF8" /> 
+       <input type="hidden" name="output" value="xml_no_dtd" /> 
+       <input type="hidden" name="partialfields" value="" /> 
+       <input type="hidden" name="proxycustom" value="" /> 
+       <input type="hidden" name="proxyreload" value="0" /> 
+       <input type="hidden" name="proxystylesheet" value="default_frontend" /> 
+       <input type="hidden" name="requiredfields" value="" /> 
+       <input type="hidden" name="sitesearch" value="" /> 
+       <input type="hidden" name="sort" value="date:D:S:d1" /> 
+       <input type="hidden" name="start" value="0" /> 
+       <input type="hidden" name="ud" value="1" /> 
+       <button type="submit"><img class="pull-right" src="/themes/sanders/images/search/searchd.png" alt="search" /></button> 
+      </form> 
+     </div> 
+    </div> 
+    <script type="text/template" class="deferred-script">
+
+
+	var nav = $('#site-search');
+	var search = {
+		'form': $('#searchform'),
+		'top': 0,
+		'open': $('#search-icon a'),
+		'isOpen': false,
+		'tweenLength': 300
+	};
+
+	search.open.click(function() {
+
+
+
+		if (search.isOpen == false) {
+
+			search.form.animate(
+				{'left': "43px", 'opacity': 1, 'z-index':999},
+				300,
+				function() {
+					search.isOpen = true;
+				}
+			);
+
+		} else {
+
+		search.form.animate(
+				{	'left': "268", 'display': 'none', 'opacity': 0, 'z-index':1 },
+				300,
+				function() {
+					search.isOpen = false;
+				}
+			);
+
+
+		}
+	});
+</script> 
+    <div id="main"> 
+     <div class="main-hold"> 
+      <div id="content" role="main" class="row"> 
+       <ul class="breadcrumb">
+        <li><a href="http://www.sanders.senate.gov/">Home</a><span class="divider">&gt;</span> </li>
+        <li><a href="http://www.sanders.senate.gov/newsroom">Newsroom</a><span class="divider">&gt;</span> </li>
+        <li><a href="http://www.sanders.senate.gov/newsroom/press-releases">Press Releases</a><span class="divider">&gt;</span> </li>
+        <li class="current-section">Press Release</li>
+       </ul>
+       <div class="clear">
+        <!-- // -->
+       </div> 
+       <div class="offset2 span12"> 
+        <div class="span11"> 
+         <header> 
+          <h1 class="entry-title">Senators to U.S. Trade Rep: End Trade Deal Secrecy</h1> 
+         </header> 
+         <time class="dateline" datetime="2015-02-28">Saturday, February 28, 2015</time> 
+         <table cellspacing="0" cellpadding="0"> 
+          <tbody> 
+           <tr> 
+            <td valign="top" class="td1"> <p class="p1">WASHINGTON, Feb. 28 – Sen. Bernie Sanders (I-Vt.), the ranking member of the Senate Budget Committee, led a group of senators calling for an end to secret, back-room negotiations on a free trade agreement.</p> <p class="p1">A letter by Sanders signed by Sens. Tammy Baldwin (D-Wis.), Al Franken (D-Minn.), Ed Markey (D-Mass.), Jeff Merkley (D-Ore.) and Elizabeth Warren (D-Mass.) asked the top U.S. trade negotiator to make public details in proposed text of a 12-nation Trans-Pacific Partnership and other pending trade deals.</p> <p class="p1">“We remain deeply concerned that representatives of special interests and multinational corporations have broad and deep access to the negotiating texts, while democratically elected officials and their designees do not,” said the letter to United States Trade Representative Michael Froman. “It is simply unacceptable.”</p> <p class="p1">The letter continued: “USTR has afforded over 400 representatives of special interests and corporations the opportunity to develop negotiating objectives and access confidential information that is not available to the general public, or their elected representatives.”</p> <p class="p1">The trade deal would be the largest free trade agreement ever with the United States and 11 other Pacific Rim counties spelling out new regulations covering exports and imports.</p> <p class="p1">Previously, Sanders and other lawmakers pressured Froman on transparency by noting the difference in how trade agreements are handled in Europe, which provides for more access before the deals are finalized.</p> <p class="p1">A copy of this week’s letter is available <a href="http://www.budget.senate.gov/democratic/public/_cache/files/c54409ba-8b75-4ec9-809b-239ff753a070/2.26.2015-tpp-letter-to-ambassador-froman.pdf">here</a>:</p> </td> 
+           </tr> 
+          </tbody> 
+         </table> 
+         <!--googleoff: all--> 
+         <footer> 
+          <script>// cribbed from jquery migrage plugin @ https://github.com/jquery/jquery-migrate/blob/master/src/core.js
+		if (typeof uaMatch == 'undefined') {
+			var uaMatch = function( ua ) {
+				ua = ua.toLowerCase();
+
+				var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
+					/(webkit)[ \/]([\w.]+)/.exec( ua ) ||
+					/(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
+					/(msie) ([\w.]+)/.exec( ua ) ||
+					ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec( ua ) ||
+					[];
+
+				return {
+					browser: match[ 1 ] || "",
+					version: match[ 2 ] || "0"
+				};
+			};
+
+			var matched = uaMatch( navigator.userAgent );
+			var browser = {};
+
+			if ( matched.browser ) {
+				browser[ matched.browser ] = true;
+				browser.version = matched.version;
+			}
+
+			// Chrome is Webkit, but Webkit is also Safari.
+			if ( browser.chrome ) {
+				browser.webkit = true;
+			} else if ( browser.webkit ) {
+				browser.safari = true;
+			}
+		}
+	</script> 
+          <div id="fb-root"></div> 
+          <div class="clearfix"></div> 
+          <ul id="actions" class="unstyled clearfix"> 
+           <li><a onclick="window.print()" style="cursor:pointer;" class="button">Print</a></li> 
+           <li><a style="cursor:pointer;" href="mailto:?subject=Senators to U.S. Trade Rep: End Trade Deal Secrecy&amp;body=From http://www.sanders.senate.gov/:%20%0D%0A%0D%0ASenators to U.S. Trade Rep: End Trade Deal Secrecy%20%0D%0A%0D%0Ahttp://www.sanders.senate.gov/newsroom/press-releases/senators-to-us-trade-rep-end-trade-deal-secrecy" class="button">Email</a></li> 
+           <li id="fb-li"> 
+            <div id="fb-li" class="fb-like" data-href="http://www.sanders.senate.gov/newsroom/press-releases/senators-to-us-trade-rep-end-trade-deal-secrecy" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" data-font="verdana"></div> </li> 
+           <li id="twitter-li"> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.sanders.senate.gov/newsroom/press-releases/senators-to-us-trade-rep-end-trade-deal-secrecy" data-text="Senators to U.S. Trade Rep: End Trade Deal Secrecy">Tweet</a> </li> 
+          </ul> 
+          <script>
+		if (!browser.msie || browser.msie && browser.version >= 8) {
+			// facebook
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=178127398911465";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+			// twitter
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+		} else {
+			document.getElementById('fb-li').style.display = 'none';
+			document.getElementById('twitter-li').style.display = 'none';
+		}
+	</script> 
+          <form id="send-to-friend-form" action="http://www.sanders.senate.gov/email/" method="post"> 
+           <input type="hidden" id="send-to-friend-id" name="send_to_friend_id" value="5c6e0703-fd9a-4a76-bf4a-a441f75eaa72" /> 
+           <input type="hidden" id="send-to-friend-path" name="send_to_friend_path" value="http://www.sanders.senate.gov/newsroom/press-releases/senators-to-us-trade-rep-end-trade-deal-secrecy" /> 
+           <input type="hidden" id="send-to-friend-title" name="send_to_friend_title" value="Senators to U.S. Trade Rep: End Trade Deal Secrecy" /> 
+          </form> 
+         </footer> 
+         <!--googleon: all--> 
+         <div id="divDownPage"></div> 
+        </div> 
+        <!-- end asides //--> 
+       </div> 
+      </div> 
+      <!-- end content //--> 
+      <!-- end container //--> 
+      <script type="text/template" class="deferred-script">
+		var thisPath = "/newsroom/press-releases/senators-to-us-trade-rep-end-trade-deal-secrecy";
+		var n = Cookie.read("popup_sub");
+		var c = Cookie.read("modal_viewed");
+		
+        $('span.close').click(
+		function(){
+			$("#popup").animate({right: parseInt($("#popup").css('right'),10) == 0 ? -$("#popup").outerWidth() : 0 });
+             var c = Cookie.write("modal_viewed", "true", {
+				path: thisPath,
+				duration: 30
+			});
+		});
+           
+        window.onscroll = function () {
+			
+			var height = $(window).height();
+			var scrollTop = $(window).scrollTop();
+			var obj = $("#divDownPage")
+			var pos = obj.position();
+			
+			if (height + scrollTop >= pos.top+250 && (!$chk(c)) && (!$chk(n)))  {
+				$("#popup").show().animate({right: parseInt($("#popup").css('left'),10) == 0 ? -$("#popup").outerWidth() : 0});
+             	var c = Cookie.write("popup_sub", "true", {path: thisPath,duration: 400});
+            } else if (height + scrollTop < pos.top+250 && (!$chk(c)))  {
+            	$("#popup").animate({right: parseInt($("#popup").css('right'),10) == 0 ? -$("#popup").outerWidth() : 0 });
+            }
+			
+			
+            if ($chk(c)) {
+                window.onscroll = function () {
+                    if (height + scrollTop < pos.top+250 && (!$chk(c)))  {
+                      $("#popup").animate({right: parseInt($("#popup").css('right'),10) == 0 ? -$("#popup").outerWidth() : 0 });
+                    } 
+                }
+            }
+           }
+
+            $(function() {
+				
+			var height = $(window).height();
+			var scrollTop = $(window).scrollTop();
+			var obj = $("#divDownPage")
+			var pos = obj.position();
+				if ($chk(c)) {
+				    window.onscroll = function () {
+                        if (height + scrollTop >= pos.top+250 && (!$chk(c)))  {
+                            $("#popup").hide();
+                        } 
+                    }
+                    //alert('you closed it');
+				}else if ($chk(n)) {
+				   //alert('you already saw it');
+				}
+          });
+           
+        </script> 
+      <div id="popup" class="popup-info"> 
+       <span class="close">X</span> 
+       <h2>You might also like:</h2> 
+       <div class="article-popup"> 
+        <div class="pull-left marginleft popup-text"> 
+         <time class="dateline nomargin">02-27-15</time> 
+         <h3 class="nomargin"><a href="http://www.sanders.senate.gov/newsroom/press-releases/sanders-statement-on-new-cbo-director">Sanders Statement on New CBO Director</a></h3> 
+         <p class="nomargin"> WASHINGTON, Feb. 27 - Sen. Bernie Sanders (I-Vt.), the Senate Budget Committee ranking member, today issued the following statement on the a... </p> 
+         <br /> 
+        </div> 
+       </div> 
+       <div class="article-popup"> 
+        <div class="pull-left marginleft popup-text"> 
+         <time class="dateline nomargin">02-25-15</time> 
+         <h3 class="nomargin"><a href="http://www.sanders.senate.gov/newsroom/press-releases/sanders-to-boehner-no-more-excuses-fund-homeland-security">Sanders to Boehner: No More Excuses, Fund Homeland Security</a></h3> 
+         <p class="nomargin"> WASHINGTON, Feb. 25 - After the Senate today cleared the way to avoid a shutdown of the Department of Homeland Security, Sen. Bernie Sanders... </p> 
+         <br /> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <!--end body container--> 
+  <footer class="footer"> 
+   <div class="upper-footer"> 
+    <div class="container"> 
+     <div class="container-fluid margintop marginbottom officemobile"> 
+      <a href="/office-locations"><h2>OFFICE LOCATIONS</h2></a> 
+     </div> 
+     <div class="container-fluid marginbottom officedesktop"> 
+      <h2>OFFICE LOCATIONS</h2> 
+      <div class="office-locations pull-left"> 
+       <h3>
+        <bold>
+         Washington D.C.
+        </bold></h3> 
+       <ul> 
+        <li>U.S. Senate</li> 
+        <li>332 Dirksen Building</li> 
+        <li>Washington, D.C. 20510</li> 
+        <li>tel (202) 224-5141</li> 
+        <li>fax (202) 228-0776</li> 
+        <li><a class="directions" href="///maps.google.com/maps?q=332+Dirksen+Building,washington&amp;hl=en&amp;ll=38.892703,-77.00326&amp;spn=0.057385,0.048323&amp;sll=34.020479,-118.411732&amp;sspn=0.977727,0.773163&amp;t=h&amp;hq=332+Dirksen+Building,washington&amp;z=14&amp;iwloc=A">Get Directions</a></li> 
+       </ul> 
+      </div> 
+      <div class="office-locations pull-left"> 
+       <h3>
+        <bold>
+         Burlington
+        </bold></h3> 
+       <ul> 
+        <li>1 Church Street, Suite 300</li> 
+        <li>Burlington, VT 05401</li> 
+        <li>tel (802) 862-0697</li> 
+        <li>tel (800) 339-9834</li> 
+        <li>fax (802) 860-6370</li> 
+        <li><a class="directions" href="///maps.google.com/maps?q=1+Church+St,Burlington,+VT+05401&amp;hl=en&amp;sll=38.892703,-77.00326&amp;sspn=0.057385,0.048323&amp;t=h&amp;hnear=1+Church+St,+Burlington,+Chittenden,+Vermont+05401&amp;z=16">Get Directions</a></li> 
+       </ul> 
+      </div> 
+      <div class="office-locations pull-left"> 
+       <h3>
+        <bold>
+         St. Johnsbury
+        </bold></h3> 
+       <ul> 
+        <li>357 Western Ave. Suite 1B</li> 
+        <li>St. Johnsbury, VT 05819</li> 
+        <li>tel (802) 748-9269</li> 
+        <li>fax (802) 748-0302</li> 
+        <li><a class="directions" href="///maps.google.com/maps?q=357+Western+Ave.+St.+Johnsbury,+VT+05819&amp;hl=en&amp;sll=42.87706,-72.56161&amp;sspn=0.013507,0.012081&amp;t=h&amp;hnear=357+Western+Ave,+St+Johnsbury,+Caledonia,+Vermont+05819&amp;z=16">Get Directions</a></li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="sub-footer"> 
+    <div class="container"> 
+     <div class="container-fluid container-ie pull-left marginbottom"> 
+      <div id="toolbar"> 
+       <div class="social-media"> 
+        <ul class="pull-left nomargin"> 
+         <li class="facebook"><a href="http://www.senate.gov/cgi-bin/exitmsg?url=https://www.facebook.com/senatorsanders" target="_blank">Facebook</a></li> 
+         <li class="twitter"><a href="http://www.senate.gov/cgi-bin/exitmsg?url=https://twitter.com/@sensanders" target="_blank">Twitter</a></li> 
+         <li class="google"><a href="http://www.senate.gov/cgi-bin/exitmsg?url=https://plus.google.com/+BernieSanders/posts" target="_blank">google</a></li> 
+         <li class="youtube"><a href="http://www.senate.gov/cgi-bin/exitmsg?url=http://www.youtube.com/senatorsanders" target="_blank">Youtube</a></li> 
+        </ul> 
+       </div> 
+       <div class="pull-left newsletter"> 
+        <form class="form-inline" id="newsletter-signup" method="post" action="/buzz" enctype="application/x-www-form-urlencoded"> 
+         <input type="email" class="input-medium" placeholder="EMAIL ADDRESS" name="email_address" id="email_address" required="" /> 
+         <button type="submit" class="btn pull-right">Sign Up for The Bernie Buzz</button> 
+        </form> 
+        <!--[if lt IE 8 ]> <img src="/themes/sanders/images/masthead/stack.png"> <![endif]--> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="container-fluid"> 
+      <ul class="footer-links unstyled pull-right"> 
+       <li><a href="http://www.sanders.senate.gov/privacy/">Privacy Policy</a> | </li> 
+       <li><a href="http://www.sanders.senate.gov/site/map/">Site Map</a> | </li> 
+       <li><a href="http://www.sanders.senate.gov/rss/feeds/">RSS</a> | </li> 
+       <li><a href="http://www.sanders.senate.gov/contact/">Contact</a></li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div>  
+   <!--1--> 
+  </footer> 
+  <script src="http://platform.twitter.com/widgets.js"></script> 
+  <script src="/scripts/vendor/jquery/jquery.js?cachebuster=1378979914"></script> 
+  <script src="/themes/sanders/scripts/sidetogglemenu.js?cachebuster=1379328654"></script> 
+  <script>
+
+jQuery(function(){ // on DOM load
+ menu1 = new sidetogglemenu({ // initialize first menu example
+  id: 'togglemenu1',
+  pushcontent: false // <- No comma after last option!
+ })
+})
+
+</script> 
+  <script src="/scripts/vendor/bootstrap/bootstrap.min.js?cachebuster=1379456015"></script> 
+  <script src="/scripts/vendor/orientation.js?cachebuster=1378979973"></script> 
+  <script src="/scripts/vendor/mootools/mootools.js?cachebuster=1378979976"></script> 
+  <script src="/scripts/vendor/mootools/mootools-more.js?cachebuster=1378979975"></script> 
+  <script src="/scripts/vendor/modernizr/modernizr.js?cachebuster=1378979920"></script> 
+  <script src="/scripts/vendor/selectivizr/selectivizr.js?cachebuster=1378979974"></script> 
+  <script src="/scripts/vendor/cerabox/cerabox.min.js?cachebuster=1378979916"></script> 
+  <script src="/scripts/popover-extended.js?cachebuster=1379506413"></script> 
+  <a href="/themes/sanders/templates/popup.cfm" data-type="iframe" class="mb" id="clickme" style="display:none;"></a> 
+  <script type="text/template" class="deferred-script">
+                	if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/gi.test(navigator.userAgent))) {
+	                    window.addEvent("domready", function() {
+	                        $$("a.mb").cerabox({
+	                            width: 700,
+	                            height: 400,
+	                            displayTitle: false,
+	                            events: {
+	                                onClose: function() {
+	                                    var c = Cookie.write("modal_viewed", "true", {
+	                                        path: "/",
+	                                        duration: 30
+	                                    });
+	                                }
+	                            }
+	                        });
+
+	                         var n = Cookie.read("newsletter_sub");
+	                         var c = Cookie.read("modal_viewed");
+
+	                         if (!$chk(c) && !$chk(n)) {
+	                            document.id('clickme').fireEvent('click');
+
+	                         };
+	                    });
+                	}
+                </script> 
+  <script type="text/template" class="deferred-script">
+			 $$('[data-toggle=collapse]').each(function(item) {
+				if (item.hasClass('iscollapsible')) {
+					$$(item.get('data-target'))[0].hide = null;
+				}
+			});
+
+			// fix for bootstrap tooltip hide/mootools hide collision
+			$$('form input,form select,form textarea').each(function(item) { if (typeof item.hide == 'function') { item.hide = null; } });
+
+			$("#next-text").on('hide', function () {
+				$('#collapsible-btn').html("Read More");
+				$('#collapsible-btn').removeClass("opened");
+
+			});
+			$("#next-text").on('show', function () {
+				$('#collapsible-btn').html("Hide");
+				$('#collapsible-btn').addClass("opened");
+
+			});
+		</script> 
+  <script type="text/javascript">
+			window.top['site_path'] = "5c6e0703-fd9a-4a76-bf4a-a441f75eaa72";
+
+			
+
+			
+			
+
+			var application = {
+				"bootstrap": {},
+				"config": {
+					"tinymce": {
+						"plugins": {
+							"selectvideo": {
+								"player": "jwplayer", // should be set to "legacy" or "jwplayer" currently
+								"youtube": true, // set to true to write the youtube tags for youtube videos
+								"width": "100%", // set width and height on the containing element
+								"height": "100%",
+								"tracking": true
+							}
+						}
+					}
+				},
+				"fn": { // deprecated mootools 1.2 stuff that we'll probably still use once we upgrade fully to 1.3
+					"defined": function(obj) {
+						return (obj != undefined);
+					},
+					"check": function(obj) {
+						return !!(obj || obj === 0);
+					}
+				},
+				"form": {
+					"processed": null
+					
+				},
+				"friendly_urls": true,
+				"map": {
+					"width": "100%", // set width and height on the containing element
+					"height": "100%"
+				},
+				"siteroot": "http://www.sanders.senate.gov/",
+				"theme": "sanders",
+				"webroot": "http://www.sanders.senate.gov/"
+			};
+
+			var yt_players = [];
+			function onYouTubePlayerAPIReady() {
+				$each(yt_players, function(video) {
+					video.target.innerHTML = "";
+					video.player = new YT.Player(video.target, {
+						width: video.width,
+						height: video.height,
+						videoId: video.id,
+						events: {
+							'onStateChange': function(event) {
+								if (event.data == YT.PlayerState.PLAYING) {
+									_gaq.push(['_trackEvent', 'Video', 'Play', video.title ]);
+								} /*else if (event.data == YT.PlayerState.PAUSED) {
+									_gaq.push(['_trackEvent', 'Video', 'Pause', video.title ]);
+								}*/ else if (event.data == YT.PlayerState.ENDED) {
+									_gaq.push(['_trackEvent', 'Video', 'Complete', video.title ]);
+								}
+							}
+						}
+					});
+				});
+			}
+
+			function returnfalse() { return false }
+		</script> 
+  <script src="/scripts/global.js?cachebuster=1378980003"></script> 
+  <script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-40284960-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script> 
+  <script src="/wt_sdc/sanders_webtrends.js" type="text/javascript"></script> 
+  <!-- ----------------------------------------------------------------------------------- --> 
+  <!-- Warning: The two script blocks below must remain inline. Moving them to an external --> 
+  <!-- JavaScript include file can cause serious problems with cross-domain tracking.      --> 
+  <!-- ----------------------------------------------------------------------------------- --> 
+  <script type="text/javascript">
+			//<![CDATA[
+			var _tag=new WebTrends();
+			_tag.dcsGetId();
+			//]]>
+			</script> 
+  <script type="text/javascript">
+			//<![CDATA[
+			_tag.dcsCustom=function(){
+			// Add custom parameters here.
+			//_tag.DCSext.param_name=param_value;
+			}
+			_tag.dcsCollect();
+			//]]>
+			</script> 
+  <noscript> 
+   <div>
+    <img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="//sdc1.senate.gov/dcsh8hea46iyw6gqctbr2i8zb_5o3u/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.sanders.senate.gov" />
+   </div> 
+  </noscript> 
+  <!-- END OF SmartSource Data Collector TAG --> 
+  <script src="http://www.youtube.com/player_api" type="text/javascript" charset="utf-8"></script> 
+  <script>
+			if (top.frames.length > 0 && window.top.location.href.match(/\/amend\//gi)) {
+				document.write('<script type="text/javascript" src="/scripts/vendor/tinymce/tiny_mce.js?cachebuster=1378979911"><\/script>');
+			}
+		</script> 
+  <script type="text/javascript">
+			window.addEvent("domready", function() {
+				$$('[data-toggle=collapse]').each(function(item) {
+					if (item.hasClass('iscollapsible')) {
+						$$(item.get('data-target'))[0].hide = null;
+					}
+				});
+
+				$$("script.deferred-script").each(function(script) {
+					Browser.exec((Browser.ie) ? script.innerHTML : script.get("text"));
+				});
+			});
+		</script>   
+ </body>
+</html>
