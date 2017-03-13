@@ -31,8 +31,8 @@ public class Oneliner {
   public static void main(final String[] args) throws Exception {
     final URL url =
         new URL(
-            "http://blog.openshift.com/day-18-boilerpipe-article-extraction-for-java-developers/"
-        // "http://www.dn.se/nyheter/vetenskap/annu-godare-choklad-med-hjalp-av-dna-teknik"
+//            "http://blog.openshift.com/day-18-boilerpipe-article-extraction-for-java-developers/"
+         "http://www.dn.se/nyheter/vetenskap/annu-godare-choklad-med-hjalp-av-dna-teknik"
         );
 
     System.out.println(ArticleExtractor.INSTANCE.getText(url));
