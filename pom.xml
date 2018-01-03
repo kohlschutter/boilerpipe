@@ -202,8 +202,6 @@
   </dependencies>
 
   <modules>
-    <module>nekohtml</module>
-    <module>nekohtml-relocated</module>
     <module>boilerpipe-common</module>
     <module>boilerpipe-demo</module>
   </modules>
